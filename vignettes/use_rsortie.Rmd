@@ -1,0 +1,48 @@
+---
+title: "How to use the rsortie package"
+output: rmarkdown::html_vignette
+date: "December 7, 2021"
+vignette: >
+  %\VignetteIndexEntry{How to use the rsortie package}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(rsortie)
+```
+
+## Introduction
+
+This vignette provides an _overview_ of how to use the **rSORTIE** package.  
+Other vignettes go into specific actions and functions within the **rSORTIE** package.  
+
+The goal of the **rSORTIE** package is to make the SORTIE-ND model more widely accessible to a wider audience. Operating the SORTIE-ND model through R allows for a continuous workflow, transparent and reproducible research, and clear documentation. 
+
+SORTIE-ND is an individual tree, spatially explicit model of forest dynamics.  
+
+* Individual tree means the model tracks individuals over time, trees are modelled individually, and each individual has a location and space  
+* Spatially explicit means the model operates in real space, the location of an individual affects the processes (birth, growth, death), and it is resource-dependent  
+
+
+## Step 1: Set global parameters and import data  
+Here we can walk through chunks of code  
+
+## Step 2: Clean data (if needed)  
+
+## Step 3: Update parameter files  
+
+## Step 4: Add treatments  
+See other vignettes  
+
+## Step 5: Run the model  
+
+## Step 6: Extract and Parse output files  
+See other vignettes  

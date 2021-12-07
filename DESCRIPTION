@@ -20,4 +20,7 @@ Suggests:
     plyr,
     raster,
     fasterize,
-    SpaDES
+    SpaDES,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
