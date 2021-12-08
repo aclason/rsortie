@@ -1,0 +1,5 @@
+url: https://leah-walker.github.io/rsortie/
+
+template:
+  bootstrap: 5
+  bootswatch: minty
