@@ -22,7 +22,7 @@
     <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
     
 
-    <nav class="navbar fixed-top navbar-dark navbar-expand-lg bg-primary"><div class="container">
+    <nav class="navbar fixed-top navbar-default navbar-expand-lg bg-light"><div class="container">
     
     <a class="navbar-brand me-2" href="../index.html">rsortie</a>
 
@@ -35,25 +35,32 @@
 
     <div id="navbar" class="collapse navbar-collapse ms-2">
       <ul class="navbar-nav me-auto">
-<li class="nav-item">
-  <a class="nav-link" href="../reference/index.html">Reference</a>
-</li>
 <li class="active nav-item dropdown">
-  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-articles">Articles</a>
-  <div class="dropdown-menu" aria-labelledby="dropdown-articles">
-    <a class="dropdown-item" href="../articles/add_harvest.html">add_harvest</a>
-    <a class="dropdown-item" href="../articles/add_plant.html">add_plant</a>
-    <a class="dropdown-item" href="../articles/edit_inputs.html">How to edit and prepare rsortie input files</a>
-    <a class="dropdown-item" href="../articles/extract_outputs.html">How to extract rsortie outputs</a>
-    <a class="dropdown-item" href="../articles/use_rsortie.html">How to use the rsortie package</a>
+  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-vignettes">Vignettes</a>
+  <div class="dropdown-menu" aria-labelledby="dropdown-vignettes">
+    <a class="dropdown-item" href="../articles/use_rsortie.html">How to use rsortie</a>
+    <a class="dropdown-item" href="../articles/edit_inputs.html">How to edit inputs</a>
+    <a class="dropdown-item" href="../articles/extract_outputs.html">How to extract outputs</a>
+    <a class="dropdown-item" href="../articles/add_harvest.html">Add a harvest</a>
+    <a class="dropdown-item" href="../articles/add_plant.html">Add a plant</a>
   </div>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="../reference/index.html">Functions</a>
 </li>
       </ul>
 <form class="form-inline my-2 my-lg-0" role="search">
         <input type="search" class="form-control me-sm-2" aria-label="Toggle navigation" name="search-input" data-search-index="../search.json" id="search-input" placeholder="Search for" autocomplete="off">
 </form>
 
-      <ul class="navbar-nav"></ul>
+      <ul class="navbar-nav">
+<li class="nav-item">
+  <a class="external-link nav-link" href="https://github.com/leah-walker/rsortie/" aria-label="github">
+    <span class="fab fa fab fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
 </div>
 
     
@@ -66,14 +73,14 @@
             
             <h4 data-toc-skip class="date">December 7, 2021</h4>
       
-      
+      <small class="dont-index">Source: <a href="https://github.com/leah-walker/rsortie/blob/HEAD/vignettes/use_rsortie.Rmd" class="external-link"><code>vignettes/use_rsortie.Rmd</code></a></small>
       <div class="d-none name"><code>use_rsortie.Rmd</code></div>
     </div>
 
     
     
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">rsortie</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://leah-walker.github.io/rsortie">rsortie</a></span><span class="op">)</span></code></pre></div>
 <div class="section level2">
 <h2 id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
 </h2>
@@ -82,9 +89,9 @@ Other vignettes go into specific actions and functions within the <strong>rSORTI
 <p>The goal of the <strong>rSORTIE</strong> package is to make the SORTIE-ND model more widely accessible to a wider audience. Operating the SORTIE-ND model through R allows for a continuous workflow, transparent and reproducible research, and clear documentation.</p>
 <p>SORTIE-ND is an individual tree, spatially explicit model of forest dynamics.</p>
 <ul>
-<li>Individual tree means the model tracks individuals over time, trees are modelled individually, and each individual has a location and space<br>
+<li>the model tracks individuals over time, trees are modelled individually, and each individual has a location and space<br>
 </li>
-<li>Spatially explicit means the model operates in real space, the location of an individual affects the processes (birth, growth, death), and it is resource-dependent</li>
+<li>the model operates in real space, the location of an individual affects the processes (birth, growth, death), and it is resource-dependent</li>
 </ul>
 </div>
 <div class="section level2">

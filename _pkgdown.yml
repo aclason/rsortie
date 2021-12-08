@@ -2,4 +2,25 @@ url: https://leah-walker.github.io/rsortie/
 
 template:
   bootstrap: 5
-  bootswatch: minty
+  bootswatch: spacelab
+
+navbar:
+  title: ~
+  type: default
+  structure:
+    right: [search, github]
+  left:
+    - text: Vignettes
+      menu:
+        - text: How to use rsortie
+          href: articles/use_rsortie.html
+        - text: How to edit inputs
+          href: articles/edit_inputs.html
+        - text: How to extract outputs
+          href: articles/extract_outputs.html
+        - text: Add a harvest
+          href: articles/add_harvest.html
+        - text: Add a plant
+          href: articles/add_plant.html
+    - text: Functions
+      href: reference/index.html

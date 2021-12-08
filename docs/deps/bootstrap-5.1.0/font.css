@@ -1,21 +1,32 @@
 @font-face {
-  font-family: 'Montserrat';
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(fonts/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkaVQ.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(fonts/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjaVQ.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
+  font-stretch: normal;
   font-display: swap;
-  src: url(fonts/JTUSjIg1_i6t8kCHKm45xW0.woff) format('woff');
+  src: url(fonts/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0C4k.woff) format('woff');
 }
 @font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(fonts/JTURjIg1_i6t8kCHKm45_ZpC7g0.woff) format('woff');
-}
-@font-face {
-  font-family: 'Montserrat';
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 700;
+  font-stretch: normal;
   font-display: swap;
-  src: url(fonts/JTURjIg1_i6t8kCHKm45_dJE7g0.woff) format('woff');
+  src: url(fonts/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1y4k.woff) format('woff');
 }
