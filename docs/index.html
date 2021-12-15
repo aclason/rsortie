@@ -84,13 +84,9 @@
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
-<ol style="list-style-type: decimal">
-<li>Install the SORTIE-ND GUI.</li>
-</ol>
+<p>1. Install the SORTIE-ND GUI.</p>
 <p>Go to <a href="http://www.sortie-nd.org/software/index.html" class="external-link uri">http://www.sortie-nd.org/software/index.html</a> and download the newest version.</p>
-<ol start="2" style="list-style-type: decimal">
-<li>Set the value of the JAVA-HOME environment variable (Optional)</li>
-</ol>
+<p>2. Set the value of the JAVA-HOME environment variable (Optional)</p>
 <p>In some cases, the SORTIE GUI does not know where to locate Java even though it is installed on the user’s system. To fix this issue on a Windows computer:</p>
 <p>Open the Windows System Properties Control Panel applet on any version of Windows.<br>
 Choose Advanced System settings.<br>
@@ -99,19 +95,15 @@ Click on the New button under System Variables.<br>
 Set <strong>JAVA_HOME</strong> as the <em>environment variable name</em>.<br>
 Set the <strong>location of java.exe</strong> as the <em>environment variable Value</em>.<br>
 Click OK and close the JAVA_HOME environment variable editor.</p>
-<ol start="3" style="list-style-type: decimal">
-<li>Install <code>rsortie</code>, in R.</li>
-</ol>
+<p>3. Install <code>rsortie</code>, in R.</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://devtools.r-lib.org/reference/remote-reexports.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"aclason/rSORTIE"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"aclason/rSORTIE"</span><span class="op">)</span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="file-and-folder-descriptions">File and Folder descriptions<a class="anchor" aria-label="anchor" href="#file-and-folder-descriptions"></a>
 </h2>
 <p>(maybe don’t need to have this here as it’s in a vignette)</p>
-<ol style="list-style-type: decimal">
-<li><strong>Inputs</strong></li>
-</ol>
+<p>1. <strong>Inputs</strong></p>
 <p>These input files are the default files used to run the model, they can be changed through the arguments in the package.</p>
 <p><strong>Files.txt (e.g., “InitDateCreek.csv”)</strong><br>
 These files contain the list of files that you wish to use in the simulation.</p>
@@ -127,9 +119,7 @@ This is a translation file that matches the parameter names in the input file wi
 format of the variable. Formats are described more later. This file will only be changed to add new variables or to change the<br>
 parameter name of a variable.</p>
 <p>For information on how to edit these files please refer to <a href="https://bvcentre.ca/sortie-nd" class="external-link uri">https://bvcentre.ca/sortie-nd</a>.</p>
-<ol start="2" style="list-style-type: decimal">
-<li><strong>R</strong></li>
-</ol>
+<p>2. <strong>R</strong></p>
 <p><strong>MakeFiles.R</strong><br>
 R script that contains all the code needed to run the simulation.</p>
 <p><strong>Functions.R</strong><br>
