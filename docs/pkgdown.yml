@@ -1,0 +1,14 @@
+pandoc: 2.16.2
+pkgdown: 2.0.1
+pkgdown_sha: ~
+articles:
+  add_harvest: add_harvest.html
+  add_plant: add_plant.html
+  edit_inputs: edit_inputs.html
+  extract_outputs: extract_outputs.html
+  use_rsortie: use_rsortie.html
+last_built: 2021-12-15T17:56Z
+urls:
+  reference: https://leah-walker.github.io/rsortie/reference
+  article: https://leah-walker.github.io/rsortie/articles
+

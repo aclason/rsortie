@@ -1,11 +1,14 @@
 Package: rsortie
 Title: Forest stand dynamics modelling via SORTIE-ND
 Version: 0.0.0.9000
-Authors@R: c(person("Alana", "Clason", "alana.clason@bvcentre.ca", role = c("aut", "cre")),
-             person("Leah", "Walker", "sortie@bvcentre.ca", role = "ctb")
+Authors@R: person(given = "Alana", 
+                  family = "Clason", 
+                  email = "alana.clason@bvcentre.ca", 
+                  role = c("aut", "cre"))
 Description: This package provides an R interface to the SORTIE-ND C++ model, allowing users to 
             model forest stand dynamics in an easy and reproducible way.
 License: GPL (>= 3)
+URL: https://leah-walker.github.io/rsortie, https://github.com/leah-walker/rsortie
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2

@@ -28,8 +28,8 @@ The goal of the **rSORTIE** package is to make the SORTIE-ND model more widely a
 
 SORTIE-ND is an individual tree, spatially explicit model of forest dynamics.  
 
-* Individual tree means the model tracks individuals over time, trees are modelled individually, and each individual has a location and space  
-* Spatially explicit means the model operates in real space, the location of an individual affects the processes (birth, growth, death), and it is resource-dependent  
+* the model tracks individuals over time, trees are modelled individually, and each individual has a location and space  
+* the model operates in real space, the location of an individual affects the processes (birth, growth, death), and it is resource-dependent  
 
 
 ## Step 1: Set global parameters and import data  
