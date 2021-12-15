@@ -2,11 +2,10 @@ url: https://leah-walker.github.io/rsortie/
 
 template:
   bootstrap: 5
-  bootswatch: spacelab
+  bootswatch: minty
 
 navbar:
   title: ~
-  type: default
   structure:
     right: [search, github]
   left:
