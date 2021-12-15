@@ -14,11 +14,11 @@ All questions regarding this code should be directed to alana.clason@bvrc.ca or 
 
 ## Installation
 
-1. Install the SORTIE-ND GUI.  
+\1. Install the SORTIE-ND GUI.  
 
 Go to http://www.sortie-nd.org/software/index.html and download the newest version.
 
-2. Set the value of the JAVA-HOME environment variable (Optional)  
+\2. Set the value of the JAVA-HOME environment variable (Optional)  
 
 In some cases, the SORTIE GUI does not know where to locate Java even though it is installed on the user’s system. To fix this issue on a Windows computer:
 
@@ -30,7 +30,7 @@ Set **JAVA_HOME** as the *environment variable name*.
 Set the **location of java.exe**  as the *environment variable Value*.  
 Click OK and close the JAVA_HOME environment variable editor.
 
-3. Install `rsortie`, in R.
+\3. Install `rsortie`, in R.
 
 ```r
 devtools::install_github("aclason/rSORTIE")
@@ -39,7 +39,7 @@ devtools::install_github("aclason/rSORTIE")
 ## File and Folder descriptions  
 (maybe don't need to have this here as it's in a vignette)  
 
-1. **Inputs**
+\1. **Inputs**
 
 These input files are the default files used to run the model, they can be changed through the arguments in the package.  
 
@@ -63,7 +63,7 @@ parameter name of a variable.
 For information on how to edit these files please refer to https://bvcentre.ca/sortie-nd.  
   
   
-2. **R**
+\2. **R**
 
 **MakeFiles.R**  
 R script that contains all the code needed to run the simulation.
