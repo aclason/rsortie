@@ -2,9 +2,11 @@
 
 export(ExtractFiles)
 export(FindFileLine)
+export(MakeFiles)
 export(ModifyFile)
 export(ParseMap)
 export(ParseXML)
+export(PrepInputs)
 export(PrepareFile)
 export(ReadPlotFile)
 export(RemoveRow)

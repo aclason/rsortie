@@ -7,7 +7,7 @@
 FindFileLine(rf, itype, varname, vargroup, varmaster)
 }
 \arguments{
-\item{rf}{\code{\link[=character]{character()}} Base XML parameter file to be modified}
+\item{rf}{\code{\link[=character]{character()}} blah bla XML parameter file to be modified}
 
 \item{itype}{\code{\link[=integer]{integer()}} File type}
 

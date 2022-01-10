@@ -1,6 +1,6 @@
 #' FindFileLine
 #'
-#' @param rf [character()] Base XML parameter file to be modified
+#' @param rf [character()] blah bla XML parameter file to be modified
 #' @param itype [integer()] File type
 #' @param varname [character()] variable codename
 #' @param vargroup [character()] variable group name
@@ -488,3 +488,37 @@ read_keyhole <- function(file) {
     return(sf_out)
   }
 }
+
+#' ExtractFiles
+#'
+#' @param inputfiles [character()] The textfile containing the files to update and updating
+#'
+#' @return
+#' @export
+#'
+#' @examples
+#'PrepInputs(inputfiles)
+#'
+PrepInputs <- function(inputfiles){
+  xmlList <- c()
+  paramList1 <- vector("list",5)
+  maxtype <- 0
+  for (i in 1:nrow(inputfiles)) {
+    fn <- as.character(trimws(inputfiles$name[i]))
+    itype <- inputfiles$type[i]
+
+    if (itype == 0) {
+      xmlList <- c(xmlList,fn)
+    }
+    else {
+      paramList1[[itype]] <- c(paramList1[[itype]],list(fn))
+    }
+    if (itype > maxtype) {maxtype <- itype}
+  }
+  numtype <- c()
+  for (iii in 1:5) {
+    numtype <- c(numtype,length(paramList1[[iii]]))
+  }
+}
+
+
