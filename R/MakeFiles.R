@@ -14,15 +14,12 @@
 #' @export
 #'
 #' @examples
-#' MakeFiles(base_path, param_path, xmls_path)
+#' makeFiles(base_path, param_path, xmls_path)
 #'
 
 makeFiles <- function(base_path, param_path, xmls_path){
-  if(xmlList=NULL){
-    #check that prepInputs was run
-    stop("you must run prepInputs before makeFiles")
-    #to do - throw errors if list files isn't properly written (0 for basefile etc)
-  } else{
+  #check that prepInputs was run
+  if(exists("xmlList")){
     ListOfFiles <- c()
     for (ix in 1:length(xmlList)) { #start loop over xml files
 
@@ -74,5 +71,9 @@ makeFiles <- function(base_path, param_path, xmls_path){
         }
       }
     }
+  } else{
+    stop("you must run prepInputs before makeFiles")
+    #to do - throw errors if list files isn't properly written (0 for basefile etc)
+
   }
 }

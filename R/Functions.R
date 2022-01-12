@@ -519,7 +519,7 @@ read_keyhole <- function(file) {
 #' @export
 #'
 #' @examples
-#'PrepInputs(fileNames, varTranslation)
+#'prepInputs(fileNames, varTranslation)
 #'
 prepInputs <- function(fileNames,varTranslation){
   if(file.exists(varTranslation)){
