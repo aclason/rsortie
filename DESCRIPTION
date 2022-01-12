@@ -1,10 +1,10 @@
 Package: rsortie
 Title: Forest stand dynamics modelling via SORTIE-ND
 Version: 0.0.0.9000
-Authors@R: c(person("Alana", "Clason", email = "alana.clason@bvcentre.ca", role = c("aut", "cre")),
-            person("Sarah", "Last", role = "trl"))
-Description: This package provides an R interface to the SORTIE-ND C++ model, allowing users to 
-            model forest stand dynamics in an easy and reproducible way.
+Authors@R: c(person("Sarah", "Beukema", email = "sbeukema@essa.com", role = "aut"),
+            person("Alana", "Clason", email = "alana.clason@bvcentre.ca", role = c("aut", "cre")))
+Description: This package is an R interface to SORTIE-ND, allowing users to 
+            model forest stand dynamics in an R environment.
 License: GPL (>= 3)
 URL: https://aclason.github.io/rsortie, https://github.com/aclason/rsortie
 Encoding: UTF-8
