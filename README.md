@@ -10,7 +10,7 @@ We assume that the user is familiar with the program R, which can be downloaded 
 
 The user must also download and be familiar with SORTIE-ND, to learn and download the SORTIE-ND GUI, please visit http://www.sortie-nd.org/.
 
-All questions regarding this code should be directed to alana.clason@bvrc.ca or sortie@bvcentre.ca
+All questions regarding this code should be directed to alana.clason@bvcentre.ca or sortie@bvcentre.ca  
 
 ## Installation
 
@@ -22,29 +22,31 @@ Go to http://www.sortie-nd.org/software/index.html and download the newest versi
 
 In some cases, the SORTIE GUI does not know where to locate Java even though it is installed on the user’s system. To fix this issue on a Windows 10 computer:
 
-Search for **Environment Variables** and select **Edit the system Environment Variables**. 
-Click on **Environment Variables** near the bottom right.  
+Search for **Environment Variables** and select **Edit the system Environment Variables**.  
+Click **Environment Variables** near the bottom right.  
 Under **System Variables**, click **New**.  
 Set the *Variable Name* as **JAVA_HOME**.  
-Set the *Variable Value* as the `C:\filepath\location\of\java.exe`.  
-Click OK and close the Environment Variables editor.
+Set the *Variable Value* as the `C:\filepath\location\of\java.exe`  
+Click OK and close the Environment Variables editor.  
 
 Or
 
-Open **Command Prompt** (Run as administrator)
-Run:
+Open **Command Prompt** (Run as administrator).  
+Run:  
 ```r 
 setx -m JAVA_HOME "C:\filepath\location\of\java.exe"
 ```
-Verify the Environment Variable has been added correctly by restarting the Command Prompt and running:
+Verify the Environment Variable has been added correctly by restarting Command Prompt and running:  
 ```r
 echo %JAVA_HOME%
 ```
+You should see the file path location of java.exe  
+
 
 3.\ Install `rsortie`, in R.
 
 ```r
-devtools::install_github("aclason/rSORTIE")
+devtools::install_github("aclason/rsortie")
 ```
 
 ## File and Folder descriptions  
