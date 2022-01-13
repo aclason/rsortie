@@ -21,8 +21,7 @@ The makeFiles function takes a base parameter file and replaces specific
 parameter values to generate new parameter files to be run in SORTIE. Common use of
 this function would be to change the number of timesteps or initiate different starting stands
 to create a series of parameter files for an experiment
-}
-\details{
+
 Prior to running \code{\link[=makeFiles]{makeFiles()}}, you must run \code{\link[=prepInputs]{prepInputs()}}
 to generate the parameter value files needed for updating.
 }
