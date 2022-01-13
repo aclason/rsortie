@@ -1,5 +1,6 @@
 #' makeFiles
 #'
+#'@description
 #' The makeFiles function takes a base parameter file and replaces specific
 #' parameter values to generate new parameter files to be run in SORTIE. Common use of
 #' this function would be to change the number of timesteps or initiate different starting stands
