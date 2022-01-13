@@ -2,7 +2,7 @@
 % Please edit documentation in R/Functions.R
 \name{RemoveSpecies}
 \alias{RemoveSpecies}
-\title{RemoveSpecies}
+\title{Remove a species}
 \usage{
 RemoveSpecies(sp, rf)
 }
@@ -15,7 +15,7 @@ RemoveSpecies(sp, rf)
 
 }
 \description{
-RemoveSpecies
+\code{RemoveSpecies()} removes a species from the base parameter file and simulation.
 }
 \examples{
 RemoveSpecies(sp, rf)

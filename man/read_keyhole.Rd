@@ -2,7 +2,7 @@
 % Please edit documentation in R/Functions.R
 \name{read_keyhole}
 \alias{read_keyhole}
-\title{Read Keyhole}
+\title{Read in spatial files}
 \usage{
 read_keyhole(file)
 }
@@ -13,7 +13,7 @@ read_keyhole(file)
 
 }
 \description{
-Read Keyhole
+\code{read_keyhole()} is a helper function to read in .kmz files
 }
 \examples{
 read_keyhole(file)

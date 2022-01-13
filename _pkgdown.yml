@@ -15,10 +15,34 @@ navbar:
       href: reference/index.html
 
 articles:
-  - title: All Vignettes
-    contents:
+ - title: All Vignettes
+   contents:
     - use_rsortie
     - edit_inputs
     - extract_outputs
     - add_harvest
     - add_plant
+
+reference:
+ - title: Create new parameter file(s)
+   contents:
+   - FindFileLine
+   - makeFiles
+   - ModifyFile
+   - PrepareFile
+   - prepInputs
+   - read_keyhole
+   - RemoveRow
+   - RemoveSpecies
+   - ReplaceInfo
+   - ReplaceLines
+   - ReplaceParameter
+ - title: Run the model SORTIE
+   contents:
+   - RunSortie
+ - title: Parse output files
+   contents:
+   - ExtractFiles
+   - ParseMap
+   - ParseXML
+   - ReadPlotFile

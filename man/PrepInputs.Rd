@@ -2,7 +2,7 @@
 % Please edit documentation in R/Functions.R
 \name{prepInputs}
 \alias{prepInputs}
-\title{prepInputs}
+\title{Prepare inputs}
 \usage{
 prepInputs(fileNames, varTranslation)
 }
@@ -35,7 +35,7 @@ Column 2 defines the type of parameter to be replaced and these are the valid va
 
 }
 \description{
-prepInputs
+\code{prepInputs()} generates the base parameter values file to be modified
 }
 \examples{
 prepInputs(fileNames, varTranslation)

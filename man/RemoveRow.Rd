@@ -2,7 +2,7 @@
 % Please edit documentation in R/Functions.R
 \name{RemoveRow}
 \alias{RemoveRow}
-\title{RemoveRow}
+\title{Remove a row}
 \usage{
 RemoveRow(ln1, rf)
 }
@@ -15,7 +15,7 @@ RemoveRow(ln1, rf)
 
 }
 \description{
-RemoveRow
+\code{RemoveRow()} removes the desired row from the base parameter file.
 }
 \examples{
 RemoveRow(lnm,xml1)

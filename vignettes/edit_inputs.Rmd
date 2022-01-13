@@ -1,6 +1,7 @@
 ---
 title: "How to edit and prepare rsortie input files"
 output: rmarkdown::html_vignette
+date: "January 2022"
 vignette: >
   %\VignetteIndexEntry{How to edit and prepare rsortie input files}
   %\VignetteEngine{knitr::rmarkdown}

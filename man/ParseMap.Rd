@@ -2,7 +2,7 @@
 % Please edit documentation in R/ParseXML.R
 \name{ParseMap}
 \alias{ParseMap}
-\title{Parse Map}
+\title{Parse spatial files}
 \usage{
 ParseMap(grid_data)
 }
@@ -10,10 +10,10 @@ ParseMap(grid_data)
 \item{grid_data}{\code{\link[=character]{character()}} Grid data}
 }
 \value{
-
+The file sprd.
 }
 \description{
-Parse Map
+\code{ParseMap()} takes the output XML file name and returns the file sprd.
 }
 \examples{
 ParseMap(grid_data)

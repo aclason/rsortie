@@ -2,12 +2,12 @@
 % Please edit documentation in R/Functions.R
 \name{FindFileLine}
 \alias{FindFileLine}
-\title{FindFileLine}
+\title{Find file line}
 \usage{
 FindFileLine(rf, itype, varname, vargroup, varmaster)
 }
 \arguments{
-\item{rf}{\code{\link[=character]{character()}} blah bla XML parameter file to be modified}
+\item{rf}{\code{\link[=character]{character()}} Base XML parameter file to be modified}
 
 \item{itype}{\code{\link[=integer]{integer()}} File type}
 
@@ -21,7 +21,7 @@ FindFileLine(rf, itype, varname, vargroup, varmaster)
 
 }
 \description{
-FindFileLine
+\code{FindFileLine()} finds the correct line to be modified within the base parameter file.
 }
 \examples{
 FindFileLine(rf,itype,codename, groupname, mastergroup)

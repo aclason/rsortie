@@ -1,6 +1,9 @@
-#' FindFileLine
+#' Find file line
 #'
-#' @param rf [character()] blah bla XML parameter file to be modified
+#' @description
+#' `FindFileLine()` finds the correct line to be modified within the base parameter file.
+#'
+#' @param rf [character()] Base XML parameter file to be modified
 #' @param itype [integer()] File type
 #' @param varname [character()] variable codename
 #' @param vargroup [character()] variable group name
@@ -90,7 +93,10 @@ FindFileLine <- function(rf,itype, varname, vargroup, varmaster) {
 
 
 
-#' ReplaceParameter
+#' Replace a parameter
+#'
+#' @description
+#' `ReplaceParameter()` replaces a parameter in the base XML file.
 #'
 #' @param ln1 [double()] Line number of parameter to replace
 #' @param rf [character()] Base XML parameter file to be modified
@@ -128,7 +134,10 @@ ReplaceParameter <- function(ln1, rf, varvalue) {
 
 
 
-#' RemoveSpecies
+#' Remove a species
+#'
+#' @description
+#' `RemoveSpecies()` removes a species from the base parameter file and simulation.
 #'
 #' @param sp [character()] Species name
 #' @param rf [character()] Base XML file to be modified
@@ -150,7 +159,10 @@ RemoveSpecies <-function(sp,rf) {
 
 
 
-#' RemoveRow
+#' Remove a row
+#'
+#' @description
+#' `RemoveRow()` removes the desired row from the base parameter file.
 #'
 #' @param ln1 [double()] Row number to remove
 #' @param rf [character()] Base XML file to be modified
@@ -170,7 +182,10 @@ RemoveRow <-function(ln1, rf) {
 
 
 
-#' PrepareFile
+#' Prepare the file with new values
+#'
+#' @description
+#' `PrepareFile()` prepares the parameter file with new values to be used in `ModifyFile()`
 #'
 #' @param pfname [character()] File path and name of the parameter file with new values
 #'
@@ -217,7 +232,10 @@ PrepareFile <-function(pfname) {
 
 
 
-#' ModifyFile
+#' Modify the base parameter file
+#'
+#' @description
+#' `ModifyFile()` replaces the old  parameter values with new values
 #'
 #' @param paramFile [character()] Parameter file with new values
 #' @param xml1 [character()] Base XML parameter file to be modified
@@ -261,7 +279,10 @@ ModifyFile <-function(paramFile, xml1) {
 
 
 
-#' RunSortie
+#' Run the SORTIE model
+#'
+#' @description
+#' `RunSortie()` is a wrapper function that takes the modified parameter file with new values and runs the simulation through the SORTIE-ND GUI.
 #'
 #' @param fname [character()] File path and name to be run
 #' @param sortie_loc SORTIE location '0'
@@ -340,7 +361,10 @@ RunSortie <-function(fname, sortie_loc) {
 
 
 
-#' ExtractFiles
+#' Extract output files
+#'
+#' @description
+#' `ExtractFiles()` extracts all files from any .gz.tar files in the directory
 #'
 #' @param itype [double()] '1' = extract only the given file, otherwise extract all files in the directory
 #' @param exname [character()] The directory that contains the tar file(s) to be extracted
@@ -348,6 +372,8 @@ RunSortie <-function(fname, sortie_loc) {
 #' @param extime [double()] Extract time?
 #'
 #' @return
+#' A list of the extracted files.
+#'
 #' @export
 #'
 #' @examples
@@ -435,7 +461,10 @@ ExtractFiles <- function(itype,exname,onename,extime) {  #used for .gz.tar files
 
 
 
-#' ReadPlotFile
+#' Read output file
+#'
+#' @description
+#' `ReadPlotFile()` reads all the .out files in the output directory.
 #'
 #' @param outdir [character()] Output directory
 #'
@@ -458,7 +487,10 @@ ReadPlotFile <- function(outdir) {
 
 ##helper function to read in .kmz files
 
-#' Read Keyhole
+#' Read in spatial files
+#'
+#' @description
+#' `read_keyhole()` is a helper function to read in .kmz files
 #'
 #' @param file [character()] KMZ File
 #'
@@ -489,7 +521,10 @@ read_keyhole <- function(file) {
   }
 }
 
-#' prepInputs
+#' Prepare inputs
+#'
+#' @description
+#' `prepInputs()` generates the base parameter values file to be modified
 #'
 #' @param fileNames The text file name that contains all the file names to update and be
 #' updated.

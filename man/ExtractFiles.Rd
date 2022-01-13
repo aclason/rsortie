@@ -2,7 +2,7 @@
 % Please edit documentation in R/Functions.R
 \name{ExtractFiles}
 \alias{ExtractFiles}
-\title{ExtractFiles}
+\title{Extract output files}
 \usage{
 ExtractFiles(itype, exname, onename, extime)
 }
@@ -16,10 +16,10 @@ ExtractFiles(itype, exname, onename, extime)
 \item{extime}{\code{\link[=double]{double()}} Extract time?}
 }
 \value{
-
+A list of the extracted files.
 }
 \description{
-ExtractFiles
+\code{ExtractFiles()} extracts all files from any .gz.tar files in the directory
 }
 \examples{
 ExtractFiles(itype,exname,onename,extime)

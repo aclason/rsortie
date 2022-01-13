@@ -15,7 +15,7 @@ ReplaceLines(rf, pf1)
 
 }
 \description{
-Replace Lines
+\code{ReplaceLines()} replaces a chunk of the parameter file with a different set of lines. It assumes the new set of lines are complete and completely replace relevant section.
 }
 \examples{
 xml2 <- ReplaceLines(xml1, pf1)

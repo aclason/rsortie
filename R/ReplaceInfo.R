@@ -1,4 +1,7 @@
-#' Replace Info
+#' Replace parameter values in base XML file
+#'
+#' @description
+#' `ReplaceInfo()` updates the base parameter file with the new values from the new parameter values file.
 #'
 #' @param rf [character()] Base XML parameter file to be modified
 #' @param VariableNames [list()] Variable Names translation file
@@ -121,6 +124,9 @@ ReplaceInfo <- function(rf, VariableNames, pf1, ncols, newname) {
 ###############################################################
 
 #' Replace Lines
+#'
+#' @description
+#' `ReplaceLines()` replaces a chunk of the parameter file with a different set of lines. It assumes the new set of lines are complete and completely replace relevant section.
 #'
 #' @param rf [character()] Base XML file to be modified
 #' @param pf1 [character()] Parameter file with new values
