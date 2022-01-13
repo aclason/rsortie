@@ -1,5 +1,5 @@
 ---
-title: "add_harvest"
+title: "How to add a harvest"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{add_harvest}
