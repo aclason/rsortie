@@ -1,28 +1,73 @@
 #' Make new parameter files
 #'
-#' @description
-#' `makeFiles()` takes a base parameter file and replaces specific
-#' parameter values to generate new parameter files to be run in SORTIE. Common use of
-#' this function would be to change the number of timesteps or initiate different starting stands
-#' to create a series of parameter files for an experiment
+#' @description `makeFiles()` takes a base parameter file and replaces specific
+#' parameter values to generate new parameter files to be run in SORTIE.
 #'
-#' Prior to running [makeFiles()], you must run [prepInputs()]
-#' to generate the parameter value files needed for updating.
 #'
+#' @param lstFiles The text file [character()]or [dataframe()] that contains all the file names to update and be
 #' @param base_path [character()] the file path to the base parameter file(s) location
 #' @param param_path [character()] the file path to the parameter value file(s) location
 #' @param xmls_path [character()] the file path to the new output parameter file(s) location
 #'
-#' @return
+#' @details Common use of this function would be to change the number of timesteps or initiate different
+#' starting stands to create a series of parameter files for an experiment
+#'
+#' @details
+#' There are many different types of parameter values that can be updated.
+#' The [VariableNames()] file is then essential to ensure the parameter name that is defined in the R environment
+#' can be found in the base parameter file to replace the correct value. This csv file must be setup correctly
+#' with the following columns:#'
+#'     col 1: input parameter name defined
+#'     col 2: type
+#'     col 3: name in the line being replaced in the base parameter file
+#'     col 4: group name
+#'
+#' Column 2 defines the type of parameter to be replaced and these are the valid values:
+#'     1 = basic case: variable parameter is directly after the name
+#'     2 = basic case with species: same, but with a species name after it
+#'     3 = behaviorlist type: but basic parameter - similar to 1
+#'     4 = behaviorlist type: but with species - similar to 2
+#'     5 = output files: so parameter file will have a directory name
+#'     6 = groups with species on the previous line, e.g. for initial density
+#'
+#' @return This function will generate new .xml files in the [xmls_path()] directory
 #' @export
 #'
 #' @examples
-#' makeFiles(base_path, param_path, xmls_path)
+#' a <- data.frame("type"=c(0,1,1), "name"=c("a1.csv","a2.csv","a3.csv"))
+#' makeFiles(lstFiles=a, base_path=".", param_path=".", xmls_path=".")
 #'
 
-makeFiles <- function(base_path, param_path, xmls_path){
-  #check that prepInputs was run
-  if(exists("xmlList")){
+makeFiles <- function(lstFiles, base_path, param_path, xmls_path){
+  if(is.character(lstFiles)){
+    lstFiles <- read.csv(lstFiles)
+  } else if(is.data.frame(lstFiles)){
+    lstFiles <- lstFiles #if a user has created a data.frame in R and not provided a csv that should be fine
+  }else{
+    stop("provide a valid file name or dataframe of files to update and be updated")
+  }
+
+  xmlList <- c()
+  paramList1 <- vector("list",5)
+  maxtype <- 0
+  for (i in 1:nrow(lstFiles)) {
+    fn <- as.character(trimws(lstFiles$name[i]))
+    itype <- lstFiles$type[i]
+
+    if (itype == 0) {
+      xmlList <- c(xmlList,fn)
+    }
+    else {
+      paramList1[[itype]] <- c(paramList1[[itype]],list(fn))
+    }
+    if (itype > maxtype) {maxtype <- itype}
+  }
+  numtype <- c()
+  for (iii in 1:5) {
+    numtype <- c(numtype,length(paramList1[[iii]]))
+  }
+
+
     ListOfFiles <- c()
     for (ix in 1:length(xmlList)) { #start loop over xml files
 
@@ -68,15 +113,11 @@ makeFiles <- function(base_path, param_path, xmls_path){
                 #write the new file
                 newname <- paste(newname,".xml",sep="")
                 writeLines(paste0(xmls_path,newname))
+                print(paste("parameter file",newname,"created"))
               }
             }
           }
         }
       }
     }
-  } else{
-    stop("you must run prepInputs before makeFiles")
-    #to do - throw errors if list files isn't properly written (0 for basefile etc)
-
   }
-}
