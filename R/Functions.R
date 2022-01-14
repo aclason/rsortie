@@ -1,4 +1,7 @@
-#' prepInputs
+#' Prepare input files
+#'
+#' @description
+#' `prepInputs()` prepares the input files for `MakeFiles()`
 #'
 #' @param fileNames The text file name that contains all the file names to update and be
 #' updated.
@@ -65,9 +68,12 @@ prepInputs <- function(fileNames){
 }
 
 
-#' FindFileLine
+#' Find a file line
 #'
-#' @param rf [character()] blah bla XML parameter file to be modified
+#' @description
+#' `FindFileLine()` finds the line within the base parameter file that is to be modified.
+#'
+#' @param rf [character()] Base XML parameter file to be modified
 #' @param itype [integer()] File type
 #' @param varname [character()] variable codename
 #' @param vargroup [character()] variable group name
@@ -157,7 +163,10 @@ FindFileLine <- function(rf,itype, varname, vargroup, varmaster) {
 
 
 
-#' ReplaceParameter
+#' Replace a parameter
+#'
+#' @description
+#' `ReplaceParameter()` replaces a parameter in the base file with a new value.
 #'
 #' @param ln1 [double()] Line number of parameter to replace
 #' @param rf [character()] Base XML parameter file to be modified
@@ -195,7 +204,10 @@ ReplaceParameter <- function(ln1, rf, varvalue) {
 
 
 
-#' RemoveSpecies
+#' Remove a species
+#'
+#' @description
+#' `RemoveSpecies()` removes a species from the base parameter file.
 #'
 #' @param sp [character()] Species name
 #' @param rf [character()] Base XML file to be modified
@@ -217,7 +229,10 @@ RemoveSpecies <-function(sp,rf) {
 
 
 
-#' RemoveRow
+#' Remove a row
+#'
+#' @description
+#' `RemoveRow()` removes a row from the base parameter file.
 #'
 #' @param ln1 [double()] Row number to remove
 #' @param rf [character()] Base XML file to be modified
@@ -237,7 +252,10 @@ RemoveRow <-function(ln1, rf) {
 
 
 
-#' PrepareFile
+#' Prepare a file to be updated
+#'
+#' @description
+#' `PrepareFile()` prepares the new parameter file for `ModifyFile()`
 #'
 #' @param pfname [character()] File path and name of the parameter file with new values
 #'
@@ -284,7 +302,10 @@ PrepareFile <-function(pfname) {
 
 
 
-#' ModifyFile
+#' Modify a parameter file
+#'
+#' @description
+#' `ModifyFile()` replaces the base parameter file with new, updated values.
 #'
 #' @param paramFile [character()] Parameter file with new values
 #' @param xml1 [character()] Base XML parameter file to be modified
@@ -328,7 +349,10 @@ ModifyFile <-function(paramFile, xml1) {
 
 
 
-#' RunSortie
+#' Run the SORTIE model
+#'
+#' @description
+#' `RunSortie()` is a wrapper function that passes the updated parameter file to the C++ program SORTIE for simulation.
 #'
 #' @param fname [character()] File path and name to be run
 #' @param sortie_loc SORTIE location '0'
@@ -407,7 +431,14 @@ RunSortie <-function(fname, sortie_loc) {
 
 
 
-#' ExtractFiles
+#' Extract output files
+#'
+#' @description
+#' `ExtractFiles()` reads the directory and extract all files from any .gz.tar files that are present.
+#' It also assumes that all the files in a single .gz.tar file were in the same directory. It looks at the
+#' first file in the .gz.tar, determines how many subdirectories are present, and then strips all those subdirectories.
+#' The extracted files will be placed in a new extracted directory. If you want to put them
+#' somewhere else, then change the variable extractDir
 #'
 #' @param itype [double()] '1' = extract only the given file, otherwise extract all files in the directory
 #' @param exname [character()] The directory that contains the tar file(s) to be extracted
@@ -415,6 +446,7 @@ RunSortie <-function(fname, sortie_loc) {
 #' @param extime [double()] Extract time?
 #'
 #' @return
+#' The routine returns a list of the extracted files.
 #' @export
 #'
 #' @examples
@@ -502,7 +534,10 @@ ExtractFiles <- function(itype,exname,onename,extime) {  #used for .gz.tar files
 
 
 
-#' ReadPlotFile
+#' Read plot file
+#'
+#' @description
+#' `ReadPlotFile()` reads .out output files.
 #'
 #' @param outdir [character()] Output directory
 #'
@@ -525,7 +560,10 @@ ReadPlotFile <- function(outdir) {
 
 ##helper function to read in .kmz files
 
-#' Read Keyhole
+#' Read keyhole
+#'
+#' @description
+#' `read_keyhole()` is a helper function to read in .kmz spatial files.
 #'
 #' @param file [character()] KMZ File
 #'
@@ -555,6 +593,4 @@ read_keyhole <- function(file) {
     return(sf_out)
   }
 }
-
-
 

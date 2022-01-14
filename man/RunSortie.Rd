@@ -2,7 +2,7 @@
 % Please edit documentation in R/Functions.R
 \name{RunSortie}
 \alias{RunSortie}
-\title{RunSortie}
+\title{Run the SORTIE model}
 \usage{
 RunSortie(fname, sortie_loc)
 }
@@ -15,7 +15,7 @@ RunSortie(fname, sortie_loc)
 
 }
 \description{
-RunSortie
+\code{RunSortie()} is a wrapper function that passes the updated parameter file to the C++ program SORTIE for simulation.
 }
 \examples{
 RunSortie(paste0(xmls_path,Xmls2Run[ix]),0)

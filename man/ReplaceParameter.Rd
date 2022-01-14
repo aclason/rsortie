@@ -2,7 +2,7 @@
 % Please edit documentation in R/Functions.R
 \name{ReplaceParameter}
 \alias{ReplaceParameter}
-\title{ReplaceParameter}
+\title{Replace a parameter}
 \usage{
 ReplaceParameter(ln1, rf, varvalue)
 }
@@ -17,7 +17,7 @@ ReplaceParameter(ln1, rf, varvalue)
 
 }
 \description{
-ReplaceParameter
+\code{ReplaceParameter()} replaces a parameter in the base file with a new value.
 }
 \examples{
 ReplaceParameter(ln1, rf, fname)

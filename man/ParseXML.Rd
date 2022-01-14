@@ -2,7 +2,7 @@
 % Please edit documentation in R/ParseXML.R
 \name{ParseXML}
 \alias{ParseXML}
-\title{Parse XML}
+\title{Parse output data frame}
 \usage{
 ParseXML(xmlname)
 }
@@ -10,10 +10,10 @@ ParseXML(xmlname)
 \item{xmlname}{\code{\link[=character]{character()}} XML file name}
 }
 \value{
-
+The file output data frame.
 }
 \description{
-Parse XML
+\code{ParseXML()} takes the SORTIE output XML file name and returns the file output data frame
 }
 \examples{
 ParseXML(xmlname)

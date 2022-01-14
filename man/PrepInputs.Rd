@@ -2,7 +2,7 @@
 % Please edit documentation in R/Functions.R
 \name{prepInputs}
 \alias{prepInputs}
-\title{prepInputs}
+\title{Prepare input files}
 \usage{
 prepInputs(fileNames)
 }
@@ -32,7 +32,7 @@ Column 2 defines the type of parameter to be replaced and these are the valid va
 
 }
 \description{
-prepInputs
+\code{prepInputs()} prepares the input files for \code{MakeFiles()}
 }
 \examples{
 fileNames <- data.frame("type"=c(0,1,1), "name"=c("a1.csv","a2.csv","a3.csv"))

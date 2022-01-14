@@ -2,7 +2,7 @@
 % Please edit documentation in R/ReplaceInfo.R
 \name{ReplaceInfo}
 \alias{ReplaceInfo}
-\title{Replace Info}
+\title{Replace parameter values in base XML file}
 \usage{
 ReplaceInfo(rf, VariableNames, pf1, ncols, newname)
 }
@@ -21,7 +21,7 @@ ReplaceInfo(rf, VariableNames, pf1, ncols, newname)
 
 }
 \description{
-Replace Info
+\code{ReplaceInfo()} updates the base parameter file with the new values from the new parameter values file.
 }
 \examples{
 xml2 <- ReplaceInfo(xml1, VariableNames, pf1, ncols, newname)

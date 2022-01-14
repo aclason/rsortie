@@ -1,7 +1,7 @@
 ---
 title: "How to use the rsortie package"
 output: rmarkdown::html_vignette
-date: "December 7, 2021"
+date: "January 2022"
 vignette: >
   %\VignetteIndexEntry{How to use the rsortie package}
   %\VignetteEngine{knitr::rmarkdown}

@@ -8,9 +8,9 @@ This is an R package that facilitates the use of SORTIE-ND, a C++ model, in R.
 
 We assume that the user is familiar with the program R, which can be downloaded from the web at http://www.cran.r-project.org/. 
 
-The user must also download and be familiar with SORTIE-ND, to download the SORTIE-ND GUI and view an introduction, please visit http://www.sortie-nd.org/.
+The user must also download and be familiar with SORTIE-ND, to learn and download the SORTIE-ND GUI, please visit http://www.sortie-nd.org/.
 
-All questions regarding this code should be directed to alana.clason@bvrc.ca or sortie@bvcentre.ca
+All questions regarding this code should be directed to alana.clason@bvcentre.ca or sortie@bvcentre.ca  
 
 ## Installation
 
@@ -20,20 +20,33 @@ Go to http://www.sortie-nd.org/software/index.html and download the newest versi
 
 2.\ Set the value of the JAVA-HOME environment variable (Optional)  
 
-In some cases, the SORTIE GUI does not know where to locate Java even though it is installed on the user’s system. To fix this issue on a Windows computer:
+In some cases, the SORTIE GUI does not know where to locate Java even though it is installed on the user’s system. To fix this issue on a Windows 10 computer:
 
-Open the Windows System Properties Control Panel applet on any version of Windows.  
-Choose Advanced System settings.  
-Click on the Environment Variables button.  
-Click on the New button under System Variables.  
-Set **JAVA_HOME** as the *environment variable name*.  
-Set the **location of java.exe**  as the *environment variable Value*.  
-Click OK and close the JAVA_HOME environment variable editor.
+Search for **Environment Variables** and select **Edit the system Environment Variables**.  
+Click **Environment Variables** near the bottom right.  
+Under **System Variables**, click **New**.  
+Set the *Variable Name* as **JAVA_HOME**.  
+Set the *Variable Value* as the `C:\filepath\location\of\java.exe`  
+Click OK and close the Environment Variables editor.  
+
+Or
+
+Open **Command Prompt** (Run as administrator).  
+Run:  
+```r 
+setx -m JAVA_HOME "C:\filepath\location\of\java.exe"
+```
+Verify the Environment Variable has been added correctly by restarting Command Prompt and running:  
+```r
+echo %JAVA_HOME%
+```
+You should see the file path location of java.exe  
+
 
 3.\ Install `rsortie`, in R.
 
 ```r
-devtools::install_github("aclason/rSORTIE")
+devtools::install_github("aclason/rsortie")
 ```
 
 ## File and Folder descriptions  
