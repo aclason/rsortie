@@ -2,7 +2,7 @@
 % Please edit documentation in R/Functions.R
 \name{FindFileLine}
 \alias{FindFileLine}
-\title{Find file line}
+\title{Find a file line}
 \usage{
 FindFileLine(rf, itype, varname, vargroup, varmaster)
 }
@@ -21,7 +21,7 @@ FindFileLine(rf, itype, varname, vargroup, varmaster)
 
 }
 \description{
-\code{FindFileLine()} finds the correct line to be modified within the base parameter file.
+\code{FindFileLine()} finds the line within the base parameter file that is to be modified.
 }
 \examples{
 FindFileLine(rf,itype,codename, groupname, mastergroup)

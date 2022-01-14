@@ -17,7 +17,7 @@ ReplaceParameter(ln1, rf, varvalue)
 
 }
 \description{
-\code{ReplaceParameter()} replaces a parameter in the base XML file.
+\code{ReplaceParameter()} replaces a parameter in the base file with a new value.
 }
 \examples{
 ReplaceParameter(ln1, rf, fname)

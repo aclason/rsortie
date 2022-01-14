@@ -2,7 +2,7 @@
 % Please edit documentation in R/Functions.R
 \name{ReadPlotFile}
 \alias{ReadPlotFile}
-\title{Read output file}
+\title{Read plot file}
 \usage{
 ReadPlotFile(outdir)
 }
@@ -13,7 +13,7 @@ ReadPlotFile(outdir)
 
 }
 \description{
-\code{ReadPlotFile()} reads all the .out files in the output directory.
+\code{ReadPlotFile()} reads .out output files.
 }
 \examples{
 ReadPlotFile(outdir)

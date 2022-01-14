@@ -15,7 +15,7 @@ RemoveRow(ln1, rf)
 
 }
 \description{
-\code{RemoveRow()} removes the desired row from the base parameter file.
+\code{RemoveRow()} removes a row from the base parameter file.
 }
 \examples{
 RemoveRow(lnm,xml1)

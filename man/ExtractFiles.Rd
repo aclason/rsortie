@@ -16,10 +16,14 @@ ExtractFiles(itype, exname, onename, extime)
 \item{extime}{\code{\link[=double]{double()}} Extract time?}
 }
 \value{
-A list of the extracted files.
+The routine returns a list of the extracted files.
 }
 \description{
-\code{ExtractFiles()} extracts all files from any .gz.tar files in the directory
+\code{ExtractFiles()} reads the directory and extract all files from any .gz.tar files that are present.
+It also assumes that all the files in a single .gz.tar file were in the same directory. It looks at the
+first file in the .gz.tar, determines how many subdirectories are present, and then strips all those subdirectories.
+The extracted files will be placed in a new extracted directory. If you want to put them
+somewhere else, then change the variable extractDir
 }
 \examples{
 ExtractFiles(itype,exname,onename,extime)

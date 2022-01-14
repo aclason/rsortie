@@ -2,7 +2,7 @@
 % Please edit documentation in R/Functions.R
 \name{PrepareFile}
 \alias{PrepareFile}
-\title{Prepare the file with new values}
+\title{Prepare a file to be updated}
 \usage{
 PrepareFile(pfname)
 }
@@ -13,7 +13,7 @@ PrepareFile(pfname)
 pf1
 }
 \description{
-\code{PrepareFile()} prepares the parameter file with new values to be used in \code{ModifyFile()}
+\code{PrepareFile()} prepares the new parameter file for \code{ModifyFile()}
 }
 \examples{
 PrepareFile(paramFile)

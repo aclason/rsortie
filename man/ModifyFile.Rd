@@ -2,7 +2,7 @@
 % Please edit documentation in R/Functions.R
 \name{ModifyFile}
 \alias{ModifyFile}
-\title{Modify the base parameter file}
+\title{Modify a parameter file}
 \usage{
 ModifyFile(paramFile, xml1)
 }
@@ -15,7 +15,7 @@ ModifyFile(paramFile, xml1)
 
 }
 \description{
-\code{ModifyFile()} replaces the old  parameter values with new values
+\code{ModifyFile()} replaces the base parameter file with new, updated values.
 }
 \examples{
 ModifyFile("./Inputs/ParameterValues/D3.csv",xml1)

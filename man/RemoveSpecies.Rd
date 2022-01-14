@@ -15,7 +15,7 @@ RemoveSpecies(sp, rf)
 
 }
 \description{
-\code{RemoveSpecies()} removes a species from the base parameter file and simulation.
+\code{RemoveSpecies()} removes a species from the base parameter file.
 }
 \examples{
 RemoveSpecies(sp, rf)

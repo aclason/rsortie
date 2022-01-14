@@ -15,7 +15,7 @@ RunSortie(fname, sortie_loc)
 
 }
 \description{
-\code{RunSortie()} is a wrapper function that takes the modified parameter file with new values and runs the simulation through the SORTIE-ND GUI.
+\code{RunSortie()} is a wrapper function that passes the updated parameter file to the C++ program SORTIE for simulation.
 }
 \examples{
 RunSortie(paste0(xmls_path,Xmls2Run[ix]),0)
