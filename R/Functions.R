@@ -1,9 +1,73 @@
-#' Find file line
+#' prepInputs
 #'
-#' @description
-#' `FindFileLine()` finds the correct line to be modified within the base parameter file.
+#' @param fileNames The text file name that contains all the file names to update and be
+#' updated.
+#' This file must be a csv with a type and
 #'
-#' @param rf [character()] Base XML parameter file to be modified
+#' There are many different types of parameter values that can be updated.
+#' The [varTranslation()] file is then essential to ensure the parameter name that is defined in the R environment
+#' can be found in the base parameter file to replace the correct value. This csv file must be setup correctly
+#' with the following columns:#'
+#'     col 1: input parameter name defined
+#'     col 2: type
+#'     col 3: name in the line being replaced in the base parameter file
+#'     col 4: group name
+#'
+#' Column 2 defines the type of parameter to be replaced and these are the valid values:
+#'     1 = basic case: variable parameter is directly after the name
+#'     2 = basic case with species: same, but with a species name after it
+#'     3 = behaviorlist type: but basic parameter - similar to 1
+#'     4 = behaviorlist type: but with species - similar to 2
+#'     5 = output files: so parameter file will have a directory name
+#'     6 = groups with species on the previous line, e.g. for initial density
+#'
+#' @return
+#' @export
+#'
+#' @examples
+#'fileNames <- data.frame("type"=c(0,1,1), "name"=c("a1.csv","a2.csv","a3.csv"))
+#'prepInputs(fileNames)
+#'
+prepInputs <- function(fileNames){
+  #if(missing(varTranslation)){
+  #  VariableNames <- read.csv(varTranslation, header=TRUE, strip.white = TRUE)
+  #} else {
+  #  print("using default variable name translation")
+  #}
+
+  if(!exists("lstFiles")){
+    lstFiles <- read.csv(fileNames)
+  } else if(is.data.frame(fileNames)){
+    lstFiles <- fileNames #if a user has created a data.frame in R and not provided a csv that should be fine
+  }else{
+    stop("provide a valid file name or dataframe for the list of files to update and be updated")
+  }
+
+  xmlList <- c()
+  paramList1 <- vector("list",5)
+  maxtype <- 0
+  for (i in 1:nrow(lstFiles)) {
+    fn <- as.character(trimws(lstFiles$name[i]))
+    itype <- lstFiles$type[i]
+
+    if (itype == 0) {
+      xmlList <- c(xmlList,fn)
+    }
+    else {
+      paramList1[[itype]] <- c(paramList1[[itype]],list(fn))
+    }
+    if (itype > maxtype) {maxtype <- itype}
+  }
+  numtype <- c()
+  for (iii in 1:5) {
+    numtype <- c(numtype,length(paramList1[[iii]]))
+  }
+}
+
+
+#' FindFileLine
+#'
+#' @param rf [character()] blah bla XML parameter file to be modified
 #' @param itype [integer()] File type
 #' @param varname [character()] variable codename
 #' @param vargroup [character()] variable group name
@@ -93,10 +157,7 @@ FindFileLine <- function(rf,itype, varname, vargroup, varmaster) {
 
 
 
-#' Replace a parameter
-#'
-#' @description
-#' `ReplaceParameter()` replaces a parameter in the base XML file.
+#' ReplaceParameter
 #'
 #' @param ln1 [double()] Line number of parameter to replace
 #' @param rf [character()] Base XML parameter file to be modified
@@ -134,10 +195,7 @@ ReplaceParameter <- function(ln1, rf, varvalue) {
 
 
 
-#' Remove a species
-#'
-#' @description
-#' `RemoveSpecies()` removes a species from the base parameter file and simulation.
+#' RemoveSpecies
 #'
 #' @param sp [character()] Species name
 #' @param rf [character()] Base XML file to be modified
@@ -159,10 +217,7 @@ RemoveSpecies <-function(sp,rf) {
 
 
 
-#' Remove a row
-#'
-#' @description
-#' `RemoveRow()` removes the desired row from the base parameter file.
+#' RemoveRow
 #'
 #' @param ln1 [double()] Row number to remove
 #' @param rf [character()] Base XML file to be modified
@@ -182,10 +237,7 @@ RemoveRow <-function(ln1, rf) {
 
 
 
-#' Prepare the file with new values
-#'
-#' @description
-#' `PrepareFile()` prepares the parameter file with new values to be used in `ModifyFile()`
+#' PrepareFile
 #'
 #' @param pfname [character()] File path and name of the parameter file with new values
 #'
@@ -232,10 +284,7 @@ PrepareFile <-function(pfname) {
 
 
 
-#' Modify the base parameter file
-#'
-#' @description
-#' `ModifyFile()` replaces the old  parameter values with new values
+#' ModifyFile
 #'
 #' @param paramFile [character()] Parameter file with new values
 #' @param xml1 [character()] Base XML parameter file to be modified
@@ -279,10 +328,7 @@ ModifyFile <-function(paramFile, xml1) {
 
 
 
-#' Run the SORTIE model
-#'
-#' @description
-#' `RunSortie()` is a wrapper function that takes the modified parameter file with new values and runs the simulation through the SORTIE-ND GUI.
+#' RunSortie
 #'
 #' @param fname [character()] File path and name to be run
 #' @param sortie_loc SORTIE location '0'
@@ -361,10 +407,7 @@ RunSortie <-function(fname, sortie_loc) {
 
 
 
-#' Extract output files
-#'
-#' @description
-#' `ExtractFiles()` extracts all files from any .gz.tar files in the directory
+#' ExtractFiles
 #'
 #' @param itype [double()] '1' = extract only the given file, otherwise extract all files in the directory
 #' @param exname [character()] The directory that contains the tar file(s) to be extracted
@@ -372,8 +415,6 @@ RunSortie <-function(fname, sortie_loc) {
 #' @param extime [double()] Extract time?
 #'
 #' @return
-#' A list of the extracted files.
-#'
 #' @export
 #'
 #' @examples
@@ -461,10 +502,7 @@ ExtractFiles <- function(itype,exname,onename,extime) {  #used for .gz.tar files
 
 
 
-#' Read output file
-#'
-#' @description
-#' `ReadPlotFile()` reads all the .out files in the output directory.
+#' ReadPlotFile
 #'
 #' @param outdir [character()] Output directory
 #'
@@ -487,10 +525,7 @@ ReadPlotFile <- function(outdir) {
 
 ##helper function to read in .kmz files
 
-#' Read in spatial files
-#'
-#' @description
-#' `read_keyhole()` is a helper function to read in .kmz files
+#' Read Keyhole
 #'
 #' @param file [character()] KMZ File
 #'
@@ -520,72 +555,4 @@ read_keyhole <- function(file) {
     return(sf_out)
   }
 }
-
-#' prepInputs
-#'
-#' @param fileNames The text file name that contains all the file names to update and be
-#' updated.
-#' This file must be a csv with a type and
-#'
-#' @param varTranslation The translation file that recognizes the behaviour and parameter names in the base
-#' parameter file and translates given names of objects from R to ensure the right parameter value is updated
-#'
-#' There are many different types of parameter values that can be updated.
-#' The [varTranslation()] file is then essential to ensure the parameter name that is defined in the R environment
-#' can be found in the base parameter file to replace the correct value. This csv file must be setup correctly
-#' with the following columns:#'
-#'     col 1: input parameter name defined
-#'     col 2: type
-#'     col 3: name in the line being replaced in the base parameter file
-#'     col 4: group name
-#'
-#' Column 2 defines the type of parameter to be replaced and these are the valid values:
-#'     1 = basic case: variable parameter is directly after the name
-#'     2 = basic case with species: same, but with a species name after it
-#'     3 = behaviorlist type: but basic parameter - similar to 1
-#'     4 = behaviorlist type: but with species - similar to 2
-#'     5 = output files: so parameter file will have a directory name
-#'     6 = groups with species on the previous line, e.g. for initial density
-#'
-#' @return
-#' @export
-#'
-#' @examples
-#'prepInputs(fileNames, varTranslation)
-#'
-prepInputs <- function(fileNames,varTranslation){
-  if(file.exists(varTranslation)){
-    VariableNames <- read.csv(varTranslation, header=TRUE, strip.white = TRUE)
-  } else {
-    stop("must provide a valid file name for the variable translation file")
-  }
-  if(file.exists(lstFiles)){
-    lstFiles <- read.csv(fileNames)
-  } else if(is.data.frame(fileNames)){
-    lstFiles <- fileNames #if a user has created a data.frame in R and not provided a csv that should be fine
-  }else{
-    stop("must provide a valid file name or dataframe for the list of files to update and be updated")
-  }
-
-  xmlList <- c()
-  paramList1 <- vector("list",5)
-  maxtype <- 0
-  for (i in 1:nrow(lstFiles)) {
-    fn <- as.character(trimws(lstFiles$name[i]))
-    itype <- lstFiles$type[i]
-
-    if (itype == 0) {
-      xmlList <- c(xmlList,fn)
-    }
-    else {
-      paramList1[[itype]] <- c(paramList1[[itype]],list(fn))
-    }
-    if (itype > maxtype) {maxtype <- itype}
-  }
-  numtype <- c()
-  for (iii in 1:5) {
-    numtype <- c(numtype,length(paramList1[[iii]]))
-  }
-}
-
 

@@ -1,4 +1,4 @@
-pandoc: 2.16.2
+pandoc: 2.14.0.3
 pkgdown: 2.0.1
 pkgdown_sha: ~
 articles:
@@ -7,7 +7,9 @@ articles:
   edit_inputs: edit_inputs.html
   extract_outputs: extract_outputs.html
   use_rsortie: use_rsortie.html
+
 last_built: 2022-01-13T23:42Z
+
 urls:
   reference: https://leah-walker.github.io/rsortie/reference
   article: https://leah-walker.github.io/rsortie/articles

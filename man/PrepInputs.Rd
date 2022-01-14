@@ -4,15 +4,12 @@
 \alias{prepInputs}
 \title{Prepare inputs}
 \usage{
-prepInputs(fileNames, varTranslation)
+prepInputs(fileNames)
 }
 \arguments{
 \item{fileNames}{The text file name that contains all the file names to update and be
 updated.
-This file must be a csv with a type and}
-
-\item{varTranslation}{The translation file that recognizes the behaviour and parameter names in the base
-parameter file and translates given names of objects from R to ensure the right parameter value is updated
+This file must be a csv with a type and
 
 There are many different types of parameter values that can be updated.
 The \code{\link[=varTranslation]{varTranslation()}} file is then essential to ensure the parameter name that is defined in the R environment
@@ -38,6 +35,7 @@ Column 2 defines the type of parameter to be replaced and these are the valid va
 \code{prepInputs()} generates the base parameter values file to be modified
 }
 \examples{
-prepInputs(fileNames, varTranslation)
+fileNames <- data.frame("type"=c(0,1,1), "name"=c("a1.csv","a2.csv","a3.csv"))
+prepInputs(fileNames)
 
 }
