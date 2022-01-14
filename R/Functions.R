@@ -1,3 +1,126 @@
+#' Make new parameter files
+#'
+#' @description `makeFiles()` takes a base parameter file and replaces specific
+#' parameter values to generate new parameter files to be run in SORTIE.
+#'
+#'
+#' @param lstFiles The text file [character()]or [dataframe()] that contains all the file names to update and be
+#' @param base_path [character()] the file path to the base parameter file(s) location
+#' @param param_path [character()] the file path to the parameter value file(s) location
+#' @param xmls_path [character()] the file path to the new output parameter file(s) location
+#'
+#' @details Common use of this function would be to change the number of timesteps or initiate different
+#' starting stands to create a series of parameter files for an experiment
+#'
+#' @details
+#' There are many different types of parameter values that can be updated.
+#' The [VariableNames()] file is then essential to ensure the parameter name that is defined in the R environment
+#' can be found in the base parameter file to replace the correct value. This csv file must be setup correctly
+#' with the following columns:#'
+#'     col 1: input parameter name defined
+#'     col 2: type
+#'     col 3: name in the line being replaced in the base parameter file
+#'     col 4: group name
+#'
+#' Column 2 defines the type of parameter to be replaced and these are the valid values:
+#'     1 = basic case: variable parameter is directly after the name
+#'     2 = basic case with species: same, but with a species name after it
+#'     3 = behaviorlist type: but basic parameter - similar to 1
+#'     4 = behaviorlist type: but with species - similar to 2
+#'     5 = output files: so parameter file will have a directory name
+#'     6 = groups with species on the previous line, e.g. for initial density
+#'
+#' @return This function will generate new .xml files in the [xmls_path()] directory
+#' @export
+#'
+#' @examples
+#' a <- data.frame("type"=c(0,1,1), "name"=c("a1.csv","a2.csv","a3.csv"))
+#' makeFiles(lstFiles=a, base_path=".", param_path=".", xmls_path=".")
+
+makeFiles <- function(lstFiles, base_path, param_path, xmls_path){
+  if(is.character(lstFiles)){
+    lstFiles <- read.csv(lstFiles)
+  } else if(is.data.frame(lstFiles)){
+    lstFiles <- lstFiles #if a user has created a data.frame in R and not provided a csv that should be fine
+  }else{
+    stop("provide a valid file name or dataframe of files to update and be updated")
+  }
+
+  xmlList <- c()
+  paramList1 <- vector("list",5)
+  maxtype <- 0
+  for (i in 1:nrow(lstFiles)) {
+    fn <- as.character(trimws(lstFiles$name[i]))
+    itype <- lstFiles$type[i]
+
+    if (itype == 0) {
+      xmlList <- c(xmlList,fn)
+    }
+    else {
+      paramList1[[itype]] <- c(paramList1[[itype]],list(fn))
+    }
+    if (itype > maxtype) {maxtype <- itype}
+  }
+  numtype <- c()
+  for (iii in 1:5) {
+    numtype <- c(numtype,length(paramList1[[iii]]))
+  }
+
+
+  ListOfFiles <- c()
+  for (ix in 1:length(xmlList)) { #start loop over xml files
+
+    #read the given xml
+    res <- xml2::read_xml(paste0(base_path,xmlList[ix]))
+    #write the xml to a file again (this will put in the missing line breaks)
+    xml2::write_xml(res, "temp.xml")
+
+    #read the newly printed file, this time as lines of text
+    tmp <- readLines("temp.xml", encoding="UTF-8")
+    xml1 <- gsub("\\\\", "//",tmp)    #reverse the slash marks
+
+    #make a vector that contains the length of each file type
+    for (ip in 1:numtype[1]) {
+      for (ip2 in 1:max(1,numtype[2])) {
+        for (ip3 in 1:max(1,numtype[3])) {
+          for (ip4 in 1:max(1,numtype[4])) {
+            for (ip5 in 1:max(1,numtype[5])) {
+              ip_vals <- c(ip,ip2,ip3,ip4,ip5)
+              newname <- ""
+              newname <- paste(substr(xmlList[ix],1,nchar(xmlList[ix])-4),"-",substr(paramList1[[1]][ip],1,nchar(paramList1[[1]][ip])-4),sep="")
+              for (iii in 2:5) {
+                if (numtype[iii] >0) {
+                  newname <- paste(newname,"-",substr(paramList1[[iii]][ip_vals[iii]],1,nchar(paramList1[[iii]][ip_vals[iii]])-4),sep="")
+                }
+              }
+
+              #for each of the files, prepare it, and process it
+              # note: we have to do all five files each time because we don't know which of the files might have the output directories (which need 'newname')
+
+              for (iii in 1:5) {
+                if (numtype[iii] > 0) {
+                  #print(paste("MakeFiles",iii,ip_vals[iii]))
+                  #print(paramList1[[iii]][ip_vals[iii]])
+                  xml2 <- ModifyFile(paste0(param_path,paramList1[[iii]][ip_vals[iii]]),xml1)
+                } else {
+                  xml2 <- xml1
+                }
+                xml1 <- xml2
+              }
+
+              xml2 <- gsub("//", "\\\\", xml2)    #turn any forward slashes into back into double backwards slashes
+              #write the new file
+              newname <- paste(newname,".xml",sep="")
+              writeLines(paste0(xmls_path,newname))
+              print(paste("parameter file",newname,"created"))
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 #' Find a file line
 #'
 #' @description
@@ -119,15 +242,15 @@ ReplaceParameter <- function(ln1, rf, varvalue) {
   #Now, the line number has been passed in, along with the variable value
 
   #Find the characters just before the start and end of the value
-  st_start <- str_locate(rf[ln1],">")
-  st_end <- str_locate(rf[ln1],"</")
+  st_start <- stringr::str_locate(rf[ln1],">")
+  st_end <- stringr::str_locate(rf[ln1],"</")
 
   #print(paste(ln1, varvalue, st_start, st_end))
   #print(paste(rf[ln1],substr(rf[ln1],st_start[1]+1,st_end[1]-1)))
 
   #and replace the value
   #newln <- str_replace(rf[ln1],substr(rf[ln1],st_start[1]+1,st_end[1]-1),as.character(varvalue))
-  newln <- str_replace(rf[ln1],paste0(">",substr(rf[ln1],st_start[1]+1,st_end[1]-1),"<"), paste0(">",as.character(varvalue),"<"))
+  newln <- stringr::str_replace(rf[ln1],paste0(">",substr(rf[ln1],st_start[1]+1,st_end[1]-1),"<"), paste0(">",as.character(varvalue),"<"))
   rf[ln1] <- newln
   return(rf)
 }
@@ -207,7 +330,7 @@ PrepareFile <-function(pfname) {
   tempf1 <- readLines(as.character(pfname))
 
   #determine the number of species by counting the number of commas in the first line
-  ncols <- str_count(tempf1[1], ",")
+  ncols <- stringr::str_count(tempf1[1], ",")
 
   if (ncols>0) {
     #strip the " from this file
@@ -217,7 +340,7 @@ PrepareFile <-function(pfname) {
     #TEST    tempf[1] <- tempf1[1]
 
     #The first line will be a header that has the species names, which must be in " and the same as in the xml file
-    pf1 <- str_split_fixed(tempf, ",", n=ncols+1)
+    pf1 <- stringr::str_split_fixed(tempf, ",", n=ncols+1)
 
     #TEST
     pf1[1,] <- paste0("\"",pf1[1,],"\"")
@@ -259,9 +382,8 @@ ModifyFile <-function(paramFile, xml1) {
     #Two problems: 1) we need to change the filename to a string (rather than the element of a list)
     #2) (bigger) read_xml only works on a complete xml file. If we have more than one xml chunk inside the file,
     #           it will not be in the full proper format. So, the user MUST have the file already in line format.
-    #p2 <- read_xml(toString(paramFile))
     p2 <- NULL
-    try(p2 <- read_xml(toString(paramFile)),silent=TRUE)
+    try(p2 <- xml2::read_xml(toString(paramFile)),silent=TRUE)
     if (!is.null(p2)) {
       write_xml(p2, "p2.xml",options=c("no_declaration","format"))    #Note, we have now removed the extra line.
       p2 <- readLines("p2.xml", encoding="UTF-8")
@@ -271,7 +393,6 @@ ModifyFile <-function(paramFile, xml1) {
     pf1 <- gsub("\\\\", "//",p2)
 
     xml2 <- ReplaceLines(xml1, pf1)
-    #print(paste("xml2 ",length(xml2)))
   }
   return(xml2)
 }
@@ -296,7 +417,7 @@ ModifyFile <-function(paramFile, xml1) {
 RunSortie <-function(fname, sortie_loc) {
   #This function could be called as a stand-alone and may not be run with files created by the R scripts
   #So, we need to read the given xml, and write it again to put in the missing line breaks.
-  res <- read_xml(fname)
+  res <- xml2::read_xml(fname)
   write_xml(res, "temp_run.xml")
 
   if (sortie_loc==0) {
@@ -414,7 +535,7 @@ ExtractFiles <- function(itype,exname,onename,extime) {  #used for .gz.tar files
   #untar the list of files
   for (ix in 1:length(FileList)) {
     #first get a list of the files and find out how many directory levels down they are. Just check the first file.
-    ndir <- str_count(untar(paste0(outdir,FileList[ix]), compressed = TRUE, list=TRUE),pattern="/")
+    ndir <- stringr::str_count(untar(paste0(outdir,FileList[ix]), compressed = TRUE, list=TRUE),pattern="/")
     #untar(paste0(outdir,FileList[ix]),exdir=extractDir, compressed = TRUE, extras=paste0("--strip-components ",ndir[1]))
     #untar(paste0(outdir,FileList[ix]),exdir=extractDir, compressed = TRUE)
     cmd <-paste0("tar -xf \"",outdir,FileList[ix],"\""," --strip-components=",ndir," -C ",extractDir)
