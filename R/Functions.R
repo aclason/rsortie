@@ -521,10 +521,7 @@ read_keyhole <- function(file) {
   }
 }
 
-#' Prepare inputs
-#'
-#' @description
-#' `prepInputs()` generates the base parameter values file to be modified
+#' prepInputs
 #'
 #' @param fileNames The text file name that contains all the file names to update and be
 #' updated.
