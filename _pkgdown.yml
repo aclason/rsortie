@@ -30,7 +30,6 @@ reference:
    - makeFiles
    - ModifyFile
    - PrepareFile
-   - prepInputs
    - read_keyhole
    - RemoveRow
    - RemoveSpecies
