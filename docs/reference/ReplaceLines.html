@@ -69,7 +69,7 @@
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="va">xml2</span> <span class="op">&lt;-</span> <span class="fu">ReplaceLines</span><span class="op">(</span><span class="va">xml1</span>, <span class="va">pf1</span><span class="op">)</span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in substring(pf1[firstline], str_locate(pf1[firstline], "&lt;") + 1,     str_length(pf1[firstline]) - 1):</span> object 'pf1' not found</span>
+<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in substring(pf1[firstline], stringr::str_locate(pf1[firstline],     "&lt;") + 1, stringr::str_length(pf1[firstline]) - 1):</span> object 'pf1' not found</span>
 <span class="r-in"></span>
 </code></pre></div>
     </div>

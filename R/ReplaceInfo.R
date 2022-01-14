@@ -142,10 +142,10 @@ ReplaceLines <- function(rf, pf1) {       #rf is the main file, pf1 is the param
   #Find what group this file contains. #(Feb 2021) There is no longer the extra line at the top of the file
   firstline <- 1
 
-  grouptext <- substring(pf1[firstline],str_locate(pf1[firstline], "<")+1,str_length(pf1[firstline])-1)[1]
+  grouptext <- substring(pf1[firstline],stringr::str_locate(pf1[firstline], "<")+1,stringr::str_length(pf1[firstline])-1)[1]
 
   #now remove the numbers from the end of the grouptext. Note that there can be more than 1 number (eg Plant24)
-  gtext <- str_replace_all(grouptext, "[:digit:]", "")
+  gtext <- stringr::str_replace_all(grouptext, "[:digit:]", "")
 
   #If the grouptext is a harvest one, then we will do it differently than if it isn't
   #This allows a chunk of harvest related code to have several different bits in it and they will all be replaced.
@@ -192,13 +192,13 @@ ReplaceLines <- function(rf, pf1) {       #rf is the main file, pf1 is the param
     bRemove <- grepl("-999",pf1[i+1],fixed=TRUE)
 
     #get the beginning and end line of this group in the INPUT file
-    grouptext <- str_trim(str_replace_all(pf1[i],c("<"="",">"="")))  #get the name of the group we are replacing
+    grouptext <- stringr::str_trim(stringr::str_replace_all(pf1[i],c("<"="",">"="")))  #get the name of the group we are replacing
 
     lni <- grep(grouptext,pf1)
 
     #find the text inside the MAIN file
-    grouptext <- str_trim(pf1[i])        #get the name of the group we are replacing
-    endgroup <- str_replace_all(grouptext,"<","</")
+    grouptext <- stringr::str_trim(pf1[i])        #get the name of the group we are replacing
+    endgroup <- stringr::str_replace_all(grouptext,"<","</")
     #print(paste("looking for",i,grouptext,endgroup))
 
     lnb <- grep(grouptext,rf)     #look for this text inside the main file. This should return the beginning of the group

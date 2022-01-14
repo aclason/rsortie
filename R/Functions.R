@@ -71,7 +71,12 @@ makeFiles <- function(lstFiles, base_path, param_path, xmls_path){
   for (ix in 1:length(xmlList)) { #start loop over xml files
 
     #read the given xml
-    res <- xml2::read_xml(paste0(base_path,xmlList[ix]))
+    if(file.exists(paste0(base_path,xmlList[ix]))){
+      res <- xml2::read_xml(paste0(base_path,xmlList[ix]))
+    }else{
+      stop("please pass a valid .xml file")
+    }
+
     #write the xml to a file again (this will put in the missing line breaks)
     xml2::write_xml(res, "temp.xml")
 
@@ -174,7 +179,7 @@ FindFileLine <- function(rf,itype, varname, vargroup, varmaster) {
         }
       }
     } else {
-      print(paste("WARNING! Master Variable:", varmaster, "not found."))
+      print(paste("WARNING! Master Variable:", varmaster, "not found. Check that the behaviour list name and number in your parameter values file matches the base xml behaviour list name and number"))
     }
   } else if (itype == 6) {   #Initial Density section
     #For this type, we need to find the section with the right species.
@@ -327,7 +332,11 @@ PrepareFile <-function(pfname) {
   #print(paste("PrepareFile",pfname))
   #con <- open(as.character(pfname), r)
   #tempf1 <- readLines(pfname)
-  tempf1 <- readLines(as.character(pfname))
+  if(file.exists(pfname)){
+    tempf1 <- readLines(as.character(pfname))
+  }else{
+    stop("must provide a valid parameter values file")
+  }
 
   #determine the number of species by counting the number of commas in the first line
   ncols <- stringr::str_count(tempf1[1], ",")
@@ -335,13 +344,8 @@ PrepareFile <-function(pfname) {
   if (ncols>0) {
     #strip the " from this file
     tempf <- gsub("\"","",tempf1)
-
-    #but we need them around the species, so put those back
-    #TEST    tempf[1] <- tempf1[1]
-
     #The first line will be a header that has the species names, which must be in " and the same as in the xml file
     pf1 <- stringr::str_split_fixed(tempf, ",", n=ncols+1)
-
     #TEST
     pf1[1,] <- paste0("\"",pf1[1,],"\"")
 
@@ -371,21 +375,14 @@ PrepareFile <-function(pfname) {
 #'
 ModifyFile <-function(paramFile, xml1) {
   pf1 <- PrepareFile(paramFile)
-  #print("In Modify File")
   if (!is.null(ncol(pf1))) {#usual file type with variables on the lines and values in columns
     ncols <- ncol(pf1)-1
-    #print("calling ReplaceInfo")
     xml2 <- ReplaceInfo(xml1, VariableNames, pf1, ncols, newname)
   } else { #there are no columns here so we will assume it is a .xml chunk
-    #Because we don't know how the xml file was created, we will read and write it to make sure it is in line format
-    #print("Ready to read_xml")
-    #Two problems: 1) we need to change the filename to a string (rather than the element of a list)
-    #2) (bigger) read_xml only works on a complete xml file. If we have more than one xml chunk inside the file,
-    #           it will not be in the full proper format. So, the user MUST have the file already in line format.
     p2 <- NULL
     try(p2 <- xml2::read_xml(toString(paramFile)),silent=TRUE)
     if (!is.null(p2)) {
-      write_xml(p2, "p2.xml",options=c("no_declaration","format"))    #Note, we have now removed the extra line.
+      xml2::write_xml(p2, "p2.xml",options=c("no_declaration","format")) #Note, we have now removed the extra line.
       p2 <- readLines("p2.xml", encoding="UTF-8")
     } else {
       p2<- readLines(toString(paramFile), encoding="UTF-8")
@@ -418,7 +415,7 @@ RunSortie <-function(fname, sortie_loc) {
   #This function could be called as a stand-alone and may not be run with files created by the R scripts
   #So, we need to read the given xml, and write it again to put in the missing line breaks.
   res <- xml2::read_xml(fname)
-  write_xml(res, "temp_run.xml")
+  xml2::write_xml(res, "temp_run.xml")
 
   if (sortie_loc==0) {
     cmd=paste0("\"C:\\Program Files (x86)\\SORTIE\\bin\\coremodel.exe\" ","temp_run.xml")
