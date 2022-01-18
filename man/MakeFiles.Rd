@@ -7,7 +7,7 @@
 makeFiles(lstFiles, base_path, param_path, xmls_path)
 }
 \arguments{
-\item{lstFiles}{The text file \code{\link[=character]{character()}}or \code{\link[=dataframe]{dataframe()}} that contains all the file names to update and be}
+\item{lstFiles}{The text file \code{\link[=character]{character()}}or \code{\link[=dataframe]{dataframe()}} that contains all the file names to update and be updated}
 
 \item{base_path}{\code{\link[=character]{character()}} the file path to the base parameter file(s) location}
 

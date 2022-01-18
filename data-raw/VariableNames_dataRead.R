@@ -1,4 +1,3 @@
-library(data.table)
-VariableNames <- fread("D:/Github/SORTIEparams/Inputs/ICH/VariableNames_DateCreek.csv", header=TRUE, strip.white = TRUE)
+VariableNames <- read.csv("D:/Github/r-SORTIE/VariableNames_default.csv", header=TRUE, strip.white = TRUE)
 
-usethis::use_data(VariableNames)
+usethis::use_data(VariableNames, overwrite = TRUE)
