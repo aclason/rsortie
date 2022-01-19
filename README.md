@@ -1,18 +1,12 @@
 # rsortie
 
-## Forest Stand Neighbourhood Dynamics Model
+### Modelling forest stand dynamics with SORTIE-ND in R
 
-This is an R package that facilitates the use of SORTIE-ND, a C++ model, in R. 
+This is an R package that allows users to interact with SORTIE-ND. Specifically, users can modify input parameter files, run simulations, and process output files from SORTIE-ND.
 
-**rsortie** allows the user to modify input files, run simulations, and process output files for this forest stand dynamics model.
+We assume that users are familiar with R (http://www.cran.r-project.org/), and have downloaded are familiar with SORTIE-ND (http://www.sortie-nd.org/).
 
-We assume that the user is familiar with the program R, which can be downloaded from the web at http://www.cran.r-project.org/. 
-
-The user must also download and be familiar with SORTIE-ND, to learn and download the SORTIE-ND GUI, please visit http://www.sortie-nd.org/.
-
-All questions regarding this code should be directed to alana.clason@bvcentre.ca or sortie@bvcentre.ca  
-
-## Installation
+### Installation
 
 1.\ Install the SORTIE-ND GUI.  
 
@@ -43,52 +37,13 @@ echo %JAVA_HOME%
 You should see the file path location of java.exe  
 
 
-3.\ Install `rsortie`, in R.
+3.\ Install `rsortie` from github.
 
 ```r
+#install.packages("devtools")
+library("devtools")
 devtools::install_github("aclason/rsortie")
 ```
+For information on parameterizations of SORTIE in British Columbia and research at the Bulkley Valley Research Centre, visit https://forests-bvcentre.ca.
 
-## File and Folder descriptions  
-(maybe don't need to have this here as it's in a vignette)  
-
-1.\ **Inputs**
-
-These input files are the default files used to run the model, they can be changed through the arguments in the package.  
-
-**Files.txt (e.g., “InitDateCreek.csv”)**  
-These files contain the list of files that you wish to use in the simulation.  
-     
-**Base XML file (e.g., “ICH.xml”)**  
-These files should be a standard SORTIE input parameter file, with no modifications required. It is very important that  
-this file contains all variables and sections that will be modified. For example, if you might be adding XML code with  
-new harvest rules, a harvest section must be in the original SORTIE file. Similarly, if you are changing initial densities,  
-then each size class that you might want to use should be in the original file.  
-
-**Parameter Values File (e.g., “A1.csv”)**  
-These files contain a set of new values for different parameters.  
-
-**Variable Names (e.g., “VariableNames.csv”)**  
-This is a translation file that matches the parameter names in the input file with those in the XML file and tells the general  
-format of the variable. Formats are described more later. This file will only be changed to add new variables or to change the  
-parameter name of a variable.  
-
-For information on how to edit these files please refer to https://bvcentre.ca/sortie-nd.  
-  
-  
-2.\ **R**
-
-**MakeFiles.R**  
-R script that contains all the code needed to run the simulation.
-
-**Functions.R**  
-R script that contains functions to do… 
-
-**ParseXML.R**  
-R script that contains functions to parse…
-
-**ReplaceInfo.R**  
-R script that contains functions to replace the base XML with the parameter values you wish to use.
-
-**SORTIE-HelperFunctions.R**  
-R script that contains functions to do… 
+All questions regarding this code should be directed to alana.clason@bvcentre.ca or sortie@bvcentre.ca  

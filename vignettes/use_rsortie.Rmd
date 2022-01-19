@@ -1,5 +1,5 @@
 ---
-title: "How to use the rsortie package"
+title: "Structure of rsortie"
 output: rmarkdown::html_vignette
 date: "January 2022"
 vignette: >
@@ -21,7 +21,7 @@ library(rsortie)
 
 ## Introduction
 
-This vignette provides an _overview_ of how to use the **rSORTIE** package.  
+This vignette provides an _overview_ of the **rSORTIE** package.  
 Other vignettes go into specific actions and functions within the **rSORTIE** package.  
 
 The goal of the **rSORTIE** package is to make the SORTIE-ND model more widely accessible to a wider audience. Operating the SORTIE-ND model through R allows for a continuous workflow, transparent and reproducible research, and clear documentation. 

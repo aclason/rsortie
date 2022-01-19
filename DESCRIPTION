@@ -1,5 +1,5 @@
 Package: rsortie
-Title: Forest stand dynamics modelling via SORTIE-ND
+Title: Modelling Forest stand dynamics in R with SORTIE-ND
 Version: 0.0.0.9000
 Authors@R: c(person("Sarah", "Beukema", email = "sbeukema@essa.com", role = "aut"),
             person("Alana", "Clason", email = "alana.clason@bvcentre.ca", role = c("aut", "cre")))

@@ -108,8 +108,6 @@ makeFiles <- function(lstFiles, base_path, param_path, xmls_path){
 
               for (iii in 1:5) {
                 if (numtype[iii] > 0) {
-                  #print(paste("MakeFiles",iii,ip_vals[iii]))
-                  #print(paramList1[[iii]][ip_vals[iii]])
                   xml2 <- ModifyFile(paste0(param_path,paramList1[[iii]][ip_vals[iii]]),xml1,newname)
                 } else {
                   xml2 <- xml1
@@ -289,7 +287,6 @@ RemoveSpecies <-function(sp,rf) {
 }
 
 
-
 #' Remove a row
 #'
 #' @description
@@ -327,20 +324,11 @@ RemoveRow <-function(ln1, rf) {
 #' PrepareFile(paramFile)
 #'
 PrepareFile <-function(pfname) {
-
-  #read the file with the new parameters
-  #   note: when it reads as a csv the " marks are left as is
-  #   note: when read as a Line the " marks are marked as \".
-  #         this is necessary because the original xml file is read as Lines
-  #print(paste("PrepareFile",pfname))
-  #con <- open(as.character(pfname), r)
-  #tempf1 <- readLines(pfname)
   if(file.exists(pfname)){
     tempf1 <- readLines(as.character(pfname))
   }else{
     stop("must provide a valid parameter values file")
   }
-
   #determine the number of species by counting the number of commas in the first line
   ncols <- stringr::str_count(tempf1[1], ",")
 
@@ -516,12 +504,6 @@ ReplaceInfo <- function(rf, VariableNames, pf1, ncols, newname) {
 
 }
 
-###############################################################
-###############################################################
-###############################################################
-#Function to replace a chunk of the file with a different set of lines
-#It assumes the new set of lines are complete and completely replace relevant section
-###############################################################
 
 #' Replace Lines
 #'
@@ -626,56 +608,6 @@ RunSortie <-function(fname, sortie_loc) {
   system("runSortie.bat")
 
 }
-
-#ExtractFiles <- function(itype,exname,onename) {  #used for .gz.tar files - e.g., trees
-#itype: 1=extract only the given file, otherwise extract all files in the directory.
-#exname: the directory that contains the tar file(s) to be extracted
-#onename: the single tar file to extract (only used if itype=1)
-
-#This program will then read the directory and extract all files from any tar files that are present
-#It also assumes that all the files in a single tar file were in the same directory. It looks at the
-#first file in the tar, determines how many subdirectories are present, and then strips all those subdirectories.
-#The extracted files will be placed in a new extracted directory. If you want to put them
-# somewhere else, then change the variable extractDir
-#The routine returns a list of the extracted files.
-# write("", file="rungzip.bat")
-#  write("", file="runtar.bat")
-# outdir <- exname
-#  extractDir <- paste0(outdir,"extracted")  #directory that will contain the extracted files
-# if (dir.exists(extractDir) & (itype != 1)) {
-#  print("Target directory exists, so files will not be extracted.")
-#  return(NULL)
-#  }
-
-# dir.create(extractDir,showWarnings=FALSE)  #make the directory if it doesn't already exist
-
-#  if (itype != 1) {  #extract all the tar files in the directory
-#    FileList <- list.files(outdir,pattern="*.tar")
-# }
-#  else {
-#    FileList <- list.files(outdir,pattern=onename)
-# }
-#  for (ix in 1:length(FileList)) {
-#first get a list of the files and find out how many directory levels down they are. Just check the first file.
-#   ndir <- str_count(untar(paste0(outdir,FileList[ix]), compressed = TRUE, list=TRUE),pattern="/")
-#untar(paste0(outdir,FileList[ix]),exdir=extractDir, compressed = TRUE, extras=paste0("--strip-components ",ndir[1]))
-#untar(paste0(outdir,FileList[ix]),exdir=extractDir, compressed = TRUE)
-#    cmd <-paste0("tar -xf \"",outdir,FileList[ix],"\""," --strip-components=",ndir," -C ",extractDir)
-#    write(cmd, file="runtar.bat", append=FALSE)
-#    system("runtar.bat")
-
-#    FileList2 <- list.files(extractDir,pattern="*.gz",recursive=TRUE)
-#    for (ix2 in 1:length(FileList2)) {
-#      cmd<-paste0("gzip -d \"",extractDir,"/",FileList2[ix2],"\"")
-#      write(cmd, file="rungzip.bat", append=TRUE)
-#   }
-#  }
-
-# system("rungzip.bat")
-# FileList3 <- list.files(extractDir,pattern="*.xml",recursive=TRUE,full.names=TRUE)
-#  return(FileList3)
-#}
-
 
 
 #' Extract output files
