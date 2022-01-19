@@ -1,18 +1,12 @@
 # rsortie
 
-## Forest Stand Neighbourhood Dynamics Model
+### Modelling forest stand dynamics with SORTIE-ND in R
 
-This is an R package that facilitates the use of SORTIE-ND, a C++ model, in R. 
+This is an R package that allows users to interact with SORTIE-ND. Specifically, users can modify input parameter files, run simulations, and process output files from SORTIE-ND.
 
-**rsortie** allows the user to modify input files, run simulations, and process output files for this forest stand dynamics model.
+We assume that users are familiar with R (http://www.cran.r-project.org/), and have downloaded are familiar with SORTIE-ND (http://www.sortie-nd.org/).
 
-We assume that the user is familiar with the program R, which can be downloaded from the web at http://www.cran.r-project.org/. 
-
-The user must also download and be familiar with SORTIE-ND, to learn and download the SORTIE-ND GUI, please visit http://www.sortie-nd.org/.
-
-All questions regarding this code should be directed to alana.clason@bvcentre.ca or sortie@bvcentre.ca  
-
-## Installation
+### Installation
 
 1.\ Install the SORTIE-ND GUI.  
 
@@ -43,9 +37,11 @@ echo %JAVA_HOME%
 You should see the file path location of java.exe  
 
 
-3.\ Install `rsortie`, in R.
+3.\ Install `rsortie` from github.
 
 ```r
+#install.packages("devtools")
+library("devtools")
 devtools::install_github("aclason/rsortie")
 ```
-
+For information on parameterizations of SORTIE in British Columbia and research at the Bulkley Valley Research Centre, visit https://forests-bvcentre.ca.
