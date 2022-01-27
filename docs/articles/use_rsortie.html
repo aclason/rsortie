@@ -73,16 +73,19 @@
     
     
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://aclason.github.io/rsortie">rsortie</a></span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://forests-bvcentre.ca/rsortie">rsortie</a></span><span class="op">)</span></code></pre></div>
 <div class="section level2">
 <h2 id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
 </h2>
-<p>This vignette provides an <em>overview</em> of the <strong>rSORTIE</strong> package.<br>
-Other vignettes go into specific actions and functions within the <strong>rSORTIE</strong> package.</p>
-<p>The goal of the <strong>rSORTIE</strong> package is to make the SORTIE-ND model more widely accessible to a wider audience. Operating the SORTIE-ND model through R allows for a continuous workflow, transparent and reproducible research, and clear documentation.</p>
-<p>SORTIE-ND is an individual tree, spatially explicit model of forest dynamics.</p>
+<p>This vignette provides an <em>overview</em> of the <strong>rsortie</strong> package, with other vignettes going into specific actions and functions.</p>
+<p>The goal of the <strong>rsortie</strong> package is to support a continuous workflow from data through to model outputs, making model development, parameterization, experimentation and validation reproducible. Taking advantage of packages already developed in R, including the ability to manipulate datasets and spatial files effectively, supports larger and more complex experiments applied within SORTIE-ND. Examples of uses of <strong>rsortie</strong> are explored in other vignettes.</p>
+</div>
+<div class="section level2">
+<h2 id="sortie-nd">SORTIE-ND<a class="anchor" aria-label="anchor" href="#sortie-nd"></a>
+</h2>
+<p>SORTIE-ND is an individual-based, spatially-explicit model of forest dynamics. Specifically:</p>
 <ul>
-<li>the model tracks individuals over time, trees are modelled individually, and each individual has a location and space<br>
+<li>Trees exist as individuals with x-y coordinates that interact in neighbourhoods affecting processes<br>
 </li>
 <li>the model operates in real space, the location of an individual affects the processes (birth, growth, death), and it is resource-dependent</li>
 </ul>

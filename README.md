@@ -45,3 +45,5 @@ library("devtools")
 devtools::install_github("aclason/rsortie")
 ```
 For information on parameterizations of SORTIE in British Columbia and research at the Bulkley Valley Research Centre, visit https://forests-bvcentre.ca.
+
+Questions regarding this code should be directed to alana.clason@bvcentre.ca or sortie@bvcentre.ca  

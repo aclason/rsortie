@@ -593,6 +593,7 @@ ReplaceLines <- function(rf, pf1) {       #rf is the main file, pf1 is the param
 #'RunSortie(paste0(xmls_path,Xmls2Run[ix]),0)
 #'
 RunSortie <-function(fname, sortie_loc) {
+  ##To do - make parallel processing compatable
   #This function could be called as a stand-alone and may not be run with files created by the R scripts
   #So, we need to read the given xml, and write it again to put in the missing line breaks.
   res <- xml2::read_xml(fname)

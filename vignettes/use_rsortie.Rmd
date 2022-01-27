@@ -3,7 +3,7 @@ title: "Structure of rsortie"
 output: rmarkdown::html_vignette
 date: "January 2022"
 vignette: >
-  %\VignetteIndexEntry{How to use the rsortie package}
+  %\VignetteIndexEntry{Structure of rsortie}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -21,14 +21,15 @@ library(rsortie)
 
 ## Introduction
 
-This vignette provides an _overview_ of the **rSORTIE** package.  
-Other vignettes go into specific actions and functions within the **rSORTIE** package.  
+This vignette provides an _overview_ of the **rsortie** package, with other vignettes going into specific actions and functions.  
 
-The goal of the **rSORTIE** package is to make the SORTIE-ND model more widely accessible to a wider audience. Operating the SORTIE-ND model through R allows for a continuous workflow, transparent and reproducible research, and clear documentation. 
+The goal of the **rsortie** package is to support a continuous workflow from data through to model outputs, making model development, parameterization, experimentation and validation reproducible. Taking advantage of packages already developed in R, including the ability to manipulate datasets and spatial files effectively, supports larger and more complex experiments applied within SORTIE-ND. Examples of uses of **rsortie** are explored in other vignettes.
 
-SORTIE-ND is an individual tree, spatially explicit model of forest dynamics.  
+## SORTIE-ND
 
-* the model tracks individuals over time, trees are modelled individually, and each individual has a location and space  
+SORTIE-ND is an individual-based, spatially-explicit model of forest dynamics. Specifically:  
+
+* Trees exist as individuals with x-y coordinates that interact in neighbourhoods affecting processes   
 * the model operates in real space, the location of an individual affects the processes (birth, growth, death), and it is resource-dependent  
 
 
