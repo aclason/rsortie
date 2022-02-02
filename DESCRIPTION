@@ -16,7 +16,8 @@ Imports:
     dplyr,
     stringr,
     tidyr,
-    xml2
+    xml2,
+    parallel
 Suggests: 
     sf,
     plyr,

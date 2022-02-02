@@ -26,6 +26,7 @@ articles:
 reference:
  - title: Create new parameter file(s)
    contents:
+   - InitTreeList
    - FindFileLine
    - makeFiles
    - ModifyFile
@@ -39,6 +40,7 @@ reference:
  - title: Run the model SORTIE
    contents:
    - RunSortie
+   - RunSortiePar
  - title: Parse output files
    contents:
    - ExtractFiles

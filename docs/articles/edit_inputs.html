@@ -46,14 +46,7 @@
         <input type="search" class="form-control me-sm-2" aria-label="Toggle navigation" name="search-input" data-search-index="../search.json" id="search-input" placeholder="Search for" autocomplete="off">
 </form>
 
-      <ul class="navbar-nav">
-<li class="nav-item">
-  <a class="external-link nav-link" href="https://github.com/aclason/rsortie/" aria-label="github">
-    <span class="fab fa fab fa-github fa-lg"></span>
-     
-  </a>
-</li>
-      </ul>
+      <ul class="navbar-nav"></ul>
 </div>
 
     
@@ -66,25 +59,25 @@
             
             <h4 data-toc-skip class="date">January 2022</h4>
       
-      <small class="dont-index">Source: <a href="https://github.com/aclason/rsortie/blob/HEAD/vignettes/edit_inputs.Rmd" class="external-link"><code>vignettes/edit_inputs.Rmd</code></a></small>
+      
       <div class="d-none name"><code>edit_inputs.Rmd</code></div>
     </div>
 
     
     
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://forests-bvcentre.ca/rsortie">rsortie</a></span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://aclason.github.io/rsortie/" class="external-link">rsortie</a></span><span class="op">)</span></code></pre></div>
 <div class="section level2">
 <h2 id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
 </h2>
 <p>This vignette will:</p>
 <ul>
-<li>Create one or more new files that contain updated information based on user-provided parameters or xml code</li>
+<li>Create one or more new files that contain updated information based on user-provided values or chunks of xml code</li>
 </ul>
 </div>
-<div class="section level2">
-<h2 id="inputs">Inputs<a class="anchor" aria-label="anchor" href="#inputs"></a>
-</h2>
+<div class="section level1">
+<h1 id="inputs">Inputs<a class="anchor" aria-label="anchor" href="#inputs"></a>
+</h1>
 <p>To edit a SORTIE xml file, you must provide the tool with a set of information about the base file, the parameters or code that you are changing, and information about how to combine the input to make different files.</p>
 <p>There are a minimum of four files that must be present to run the model.</p>
 <ol style="list-style-type: decimal">
@@ -176,7 +169,6 @@ The tool will search through the xml file replacing one section at a time, in or
 </ul>
 </li>
 </ul>
-</div>
 <div class="section level2">
 <h2 id="editing-the-variablenames-file">Editing the VariableNames file<a class="anchor" aria-label="anchor" href="#editing-the-variablenames-file"></a>
 </h2>
@@ -185,6 +177,7 @@ The tool will search through the xml file replacing one section at a time, in or
 <p>The current version of the VariableNames file is not exhaustive. It only contains those variables that were being used in the testing files. However, new variables that fit one of the 7 currently defined types should be able to be added and the code should run.</p>
 <p><em><strong>Variable Types:</strong> <span style="color: blue;">Blue text</span> is an example from the xml file (the SORTIE-generated file). <span style="color: green;">Green text</span> is an example from the VariableNames file and <span style="color: purple;">purple text</span> is the example from the parameter value file (the csv file).</em></p>
 <p>Type 1: the parameter is on the same line and directly after the variable name:<br><span style="color: blue;">&lt;timesteps&gt;20&lt;/timesteps&gt;</span><br><span style="color: green;">Timesteps,1,timesteps,</span><br><span style="color: purple;">Timesteps,66,66,66,66</span></p>
+</div>
 </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
     </nav></aside>

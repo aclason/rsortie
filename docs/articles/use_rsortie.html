@@ -46,14 +46,7 @@
         <input type="search" class="form-control me-sm-2" aria-label="Toggle navigation" name="search-input" data-search-index="../search.json" id="search-input" placeholder="Search for" autocomplete="off">
 </form>
 
-      <ul class="navbar-nav">
-<li class="nav-item">
-  <a class="external-link nav-link" href="https://github.com/aclason/rsortie/" aria-label="github">
-    <span class="fab fa fab fa-github fa-lg"></span>
-     
-  </a>
-</li>
-      </ul>
+      <ul class="navbar-nav"></ul>
 </div>
 
     
@@ -66,7 +59,7 @@
             
             <h4 data-toc-skip class="date">January 2022</h4>
       
-      <small class="dont-index">Source: <a href="https://github.com/aclason/rsortie/blob/HEAD/vignettes/use_rsortie.Rmd" class="external-link"><code>vignettes/use_rsortie.Rmd</code></a></small>
+      
       <div class="d-none name"><code>use_rsortie.Rmd</code></div>
     </div>
 
@@ -91,7 +84,7 @@
 </h2>
 <p>The goal of the <strong>rsortie</strong> package is to support a continuous workflow from data through to model outputs, making model development, parameterization, experimentation and validation efficient and reproducible. Taking advantage of packages already developed in R, including the ability to manipulate datasets and spatial files effectively, supporting larger and more complex experiments applied within SORTIE-ND. Examples and uses of <strong>rsortie</strong> are explored in other vignettes.</p>
 <p>rsortie can be used in a continuous workflow (from data to outputs) or in stages. Often with complex silviculture prescriptions or experimental designs, there may still be a need to interact with SORTIE with its GUI. Many modifications of the structure (behaviours) must occur in the GUI.</p>
-<p>A typical workflow in rsortie may include: 1. Importing initial stands (plots) and manipulating data to generate SORTIE starting conditions 2. Defining a base parameter file to update with initial stands 3. Modifying parameter values (i.e. stand initial conditions, time steps to run, or parameter values from a certain behaviour in a parameterization experiment), which always include updating the output file pathways in the base parameter file 4. Modify silviculture treatments (harvest, planting) defined in the base parameter file 5. Run the model for each parameter file of interest, either in serial or with parallel processing 6. Extract and parse model outputs 7. Analyze outputs</p>
+<p>A typical workflow in rsortie may include: <em>1. Importing initial stands (plots) and manipulating data to generate SORTIE starting conditions </em>2. Defining a base parameter file to update with initial stands <em>3. Modifying parameter values (i.e. stand initial conditions, time steps to run, or parameter values from a certain behaviour in a parameterization experiment), which always include updating the output file pathways in the base parameter file </em>4. Modify silviculture treatments (harvest, planting) defined in the base parameter file <em>5. Run the model for each parameter file of interest, either in serial or with parallel processing </em>6. Extract and parse model outputs *7. Analyze outputs</p>
 </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
     </nav></aside>
