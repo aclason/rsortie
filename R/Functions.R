@@ -1,4 +1,32 @@
 
+#' Define the names of tree list
+#'
+#' @description `InitTreeList()` adds tree list names and diameter size classes to the variable translation file
+#'
+#'
+#' @param initname Naming convention for rows of tree sizes [character()]
+#' @param numDigits Decimal places for tree diameter class size in new values and base parameter file
+#' @param diamBinMin Minimum diameter class size [numeric()]
+#' @param diamBinMax Maximum diameter class size ([numeric])
+#' @param diaminc
+#'
+#' @details This function adds new rows to the variable translation default to capture specific naming conventions
+#' for the tree size class by species (tree list) defined in the new values file and the base parameter file
+#' @return
+#' @export
+InitTreeList <- function(initname,numDigits=0, diamBinMin, diamBinMax, diaminc){
+  de<-data.frame(paste0(initname,formatC(seq(diamBinMin,diamBinMax, by=diaminc),
+                                         digits = numDigits, format = "f")),
+                 rep(1,length(seq(diamBinMin,diamBinMax, by=diaminc))),
+                 paste0("tr_initialDensity sizeClass\"=s",
+                        formatC(seq(diamBinMin,diamBinMax, by=diaminc),
+                                digits = numDigits, format = "f"),"\""),
+                 rep("tr_idVals",length(seq(diamBinMin,diamBinMax, by=diaminc))))
+  names(de)<-names(VariableNames)
+  newdf <- rbind(VariableNames, de)
+  return(newdf)
+}
+
 #TO DO: make a function that updates Variable Names
 
 
@@ -41,13 +69,19 @@
 #' a <- data.frame("type"=c(0,1,1), "name"=c("a1.csv","a2.csv","a3.csv"))
 #' makeFiles(lstFiles=a, base_path=".", param_path=".", xmls_path=".")
 
-makeFiles <- function(lstFiles, base_path, param_path, xmls_path){
+makeFiles <- function(lstFiles, base_path, param_path, xmls_path,TreeListTransL=NULL){
   if(is.character(lstFiles)){
     lstFiles <- read.csv(lstFiles)
   } else if(is.data.frame(lstFiles)){
     lstFiles <- lstFiles #if a user has created a data.frame in R and not provided a csv that should be fine
   }else{
     stop("provide a valid file name or dataframe of files to update and be updated")
+  }
+
+  if(is.null(TreeListTransL)){
+    VariableNames <- VariableNames #use Variable Names unless adding tree inits, then add those rows
+  }else{
+    VariableNames <- TreeListTransL
   }
 
   xmlList <- c()
@@ -581,7 +615,7 @@ ReplaceLines <- function(rf, pf1) {       #rf is the main file, pf1 is the param
 #' Run the SORTIE model
 #'
 #' @description
-#' `RunSortie()` is a wrapper function that passes the updated parameter file to the C++ program SORTIE for simulation.
+#' `RunSortie()` is a wrapper function that passes a parameter file to SORTIE to start a simulation.
 #'
 #' @param fname [character()] File path and name to be run
 #' @param sortie_loc SORTIE location '0'
@@ -590,7 +624,7 @@ ReplaceLines <- function(rf, pf1) {       #rf is the main file, pf1 is the param
 #' @export
 #'
 #' @examples
-#'RunSortie(paste0(xmls_path,Xmls2Run[ix]),0)
+#'RunSortie(parameterfile.xml,0)
 #'
 RunSortie <-function(fname, sortie_loc) {
   ##To do - make parallel processing compatable
@@ -610,6 +644,45 @@ RunSortie <-function(fname, sortie_loc) {
 
 }
 
+
+#' Run SORTIE in parallel
+#'
+#' @description
+#' `RunSortiePar()` is a wrapper function that passes parameter files to process parallel SORTIE simulations
+#'
+#' @param fname File path and parameter file names to run
+#' @param numcores How many cores. Right now, the number of cores is the same as the number of files to run, but we will
+#' update this to allow serial runs passed across cores
+#' @param sortie_loc '0' defaults to Program Files (x86) for SORTIE location. If stored elsewhere, sortie_loc = location
+#'
+#' @return
+#' @export
+#'
+#' @examples
+#'RunSortiePar(parameterfile.xml,numcores = 2, 0)
+#'
+RunSortiePar <- function(fname, numcores, sortie_loc) {
+  cl <- parallel::makeCluster(numcores)
+  doParallel::registerDoParallel(cl)
+  parallel::clusterEvalQ(cl, c(library(foreach))) #probably not the right way to embed foreach
+
+  for(ii in 1:length(fname)){
+    res <- xml2::read_xml(fname[ii])
+    xml2::write_xml(res, paste0("temp_run",ii,".xml"))
+    if (sortie_loc==0) {
+      cmd=paste0("\"C:\\Program Files (x86)\\SORTIE\\bin\\coremodel.exe\" ",paste0("temp_run",ii,".xml"))
+    } else {
+      cmd=paste0("\"",sortie_loc,"\" temp_run.xml")
+    }
+    write(cmd, file=paste0("runSortie",ii,".bat"))
+  }
+  `%dopar%` <- foreach::`%dopar%`
+  foreach::foreach(i=1:length(fname))%dopar%{
+    system(paste0(getwd(),"/",paste0("runSortie",i,".bat")))
+  }
+
+  parallel::stopCluster(cl)
+}
 
 #' Extract output files
 #'

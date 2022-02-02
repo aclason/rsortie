@@ -15,35 +15,29 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r setup}
-library(rsortie)
-```
-
 ## Introduction
 
 This vignette provides an _overview_ of the **rsortie** package, with other vignettes going into specific actions and functions.  
 
-The goal of the **rsortie** package is to support a continuous workflow from data through to model outputs, making model development, parameterization, experimentation and validation reproducible. Taking advantage of packages already developed in R, including the ability to manipulate datasets and spatial files effectively, supports larger and more complex experiments applied within SORTIE-ND. Examples of uses of **rsortie** are explored in other vignettes.
 
 ## SORTIE-ND
 
-SORTIE-ND is an individual-based, spatially-explicit model of forest dynamics. Specifically:  
+SORTIE-ND (hereafter SORTIE) is an individual-based, spatially-explicit model of forest stand dynamics. Specifically:  
 
-* Trees exist as individuals with x-y coordinates that interact in neighbourhoods affecting processes   
-* the model operates in real space, the location of an individual affects the processes (birth, growth, death), and it is resource-dependent  
+* the model simulates the processes of establishment, growth and mortality of individuals, within resource-mediated (primarily light) interactions
+* Trees exist as individuals with x-y coordinates that interact in neighbourhoods   
 
+## rsortie
 
-## Step 1: Set global parameters and import data  
-Here we can walk through chunks of code  
+The goal of the **rsortie** package is to support a continuous workflow from data through to model outputs, making model development, parameterization, experimentation and validation efficient and reproducible. Taking advantage of packages already developed in R, including the ability to manipulate datasets and spatial files effectively, supporting larger and more complex experiments applied within SORTIE-ND. Examples and uses of **rsortie** are explored in other vignettes.
 
-## Step 2: Clean data (if needed)  
+rsortie can be used in a continuous workflow (from data to outputs) or in stages. Often with complex silviculture prescriptions or experimental designs, there may still be a need to interact with SORTIE with its GUI. Many modifications of the structure (behaviours) must occur in the GUI.
 
-## Step 3: Update parameter files  
-
-## Step 4: Add treatments  
-See other vignettes  
-
-## Step 5: Run the model  
-
-## Step 6: Extract and Parse output files  
-See other vignettes  
+A typical workflow in rsortie may include:
+*1. Importing initial stands (plots) and manipulating data to generate SORTIE starting conditions
+*2. Defining a base parameter file to update with initial stands
+*3. Modifying parameter values (i.e. stand initial conditions, time steps to run, or parameter values from a certain behaviour in a parameterization experiment), which always include updating the output file pathways in the base parameter file
+*4. Modify silviculture treatments (harvest, planting) defined in the base parameter file
+*5. Run the model for each parameter file of interest, either in serial or with parallel processing
+*6. Extract and parse model outputs
+*7. Analyze outputs

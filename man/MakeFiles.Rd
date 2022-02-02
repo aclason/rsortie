@@ -4,7 +4,7 @@
 \alias{makeFiles}
 \title{Make new parameter files}
 \usage{
-makeFiles(lstFiles, base_path, param_path, xmls_path)
+makeFiles(lstFiles, base_path, param_path, xmls_path, TreeListTransL = NULL)
 }
 \arguments{
 \item{lstFiles}{The text file \code{\link[=character]{character()}}or \code{\link[=dataframe]{dataframe()}} that contains all the file names to update and be updated}

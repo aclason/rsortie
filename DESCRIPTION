@@ -1,12 +1,13 @@
 Package: rsortie
-Title: Modelling Forest stand dynamics in R with SORTIE-ND
+Title: Forest stand dynamics modelling with SORTIE-ND in R 
 Version: 0.0.0.9000
 Authors@R: c(person("Sarah", "Beukema", email = "sbeukema@essa.com", role = "aut"),
             person("Alana", "Clason", email = "alana.clason@bvcentre.ca", role = c("aut", "cre")))
 Description: This package is an R interface to SORTIE-ND, allowing users to 
     model forest stand dynamics in an R environment.
 License: GPL (>= 3)
-URL: https://forests-bvcentre.ca/rsortie, https://github.com/aclason/rsortie
+URL: https://aclason.github.io/rsortie/
+Date: 2022-01-20
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2

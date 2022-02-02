@@ -23,10 +23,12 @@ library(rsortie)
 
 This vignette will:  
 
-* Create one or more new files that contain updated information based on user-provided parameters or xml code
+* Create one or more new files that contain updated information based on user-provided values or chunks of xml code
 
 
-## Inputs  
+# Inputs  
+
+
 
 To edit a SORTIE xml file, you must provide the tool with a set of information about the base file, the parameters or code that you are changing, and information about how to combine the input to make different files. 
 
