@@ -1,8 +1,6 @@
-
 #' Define the names of tree list
 #'
 #' @description `InitTreeList()` adds tree list names and diameter size classes to the variable translation file
-#'
 #'
 #' @param initname Naming convention for rows of tree sizes ("Init.Dens") [character()]
 #' @param numDigits Decimal places for tree diameter class size in new values and base parameter file
@@ -12,9 +10,11 @@
 #'
 #' @details This function adds new rows to the variable translation default to capture specific naming conventions
 #' for the tree size class by species (tree list) defined in the new values file and the base parameter file
+#'
 #' @return
 #' @export
-#' @example
+#'
+#' @examples
 #'
 InitTreeList <- function(initname,numDigits=0, diamBinMin, diamBinMax, diaminc){
   de<-data.frame(paste0(initname,formatC(seq(diamBinMin,diamBinMax, by=diaminc),
@@ -29,16 +29,17 @@ InitTreeList <- function(initname,numDigits=0, diamBinMin, diamBinMax, diaminc){
   return(newdf)
 }
 
+
 #' Make new parameter files
 #'
 #' @description `makeFiles()` takes a base parameter file and replaces specific
 #' parameter values to generate new parameter files to be run in SORTIE.
 #'
-#'
 #' @param lstFiles The text file [character()]or [dataframe()] that contains all the file names to update and be updated
 #' @param base_path [character()] the file path to the base parameter file(s) location
 #' @param param_path [character()] the file path to the parameter value file(s) location
 #' @param xmls_path [character()] the file path to the new output parameter file(s) location
+#' @param TreeListTransL
 #'
 #' @details Common use of this function would be to change the number of timesteps or initiate different
 #' starting stands to create a series of parameter files for an experiment
