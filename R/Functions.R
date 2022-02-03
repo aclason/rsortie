@@ -1,21 +1,16 @@
-#' Define the names of tree list
+
+#' Initiate tree list
 #'
-#' @description `InitTreeList()` adds tree list names and diameter size classes to the variable translation file
-#'
-#' @param initname Naming convention for rows of tree sizes ("Init.Dens") [character()]
-#' @param numDigits Decimal places for tree diameter class size in new values and base parameter file
-#' @param diamBinMin Minimum diameter class size [numeric()]
-#' @param diamBinMax Maximum diameter class size [numeric()]
-#' @param diaminc Size of diameter increments for SORTIE size class
-#'
-#' @details This function adds new rows to the variable translation default to capture specific naming conventions
-#' for the tree size class by species (tree list) defined in the new values file and the base parameter file
+#' @param initname
+#' @param numDigits
+#' @param diamBinMin
+#' @param diamBinMax
+#' @param diaminc
 #'
 #' @return
 #' @export
 #'
 #' @examples
-#'
 InitTreeList <- function(initname,numDigits=0, diamBinMin, diamBinMax, diaminc){
   de<-data.frame(paste0(initname,formatC(seq(diamBinMin,diamBinMax, by=diaminc),
                                          digits = numDigits, format = "f")),
