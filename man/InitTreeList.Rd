@@ -7,15 +7,15 @@
 InitTreeList(initname, numDigits = 0, diamBinMin, diamBinMax, diaminc)
 }
 \arguments{
-\item{initname}{Naming convention for rows of tree sizes \code{\link[=character]{character()}}}
+\item{initname}{Naming convention for rows of tree sizes ("Init.Dens") \code{\link[=character]{character()}}}
 
 \item{numDigits}{Decimal places for tree diameter class size in new values and base parameter file}
 
 \item{diamBinMin}{Minimum diameter class size \code{\link[=numeric]{numeric()}}}
 
-\item{diamBinMax}{Maximum diameter class size (\link{numeric})}
+\item{diamBinMax}{Maximum diameter class size \code{\link[=numeric]{numeric()}}}
 
-\item{diaminc}{}
+\item{diaminc}{Size of diameter increments for SORTIE size class}
 }
 \value{
 
@@ -26,4 +26,7 @@ InitTreeList(initname, numDigits = 0, diamBinMin, diamBinMax, diaminc)
 \details{
 This function adds new rows to the variable translation default to capture specific naming conventions
 for the tree size class by species (tree list) defined in the new values file and the base parameter file
+}
+\examples{
+
 }

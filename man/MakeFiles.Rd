@@ -14,6 +14,8 @@ makeFiles(lstFiles, base_path, param_path, xmls_path, TreeListTransL = NULL)
 \item{param_path}{\code{\link[=character]{character()}} the file path to the parameter value file(s) location}
 
 \item{xmls_path}{\code{\link[=character]{character()}} the file path to the new output parameter file(s) location}
+
+\item{TreeListTransL}{}
 }
 \value{
 This function will generate new .xml files in the \code{\link[=xmls_path]{xmls_path()}} directory
@@ -46,4 +48,5 @@ Column 2 defines the type of parameter to be replaced and these are the valid va
 \examples{
 a <- data.frame("type"=c(0,1,1), "name"=c("a1.csv","a2.csv","a3.csv"))
 makeFiles(lstFiles=a, base_path=".", param_path=".", xmls_path=".")
+
 }
