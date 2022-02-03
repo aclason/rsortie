@@ -4,20 +4,22 @@
 #' @description `InitTreeList()` adds tree list names and diameter size classes to the variable translation file
 #'
 #'
-#' @param initname Naming convention for rows of tree sizes [character()]
+#' @param initname Naming convention for rows of tree sizes ("Init.Dens") [character()]
 #' @param numDigits Decimal places for tree diameter class size in new values and base parameter file
 #' @param diamBinMin Minimum diameter class size [numeric()]
-#' @param diamBinMax Maximum diameter class size ([numeric])
-#' @param diaminc
+#' @param diamBinMax Maximum diameter class size [numeric()]
+#' @param diaminc Size of diameter increments for SORTIE size class
 #'
 #' @details This function adds new rows to the variable translation default to capture specific naming conventions
 #' for the tree size class by species (tree list) defined in the new values file and the base parameter file
 #' @return
 #' @export
+#' @example
+#'
 InitTreeList <- function(initname,numDigits=0, diamBinMin, diamBinMax, diaminc){
   de<-data.frame(paste0(initname,formatC(seq(diamBinMin,diamBinMax, by=diaminc),
                                          digits = numDigits, format = "f")),
-                 rep(1,length(seq(diamBinMin,diamBinMax, by=diaminc))),
+                 rep(6,length(seq(diamBinMin,diamBinMax, by=diaminc))),
                  paste0("tr_initialDensity sizeClass\"=s",
                         formatC(seq(diamBinMin,diamBinMax, by=diaminc),
                                 digits = numDigits, format = "f"),"\""),
@@ -26,9 +28,6 @@ InitTreeList <- function(initname,numDigits=0, diamBinMin, diamBinMax, diaminc){
   newdf <- rbind(VariableNames, de)
   return(newdf)
 }
-
-#TO DO: make a function that updates Variable Names
-
 
 #' Make new parameter files
 #'
@@ -68,7 +67,7 @@ InitTreeList <- function(initname,numDigits=0, diamBinMin, diamBinMax, diaminc){
 #' @examples
 #' a <- data.frame("type"=c(0,1,1), "name"=c("a1.csv","a2.csv","a3.csv"))
 #' makeFiles(lstFiles=a, base_path=".", param_path=".", xmls_path=".")
-
+#'
 makeFiles <- function(lstFiles, base_path, param_path, xmls_path,TreeListTransL=NULL){
   if(is.character(lstFiles)){
     lstFiles <- read.csv(lstFiles)
@@ -112,7 +111,7 @@ makeFiles <- function(lstFiles, base_path, param_path, xmls_path,TreeListTransL=
     if(file.exists(paste0(base_path,xmlList[ix]))){
       res <- xml2::read_xml(paste0(base_path,xmlList[ix]))
     }else{
-      stop("please pass a valid .xml file")
+      stop("the base xml file does not exist")
     }
 
     #write the xml to a file again (this will put in the missing line breaks)
