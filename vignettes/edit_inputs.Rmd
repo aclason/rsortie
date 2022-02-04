@@ -122,18 +122,3 @@ The second type of parameter value file allows for the replacement or deletion o
 The tool will search through the xml file replacing one section at a time, in order. Any number of
 xml sections can be present in this file, and the file can include both sections to delete or
 sections to replace.  
-
-## Editing the VariableNames file
-
-The VariableNames.csv file is critical to the success of the code when using new values defined in the csv-format parameter value files. The VariableNames file contains two important pieces of information: the mapping of the parameter name in the input parameter value file to the corresponding xml variable name, and the type of the variable in the xml file. **You must be familiar with the SORTIE xml file format** because this file contains the names that the code is using to identify what to change.  
-
-The xml file contains many different formats for its variables. Some are simple formats with the variable and its value on the same line. Some include species, and some are further grouped. The Type column in the VariableNames file is critical to identify the format of the variable and thus the rules in the code for finding and replacing the right variable. So far, 7 different formats have been identified and coded.  
-
-The current version of the VariableNames file is not exhaustive. It only contains those variables that were being used in the testing files. However, new variables that fit one of the 7 currently defined types should be able to be added and the code should run.  
-
-_**Variable Types:** <span style="color: blue;">Blue text</span> is an example from the xml file (the SORTIE-generated file). <span style="color: green;">Green text</span> is an example from the VariableNames file and <span style="color: purple;">purple text</span> is the example from the parameter value file (the csv file)._  
-
-Type 1: the parameter is on the same line and directly after the variable name:  
-<span style="color: blue;">\<timesteps\>20\</timesteps\></span>   
-<span style="color: green;">Timesteps,1,timesteps,</span>  
-<span style="color: purple;">Timesteps,66,66,66,66</span>  

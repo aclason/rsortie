@@ -17,6 +17,7 @@ articles:
  - title: All Vignettes
    contents:
     - use_rsortie
+    - values_to_xml_translation
     - edit_inputs
     - extract_outputs
     - add_harvest
@@ -25,24 +26,25 @@ articles:
 reference:
  - title: Create new parameter file(s)
    contents:
-   - InitTreeList
-   - FindFileLine
+   - treelistDfn
+   - findFileLine
    - makeFiles
-   - ModifyFile
-   - PrepareFile
+   - modifyFile
+   - prepareFile
    - read_keyhole
-   - RemoveRow
-   - RemoveSpecies
-   - ReplaceInfo
-   - ReplaceLines
-   - ReplaceParameter
+   - removeRow
+   - removeSpecies
+   - replaceInfo
+   - replaceLines
+   - replaceParameter
  - title: Run the model SORTIE
    contents:
-   - RunSortie
-   - RunSortiePar
+   - runSortie
+   - runSortiePar
  - title: Parse output files
    contents:
-   - ExtractFiles
-   - ParseMap
-   - ParseXML
-   - ReadPlotFile
+   - extractFiles
+   - parseMap
+   - parseXML
+   - readPlotFile
+

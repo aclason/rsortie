@@ -1,87 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>/404.html</loc>
+    <loc>https://aclason.github.io/rsortie/404.html</loc>
   </url>
   <url>
-    <loc>/articles/add_harvest.html</loc>
+    <loc>https://aclason.github.io/rsortie/articles/add_harvest.html</loc>
   </url>
   <url>
-    <loc>/articles/add_plant.html</loc>
+    <loc>https://aclason.github.io/rsortie/articles/add_plant.html</loc>
   </url>
   <url>
-    <loc>/articles/edit_inputs.html</loc>
+    <loc>https://aclason.github.io/rsortie/articles/edit_inputs.html</loc>
   </url>
   <url>
-    <loc>/articles/extract_outputs.html</loc>
+    <loc>https://aclason.github.io/rsortie/articles/extract_outputs.html</loc>
   </url>
   <url>
-    <loc>/articles/index.html</loc>
+    <loc>https://aclason.github.io/rsortie/articles/index.html</loc>
   </url>
   <url>
-    <loc>/articles/use_rsortie.html</loc>
+    <loc>https://aclason.github.io/rsortie/articles/use_rsortie.html</loc>
   </url>
   <url>
-    <loc>/authors.html</loc>
+    <loc>https://aclason.github.io/rsortie/articles/values_to_xml_translation.html</loc>
   </url>
   <url>
-    <loc>/index.html</loc>
+    <loc>https://aclason.github.io/rsortie/authors.html</loc>
   </url>
   <url>
-    <loc>/LICENSE.html</loc>
+    <loc>https://aclason.github.io/rsortie/index.html</loc>
   </url>
   <url>
-    <loc>/reference/ExtractFiles.html</loc>
+    <loc>https://aclason.github.io/rsortie/LICENSE.html</loc>
   </url>
   <url>
-    <loc>/reference/FindFileLine.html</loc>
+    <loc>https://aclason.github.io/rsortie/reference/ExtractFiles.html</loc>
   </url>
   <url>
-    <loc>/reference/index.html</loc>
+    <loc>https://aclason.github.io/rsortie/reference/FindFileLine.html</loc>
   </url>
   <url>
-    <loc>/reference/InitTreeList.html</loc>
+    <loc>https://aclason.github.io/rsortie/reference/index.html</loc>
   </url>
   <url>
-    <loc>/reference/makeFiles.html</loc>
+    <loc>https://aclason.github.io/rsortie/reference/InitTreeList.html</loc>
   </url>
   <url>
-    <loc>/reference/ModifyFile.html</loc>
+    <loc>https://aclason.github.io/rsortie/reference/makeFiles.html</loc>
   </url>
   <url>
-    <loc>/reference/ParseMap.html</loc>
+    <loc>https://aclason.github.io/rsortie/reference/ModifyFile.html</loc>
   </url>
   <url>
-    <loc>/reference/ParseXML.html</loc>
+    <loc>https://aclason.github.io/rsortie/reference/ParseMap.html</loc>
   </url>
   <url>
-    <loc>/reference/PrepareFile.html</loc>
+    <loc>https://aclason.github.io/rsortie/reference/ParseXML.html</loc>
   </url>
   <url>
-    <loc>/reference/ReadPlotFile.html</loc>
+    <loc>https://aclason.github.io/rsortie/reference/PrepareFile.html</loc>
   </url>
   <url>
-    <loc>/reference/read_keyhole.html</loc>
+    <loc>https://aclason.github.io/rsortie/reference/ReadPlotFile.html</loc>
   </url>
   <url>
-    <loc>/reference/RemoveRow.html</loc>
+    <loc>https://aclason.github.io/rsortie/reference/read_keyhole.html</loc>
   </url>
   <url>
-    <loc>/reference/RemoveSpecies.html</loc>
+    <loc>https://aclason.github.io/rsortie/reference/RemoveRow.html</loc>
   </url>
   <url>
-    <loc>/reference/ReplaceInfo.html</loc>
+    <loc>https://aclason.github.io/rsortie/reference/RemoveSpecies.html</loc>
   </url>
   <url>
-    <loc>/reference/ReplaceLines.html</loc>
+    <loc>https://aclason.github.io/rsortie/reference/ReplaceInfo.html</loc>
   </url>
   <url>
-    <loc>/reference/ReplaceParameter.html</loc>
+    <loc>https://aclason.github.io/rsortie/reference/ReplaceLines.html</loc>
   </url>
   <url>
-    <loc>/reference/RunSortie.html</loc>
+    <loc>https://aclason.github.io/rsortie/reference/ReplaceParameter.html</loc>
   </url>
   <url>
-    <loc>/reference/RunSortiePar.html</loc>
+    <loc>https://aclason.github.io/rsortie/reference/RunSortie.html</loc>
+  </url>
+  <url>
+    <loc>https://aclason.github.io/rsortie/reference/RunSortiePar.html</loc>
+  </url>
+  <url>
+    <loc>https://aclason.github.io/rsortie/reference/treelistDfn.html</loc>
+  </url>
+  <url>
+    <loc>https://aclason.github.io/rsortie/reference/treelist_dfn.html</loc>
   </url>
 </urlset>

@@ -1,7 +1,7 @@
 #' Parse output data frame
 #'
 #' @description
-#' `ParseXML()` takes the SORTIE output XML file name and returns the file output data frame
+#' `parseXML()` takes the SORTIE output XML file name and returns the file output data frame
 #'
 #' @param xmlname [character()] XML file name
 #'
@@ -10,10 +10,9 @@
 #' @export
 #'
 #' @examples
-#' ParseXML(xmlname)
+#' parseXML(xmlname)
 #'
-ParseXML <- function(xmlname)
-{
+parseXML <- function(xmlname){
   #Routine will take the file xmlname (assume it is a SORTIE output file)
   #it will return the file output_df
   #it takes awhile!
@@ -279,7 +278,7 @@ ParseXML <- function(xmlname)
 #' Parse spatial files
 #'
 #' @description
-#' `ParseMap()` takes the output XML file name and returns the file sprd.
+#' `parseMap()` takes the output XML file name and returns the file sprd.
 #'
 #' @param grid_data [character()] Grid data
 #'
@@ -288,9 +287,9 @@ ParseXML <- function(xmlname)
 #' @export
 #'
 #' @examples
-#' ParseMap(grid_data)
+#' parseMap(grid_data)
 #'
-ParseMap <-function(grid_data)
+parseMap <-function(grid_data)
 {
   #Routine will take the file xmlname (assume it is a SORTIE output file)
   #it will return the file sprd
