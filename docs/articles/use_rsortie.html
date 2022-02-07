@@ -66,25 +66,35 @@
     
     
 <div class="section level2">
-<h2 id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
+<h2 id="background">Background<a class="anchor" aria-label="anchor" href="#background"></a>
 </h2>
-<p>This vignette provides an <em>overview</em> of the <strong>rsortie</strong> package, with other vignettes going into specific actions and functions.</p>
+<p>rsortie is a package that supports interacting with SORTIE-ND in an R environment.</p>
 </div>
 <div class="section level2">
 <h2 id="sortie-nd">SORTIE-ND<a class="anchor" aria-label="anchor" href="#sortie-nd"></a>
 </h2>
 <p>SORTIE-ND (hereafter SORTIE) is an individual-based, spatially-explicit model of forest stand dynamics. Specifically:</p>
 <ul>
-<li>the model simulates the processes of establishment, growth and mortality of individuals, within resource-mediated (primarily light) interactions</li>
+<li>SORTIE simulates the processes of establishment, growth and mortality of individuals, within resource-mediated (primarily light) interactions</li>
 <li>Trees exist as individuals with x-y coordinates that interact in neighbourhoods</li>
+<li>
 </ul>
 </div>
 <div class="section level2">
 <h2 id="rsortie">rsortie<a class="anchor" aria-label="anchor" href="#rsortie"></a>
 </h2>
-<p>The goal of the <strong>rsortie</strong> package is to support a continuous workflow from data through to model outputs, making model development, parameterization, experimentation and validation efficient and reproducible. Taking advantage of packages already developed in R, including the ability to manipulate datasets and spatial files effectively, supporting larger and more complex experiments applied within SORTIE-ND. Examples and uses of <strong>rsortie</strong> are explored in other vignettes.</p>
-<p>rsortie can be used in a continuous workflow (from data to outputs) or in stages. Often with complex silviculture prescriptions or experimental designs, there may still be a need to interact with SORTIE with its GUI. Many modifications of the structure (behaviours) must occur in the GUI.</p>
-<p>A typical workflow in rsortie may include: <em>1. Importing initial stands (plots) and manipulating data to generate SORTIE starting conditions </em>2. Defining a base parameter file to update with initial stands <em>3. Modifying parameter values (i.e. stand initial conditions, time steps to run, or parameter values from a certain behaviour in a parameterization experiment), which always include updating the output file pathways in the base parameter file </em>4. Modify silviculture treatments (harvest, planting) defined in the base parameter file <em>5. Run the model for each parameter file of interest, either in serial or with parallel processing </em>6. Extract and parse model outputs *7. Analyze outputs</p>
+<p><strong>rsortie</strong> is designed to support a continuous workflow from data through to model outputs, making model development, parameterization, experimentation and validation efficient and reproducible. This takes advantage of packages already developed in R, including the ability to manipulate datasets and spatial files effectively, supporting larger and more complex experiments applied within SORTIE-ND. Examples and uses of <strong>rsortie</strong> are explored in other vignettes.</p>
+<p>rsortie can be used in a continuous workflow (from data to outputs) or in stages. Often with complex silviculture prescriptions or experimental designs, there will still be a need to interact with SORTIE through the graphical user interface (GUI). Many modifications of the structure (behaviours) that define a SORTIE run must occur in the GUI before those variables (or parameters) are available to change in R.</p>
+<p>A typical workflow in rsortie may include:</p>
+<ol style="list-style-type: decimal">
+<li>Importing initial stands (plots) and manipulating data to generate SORTIE starting conditions</li>
+<li>Defining a base parameter file to update with initial stands</li>
+<li>Modifying parameter values (i.e. stand initial conditions, time steps to run, or parameter values from a certain behaviour in a parameterization experiment), which always include updating the output file pathways in the base parameter file</li>
+<li>Modify silviculture treatments (harvest, planting) defined in the base parameter file</li>
+<li>Run the model for each parameter file of interest, either in serial or with parallel processing</li>
+<li>Extract and parse model outputs</li>
+<li>Analyze outputs</li>
+</ol>
 </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
     </nav></aside>

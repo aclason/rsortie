@@ -40,7 +40,6 @@ reference:
  - title: Run the model SORTIE
    contents:
    - runSortie
-   - runSortiePar
  - title: Parse output files
    contents:
    - extractFiles

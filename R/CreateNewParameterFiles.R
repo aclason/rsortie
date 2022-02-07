@@ -1,4 +1,4 @@
-#' Make new parameter files
+#' Create new SORTIE parameter files
 #'
 #' @description `makeFiles` takes a base SORTIE parameter file (base xmls) and replaces specific
 #' values (new vals) to generate new parameter files (new xmls) to be run in SORTIE.
@@ -157,9 +157,10 @@ makeFiles <- function(lstFiles, path_basexmls = path_basexmls, path_newvals = pa
   }
 }
 
-#' Add tree initial definitions to VariableNames file
+#' Add new variables that translate updates to base SORTIE parameter file
 #'
-#' `treelistDfn` adds additional initial tree diameter size classes and prefixes to [VariableNames]
+#' @description `treelistDfn()` adds additional initial tree diameter size classes and prefixes
+#' to [VariableNames]
 #'
 #' @details [VariableNames] is a table that translates the names of parameters found within behaviours
 #' (variables) defined by a user in the newvals object to the names of these parameters (variables) found in
@@ -197,12 +198,12 @@ treelistDfn <- function(initname,numDigits=0, diamMin, diamMax, diamInc){
   #return(newdf)
 }
 
-#' Find a file line
+#' Find the location in a SORTIE base parameter file from variable name
 #'
 #' @description
-#' `findFileLine()` finds the line within the base parameter file that the new vals (file or dataframe)
-#' identifies is a value to modify. This file line applies only to the base parameter file and is passed to
-#' `replaceInfo()1
+#' `findFileLine()` finds the line within the base SORTIE parameter file that the new values (file or dataframe)
+#' identifies is a variable to be modified. This file line applies only to the base parameter file and is
+#'  passed to `replaceInfo()`.
 #'
 #' @param rf [character()] Base XML parameter file to be modified
 #' @param itype [integer()] File type
@@ -294,14 +295,16 @@ findFileLine <- function(rf,itype, varname, vargroup, varmaster) {
   return(ln1)
 }
 
-#' Prepare a file to be updated
+#' Match formatting of the new values file to the base SORTIE parameter file
 #'
 #' @description
-#' `prepareFile()` prepares the new parameter file for `modifyFile()`
+#' `prepareFile()` is called by `modifyFile()` and receives an table of values that will replace the
+#'values already in the base SORTIE parameter file. Typically this function is not called outside of the
+#'`makeFiles()` function sequence.
 #'
 #' @param pfname [character()] File path and name of the parameter file with new values
 #'
-#' @return pf1
+#' @return a formatted table containing the values of
 #' @export
 #'
 #' @examples
