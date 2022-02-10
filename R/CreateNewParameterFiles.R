@@ -15,21 +15,21 @@
 #' @details
 #' The `makeFiles` function requires a table indicating the base SORTIE parameter file (.xml)
 #' and the files containing values to replace in the base parameter file. This table can be read from file, with
-#' [lstFiles()] being a character that contains the pathway and file name of the list of files
+#' `lstFiles()` being a character that contains the pathway and file name of the list of files
 #' table (i.e. "pathway/listofmyfiles.csv"). If the list of files is held in a data.frame in the R environment
-#' (as the example), then [lstFiles()] requires just the name of that object.
+#' (as the example), then `lstFiles()` requires just the name of that object.
 #'
 #' There are two optional pathway arguments available if the required files (base parameter file(s), and new
 #' values file(s)) are not yet present in the R environment. `makeFiles()` will read those files in and translate
-#' them into the appropriate format, but requires file directory location be passed by the [path_basexml] and
-#' [path_newvals] arguments. The [path_newxmls] is provided to allow users the ability to organize and store
+#' them into the appropriate format, but requires file directory location be passed by the `path_basexml` and
+#' `path_newvals` arguments. The `path_newxmls` is provided to allow users the ability to organize and store
 #' newly generated SORTIE parameter files in different directories, but if not passed, the new files will
 #' be placed in the working directory.
 #'
 #' NOTE - you do not need to assign the makeFiles function to a named object in R, as the output is written to
 #' file, not returned as an object.
 #'
-#' @return This function will generate new .xml files in the [path_newxmls()] directory, or if [path_newxmls()]
+#' @return This function will generate new .xml files in the `path_newxmls` directory, or if `path_newxmls`
 #' is not defined, the new .xml will be exported to the working directory.
 #'
 #' @export
@@ -38,8 +38,8 @@
 #' exFiles <- data.frame("type"=c(0,0,1), "name"=c("samplebasexml","samplebasexml","gmf_time_new"))
 #' makeFiles(lstFiles=exFiles)
 #'
-makeFiles <- function(lstFiles, path_basexmls = "./Inputs/ParameterFiles/BaseFiles/", path_newvals = "./Inputs/ParameterValues/",
-                      path_newxmls = "./Inputs/ParameterFiles/", treelist_add = NULL){
+makeFiles <- function(lstFiles, path_basexmls = path_basexmls, path_newvals = path_newvals,
+                      path_newxmls = path_newxmls, treelist_add = NULL){
   #determine what type of file the list of files is
   if(is.character(lstFiles)){
     lstFiles <- read.csv(lstFiles)
@@ -165,11 +165,11 @@ makeFiles <- function(lstFiles, path_basexmls = "./Inputs/ParameterFiles/BaseFil
 #' @details [VariableNames] is a table that translates the names of parameters found within behaviours
 #' (variables) defined by a user in the newvals object to the names of these parameters (variables) found in
 #' the base SORTIE parameter file. This file is essential to finding the right variable within the right
-#' behaviour to update with new values during a [makeFiles()] call.
+#' behaviour to update with new values during a `makeFiles()` call.
 #'
-#' For details on how to write a new [VariableNames] file, see [vignette("rsortie")]
+#' For details on how to write a new `VariableNames` file, see the *Structure of rsortie* vignette, linked below
 #'
-#' There is a default [VariableNames] loaded with the rsortie package, but a user may wish to add additional
+#' There is a default `VariableNames` loaded with the rsortie package, but a user may wish to add additional
 #' variable translations.
 #'
 #'
@@ -178,6 +178,8 @@ makeFiles <- function(lstFiles, path_basexmls = "./Inputs/ParameterFiles/BaseFil
 #' @param diamMin Minimum diameter size
 #' @param diamMax Maximum diameter size
 #' @param diamInc Size (in cm) of diameter bins
+#'
+#' @seealso \href{https://aclason.github.io/rsortie/articles/use_rsortie.html}{Structure of rsortie}
 #'
 #' @return
 #' @export

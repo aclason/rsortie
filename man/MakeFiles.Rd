@@ -6,9 +6,9 @@
 \usage{
 makeFiles(
   lstFiles,
-  path_basexmls = "./Inputs/ParameterFiles/BaseFiles/",
-  path_newvals = "./Inputs/ParameterValues/",
-  path_newxmls = "./Inputs/ParameterFiles/",
+  path_basexmls = path_basexmls,
+  path_newvals = path_newvals,
+  path_newxmls = path_newxmls,
   treelist_add = NULL
 )
 }
@@ -24,7 +24,7 @@ makeFiles(
 \item{treelist_add}{}
 }
 \value{
-This function will generate new .xml files in the \code{\link[=path_newxmls]{path_newxmls()}} directory, or if \code{\link[=path_newxmls]{path_newxmls()}}
+This function will generate new .xml files in the \code{path_newxmls} directory, or if \code{path_newxmls}
 is not defined, the new .xml will be exported to the working directory.
 }
 \description{
@@ -37,14 +37,14 @@ starting stands, or test the effect of changing the values that define a given b
 
 The \code{makeFiles} function requires a table indicating the base SORTIE parameter file (.xml)
 and the files containing values to replace in the base parameter file. This table can be read from file, with
-\code{\link[=lstFiles]{lstFiles()}} being a character that contains the pathway and file name of the list of files
+\code{lstFiles()} being a character that contains the pathway and file name of the list of files
 table (i.e. "pathway/listofmyfiles.csv"). If the list of files is held in a data.frame in the R environment
-(as the example), then \code{\link[=lstFiles]{lstFiles()}} requires just the name of that object.
+(as the example), then \code{lstFiles()} requires just the name of that object.
 
 There are two optional pathway arguments available if the required files (base parameter file(s), and new
 values file(s)) are not yet present in the R environment. \code{makeFiles()} will read those files in and translate
-them into the appropriate format, but requires file directory location be passed by the \link{path_basexml} and
-\link{path_newvals} arguments. The \link{path_newxmls} is provided to allow users the ability to organize and store
+them into the appropriate format, but requires file directory location be passed by the \code{path_basexml} and
+\code{path_newvals} arguments. The \code{path_newxmls} is provided to allow users the ability to organize and store
 newly generated SORTIE parameter files in different directories, but if not passed, the new files will
 be placed in the working directory.
 
