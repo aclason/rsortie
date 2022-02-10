@@ -6,9 +6,9 @@
 \usage{
 makeFiles(
   lstFiles,
-  path_basexmls = path_basexmls,
-  path_newvals = path_newvals,
-  path_newxmls = path_newxmls,
+  path_basexmls = "./Inputs/ParameterFiles/BaseFiles/",
+  path_newvals = "./Inputs/ParameterValues/",
+  path_newxmls = "./Inputs/ParameterFiles/",
   treelist_add = NULL
 )
 }
