@@ -2,7 +2,7 @@
 % Please edit documentation in R/CreateNewParameterFiles.R
 \name{makeFiles}
 \alias{makeFiles}
-\title{Make new parameter files}
+\title{Create new SORTIE parameter files}
 \usage{
 makeFiles(
   lstFiles,

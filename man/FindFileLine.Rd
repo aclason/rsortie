@@ -2,7 +2,7 @@
 % Please edit documentation in R/CreateNewParameterFiles.R
 \name{findFileLine}
 \alias{findFileLine}
-\title{Find a file line}
+\title{Find the location in a SORTIE base parameter file from variable name}
 \usage{
 findFileLine(rf, itype, varname, vargroup, varmaster)
 }
@@ -21,9 +21,9 @@ findFileLine(rf, itype, varname, vargroup, varmaster)
 
 }
 \description{
-\code{findFileLine()} finds the line within the base parameter file that the new vals (file or dataframe)
-identifies is a value to modify. This file line applies only to the base parameter file and is passed to
-`replaceInfo()1
+\code{findFileLine()} finds the line within the base SORTIE parameter file that the new values (file or dataframe)
+identifies is a variable to be modified. This file line applies only to the base parameter file and is
+passed to \code{replaceInfo()}.
 }
 \examples{
 samplebasexml[1:4]

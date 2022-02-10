@@ -1,5 +1,5 @@
-pandoc: 2.14.0.3
-pkgdown: 2.0.1
+pandoc: 2.16.2
+pkgdown: 2.0.2
 pkgdown_sha: ~
 articles:
   add_harvest: add_harvest.html
@@ -8,7 +8,7 @@ articles:
   extract_outputs: extract_outputs.html
   use_rsortie: use_rsortie.html
   values_to_xml_translation: values_to_xml_translation.html
-last_built: 2022-02-07T20:50Z
+last_built: 2022-02-08T19:35Z
 urls:
   reference: https://aclason.github.io/rsortie/reference
   article: https://aclason.github.io/rsortie/articles

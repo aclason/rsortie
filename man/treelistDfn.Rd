@@ -2,7 +2,7 @@
 % Please edit documentation in R/CreateNewParameterFiles.R
 \name{treelistDfn}
 \alias{treelistDfn}
-\title{Add tree initial definitions to VariableNames file}
+\title{Add new variables that translate updates to base SORTIE parameter file}
 \usage{
 treelistDfn(initname, numDigits = 0, diamMin, diamMax, diamInc)
 }
@@ -21,7 +21,8 @@ treelistDfn(initname, numDigits = 0, diamMin, diamMax, diamInc)
 
 }
 \description{
-\code{treelistDfn} adds additional initial tree diameter size classes and prefixes to \link{VariableNames}
+\code{treelistDfn()} adds additional initial tree diameter size classes and prefixes
+to \link{VariableNames}
 }
 \details{
 \link{VariableNames} is a table that translates the names of parameters found within behaviours
