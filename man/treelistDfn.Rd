@@ -22,10 +22,10 @@ treelistDfn(initname, numDigits = 0, diamMin, diamMax, diamInc)
 }
 \description{
 \code{treelistDfn()} adds additional initial tree diameter size classes and prefixes
-to \link{VariableNames}
+to \code{VariableNames}
 }
 \details{
-\link{VariableNames} is a table that translates the names of parameters found within behaviours
+\code{VariableNames} is a table that translates the names of parameters found within behaviours
 (variables) defined by a user in the newvals object to the names of these parameters (variables) found in
 the base SORTIE parameter file. This file is essential to finding the right variable within the right
 behaviour to update with new values during a \code{makeFiles()} call.

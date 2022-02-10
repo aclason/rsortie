@@ -160,9 +160,9 @@ makeFiles <- function(lstFiles, path_basexmls = path_basexmls, path_newvals = pa
 #' Add new variables that translate updates to base SORTIE parameter file
 #'
 #' @description `treelistDfn()` adds additional initial tree diameter size classes and prefixes
-#' to [VariableNames]
+#' to `VariableNames`
 #'
-#' @details [VariableNames] is a table that translates the names of parameters found within behaviours
+#' @details `VariableNames` is a table that translates the names of parameters found within behaviours
 #' (variables) defined by a user in the newvals object to the names of these parameters (variables) found in
 #' the base SORTIE parameter file. This file is essential to finding the right variable within the right
 #' behaviour to update with new values during a `makeFiles()` call.
