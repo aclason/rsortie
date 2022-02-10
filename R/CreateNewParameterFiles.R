@@ -38,8 +38,8 @@
 #' exFiles <- data.frame("type"=c(0,0,1), "name"=c("samplebasexml","samplebasexml","gmf_time_new"))
 #' makeFiles(lstFiles=exFiles)
 #'
-makeFiles <- function(lstFiles, path_basexmls = path_basexmls, path_newvals = path_newvals,
-                      path_newxmls = path_newxmls, treelist_add = NULL){
+makeFiles <- function(lstFiles, path_basexmls = "./Inputs/ParameterFiles/BaseFiles/", path_newvals = "./Inputs/ParameterValues/",
+                      path_newxmls = "./Inputs/ParameterFiles/", treelist_add = NULL){
   #determine what type of file the list of files is
   if(is.character(lstFiles)){
     lstFiles <- read.csv(lstFiles)
