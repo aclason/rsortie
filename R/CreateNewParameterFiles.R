@@ -193,7 +193,7 @@ treelistDfn <- function(initname,numDigits=0, diamMin, diamMax, diamInc){
                  rep(6,length(seq(diamMin,diamMax, by=diamInc))),
                  paste0("tr_initialDensity sizeClass=\"s",
                         formatC(seq(diamMin,diamMax, by=diamInc),
-                                digits = numDigits, format = "f"),"\""),
+                                digits = 1, format = "f"),"\""),
                  rep("tr_idVals",length(seq(diamMin,diamMax, by=diamInc))))
   names(de)<-names(VariableNames)
   newdf <- rbind(VariableNames, de)
