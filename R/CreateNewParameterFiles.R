@@ -15,21 +15,21 @@
 #' @details
 #' The `makeFiles` function requires a table indicating the base SORTIE parameter file (.xml)
 #' and the files containing values to replace in the base parameter file. This table can be read from file, with
-#' [lstFiles()] being a character that contains the pathway and file name of the list of files
+#' `lstFiles()` being a character that contains the pathway and file name of the list of files
 #' table (i.e. "pathway/listofmyfiles.csv"). If the list of files is held in a data.frame in the R environment
-#' (as the example), then [lstFiles()] requires just the name of that object.
+#' (as the example), then `lstFiles()` requires just the name of that object.
 #'
 #' There are two optional pathway arguments available if the required files (base parameter file(s), and new
 #' values file(s)) are not yet present in the R environment. `makeFiles()` will read those files in and translate
-#' them into the appropriate format, but requires file directory location be passed by the [path_basexml] and
-#' [path_newvals] arguments. The [path_newxmls] is provided to allow users the ability to organize and store
+#' them into the appropriate format, but requires file directory location be passed by the `path_basexml` and
+#' `path_newvals` arguments. The `path_newxmls` is provided to allow users the ability to organize and store
 #' newly generated SORTIE parameter files in different directories, but if not passed, the new files will
 #' be placed in the working directory.
 #'
 #' NOTE - you do not need to assign the makeFiles function to a named object in R, as the output is written to
 #' file, not returned as an object.
 #'
-#' @return This function will generate new .xml files in the [path_newxmls()] directory, or if [path_newxmls()]
+#' @return This function will generate new .xml files in the `path_newxmls` directory, or if `path_newxmls`
 #' is not defined, the new .xml will be exported to the working directory.
 #'
 #' @export
@@ -160,16 +160,16 @@ makeFiles <- function(lstFiles, path_basexmls = path_basexmls, path_newvals = pa
 #' Add new variables that translate updates to base SORTIE parameter file
 #'
 #' @description `treelistDfn()` adds additional initial tree diameter size classes and prefixes
-#' to [VariableNames]
+#' to `VariableNames`
 #'
-#' @details [VariableNames] is a table that translates the names of parameters found within behaviours
+#' @details `VariableNames` is a table that translates the names of parameters found within behaviours
 #' (variables) defined by a user in the newvals object to the names of these parameters (variables) found in
 #' the base SORTIE parameter file. This file is essential to finding the right variable within the right
-#' behaviour to update with new values during a [makeFiles()] call.
+#' behaviour to update with new values during a `makeFiles()` call.
 #'
-#' For details on how to write a new [VariableNames] file, see [vignette("rsortie")]
+#' For details on how to write a new `VariableNames` file, see the *Structure of rsortie* vignette, linked below
 #'
-#' There is a default [VariableNames] loaded with the rsortie package, but a user may wish to add additional
+#' There is a default `VariableNames` loaded with the rsortie package, but a user may wish to add additional
 #' variable translations.
 #'
 #'
@@ -179,6 +179,8 @@ makeFiles <- function(lstFiles, path_basexmls = path_basexmls, path_newvals = pa
 #' @param diamMax Maximum diameter size
 #' @param diamInc Size (in cm) of diameter bins
 #'
+#' @seealso \href{https://aclason.github.io/rsortie/articles/use_rsortie.html}{Structure of rsortie}
+#'
 #' @return
 #' @export
 #'
@@ -186,13 +188,13 @@ makeFiles <- function(lstFiles, path_basexmls = path_basexmls, path_newvals = pa
 #' samplebasexml[1:30]
 #' VariableNames[1:30,]
 treelistDfn <- function(initname,numDigits=0, diamMin, diamMax, diamInc){
-  de<-data.frame(paste0(initname,formatC(seq(diamMin,diamMax, by=diaminc),
+  de<-data.frame(paste0(initname,formatC(seq(diamMin,diamMax, by=diamInc),
                                          digits = numDigits, format = "f")),
-                 rep(6,length(seq(diamMin,diamMax, by=diaminc))),
-                 paste0("tr_initialDensity sizeClass\"=s",
-                        formatC(seq(diamMin,diamMax, by=diaminc),
-                                digits = numDigits, format = "f"),"\""),
-                 rep("tr_idVals",length(seq(diamMin,diamMax, by=diaminc))))
+                 rep(6,length(seq(diamMin,diamMax, by=diamInc))),
+                 paste0("tr_initialDensity sizeClass=\"s",
+                        formatC(seq(diamMin,diamMax, by=diamInc),
+                                digits = 1, format = "f"),"\""),
+                 rep("tr_idVals",length(seq(diamMin,diamMax, by=diamInc))))
   names(de)<-names(VariableNames)
   newdf <- rbind(VariableNames, de)
   #return(newdf)
