@@ -9,7 +9,7 @@ makeFiles(
   path_basexmls = path_basexmls,
   path_newvals = path_newvals,
   path_newxmls = path_newxmls,
-  treelist_add = NULL
+  variable_names = rsortie::VariableNames
 )
 }
 \arguments{
@@ -21,7 +21,7 @@ makeFiles(
 
 \item{path_newxmls}{(optional) the file path to the new output parameter file(s) location \code{\link[=character]{character()}}}
 
-\item{treelist_add}{}
+\item{variable_names}{}
 }
 \value{
 This function will generate new .xml files in the \code{path_newxmls} directory, or if \code{path_newxmls}

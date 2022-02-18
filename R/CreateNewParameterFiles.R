@@ -7,7 +7,7 @@
 #' @param path_basexmls (optional) the file path to the base parameter file(s) location [character()]
 #' @param path_newvals (optional) the file path to the new value file(s) location [character()]
 #' @param path_newxmls (optional) the file path to the new output parameter file(s) location [character()]
-#' @param treelist_add
+#' @param variable_names
 #'
 #' @details Common use of this function would be to change the number of timesteps, initiate different
 #' starting stands, or test the effect of changing the values that define a given behaviour (process)
@@ -39,7 +39,7 @@
 #' makeFiles(lstFiles=exFiles)
 #'
 makeFiles <- function(lstFiles, path_basexmls = path_basexmls, path_newvals = path_newvals,
-                      path_newxmls = path_newxmls, treelist_add = NULL){
+                      path_newxmls = path_newxmls, variable_names = rsortie::VariableNames){
   #determine what type of file the list of files is
   if(is.character(lstFiles)){
     lstFiles <- read.csv(lstFiles)
@@ -50,11 +50,11 @@ makeFiles <- function(lstFiles, path_basexmls = path_basexmls, path_newvals = pa
   }
 
   #determine whether there has been an addition to the Variable names file
-  if(missing(treelist_add)){
-    VariableNames <- VariableNames #use Variable Names unless adding tree inits, then add those rows
-  }else{
-    VariableNames <- treelist_add
-  }
+  # if(missing(treelist_add)){
+  #  VariableNames <- VariableNames #use Variable Names unless adding tree inits, then add those rows
+  # }else{
+  #  VariableNames <- treelist_add
+  # }
 
   #create the hierarchy for updating - how many base files, how many new parameter value files?
   xmlList <- c()
@@ -132,7 +132,7 @@ makeFiles <- function(lstFiles, path_basexmls = path_basexmls, path_newvals = pa
                   #} else {
                   #  stop("must provide a valid parameter values file")
                   #}
-                  xml2 <- modifyFile(pfname,xml1,newname)
+                  xml2 <- modifyFile(pfname,xml1,newname,variable_names)
                   #xml2 <- ModifyFile(paste0(path_newvals,paramList1[[iii]][ip_vals[iii]]),xml1,newname)
                 } else {
                   xml2 <- xml1
@@ -195,8 +195,8 @@ treelistDfn <- function(initname,numDigits=0, diamMin, diamMax, diamInc){
                         formatC(seq(diamMin,diamMax, by=diamInc),
                                 digits = 1, format = "f"),"\""),
                  rep("tr_idVals",length(seq(diamMin,diamMax, by=diamInc))))
-  names(de)<-names(VariableNames)
-  newdf <- rbind(VariableNames, de)
+  names(de)<-names(rsortie::VariableNames)
+  newdf <- rbind(rsortie::VariableNames, de)
   #return(newdf)
 }
 
@@ -338,6 +338,7 @@ prepareFile <-function(pfname) {
 #' @param paramFile [character()] Parameter file with new values
 #' @param xml1 [character()] Base XML parameter file to be modified
 #' @param newname name of the new parameter file being created. Automatically generated in makeFiles function
+#' @param variable_names
 #'
 #' @return
 #' @export
@@ -347,11 +348,11 @@ prepareFile <-function(pfname) {
 #' @examples
 #' modifyFile(newsortievals,xml1, newname)
 #'
-modifyFile <-function(paramFile, xml1, newname) {
+modifyFile <-function(paramFile, xml1, newname, variable_names = rsortie::VariableNames) {
   pf1 <- prepareFile(paramFile)
   if (!is.null(ncol(pf1))) {#usual file type with variables on the lines and values in columns
     ncols <- ncol(pf1)-1
-    xml2 <- replaceInfo(xml1, VariableNames, pf1, ncols, newname)
+    xml2 <- replaceInfo(xml1, variable_names, pf1, ncols, newname)
   } else { #there are no columns here so we will assume it is a .xml chunk
     p2 <- NULL
     try(p2 <- xml2::read_xml(toString(paramFile)),silent=TRUE)
