@@ -348,7 +348,7 @@ prepareFile <-function(pfname) {
 #' @examples
 #' modifyFile(newsortievals,xml1, newname)
 #'
-modifyFile <-function(paramFile, xml1, newname, variable_names = rsortie::VariableNames) {
+modifyFile <-function(paramFile, xml1, newname, variable_names) {
   pf1 <- prepareFile(paramFile)
   if (!is.null(ncol(pf1))) {#usual file type with variables on the lines and values in columns
     ncols <- ncol(pf1)-1

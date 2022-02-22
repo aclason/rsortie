@@ -4,7 +4,7 @@
 \alias{replaceInfo}
 \title{Replace parameter values in base XML file}
 \usage{
-replaceInfo(rf, variable_names = rsortie::VariableNames, pf1, ncols, newname)
+replaceInfo(rf, variable_names, pf1, ncols, newname)
 }
 \arguments{
 \item{rf}{\code{\link[=character]{character()}} Base XML parameter file to be modified}

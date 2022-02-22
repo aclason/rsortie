@@ -4,7 +4,7 @@
 \alias{modifyFile}
 \title{Modify a parameter file}
 \usage{
-modifyFile(paramFile, xml1, newname, variable_names = rsortie::VariableNames)
+modifyFile(paramFile, xml1, newname, variable_names)
 }
 \arguments{
 \item{paramFile}{\code{\link[=character]{character()}} Parameter file with new values}

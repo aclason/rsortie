@@ -16,7 +16,7 @@
 #' @examples
 #' xml2 <- ReplaceInfo(xml1, variable_names, pf1, ncols, newname)
 #'
-replaceInfo <- function(rf, variable_names = rsortie::VariableNames, pf1, ncols, newname) {
+replaceInfo <- function(rf, variable_names, pf1, ncols, newname) {
 
   #file format for pf1:
   #The first line will be a header that has the species names, which must be in " and the same as in the xml file
