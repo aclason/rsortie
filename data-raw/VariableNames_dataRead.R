@@ -1,4 +1,4 @@
-VariableNames <- read.csv("C:/Users/Leah/Desktop/BVRC/SORTIE/GitHub/SummitLake/Inputs/test.csv", header=TRUE, strip.white = TRUE)
+VariableNames <- read.csv("D:/Github/r-SORTIE/Data_rsortiePkg/VariableNames_default.csv", header=TRUE, strip.white = TRUE)
 
 usethis::use_data(VariableNames, overwrite = TRUE)
 
