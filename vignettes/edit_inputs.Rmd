@@ -4,8 +4,10 @@ output: rmarkdown::html_vignette
 date: "January 2022"
 vignette: >
   %\VignetteIndexEntry{How to edit and prepare rsortie input files}
-  %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
+  %\VignetteEngine{knitr::rmarkdown}
+editor_options: 
+  chunk_output_type: inline
 ---
 
 ```{r, include = FALSE}
@@ -21,12 +23,20 @@ library(rsortie)
 
 ## Introduction
 
-This vignette will:  
-
-* Create one or more new files that contain updated information based on user-provided values or chunks of xml code
-
+This vignette will describe how to create one or more new SORTIE parameter files that contain updated information based on user-provided values or chunks of xml code
 
 # Inputs  
+In order to run 
+
+
+![makeFiles function breakdown](makeFiles_schematic.jpg)
+
+
+
+### Base SORTIE parameter file (xml)
+To set up a base parameter file and run SORTIE, you must also download and install SORTIE - instructions are on the main page.
+
+rsortie interacts with the SORTIE parameter files. These are .xmls that contain the list of parameters within behaviours defined in the SORTIE GUI. rsortie cannot interact with or change elements that do not exist already in the base xml file, so it is important to understand the GUI to select all the behaviours required to run a SORTIE simulation. Importantly, if you intend to primarily use rsortie to assign values to parameters within the selected behaviours, you must assign a non-zero value to those parameters, or those lines do not get printed to the base xml.
 
 
 
@@ -122,3 +132,6 @@ The second type of parameter value file allows for the replacement or deletion o
 The tool will search through the xml file replacing one section at a time, in order. Any number of
 xml sections can be present in this file, and the file can include both sections to delete or
 sections to replace.  
+
+
+
