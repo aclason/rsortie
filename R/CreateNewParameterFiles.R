@@ -196,8 +196,9 @@ treelistDfn <- function(initname,numDigits=0, diamMin, diamMax, diamInc){
                                 digits = 1, format = "f"),"\""),
                  rep("tr_idVals",length(seq(diamMin,diamMax, by=diamInc))))
   names(de)<-names(rsortie::VariableNames)
+  #if two users use the same inputfileparametername, but different type, codename and group.name, that's a problem
   newdf <- rbind(rsortie::VariableNames, de)
-  #return(newdf)
+  return(newdf)
 }
 
 #' Find the location in a SORTIE base parameter file from variable name

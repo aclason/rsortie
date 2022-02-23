@@ -38,7 +38,12 @@ replaceInfo <- function(rf, variable_names, pf1, ncols, newname) {
       next                      #and skip the rest of the loop.
     }
 
-    exactParamName <- paste("\\b",paramName,"\\b",sep="")   #need this to distinguish cases like Output from ShortOutput ()
+    exactParamName <- paste0("^",paramName,"$") #need this to distinguish cases like Output from ShortOutput ()
+    #need to force the inclusion of the period for regular expressions
+    if(grepl("\\.",exactParamName)==TRUE){ #if there's a period or decimal in the exact name, add slashes
+      exactParamName <- gsub("\\.", "\\\\.", exactParamName)
+
+    }
     iline <- grep(exactParamName,variable_names[,1])
     itype <- as.numeric(variable_names[iline,2])             #ensures that itype is a number, with no blank
 
@@ -63,8 +68,7 @@ replaceInfo <- function(rf, variable_names, pf1, ncols, newname) {
           mastergroup <- pf1[1,j+1]   #we don't need the master group until we get a new one, so store the species in it for now
         }
         ln1 <- findFileLine(rf,itype,codename, groupname, mastergroup)
-
-        #print(paste("Variable",codename," is on line: ", ln1))
+                #print(paste("Variable",codename," is on line: ", ln1))
 
         if (length(ln1) > 0) {
           if (itype == 5 ) {     #changing the output filename
