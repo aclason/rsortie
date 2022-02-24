@@ -40,9 +40,8 @@ You should see the file path location of java.exe
 3.\ Install `rsortie` from github.
 
 ```r
-#install.packages("devtools")
-library("devtools")
-devtools::install_github("aclason/rsortie")
+install.packages("devtools")
+devtools::install_github("aclason/rsortie", build_vignettes = TRUE)
 ```
 For information on parameterizations of SORTIE in British Columbia and research at the Bulkley Valley Research Centre, visit https://forests-bvcentre.ca.
 
