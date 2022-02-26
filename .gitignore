@@ -37,3 +37,5 @@ vignettes/*.html
 .Rproj.user
 inst/doc
 
+
+tempf1.csv
