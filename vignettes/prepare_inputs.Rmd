@@ -20,13 +20,13 @@ knitr::opts_chunk$set(
 This vignettes describes the files required to run rsortie for SORTIE parameter file editing and creating new files.
 
 ## Files to prepare:
-- Base SORTIE parameter file
-- list of files to update
-- values to substitute those in the base parameter file and/or
-- .xml chunks to substitute with those in the base parameter file.
+* Base SORTIE parameter file
+* list of files to update
+* values to substitute those in the base parameter file and/or
+* .xml chunks to substitute with those in the base parameter file.
 
 
-### Base SORTIE parameter file (xml)
+### **Base SORTIE parameter file (xml)**
 To set up a base parameter file and run SORTIE, you must already have access to a parameter file - SORTIE comes with an example parameter file called GMF.xml that can be used to learn.
 
 #### Behaviours
@@ -42,14 +42,13 @@ This is related to how the .xml is saved from SORTIE (only behaviours selected a
 The base SORTIE parameter file must contain the species, and diameter size classes required to set up an initial tree population. These changes must be done in the SORTIE GUI using Edit > Tree Population > Edit species list, and/or Edit initial density size classes:
 
 ![Output Setup](TreeSizeClasses.jpg)
-You can use rsortie to remove an entire species from a base SORTIE parameter file, but you cannot add a species in rsortie. So again, set up the base file to contain all the species that might be used in a run.
+You can use rsortie to remove an entire species from a base SORTIE parameter file, but you cannot add a species in rsortie. So again, set up the base file in the GUI to contain all the species that might be used in a run.
 
-A common mistake is to leave 0s in all the tree species-diameter size classes for the initial stand conditions, but 0s will result in that species-diameter class will not be available in the actual saved base parameter file xml. Populate each of these with a 1 in the base parameter file, and then they will be available for substitution by zeros or non-zeros using makeFiles in rsortie.
+A common mistake is to leave 0s in all the tree species-diameter size classes for the initial stand conditions, but 0s will result in that species-diameter class not being available in the actual saved base parameter file xml. Populate each of these with a 1 in the base parameter file, and then they will be available for substitution by zeros or non-zeros using makeFiles in rsortie.
 
 ![Output Setup](TreeInits.jpg)
 
-
-We typically select the options required for outputs in the base SORTIE parameter file in the SORTIE GUI. Select outputs from the edit menu:
+We typically also select the options required for outputs in the base SORTIE parameter file in the SORTIE GUI. Select outputs from the edit menu:
 
 ![Output Setup](OutputBox.jpg)
 Select the information that will be added as columns from each tree:
@@ -61,31 +60,19 @@ And which grids to track:
 For more information on these output options and the behaviours that create them, please visit <http://sortie-nd.org/help/manuals/index.html>.
 
 
+### **A List of files** 
 
-To edit a SORTIE xml file, you must provide the tool with a set of information about the base file, the parameters or code that you are changing, and information about how to combine the input to make different files. 
+To use rsortie to substitute variable values or chunks of .xml in a SORTIE parameter file requires a list of files passed to the makeFiles function. This list of files can be stored as a .csv in a folder outside of R, or it can be created in R and passed as an object to the makeFiles function.  
 
-There are a minimum of four files that must be present to run the model.  
-
-1. **Files.txt:** this file contains the list of files that you wish to use.  
-
-There are six different slots allowed in this file, with a minimum of two types required.  
+There are six different slots allowed in this table of files, with a minimum of two types required. The column names must be: Type and Description.  
 
 | Type |  Description         | Required |
 |:----:|:---------------------|:--------:|
-| 0    | Base xml file        | Yes      |
-| 1    | Parameter value file | Yes      |
-| 2-5  | Parameter value file | No       |
+| 0    | Base parameter file  | Yes      |
+| 1    | New values file      | Yes      |
+| 2-5  | New values file      | No       |
 
-The *Base xml file* is the input xml file that contains the necessary parameters,
-behaviours, and structures. This file must contain all possible examples of
-variables and behaviours that will be modified in other files.  
-  
-  
-There can be more than one of any of the file types. Details about the formats of the files are below.  
-
-The code will loop through all combinations of the all the files.  
-
-The resulting xml files will be named with a combination of each of the names present: type0-type1-type2.xml.  
+There can be more than one of any of the file types. The code will loop through all combinations of the all the files. The resulting xml files will be named with a combination of each of the names present: type0-type1-type2.xml.  
   
 Example:  
 
@@ -101,36 +88,94 @@ The resulting output files will be named: test-t1-f2-p3.xml, test-t1-f2-r3.xml, 
 test-t1-g2-r3.xml.  
   
   
-2. **VariableNames.csv:** This a translation file that matches the parameter names in the input file
-with those in the xml file, and tells general format of the variable. Formats are described more
-later. This file will only be changed to add new variables or to change the parameter name of a
-variable.
+### **VariableNames** 
+This a translation file that matches the parameter names in the input file with those in the base parameter file, with the type of variable critical for successful substition of variable values. rsortie comes with a default VariableNames data.frame, that can be updated in R with new rows by users, or a user can pass their own VariableNames data.frame and override the default in the makeFiles function. 
 
-File format:
-Parameter name, variable type, xml variable name, group name (if applicable)  
+```{r echo= TRUE, eval=TRUE}
+library(rsortie)
+?makeFiles
+head(VariableNames)
+```
 
-All variable names are completely case and space sensitive; the code is looking for exact
-matches. For example, use Timesteps not TimeSteps or timesteps or Time steps.  
+#### Editing VariableNames
 
-The parameter names in the parameter value file can be specific to a user, but must be the same
-for all the parameter value files listed in the Files.txt.  
+The VariableNames file contains two important pieces of information: (1) mapping the variable name in the input new values file(s) to the corresponding base parameter file variable name, and (2) the type of the variable in the xml file. **You must be familiar with the SORTIE base parameter file** because this file contains the names that rsortie will use to identify what to change.  
+
+If making your own VariableNames data.frame, column headings must be:
+
+     *col 1: InputFileParameterName
+     *col 2: Type
+     *col 3: code.name
+     *col 4: group.name
+
+##### *VariableNames: Input file Parameter Name*
+The input file parameter names specify the names of the variables as contained in the "new values file(s)". In other words, these are the names assigned by users to whichever variables are intended for substition. These can be the unique names assigned to tree size classes (Initial_Density_4cm), or the names of a variable within a behaviour (Max_Growth_NCI). 
+
+**The names in the first column of the VariableNames data.frame can be anything you want, but they must match *exactly* the naming convention in the new values files**
+
+##### *VariableNames: Type*
+The base parameter file contains many different formats for its behaviours and variables. Some behaviours are simple with the variable name and its value on the same line. Some include species, and some are grouped in a more complex xml hierarchy structure. Some are completely uniquely named, but many require first identifying the location of the correct behaviour and then finding the appropriate variable name within that behaviour. The Type column in the VariableNames file is critical to identify the format of the variable and thus the rules in the code for finding and replacing the right variable. So far, 7 different formats have been identified and coded:
+
+1. = basic case: variable parameter is directly after the name
+2. = basic case with species: same, but with a species name after it
+3. = behaviorlist type: but basic parameter - similar to 1
+4. = behaviorlist type: but with species - similar to 2
+5. = output files: so parameter file will have a directory name
+6. = groups with species on the previous line, e.g. for initial density
+7. =
+8. = behaviourlist type: similar to 4, but no subgroup, because of unique tag
+
+_Variable Types: <span style="color: blue;">Blue text</span> is an example from the base parameter file (the SORTIE-generated file). <span style="color: green;">Green text</span> is an example from the VariableNames file and <span style="color: purple;">purple text</span> is the example from the parameter value file (the csv file)._  
+
+Type 1: the value is on the same line and directly after the variable name:  
+<span style="color: blue;">\<timesteps\>20\</timesteps\></span>   
+<span style="color: green;">Timesteps,1,timesteps,</span>  
+<span style="color: purple;">Timesteps,66,66,66,66</span> 
+
+
+Type 7: Disturbance types (e.g. Episodic Mortality). This is like the Behaviour types. In the new
+values file, the disturbance type goes on one line and then the variable name and values for each species on the following line. The VariableNames file just requires the names and type. You would use this type to
+update species-specific parameter values (i.e. amount of lodgepole pine to harvest), as opposed to replacing the harvest layout with an xml chunk.
+
+Type 8: the value is within a behaviour list (similar to 4), but no subgroup
+<Plant12>
+		<gr_nmpgVal species="Interior_Spruce">4.0152016</gr_nmpgVal>
+
+The current version of the VariableNames file is not exhaustive. It only contains those variables that were being used in the testing files. However, new variables that fit one of the 7 currently defined types should be able to be added and the code should run.
+
+##### *VariableNames: code.name and group.name*
+To find variable names in the base parameter file associated with a behaviour, open the base parameter file and locate the behaviour of interest. Depending on the behaviour, there will be at least one but sometimes two names required to include in the VariableNames file: code.name is always required, and group.name sometimes.
+
+First look at the base parameter file in an xml viewer like internet explorer:
+
+![Looking for variable names in a base parameter file](NCI_behaviourScreenShot.jpg)
+Compare this structure to that found in the VariableNames file:
+
+```{r echo=TRUE, eval=FALSE}
+VariableNames[20:40,]
+```
+
+This example illustrates that the variable code.name is always adjacent to the value that is going to be updated, while the variable group.name is required when there's a grouping variable name.
+
+In summary, to add a new variable to the VariableNames file:
+
+1. Find the line in the base parameter file that contains the right information.
+2. See which of the current 7 types fit.
+3. Make a note of the relevant variable name(s) as written in the base parameter file. The species name is not important, but the Behaviour List name or the group name may be important.
+4. Look at the new values file and determine or assign the corresponding *input file variable name*.
+5. Edit the VariableNames file to add the variable name (step 4), type (step 2), base parameter file variable name(s) (step 3). Note that the order of the lines in the VariableNames file does not matter, so this new line may be added at any point in the file.
+6. Comments may be added to the VariableNames file by prefacing the line with “!”.
   
-  
-3. **Base Xml file:** (type 0) This file should be a standard SORTIE input parameter file, with no
-modifications required. It is very important that this file contains all variables and sections that
-will be modified. For example, if you might be adding xml code with new harvest rules, a harvest
-section must be in the original SORTIE file. Similarly, if you are changing initial densities, then
-each size class that you might want to use should be in the original file.  
-  
-  
-4. **Parameter value files:**
+**All strings in VariableNames are completely case and space sensitive; the code is looking for exact matches. For example, use Timesteps not TimeSteps or timesteps or Time steps.**  
 
-There are two types of parameter value files: csv and xml, both of which are further described
-below.  
+ 
+### **New values files** 
 
-In all cases, variables are updated in the xml file in the order that they are in the parameter value file, and in the order of the slot of parameter value files. Parameter value files are read from top to bottom, and file slots are addressed from 1 to 3. So, a variable that is in slot 3 will supersede one that is in a slot 1 file. This could be useful if you wish, for example, to replace an xml section (e.g. as a slot 2 file), but then change one of its parameters (e.g., in a slot 3 file).  
+There are two types of new values files: csv and xml  
 
-* **4.1 CSV files**
+In all cases, variables are updated in the base parameter file in the order that they are in the new values file, and in the order of the slot of list of files passed to makeFiles. New value files are read from top to bottom, and file slots from the list of files are addressed from 1 to 3. So, a variable that is in slot 3 will supersede one that is in a slot 1 file. This could be useful if you wish, for example, to replace an xml section (e.g. as a slot 2 file), but then change one of its parameters (e.g., in a slot 3 file).  
+
+* **CSV files**
 These files contain a set of new values for different parameters.  
 
   + The first line must be a blank column and then the species names as in the xml file. As with variable names it is critical that the species names are exactly the same as they are in the xml file and the code searches for an exact match.  
@@ -143,7 +188,7 @@ ShortOutput,C:\\Projects\\SORTIE\\test\\
 The file name will be a combination of the original xml filename and the parameter value file name, and will be the same filename used for the final xml file. Note that the file extension on the Output file will be _det.gz.tar and on the ShortOutput fill be .out.  
 **If these variables are not present in an xml file or csv file, and you are creating multiple files, you will run the risk of overwriting your output when you run SORTIE.**  
 
-* **4.2 XML files**
+* **XML files**
 The second type of parameter value file allows for the replacement or deletion of xml code. The tool will replace the existing lines of text with the new lines of text from the file or delete a section of code. The file must contain complete xml format code.  
 
   + **New behavior:** The file can contain a completely new set of behaviours or parameters, such as allometry or GapDispersal21. The tool will look at the first line of the file, determine what to look for, and replace all the lines between the beginning and end of the section with the new code. For example, you could use this to completely replace the allometry section of the input file.  

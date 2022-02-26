@@ -33,7 +33,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div id="navbar" class="collapse navbar-collapse ms-2">
+    <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto">
 <li class="active nav-item">
   <a class="nav-link" href="../articles/index.html">Vignettes</a>
@@ -52,6 +52,9 @@
     
   </div>
 </nav><div class="container template-article">
+
+
+
 
 <div class="row">
   <main id="main"><div class="page-header">
@@ -76,7 +79,8 @@
 <li>.xml chunks to substitute with those in the base parameter file.</li>
 </ul>
 <div class="section level3">
-<h3 id="base-sortie-parameter-file-xml">Base SORTIE parameter file (xml)<a class="anchor" aria-label="anchor" href="#base-sortie-parameter-file-xml"></a>
+<h3 id="base-sortie-parameter-file-xml">
+<strong>Base SORTIE parameter file (xml)</strong><a class="anchor" aria-label="anchor" href="#base-sortie-parameter-file-xml"></a>
 </h3>
 <p>To set up a base parameter file and run SORTIE, you must already have access to a parameter file - SORTIE comes with an example parameter file called GMF.xml that can be used to learn.</p>
 <div class="section level4">
@@ -91,22 +95,22 @@
 <h3 id="tree-population">Tree population<a class="anchor" aria-label="anchor" href="#tree-population"></a>
 </h3>
 <p>The base SORTIE parameter file must contain the species, and diameter size classes required to set up an initial tree population. These changes must be done in the SORTIE GUI using Edit &gt; Tree Population &gt; Edit species list, and/or Edit initial density size classes:</p>
-<p><img src="TreeSizeClasses.jpg" alt="Output Setup"> You can use rsortie to remove an entire species from a base SORTIE parameter file, but you cannot add a species in rsortie. So again, set up the base file to contain all the species that might be used in a run.</p>
-<p>A common mistake is to leave 0s in all the tree species-diameter size classes for the initial stand conditions, but 0s will result in that species-diameter class will not be available in the actual saved base parameter file xml. Populate each of these with a 1 in the base parameter file, and then they will be available for substitution by zeros or non-zeros using makeFiles in rsortie.</p>
+<p><img src="TreeSizeClasses.jpg" alt="Output Setup"> You can use rsortie to remove an entire species from a base SORTIE parameter file, but you cannot add a species in rsortie. So again, set up the base file in the GUI to contain all the species that might be used in a run.</p>
+<p>A common mistake is to leave 0s in all the tree species-diameter size classes for the initial stand conditions, but 0s will result in that species-diameter class not being available in the actual saved base parameter file xml. Populate each of these with a 1 in the base parameter file, and then they will be available for substitution by zeros or non-zeros using makeFiles in rsortie.</p>
 <div class="figure">
 <img src="TreeInits.jpg" alt=""><p class="caption">Output Setup</p>
 </div>
-<p>We typically select the options required for outputs in the base SORTIE parameter file in the SORTIE GUI. Select outputs from the edit menu:</p>
+<p>We typically also select the options required for outputs in the base SORTIE parameter file in the SORTIE GUI. Select outputs from the edit menu:</p>
 <p><img src="OutputBox.jpg" alt="Output Setup"> Select the information that will be added as columns from each tree:</p>
 <p><img src="OutputTreeOptions.jpg" alt="Output Setup"> And which grids to track:</p>
 <p><img src="OutputGridOptions.jpg" alt="Output Setup"> For more information on these output options and the behaviours that create them, please visit <a href="http://sortie-nd.org/help/manuals/index.html" class="external-link uri">http://sortie-nd.org/help/manuals/index.html</a>.</p>
-<p>To edit a SORTIE xml file, you must provide the tool with a set of information about the base file, the parameters or code that you are changing, and information about how to combine the input to make different files.</p>
-<p>There are a minimum of four files that must be present to run the model.</p>
-<ol style="list-style-type: decimal">
-<li>
-<strong>Files.txt:</strong> this file contains the list of files that you wish to use.</li>
-</ol>
-<p>There are six different slots allowed in this file, with a minimum of two types required.</p>
+</div>
+<div class="section level3">
+<h3 id="a-list-of-files">
+<strong>A List of files</strong><a class="anchor" aria-label="anchor" href="#a-list-of-files"></a>
+</h3>
+<p>To use rsortie to substitute variable values or chunks of .xml in a SORTIE parameter file requires a list of files passed to the makeFiles function. This list of files can be stored as a .csv in a folder outside of R, or it can be created in R and passed as an object to the makeFiles function.</p>
+<p>There are six different slots allowed in this table of files, with a minimum of two types required. The column names must be: Type and Description.</p>
 <table class="table">
 <thead><tr class="header">
 <th align="center">Type</th>
@@ -116,25 +120,22 @@
 <tbody>
 <tr class="odd">
 <td align="center">0</td>
-<td align="left">Base xml file</td>
+<td align="left">Base parameter file</td>
 <td align="center">Yes</td>
 </tr>
 <tr class="even">
 <td align="center">1</td>
-<td align="left">Parameter value file</td>
+<td align="left">New values file</td>
 <td align="center">Yes</td>
 </tr>
 <tr class="odd">
 <td align="center">2-5</td>
-<td align="left">Parameter value file</td>
+<td align="left">New values file</td>
 <td align="center">No</td>
 </tr>
 </tbody>
 </table>
-<p>The <em>Base xml file</em> is the input xml file that contains the necessary parameters, behaviours, and structures. This file must contain all possible examples of variables and behaviours that will be modified in other files.</p>
-<p>There can be more than one of any of the file types. Details about the formats of the files are below.</p>
-<p>The code will loop through all combinations of the all the files.</p>
-<p>The resulting xml files will be named with a combination of each of the names present: type0-type1-type2.xml.</p>
+<p>There can be more than one of any of the file types. The code will loop through all combinations of the all the files. The resulting xml files will be named with a combination of each of the names present: type0-type1-type2.xml.</p>
 <p>Example:</p>
 <p>type, name<br>
 0, Test.xml<br>
@@ -144,18 +145,128 @@
 3, p3.csv<br>
 3, r3.csv</p>
 <p>The resulting output files will be named: test-t1-f2-p3.xml, test-t1-f2-r3.xml, test-t1-g2-p3.xml, test-t1-g2-r3.xml.</p>
-<ol start="2" style="list-style-type: decimal">
-<li>
-<strong>VariableNames.csv:</strong> This a translation file that matches the parameter names in the input file with those in the xml file, and tells general format of the variable. Formats are described more later. This file will only be changed to add new variables or to change the parameter name of a variable.</li>
+</div>
+<div class="section level3">
+<h3 id="variablenames">
+<strong>VariableNames</strong><a class="anchor" aria-label="anchor" href="#variablenames"></a>
+</h3>
+<p>This a translation file that matches the parameter names in the input file with those in the base parameter file, with the type of variable critical for successful substition of variable values. rsortie comes with a default VariableNames data.frame, that can be updated in R with new rows by users, or a user can pass their own VariableNames data.frame and override the default in the makeFiles function.</p>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://aclason.github.io/rsortie/">rsortie</a></span><span class="op">)</span>
+<span class="op">?</span><span class="va">makeFiles</span>
+<span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">VariableNames</span><span class="op">)</span>
+<span class="co">#&gt;   InputFileParameterName Type        code.name group.name</span>
+<span class="co">#&gt; 1              Timesteps    1        timesteps           </span>
+<span class="co">#&gt; 2             Randomseed    1       randomSeed           </span>
+<span class="co">#&gt; 3       YearsPerTimestep    1 yearsPerTimestep           </span>
+<span class="co">#&gt; 4            rt_timestep    1      rt_timestep           </span>
+<span class="co">#&gt; 5             randomSeed    1       randomSeed           </span>
+<span class="co">#&gt; 6       yearsPerTimestep    1 yearsPerTimestep</span></code></pre></div>
+<div class="section level4">
+<h4 id="editing-variablenames">Editing VariableNames<a class="anchor" aria-label="anchor" href="#editing-variablenames"></a>
+</h4>
+<p>The VariableNames file contains two important pieces of information: (1) mapping the variable name in the input new values file(s) to the corresponding base parameter file variable name, and (2) the type of the variable in the xml file. <strong>You must be familiar with the SORTIE base parameter file</strong> because this file contains the names that rsortie will use to identify what to change.</p>
+<p>If making your own VariableNames data.frame, column headings must be:</p>
+<pre><code> *col 1: InputFileParameterName
+ *col 2: Type
+ *col 3: code.name
+ *col 4: group.name</code></pre>
+<div class="section level5">
+<h5 id="variablenames-input-file-parameter-name">
+<em>VariableNames: Input file Parameter Name</em><a class="anchor" aria-label="anchor" href="#variablenames-input-file-parameter-name"></a>
+</h5>
+<p>The input file parameter names specify the names of the variables as contained in the “new values file(s)”. In other words, these are the names assigned by users to whichever variables are intended for substition. These can be the unique names assigned to tree size classes (Initial_Density_4cm), or the names of a variable within a behaviour (Max_Growth_NCI).</p>
+<p><strong>The names in the first column of the VariableNames data.frame can be anything you want, but they must match <em>exactly</em> the naming convention in the new values files</strong></p>
+</div>
+<div class="section level5">
+<h5 id="variablenames-type">
+<em>VariableNames: Type</em><a class="anchor" aria-label="anchor" href="#variablenames-type"></a>
+</h5>
+<p>The base parameter file contains many different formats for its behaviours and variables. Some behaviours are simple with the variable name and its value on the same line. Some include species, and some are grouped in a more complex xml hierarchy structure. Some are completely uniquely named, but many require first identifying the location of the correct behaviour and then finding the appropriate variable name within that behaviour. The Type column in the VariableNames file is critical to identify the format of the variable and thus the rules in the code for finding and replacing the right variable. So far, 7 different formats have been identified and coded:</p>
+<ol style="list-style-type: decimal">
+<li>= basic case: variable parameter is directly after the name</li>
+<li>= basic case with species: same, but with a species name after it</li>
+<li>= behaviorlist type: but basic parameter - similar to 1</li>
+<li>= behaviorlist type: but with species - similar to 2</li>
+<li>= output files: so parameter file will have a directory name</li>
+<li>= groups with species on the previous line, e.g. for initial density</li>
+<li>=</li>
+<li>= behaviourlist type: similar to 4, but no subgroup, because of unique tag</li>
 </ol>
-<p>File format: Parameter name, variable type, xml variable name, group name (if applicable)</p>
-<p>All variable names are completely case and space sensitive; the code is looking for exact matches. For example, use Timesteps not TimeSteps or timesteps or Time steps.</p>
-<p>The parameter names in the parameter value file can be specific to a user, but must be the same for all the parameter value files listed in the Files.txt.</p>
-<ol start="3" style="list-style-type: decimal">
-<li><p><strong>Base Xml file:</strong> (type 0) This file should be a standard SORTIE input parameter file, with no modifications required. It is very important that this file contains all variables and sections that will be modified. For example, if you might be adding xml code with new harvest rules, a harvest section must be in the original SORTIE file. Similarly, if you are changing initial densities, then each size class that you might want to use should be in the original file.</p></li>
-<li><p><strong>Parameter value files:</strong></p></li>
+<p><em>Variable Types: <span style="color: blue;">Blue text</span> is an example from the base parameter file (the SORTIE-generated file). <span style="color: green;">Green text</span> is an example from the VariableNames file and <span style="color: purple;">purple text</span> is the example from the parameter value file (the csv file).</em></p>
+<p>Type 1: the value is on the same line and directly after the variable name:<br><span style="color: blue;">&lt;timesteps&gt;20&lt;/timesteps&gt;</span><br><span style="color: green;">Timesteps,1,timesteps,</span><br><span style="color: purple;">Timesteps,66,66,66,66</span></p>
+<p>Type 7: Disturbance types (e.g. Episodic Mortality). This is like the Behaviour types. In the new values file, the disturbance type goes on one line and then the variable name and values for each species on the following line. The VariableNames file just requires the names and type. You would use this type to update species-specific parameter values (i.e. amount of lodgepole pine to harvest), as opposed to replacing the harvest layout with an xml chunk.</p>
+<p>Type 8: the value is within a behaviour list (similar to 4), but no subgroup <plant12><gr_nmpgval species="Interior_Spruce">4.0152016</gr_nmpgval></plant12></p>
+<p>The current version of the VariableNames file is not exhaustive. It only contains those variables that were being used in the testing files. However, new variables that fit one of the 7 currently defined types should be able to be added and the code should run.</p>
+</div>
+<div class="section level5">
+<h5 id="variablenames-code-name-and-group-name">
+<em>VariableNames: code.name and group.name</em><a class="anchor" aria-label="anchor" href="#variablenames-code-name-and-group-name"></a>
+</h5>
+<p>To find variable names in the base parameter file associated with a behaviour, open the base parameter file and locate the behaviour of interest. Depending on the behaviour, there will be at least one but sometimes two names required to include in the VariableNames file: code.name is always required, and group.name sometimes.</p>
+<p>First look at the base parameter file in an xml viewer like internet explorer:</p>
+<p><img src="NCI_behaviourScreenShot.jpg" alt="Looking for variable names in a base parameter file"> Compare this structure to that found in the VariableNames file:</p>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">VariableNames</span><span class="op">[</span><span class="fl">20</span><span class="op">:</span><span class="fl">40</span>,<span class="op">]</span>
+<span class="co">#&gt;         InputFileParameterName Type                   code.name</span>
+<span class="co">#&gt; 20          nciWhichSizeEffect    3          nciWhichSizeEffect</span>
+<span class="co">#&gt; 21        nciWhichDamageEffect    3        nciWhichDamageEffect</span>
+<span class="co">#&gt; 22 nciWhichPrecipitationEffect    3 nciWhichPrecipitationEffect</span>
+<span class="co">#&gt; 23   nciWhichTemperatureEffect    3   nciWhichTemperatureEffect</span>
+<span class="co">#&gt; 24      nciWhichNitrogenEffect    3      nciWhichNitrogenEffect</span>
+<span class="co">#&gt; 25     nciWhichInfectionEffect    3     nciWhichInfectionEffect</span>
+<span class="co">#&gt; 26               NCI.MaxGrowth    4          gr_nmpgVal species</span>
+<span class="co">#&gt; 27        Std.Dev.Norm.Log.Adj    4            gr_sdVal species</span>
+<span class="co">#&gt; 28         NCI.Shading.Coeff.m    4              nscVal species</span>
+<span class="co">#&gt; 29           NCI.Shading.Exp.n    4              nseVal species</span>
+<span class="co">#&gt; 30             NCI.Size.Sensit    4              ncgVal species</span>
+<span class="co">#&gt; 31           NCI.Crowd.Slope.C    4              nccVal species</span>
+<span class="co">#&gt; 32           NCI.Crowd.Steep.D    4              ncdVal species</span>
+<span class="co">#&gt; 33          NCI.Max.Crowd.Dist    4             nmcrVal species</span>
+<span class="co">#&gt; 34                   NCI.Alpha    4               naVal species</span>
+<span class="co">#&gt; 35                    NCI.Beta    4               nbVal species</span>
+<span class="co">#&gt; 36                 NCI.DBH.div    3               nciDbhDivisor</span>
+<span class="co">#&gt; 37        nciIncludeSnagsInNCI    3        nciIncludeSnagsInNCI</span>
+<span class="co">#&gt; 38           Spruce.NCI.Lambda    4               nlVal species</span>
+<span class="co">#&gt; 39             Pine.NCI.Lambda    4               nlVal species</span>
+<span class="co">#&gt; 40           NCI.Min.Neigh.DBH    4             nmndVal species</span>
+<span class="co">#&gt;                          group.name</span>
+<span class="co">#&gt; 20                                 </span>
+<span class="co">#&gt; 21                                 </span>
+<span class="co">#&gt; 22                                 </span>
+<span class="co">#&gt; 23                                 </span>
+<span class="co">#&gt; 24                                 </span>
+<span class="co">#&gt; 25                                 </span>
+<span class="co">#&gt; 26         gr_nciMaxPotentialGrowth</span>
+<span class="co">#&gt; 27             gr_standardDeviation</span>
+<span class="co">#&gt; 28            nciShadingCoefficient</span>
+<span class="co">#&gt; 29               nciShadingExponent</span>
+<span class="co">#&gt; 30                 nciCrowdingGamma</span>
+<span class="co">#&gt; 31                     nciCrowdingC</span>
+<span class="co">#&gt; 32                     nciCrowdingD</span>
+<span class="co">#&gt; 33             nciMaxCrowdingRadius</span>
+<span class="co">#&gt; 34                         nciAlpha</span>
+<span class="co">#&gt; 35                          nciBeta</span>
+<span class="co">#&gt; 36                                 </span>
+<span class="co">#&gt; 37                                 </span>
+<span class="co">#&gt; 38 nciInterior_SpruceNeighborLambda</span>
+<span class="co">#&gt; 39  nciLodgepole_PineNeighborLambda</span>
+<span class="co">#&gt; 40                nciMinNeighborDBH</span></code></pre></div>
+<p>This example illustrates that the variable code.name is always adjacent to the value that is going to be updated, while the variable group.name is required when there’s a grouping variable name.</p>
+<p>In summary, to add a new variable to the VariableNames file:</p>
+<ol style="list-style-type: decimal">
+<li>Find the line in the base parameter file that contains the right information.</li>
+<li>See which of the current 7 types fit.</li>
+<li>Make a note of the relevant variable name(s) as written in the base parameter file. The species name is not important, but the Behaviour List name or the group name may be important.</li>
+<li>Look at the new values file and determine or assign the corresponding <em>input file variable name</em>.</li>
+<li>Edit the VariableNames file to add the variable name (step 4), type (step 2), base parameter file variable name(s) (step 3). Note that the order of the lines in the VariableNames file does not matter, so this new line may be added at any point in the file.</li>
+<li>Comments may be added to the VariableNames file by prefacing the line with “!”.</li>
 </ol>
-<p>There are two types of parameter value files: csv and xml, both of which are further described below.</p>
+<p><strong>All strings in VariableNames are completely case and space sensitive; the code is looking for exact matches. For example, use Timesteps not TimeSteps or timesteps or Time steps.</strong></p>
+<ol start="4" style="list-style-type: decimal">
+<li><strong>Parameter value files:</strong></li>
+</ol>
+<p>There are two types of new values files: csv and xml</p>
 <p>In all cases, variables are updated in the xml file in the order that they are in the parameter value file, and in the order of the slot of parameter value files. Parameter value files are read from top to bottom, and file slots are addressed from 1 to 3. So, a variable that is in slot 3 will supersede one that is in a slot 1 file. This could be useful if you wish, for example, to replace an xml section (e.g. as a slot 2 file), but then change one of its parameters (e.g., in a slot 3 file).</p>
 <ul>
 <li>
@@ -193,6 +304,8 @@ The tool will search through the xml file replacing one section at a time, in or
 </ul>
 </div>
 </div>
+</div>
+</div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
     </nav></aside>
 </div>
@@ -206,7 +319,7 @@ The tool will search through the xml file replacing one section at a time, in or
 
 <div class="pkgdown-footer-right">
   <p></p>
-<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.1.</p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
 </div>
 
     </footer>

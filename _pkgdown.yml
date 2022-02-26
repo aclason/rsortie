@@ -18,7 +18,6 @@ articles:
    contents:
     - use_rsortie
     - prepare_inputs
-    - understanding_VariableNames
     - using_makeFiles
     - extract_outputs
     - edit_harvest
