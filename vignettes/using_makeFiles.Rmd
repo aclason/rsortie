@@ -1,0 +1,24 @@
+---
+title: "Using makeFiles"
+author: "Alana Clason"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Using makeFiles}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+This vignette will describe how to create one or more new SORTIE parameter files that contain updated information based on new values or chunks of xml code to substitute.
+
+![makeFiles function breakdown](makeFiles_schematic.jpg)
+
+
+

@@ -1,9 +1,9 @@
 ---
-title: "How to edit and prepare rsortie input files"
+title: "Preparing inputs for rsortie"
 output: rmarkdown::html_vignette
 date: "January 2022"
 vignette: >
-  %\VignetteIndexEntry{How to edit and prepare rsortie input files}
+  %\VignetteIndexEntry{Preparing inputs for rsortie}
   %\VignetteEncoding{UTF-8}
   %\VignetteEngine{knitr::rmarkdown}
 editor_options: 
@@ -17,26 +17,48 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r setup}
-library(rsortie)
-```
+This vignettes describes the files required to run rsortie for SORTIE parameter file editing and creating new files.
 
-## Introduction
-
-This vignette will describe how to create one or more new SORTIE parameter files that contain updated information based on user-provided values or chunks of xml code
-
-# Inputs  
-In order to run 
-
-
-![makeFiles function breakdown](makeFiles_schematic.jpg)
-
+## Files to prepare:
+- Base SORTIE parameter file
+- list of files to update
+- values to substitute those in the base parameter file and/or
+- .xml chunks to substitute with those in the base parameter file.
 
 
 ### Base SORTIE parameter file (xml)
-To set up a base parameter file and run SORTIE, you must also download and install SORTIE - instructions are on the main page.
+To set up a base parameter file and run SORTIE, you must already have access to a parameter file - SORTIE comes with an example parameter file called GMF.xml that can be used to learn.
 
-rsortie interacts with the SORTIE parameter files. These are .xmls that contain the list of parameters within behaviours defined in the SORTIE GUI. rsortie cannot interact with or change elements that do not exist already in the base xml file, so it is important to understand the GUI to select all the behaviours required to run a SORTIE simulation. Importantly, if you intend to primarily use rsortie to assign values to parameters within the selected behaviours, you must assign a non-zero value to those parameters, or those lines do not get printed to the base xml.
+#### Behaviours
+
+rsortie interacts with SORTIE parameter files. These are .xmls that contain the list of variables within behaviours defined in the SORTIE GUI. rsortie cannot interact with or change elements that do not exist already in the base xml file, so it is important to understand the GUI to select all the behaviours required to run a SORTIE simulation. Importantly, if you intend to primarily use rsortie to assign values to variables within the selected behaviours, you must assign a non-zero value to those variables, or those lines do not get printed to the base xml.
+
+**All the behaviours, including harvests or plantings, that you want to interact with in rsortie must be contained within the base file.**
+
+This is related to how the .xml is saved from SORTIE (only behaviours selected are included in the xml), and each behaviour is assigned a list position. If you add or remove a behaviour in the SORTIE GUI, these list positions will be automatically updated in the resulting xml, but we don't yet have that capability to adjust behaviour list positions in rsortie, and it may not be possible. Any of the behaviours can be populated with dummy variables (1s) and harvest or planting areas (just select some cells in the harvest and planting interfaces), as these can all be substituted in an rsortie run. As long as they exist in the base xml file, often with a non-zero value required, all variables within behaviours can be changed in rsortie.
+
+### Tree population
+
+The base SORTIE parameter file must contain the species, and diameter size classes required to set up an initial tree population. These changes must be done in the SORTIE GUI using Edit > Tree Population > Edit species list, and/or Edit initial density size classes:
+
+![Output Setup](TreeSizeClasses.jpg)
+You can use rsortie to remove an entire species from a base SORTIE parameter file, but you cannot add a species in rsortie. So again, set up the base file to contain all the species that might be used in a run.
+
+A common mistake is to leave 0s in all the tree species-diameter size classes for the initial stand conditions, but 0s will result in that species-diameter class will not be available in the actual saved base parameter file xml. Populate each of these with a 1 in the base parameter file, and then they will be available for substitution by zeros or non-zeros using makeFiles in rsortie.
+
+![Output Setup](TreeInits.jpg)
+
+
+We typically select the options required for outputs in the base SORTIE parameter file in the SORTIE GUI. Select outputs from the edit menu:
+
+![Output Setup](OutputBox.jpg)
+Select the information that will be added as columns from each tree:
+
+![Output Setup](OutputTreeOptions.jpg)
+And which grids to track:
+
+![Output Setup](OutputGridOptions.jpg)
+For more information on these output options and the behaviours that create them, please visit <http://sortie-nd.org/help/manuals/index.html>.
 
 
 

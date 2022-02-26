@@ -1,9 +1,9 @@
 ---
-title: "How to add a harvest"
+title: "How to edit a harvest"
 output: rmarkdown::html_vignette
 date: "January 2022"
 vignette: >
-  %\VignetteIndexEntry{How to add a harvest}
+  %\VignetteIndexEntry{How to edit a harvest}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---

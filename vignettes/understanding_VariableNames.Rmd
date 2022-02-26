@@ -1,10 +1,10 @@
 ---
-title: "Vignette Title"
+title: "Understanding VariableNames"
 author: "Vignette Author"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteIndexEntry{Understanding VariableNames}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -20,7 +20,7 @@ knitr::opts_chunk$set(
 
 ## Editing the VariableNames file
 
-The VariableNames.csv file is critical to the success of the code when using new values defined in the csv-format parameter value files. The VariableNames file contains two important pieces of information: the mapping of the parameter name in the input parameter value file to the corresponding xml variable name, and the type of the variable in the xml file. **You must be familiar with the SORTIE xml file format** because this file contains the names that the code is using to identify what to change.  
+The VariableNames file is critical to the success of the code when using new values defined in the csv-format parameter value files. The VariableNames file contains two important pieces of information: the mapping of the parameter name in the input parameter value file to the corresponding xml variable name, and the type of the variable in the xml file. **You must be familiar with the SORTIE xml file format** because this file contains the names that the code is using to identify what to change.  
 
 The xml file contains many different formats for its variables. Some are simple formats with the variable and its value on the same line. Some include species, and some are further grouped. The Type column in the VariableNames file is critical to identify the format of the variable and thus the rules in the code for finding and replacing the right variable. So far, 7 different formats have been identified and coded.  
 

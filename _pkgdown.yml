@@ -17,11 +17,12 @@ articles:
  - title: All Vignettes
    contents:
     - use_rsortie
-    - values_to_xml_translation
-    - edit_inputs
+    - prepare_inputs
+    - understanding_VariableNames
+    - using_makeFiles
     - extract_outputs
-    - add_harvest
-    - add_plant
+    - edit_harvest
+    - edit_plant
 
 reference:
  - title: Create new parameter file(s)

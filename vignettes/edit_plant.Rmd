@@ -1,9 +1,9 @@
 ---
-title: "How to add a plant"
+title: "How to edit a planting"
 output: rmarkdown::html_vignette
 date: "January 2022"
 vignette: >
-  %\VignetteIndexEntry{How to add a plant}
+  %\VignetteIndexEntry{How to edit a planting}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
