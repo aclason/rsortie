@@ -35,7 +35,7 @@
 #' @export
 #'
 #' @examples
-#' exFiles <- data.frame("type"=c(0,0,1), "name"=c("samplebasexml","samplebasexml","gmf_time_new"))
+#' exFiles <- data.frame("type"=c(0,1), "name"=c("samplebasexml","gmf_time_new"))
 #' makeFiles(lstFiles=exFiles)
 #'
 makeFiles <- function(lstFiles, path_basexmls = path_basexmls, path_newvals = path_newvals,

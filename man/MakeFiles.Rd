@@ -52,7 +52,7 @@ NOTE - you do not need to assign the makeFiles function to a named object in R, 
 file, not returned as an object.
 }
 \examples{
-exFiles <- data.frame("type"=c(0,0,1), "name"=c("samplebasexml","samplebasexml","gmf_time_new"))
+exFiles <- data.frame("type"=c(0,1), "name"=c("samplebasexml","gmf_time_new"))
 makeFiles(lstFiles=exFiles)
 
 }
