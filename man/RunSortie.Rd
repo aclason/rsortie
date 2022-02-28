@@ -25,6 +25,6 @@ final forward slash)
 }
 \examples{
 # MySortieLoc <- "C:/Program Files/SORTIE/bin/coremodel.exe"
-#(runSortie(parameterfile.xml,0))
+#(runSortie(samplebasexml,0))
 
 }

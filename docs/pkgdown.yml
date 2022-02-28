@@ -1,14 +1,14 @@
 pandoc: 2.14.0.3
-pkgdown: 2.0.1
+pkgdown: 2.0.2
 pkgdown_sha: ~
 articles:
-  add_harvest: add_harvest.html
-  add_plant: add_plant.html
-  edit_inputs: edit_inputs.html
+  edit_harvest: edit_harvest.html
+  edit_plant: edit_plant.html
   extract_outputs: extract_outputs.html
+  prepare_inputs: prepare_inputs.html
   use_rsortie: use_rsortie.html
-  values_to_xml_translation: values_to_xml_translation.html
-last_built: 2022-02-23T23:48Z
+  using_makeFiles: using_makeFiles.html
+last_built: 2022-02-28T19:35Z
 urls:
   reference: https://aclason.github.io/rsortie/reference
   article: https://aclason.github.io/rsortie/articles
