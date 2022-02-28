@@ -16,7 +16,7 @@
 #'
 #' @examples
 #'# MySortieLoc <- "C:/Program Files/SORTIE/bin/coremodel.exe"
-#'#(runSortie(parameterfile.xml,0))
+#'#(runSortie(samplebasexml,0))
 #'
 runSortie <-function(fname, sortie_loc=0) {
   ##To do - make parallel processing compatable

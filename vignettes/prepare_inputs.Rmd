@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 
 This vignettes describes the files required to run rsortie for SORTIE parameter file editing and creating new files.
 
-## Files to prepare:
+## **Inputs to prepare:**
 * Base SORTIE parameter file
 * list of files to update
 * values to substitute those in the base parameter file and/or
@@ -176,7 +176,7 @@ There are two types of new values files: csv and xml
 
 In all cases, variables are updated in the base parameter file in the order that they are in the new values file, and in the order of the slot of list of files passed to makeFiles. New value files are read from top to bottom, and file slots from the list of files are addressed from 1 to 3. So, a variable that is in slot 3 will supersede one that is in a slot 1 file. This could be useful if you wish, for example, to replace an xml section (e.g. as a slot 2 file), but then change one of its parameters (e.g., in a slot 3 file).  
 
-* **CSV files**
+#### **CSV files**
 These files contain a set of new values for different variables  
 
   + The first row must be a blank column and then the species names as in the xml file. As with variable names it is critical that the species names are exactly the same as they are in the xml file and the code searches for an exact match.  
@@ -196,7 +196,7 @@ These files contain a set of new values for different variables
   
 **If output file directory paths are not provided in the new values file, SORTIE may fail to run as the output directory in the base parameter file may not exist on the local computer**  
 
-* **XML files**
+#### **XML files**
 The second type of new values file enables the replacement or deletion of xml code. The tool replaces the existing lines of text with the new lines of text from the file or delete a section of code. The file must contain complete xml format code.  
 
   + **Substitute all variables from a behavior:** The file can contain a completely new set of variables contained within a behaviour, such as allometry or GapDispersal21. The tool will look at the first line of the new values file, determine what to look for, and replace all the lines between the beginning and end of the section with the new code. For example, you could use this to completely replace the allometry section of the input file. This is frequently used in replacing a harvest placeholder in the base parameter file with the entended harvest design  

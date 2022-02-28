@@ -33,7 +33,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div id="navbar" class="collapse navbar-collapse ms-2">
+    <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto">
 <li class="active nav-item">
   <a class="nav-link" href="../articles/index.html">Vignettes</a>
@@ -52,6 +52,9 @@
     
   </div>
 </nav><div class="container template-article">
+
+
+
 
 <div class="row">
   <main id="main"><div class="page-header">
@@ -74,46 +77,77 @@
 <div class="section level2">
 <h2 id="extracting-output-files">Extracting output files<a class="anchor" aria-label="anchor" href="#extracting-output-files"></a>
 </h2>
-<p>It is possible to automatically extract all the output files from one or more SORTIE runs.</p>
+<p>It is possible to automatically extract all the output files from one
+or more SORTIE runs.</p>
 <p>The program will look in the directory:<br>
 C:/Projects/SORTIE/output/</p>
-<p>It will then loop over all the tar files in that directory and extract them to the directory:<br>
+<p>It will then loop over all the tar files in that directory and
+extract them to the directory:<br>
 C:/Projects/SORTIE/output/extracted</p>
-<p>This is a very rudimentary function at this point. It will always open all tarfiles in the output directory, and overwrite all files in the extracted directory.</p>
+<p>This is a very rudimentary function at this point. It will always
+open all tarfiles in the output directory, and overwrite all files in
+the extracted directory.</p>
 <p><em>Further functionality is forthcoming</em></p>
-<p>This function returns a list of all xml files that are in the extracted directory.</p>
+<p>This function returns a list of all xml files that are in the
+extracted directory.</p>
 </div>
 <div class="section level2">
 <h2 id="read-tree-output-files">Read tree output files<a class="anchor" aria-label="anchor" href="#read-tree-output-files"></a>
 </h2>
-<p>The function ParseXML allows users to read one or more years from one or more xml file.</p>
-<p>Inputs to the function include a list of one or more xml files, as well as a list of one or more years to extract.</p>
-<p>Put the list of xml files into the variable “ListOfExtractedFile”. Note that this variable can also be filled automatically when using the ExtractFiles function described in the previous section.</p>
-<p>Put the list of years to extract into the variable “YearsToExtract”</p>
-<p>The code will then run over each set of files and years to read the tree list file and to put the resulting information into an R variable:<br>
+<p>The function ParseXML allows users to read one or more years from one
+or more xml file.</p>
+<p>Inputs to the function include a list of one or more xml files, as
+well as a list of one or more years to extract.</p>
+<p>Put the list of xml files into the variable “ListOfExtractedFile”.
+Note that this variable can also be filled automatically when using the
+ExtractFiles function described in the previous section.</p>
+<p>Put the list of years to extract into the variable
+“YearsToExtract”</p>
+<p>The code will then run over each set of files and years to read the
+tree list file and to put the resulting information into an R
+variable:<br>
 trees_#<br>
-where # is the loop number. Right now there is no correspondence between the loop number and the file-year combination.</p>
-<p>The new variable will have all the columns that Sortie printed to the output file, including one called ID. Note that ID simply represents the place in the output file that tree record contained. While this ID may refer to the same tree for some timesteps, mortality or establishment of that tree record or other trees will change the id. Use the x-y location to track trees instead as they will remain constant for the life of the tree.</p>
+where # is the loop number. Right now there is no correspondence between
+the loop number and the file-year combination.</p>
+<p>The new variable will have all the columns that Sortie printed to the
+output file, including one called ID. Note that ID simply represents the
+place in the output file that tree record contained. While this ID may
+refer to the same tree for some timesteps, mortality or establishment of
+that tree record or other trees will change the id. Use the x-y location
+to track trees instead as they will remain constant for the life of the
+tree.</p>
 </div>
 <div class="section level2">
 <h2 id="read-map-output-files">Read map output files<a class="anchor" aria-label="anchor" href="#read-map-output-files"></a>
 </h2>
-<p>The function ParseMap allows users to read all the maps in an output xml file.</p>
-<p>In the function, manually assign the name of the output file to read.</p>
-<p>The code will scan the file to find all the maps that are present, then will loop over each map in the file, extract the information, and assign it to two different R variables.</p>
-<p>The grid and information will be stored in an R variable called:<br>
+<p>The function ParseMap allows users to read all the maps in an output
+xml file.</p>
+<p>In the function, manually assign the name of the output file to
+read.</p>
+<p>The code will scan the file to find all the maps that are present,
+then will loop over each map in the file, extract the information, and
+assign it to two different R variables.</p>
+<p>The grid and information will be stored in an R variable
+called:<br>
 map_#<br>
 where # is the location in the output file.</p>
 <p>The type of map is stored in a variable called:<br>
 output_type_#<br>
-where # is again the location in the output file. The type of the map is read from the output file and could be something like “Dispersed Seeds” or “GLI Map 1”.</p>
+where # is again the location in the output file. The type of the map is
+read from the output file and could be something like “Dispersed Seeds”
+or “GLI Map 1”.</p>
 </div>
 <div class="section level2">
 <h2 id="read-raster-files">Read raster files<a class="anchor" aria-label="anchor" href="#read-raster-files"></a>
 </h2>
-<p>There is a stand-alone file “RasterFunctions.r” that will read a raster file and write the information to a text file. This is a simple file whose goal is to allow users to quickly change a raster file into a format that can be pulled into an xml chunk and added to the Sortie file.</p>
+<p>There is a stand-alone file “RasterFunctions.r” that will read a
+raster file and write the information to a text file. This is a simple
+file whose goal is to allow users to quickly change a raster file into a
+format that can be pulled into an xml chunk and added to the Sortie
+file.</p>
 <p>Input: raster file name<br>
-Output: an text file in xml format. Each cell that has a value greater than 0 will be printed as:<br>
+Output: an text file in xml format. Each cell that has a value greater
+than 0 will be printed as:<br>
 &lt;ha_applyToCell x=”xloc” y=“yloc’/&gt;</p>
 <p>Where xloc and yloc are the x-y locations in the raster file.</p>
 </div>
@@ -130,7 +164,8 @@ Output: an text file in xml format. Each cell that has a value greater than 0 wi
 
 <div class="pkgdown-footer-right">
   <p></p>
-<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.1.</p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a>
+2.0.2.</p>
 </div>
 
     </footer>
