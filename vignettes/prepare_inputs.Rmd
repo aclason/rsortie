@@ -148,11 +148,15 @@ _Variable Types: <span style="color: blue;">Blue text</span> is an example from 
 .nobullet li {
   list-style-type: none;
 }
+ div{
+       display: inline-block;  
+    }
 </style>
 
 <span style="color: blue;">\<NCIMasterGrowth5\></span>  
 <div class="nobullet">
-* <span style="color: blue;">\<nciDbhDivisor\>100.0\</nciDbhDivisor\></span></div>  
+* <span style="color: blue;">\<nciDbhDivisor\>100.0\</nciDbhDivisor\></span>
+</div>  
 
 <span style="color: green;">NCI.DBH.div,3,nciDbhDivisor,</span>  
 <br> 
@@ -166,8 +170,9 @@ This type could also be inside a grid:
 <span style="color: blue;">\<grid gridName="harvestmastercuts"\></span>  
 <div class="nobullet">
 * <span style="color: blue;">\<ma_plotLenX\>100\</ma_plotLenX\></span>  
-* <span style="color: blue;">\<ma_plotLenY\>200\</ma_plotLenY\></span></div> <span style="color: blue;">\</grid\></span>  
-<br> 
+* <span style="color: blue;">\<ma_plotLenY\>200\</ma_plotLenY\></span>  </div>  
+<span style="color: blue;">\</grid\></span>  
+<br>
 
 <span style="color: green;">plotLenX,3,ma_plotLenX,</span>  
 <span style="color: green;">plotLenY,3,ma_plotLenY,</span>  
@@ -183,7 +188,8 @@ This type could also be inside a grid:
 <span style="color: blue;">\<NCIMasterGrowth5\></span>  
 <div class="nobullet">  
 * <span style="color: blue;">\<gr_nciMaxPotentialGrowth\></span>  
-    * <span style="color: blue;">\<gr_nmpgVal species="Interior_Spruce"\>4.0152016\</gr_nmpgVal\></span></div>  
+    * <span style="color: blue;">\<gr_nmpgVal species="Interior_Spruce"\>4.0152016\</gr_nmpgVal\></span>
+    </div>  
 
 <span style="color: green;">NCI.MaxGrowth,4,gr_nmpgVal species, gr_nciMaxPotentialGrowth</span>  
 <br> 
@@ -201,10 +207,10 @@ This type could also be inside a grid:
 
 **Type 6:** groups with species on the previous line.
 
-<span style="color: blue;">\<tr_idVals whatSpecies="Lodgepole_Pine"\></span> 
+<span style="color: blue;">\<tr_idVals whatSpecies="Lodgepole_Pine"\></span>  
 <div class="nobullet"> 
 * <span style="color: blue;">\<tr_initialDensity sizeClass="s4.0"\>25.0\</tr_initialDensity\></span>  
-</div>
+</div>  
 
 <span style="color: green;">Init.Dens.4,6,tr_initialDensity sizeClass="s4.0",tr_idVals</span>  
 <br> 
