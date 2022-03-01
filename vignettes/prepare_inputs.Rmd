@@ -126,21 +126,107 @@ The base parameter file contains many different formats for its behaviours and v
 8. = behaviourlist type: similar to 4, but no subgroup, because of unique tag
 
 _Variable Types: <span style="color: blue;">Blue text</span> is an example from the base parameter file (the SORTIE-generated file). <span style="color: green;">Green text</span> is an example from the VariableNames file and <span style="color: purple;">purple text</span> is the example from the parameter value file (the csv file)._  
+<br>
 
-Type 1: the value is on the same line and directly after the variable name:  
+**Type 1:** the value is on the same line and directly after the variable name: 
+
 <span style="color: blue;">\<timesteps\>20\</timesteps\></span>   
 <span style="color: green;">Timesteps,1,timesteps,</span>  
-<span style="color: purple;">Timesteps,66,66,66,66</span> 
+<span style="color: purple;">Timesteps,66,66,66,66</span>  
+<br>  
+  
+**Type 2:** the parameter includes a species name, but the value is still on the same line:
 
+<span style="color: blue;">\<tr_mshVal species="Interior_Spruce"\>1.35\</tr_mshVal\></span>  
+<span style="color: green;">Max.Seedling.Hgt.m, 2, tr_mshVal species,</span>  
+<span style="color: purple;">Max.Seedling.Hgt.m,1.35,1.35,1.35,1.35</span>  
+<br>
 
-Type 7: Disturbance types (e.g. Episodic Mortality). This is like the Behaviour types. In the new
-values file, the disturbance type goes on one line and then the variable name and values for each species on the following line. The VariableNames file just requires the names and type. You would use this type to
-update species-specific parameter values (i.e. amount of lodgepole pine to harvest), as opposed to replacing the harvest layout with an xml chunk.
+**Type 3:** the parameter is like a type 1, but is inside a BehaviourList. The BehaviourList becomes part of the input parameter file, since it is specific to the xml file that is being used.  
 
-Type 8: the value is within a behaviour list (similar to 4), but no subgroup
-<Plant12>
-		<gr_nmpgVal species="Interior_Spruce">4.0152016</gr_nmpgVal>
+<style>
+.nobullet li {
+  list-style-type: none;
+}
+</style>
 
+<span style="color: blue;">\<NCIMasterGrowth5\></span>  
+<div class="nobullet">
+* <span style="color: blue;">\<nciDbhDivisor\>100.0\</nciDbhDivisor\></span></div>  
+
+<span style="color: green;">NCI.DBH.div,3,nciDbhDivisor,</span>  
+<br> 
+
+<span style="color: purple;">NCIMasterGrowth5,</span>  
+<span style="color: purple;">NCI.DBH.div,100,100,100,100</span>  
+<br> 
+
+This type could also be inside a grid:
+  
+<span style="color: blue;">\<grid gridName="harvestmastercuts"\></span>  
+<div class="nobullet">
+* <span style="color: blue;">\<ma_plotLenX\>100\</ma_plotLenX\></span>  
+* <span style="color: blue;">\<ma_plotLenY\>200\</ma_plotLenY\></span></div> <span style="color: blue;">\</grid\></span>  
+<br> 
+
+<span style="color: green;">plotLenX,3,ma_plotLenX,</span>  
+<span style="color: green;">plotLenY,3,ma_plotLenY,</span>  
+<br> 
+
+<span style="color: purple;">harvestmastercuts</span>  
+<span style="color: purple;">plotLenX,100,100,100,100</span>  
+<span style="color: purple;">plotLenY,200,200,200,200</span>  
+<br>
+
+**Type 4:** the parameter is like a type 2, but is inside a BehaviourList. The BehaviourList becomes part of the input parameter value file, since it is specific to the xml file that is being used. Note that type 4 must also contain a group name in the VariableName file. (This is because in a very few cases, the same variable is use multiple times in the xml file and we need the group name to figure out which case it is.)
+
+<span style="color: blue;">\<NCIMasterGrowth5\></span>  
+<div class="nobullet">  
+* <span style="color: blue;">\<gr_nciMaxPotentialGrowth\></span>  
+    * <span style="color: blue;">\<gr_nmpgVal species="Interior_Spruce"\>4.0152016\</gr_nmpgVal\></span></div>  
+
+<span style="color: green;">NCI.MaxGrowth,4,gr_nmpgVal species, gr_nciMaxPotentialGrowth</span>  
+<br> 
+
+<span style="color: purple;">NCIMasterGrowth5,</span>  
+<span style="color: purple;">NCI.MaxGrowth,1.65655768851703,2.22957895018928,1.75110747720752,2.37639294490124</span>  
+<br>
+
+**Type 5:** Output files. The code assumes that the parameter value file contains a directory. When the code writes this information to the xml file, it writes the directory specified in the parameter value file and then a unique file name. Currently the code is set-up to do Output and ShortOutput with specific file extensions. In this version of the code, other file types may not work, even if added to the VariablesName file.
+
+<span style="color: green;">ShortOutput,5,so_filename,</span>  
+
+<span style="color: purple;">ShortOutput,C:\\Projects\\SORTIE\\test\\</span>  
+<br>
+
+**Type 6:** groups with species on the previous line.
+
+<span style="color: blue;">\<tr_idVals whatSpecies="Lodgepole_Pine"\></span> 
+<div class="nobullet"> 
+* <span style="color: blue;">\<tr_initialDensity sizeClass="s4.0"\>25.0\</tr_initialDensity\></span>  
+</div>
+
+<span style="color: green;">Init.Dens.4,6,tr_initialDensity sizeClass="s4.0",tr_idVals</span>  
+<br> 
+
+<span style="color: purple;">Init.Dens.4,0,0,75,0</span>  
+<br>  
+  
+**Type 7:** Disturbance types (e.g. Episodic Mortality). This is like the Behaviour types. In the new values file, the disturbance type goes on one line and then the variable name and values for each species on the following line. The VariableNames file just requires the names and type. You would use this type to update species-specific parameter values (i.e. amount of lodgepole pine to harvest), as opposed to replacing the harvest layout with an xml chunk.
+
+<span style="color: green;">amountToCut,7,ds_amountToCut,</span>  
+<br> 
+
+<span style="color: purple;">EpisodicMortality1</span>  
+<span style="color: purple;">amountToCut,55,56,57,58</span>  
+<br>  
+  
+**Type 8:** the value is within a behaviour list (similar to 4), but no subgroup  
+<span style="color: blue;">\<Plant12\></span>  
+<div class="nobullet"> 
+* <span style="color: blue;">\<gr_nmpgVal species="Interior_Spruce"\>4.0152016\</gr_nmpgVal\></span>  
+</div>
+  
 The current version of the VariableNames file is not exhaustive. It only contains those variables that were being used in the testing files. However, new variables that fit one of the 7 currently defined types should be able to be added and the code should run.
 
 ##### *VariableNames: code.name and group.name*
