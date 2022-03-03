@@ -19,17 +19,23 @@ knitr::opts_chunk$set(
 
 This vignette describes the files required to run `rsortie` for editing and creating new SORTIE parameter files.
 
-### **Input files to prepare:**
+# **Inputs**
+
+*Required for users to prepare:*
+
 * Base SORTIE parameter file
 * A list of the files to be used
 * New values to substitute those in the base parameter file and/or
 * .xml chunks to substitute with those in the base parameter file.
 
+*Default available:*
 
-### **Base SORTIE parameter file (xml)**
+* VariableNames - to translate R objects to SORTIE base parameter files
+
+## **Base SORTIE parameter file (xml)**
 To set up a base parameter file and run SORTIE, you must already have access to a parameter file. SORTIE comes with an example parameter file called GMF.xml for practice and learning.
 
-#### Behaviours
+### Behaviours
 
 `rsortie` interacts with SORTIE parameter files. These files are .xmls that contain the list of variables within the behaviours that are user defined in the SORTIE GUI. `rsortie` cannot interact with or change elements that do not already exist in the base .xml file, so it is crucial to also understand the GUI in order to add or remove behaviours for an `rsortie` simulation.  
 Importantly, if you intend to assign values to variables, within the selected behaviours, primarily in `rsortie`, you must assign a non-zero value to those variables, or those lines do not get printed to the base .xml file.

@@ -167,7 +167,8 @@ makeFiles <- function(lstFiles, path_basexmls = path_basexmls, path_newvals = pa
 #' the base SORTIE parameter file. This file is essential to finding the right variable within the right
 #' behaviour to update with new values during a `makeFiles()` call.
 #'
-#' For details on how to write a new `VariableNames` file, see the *Structure of rsortie* vignette, linked below
+#' For details on how to write a new `VariableNames` file, see the *Preparing inputs for rsortie* vignette,
+#' linked below
 #'
 #' There is a default `VariableNames` loaded with the rsortie package, but a user may wish to add additional
 #' variable translations.
@@ -179,7 +180,7 @@ makeFiles <- function(lstFiles, path_basexmls = path_basexmls, path_newvals = pa
 #' @param diamMax Maximum diameter size
 #' @param diamInc Size (in cm) of diameter bins
 #'
-#' @seealso \href{https://aclason.github.io/rsortie/articles/use_rsortie.html}{Structure of rsortie}
+#' @seealso \href{https://aclason.github.io/rsortie/articles/prepare_inputs.html}{Preparing inputs for rsortie}
 #'
 #' @return
 #' @export

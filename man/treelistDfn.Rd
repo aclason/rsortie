@@ -30,7 +30,8 @@ to \code{VariableNames}
 the base SORTIE parameter file. This file is essential to finding the right variable within the right
 behaviour to update with new values during a \code{makeFiles()} call.
 
-For details on how to write a new \code{VariableNames} file, see the \emph{Structure of rsortie} vignette, linked below
+For details on how to write a new \code{VariableNames} file, see the \emph{Preparing inputs for rsortie} vignette,
+linked below
 
 There is a default \code{VariableNames} loaded with the rsortie package, but a user may wish to add additional
 variable translations.
@@ -40,5 +41,5 @@ samplebasexml[1:30]
 VariableNames[1:30,]
 }
 \seealso{
-\href{https://aclason.github.io/rsortie/articles/use_rsortie.html}{Structure of rsortie}
+\href{https://aclason.github.io/rsortie/articles/prepare_inputs.html}{Preparing inputs for rsortie}
 }

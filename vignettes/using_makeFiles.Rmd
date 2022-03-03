@@ -5,8 +5,10 @@ date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Using makeFiles}
-  %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
+  %\VignetteEngine{knitr::rmarkdown}
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r setup, include = FALSE}
@@ -18,7 +20,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-This vignette describes how to create one or more new SORTIE parameter files that contain updated information based on new values or chunks of .xml code to substitute.  
+This vignette describes how to create one or more new SORTIE parameter files that will substitute new values or chunks of .xml code from the base SORTIE parameter file.  
 <br>  
 
 These are the components that `makeFiles()` needs to run:
@@ -28,7 +30,7 @@ These are the components that `makeFiles()` needs to run:
   
 In this vignette, we assume the user has read and understood the "rsortie Basics" and "Preparing inputs of rsortie" vignettes and their files are ready to run.
 
-### 1. Load the `rsortie` library (optional: access the help file)
+### 1. Load the `rsortie` library
 
 ```{r echo=TRUE, eval=FALSE}
 library(rsortie)
@@ -36,7 +38,7 @@ library(rsortie)
 ```
 
 
-### 2. Set your pathways
+### 2. **Optional** Set your pathways
 
 While creating a folder structure is entirely up to the user, we typically default to a system that helps us keep track of the various files required to create and store SORTIE parameter files.  
 <br>  
@@ -55,7 +57,7 @@ Inputs
 
 ```{r echo=TRUE, eval=FALSE}
 # Change the loc_path to your working directory
-loc_path <- "D:/Users/Name/GitHub/ProjectName/Inputs/" 
+loc_path <- "ExampleDirectory/ProjectName/Inputs/" 
 
 # Pathway to base .xml file(s)
 My_basePath <- paste0(loc_path,"ParameterFiles/BaseFiles/")
@@ -68,21 +70,33 @@ My_newvalsPath <- paste0(loc_path,"ParameterValues/")
 My_newxmlPath <- paste0(loc_path,"ParameterFiles/")
 ```
 
+Alternatively, all files can be stored and written to the working directory, and in that case, no pathways would be passed to  `makeFiles()`.
 
-### 3. Provide a list of files
+### 3. **Optional** Update VariableNames
+
+Any new variables and behaviours can be appended to the default VariableNames object, or a user-defined VariableNames table can be passed to `makeFiles()`. See the Preparing inputs for rsortie vignette for detailed description of the requirements for building a VariableNames table.
+
+Within rsortie, we currently support adding the necessary initial tree density size naming convention and size classes to add to the default VariableNames object.
+
 ```{r echo=TRUE, eval=FALSE}
-My_Files <- read.csv(paste0(loc_path,"FileLists/ListofFiles.csv"))
+?treelistDfn
+
+tail(VariableNames)
+# for example
+My_Names <- treelistDfn(initname = "InitialStems", numDigits = 1, diamMin = 1.5, diamMax = 100, diamInc = 1.5)
+
+tail(My_Names)
 ```
 
-### 4. (Optional: Update VariableNames data.frame)
+### 4. Run `makeFiles()`
 ```{r echo=TRUE, eval=FALSE}
-My_Names <- treelistDfn(initname = "Init.Density_", numDigits = 1, diamMin = 1.5, diamMax = 100, diamInc = 1.5)
+#example with pathways:
+makeFiles(lstFiles = My_Files, path_basexmls = My_basePath, path_newvals = My_newvalsPath, 
+          path_newxmls = My_newxmlPath, variable_names = My_Names)
 
-```
+#example without pathways (all files in working directory)
+makeFiles(lstFiles = My_Files, variable_names = My_Names)
 
-### 5. Run `makeFiles()`
-```{r echo=TRUE, eval=FALSE}
-makeFiles(lstFiles = My_Files, path_basexmls = My_basePath, path_newvals = My_newvalsPath, path_newxmls = My_newxmlPath, variable_names = My_Names)
 ```
 
 
