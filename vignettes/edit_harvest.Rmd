@@ -1,9 +1,9 @@
 ---
-title: "How to edit a harvest"
+title: "How to edit a harvest and planting"
 output: rmarkdown::html_vignette
 date: "January 2022"
 vignette: >
-  %\VignetteIndexEntry{How to edit a harvest}
+  %\VignetteIndexEntry{How to edit a harvest and planting}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -18,6 +18,8 @@ knitr::opts_chunk$set(
 ```{r setup}
 library(rsortie)
 ```
+
+This vignette describes the files required to run `rsortie` for editing a harvest or planting.
 
 ## Introduction 
 

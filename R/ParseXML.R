@@ -26,8 +26,9 @@ parseXML <- function(xmlname){
 
   # Load external libraries to help parse xml
   library(xml2) # may need to install...
-  library(dplyr)
-  library(tidyr)
+  `%>%` <- dplyr::`%>%`
+  #library(dplyr)
+  #library(tidyr)
 
   #set tree type codes
   tp_name <- matrix(c(1:6,"Seedling","Sapling","Adult","Stump","Snag","Woody"),nrow=6,ncol=2)
@@ -253,8 +254,7 @@ parseXML <- function(xmlname){
 
 
   # Fix format
-  library(tidyr)
-  sprd <- long_f %>% spread(colnames, values)
+  sprd <- long_f %>%  tidyr::spread(colnames, values)
 
   #plot(sprd$X, sprd$Y, pch='.', col=as.factor(sprd$tree_species))
 
@@ -264,11 +264,12 @@ parseXML <- function(xmlname){
   head(output_df)
   str(output_df)
 
-  outf<-str_replace(xmlname,".xml",".csv")
+  outf<-stringr::str_replace(xmlname,".xml",".csv")
   write.csv(output_df, file=outf)
 
   return(output_df)
 }
+
 
 #' Parse spatial files
 #'
@@ -284,13 +285,13 @@ parseXML <- function(xmlname){
 #' @examples
 #' parseMap(grid_data)
 #'
-parseMap <-function(grid_data)
-{
+parseMap <-function(grid_data){
   #Routine will take the file xmlname (assume it is a SORTIE output file)
   #it will return the file sprd
 
   #This routine is just a map portion of the output file, assuming it is there
-
+  `%>%` <- magrittr::`%>%`
+  library(xml2)
   # Open xml file
   #dat <- read_xml("temp_fullbasecase.xml")
   #dat <- read_xml("temp_NCIFitCase.xml")
@@ -482,8 +483,8 @@ parseMap <-function(grid_data)
   smaller <- big_merge[,!(names(big_merge) %in% c("join","colpos","fieldn"))]
 
   # Fix format
-  library(tidyr)
-  sprd <- smaller %>% spread(colnames, values)
+  #library(tidyr)
+  sprd <- smaller %>% tidyr::spread(colnames, values)
   sprd <- merge(sprd, map_points, by.x="point_id", by.y="point_id", all.x=TRUE)
   #head(sprd)
 

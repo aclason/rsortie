@@ -21,7 +21,6 @@ articles:
     - using_makeFiles
     - extract_outputs
     - edit_harvest
-    - edit_plant
 
 reference:
  - title: Create new parameter file(s)

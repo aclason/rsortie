@@ -1,6 +1,5 @@
 ---
 title: "Using makeFiles"
-author: "Alana Clason and Leah Walker"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
