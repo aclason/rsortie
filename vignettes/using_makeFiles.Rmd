@@ -1,6 +1,6 @@
 ---
 title: "Using makeFiles"
-author: "Alana Clason"
+author: "Alana Clason and Leah Walker"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
@@ -28,7 +28,7 @@ These are the components that `makeFiles()` needs to run:
 ![makeFiles function breakdown](makeFiles_schematic.jpg)
 <br>  
   
-In this vignette, we assume the user has read and understood the "rsortie Basics" and "Preparing inputs of rsortie" vignettes and their files are ready to run.
+In this vignette, we assume the user has read and understood the *rsortie Basics* and *Preparing inputs of rsortie* vignettes and their files are ready to run.
 
 ### 1. Load the `rsortie` library
 
@@ -38,12 +38,12 @@ library(rsortie)
 ```
 
 
-### 2. **Optional** Set your pathways
+### 2. Optional: Set your pathways
 
 While creating a folder structure is entirely up to the user, we typically default to a system that helps us keep track of the various files required to create and store SORTIE parameter files.  
 <br>  
 
-For example:
+*For example*:
 
 Inputs  
   
@@ -53,7 +53,7 @@ Inputs
 * ParameterValues  
 <br>  
 
-`rsortie` allows pathway arguments to be passed to the makeFiles function in order to accommodate the folder structure outlined above, or any user-defined pathways. If you are using a Rstudio project, you can use relative pathways, which helps make code more reproducible on other computers.
+`rsortie` allows pathway arguments to be passed to the `makeFiles()` function in order to accommodate the folder structure outlined above, or any user-defined pathways. If you are using a Rstudio project, you can use relative pathways, which helps make code more reproducible on other computers.
 
 ```{r echo=TRUE, eval=FALSE}
 # Change the loc_path to your working directory
@@ -72,11 +72,11 @@ My_newxmlPath <- paste0(loc_path,"ParameterFiles/")
 
 Alternatively, all files can be stored and written to the working directory, and in that case, no pathways would be passed to  `makeFiles()`.
 
-### 3. **Optional** Update VariableNames
+### 3. Optional: Update VariableNames
 
-Any new variables and behaviours can be appended to the default VariableNames object, or a user-defined VariableNames table can be passed to `makeFiles()`. See the Preparing inputs for rsortie vignette for detailed description of the requirements for building a VariableNames table.
+Any new variables and behaviours can be appended to the default VariableNames object, or a user-defined VariableNames table can be passed to `makeFiles()`. See the *Preparing inputs of rsortie* vignette for a  detailed description of the requirements for building a VariableNames table.
 
-Within rsortie, we currently support adding the necessary initial tree density size naming convention and size classes to add to the default VariableNames object.
+Within `rsortie`, we currently support adding the user's initial tree density size naming convention and size classes to the default VariableNames object.
 
 ```{r echo=TRUE, eval=FALSE}
 ?treelistDfn
@@ -89,6 +89,7 @@ tail(My_Names)
 ```
 
 ### 4. Run `makeFiles()`
+
 ```{r echo=TRUE, eval=FALSE}
 #example with pathways:
 makeFiles(lstFiles = My_Files, path_basexmls = My_basePath, path_newvals = My_newvalsPath, 
