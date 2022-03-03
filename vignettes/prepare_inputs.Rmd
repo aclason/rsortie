@@ -185,7 +185,8 @@ This type could also be inside a grid:
 <span style="color: blue;">\<grid gridName="harvestmastercuts"\></span>  
 <div class="nobullet">
 * <span style="color: blue;">\<ma_plotLenX\>100\</ma_plotLenX\></span>  
-* <span style="color: blue;">\<ma_plotLenY\>200\</ma_plotLenY\></span>  </div>  
+* <span style="color: blue;">\<ma_plotLenY\>200\</ma_plotLenY\></span>  
+</div>  
 <span style="color: blue;">\</grid\></span>  
 <br>
 

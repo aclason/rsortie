@@ -12,13 +12,77 @@ vignette: >
 ```{r setup, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
-  comment = "#>"
+  comment = "#>",
+  tidy.opts = list(width.cutoff = 60), 
+  tidy = TRUE
 )
 ```
 
-This vignette will describe how to create one or more new SORTIE parameter files that contain updated information based on new values or chunks of xml code to substitute.
+This vignette describes how to create one or more new SORTIE parameter files that contain updated information based on new values or chunks of .xml code to substitute.  
+<br>  
+
+These are the components that `makeFiles()` needs to run:
 
 ![makeFiles function breakdown](makeFiles_schematic.jpg)
+<br>  
+  
+In this vignette, we assume the user has read and understood the "rsortie Basics" and "Preparing inputs of rsortie" vignettes and their files are ready to run.
 
+### 1. Load the `rsortie` library (optional: access the help file)
+
+```{r echo=TRUE, eval=FALSE}
+library(rsortie)
+?makeFiles
+```
+
+
+### 2. Set your pathways
+
+While creating a folder structure is entirely up to the user, we typically default to a system that helps us keep track of the various files required to create and store SORTIE parameter files.  
+<br>  
+
+For example:
+
+Inputs  
+  
+* FileLists  
+* ParameterFiles  
+    * BaseFiles  
+* ParameterValues  
+<br>  
+
+`rsortie` allows pathway arguments to be passed to the makeFiles function in order to accommodate the folder structure outlined above, or any user-defined pathways. If you are using a Rstudio project, you can use relative pathways, which helps make code more reproducible on other computers.
+
+```{r echo=TRUE, eval=FALSE}
+# Change the loc_path to your working directory
+loc_path <- "D:/Users/Name/GitHub/ProjectName/Inputs/" 
+
+# Pathway to base .xml file(s)
+My_basePath <- paste0(loc_path,"ParameterFiles/BaseFiles/")
+
+# Pathway to file(s) containing the new values with which to update the base 
+# parameter file
+My_newvalsPath <- paste0(loc_path,"ParameterValues/")
+
+# Pathway to location of newly created/ updated parameter files
+My_newxmlPath <- paste0(loc_path,"ParameterFiles/")
+```
+
+
+### 3. Provide a list of files
+```{r echo=TRUE, eval=FALSE}
+My_Files <- read.csv(paste0(loc_path,"FileLists/ListofFiles.csv"))
+```
+
+### 4. (Optional: Update VariableNames data.frame)
+```{r echo=TRUE, eval=FALSE}
+My_Names <- treelistDfn(initname = "Init.Density_", numDigits = 1, diamMin = 1.5, diamMax = 100, diamInc = 1.5)
+
+```
+
+### 5. Run `makeFiles()`
+```{r echo=TRUE, eval=FALSE}
+makeFiles(lstFiles = My_Files, path_basexmls = My_basePath, path_newvals = My_newvalsPath, path_newxmls = My_newxmlPath, variable_names = My_Names)
+```
 
 
