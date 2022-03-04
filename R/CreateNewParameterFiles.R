@@ -3,7 +3,7 @@
 #' @description `makeFiles` takes a base SORTIE parameter file (base xmls) and replaces specific
 #' values (new vals) to generate new parameter files (new xmls) to be run in SORTIE.
 #'
-#' @param lstFiles The text file [character()]or [data.frame()] that contains all the file names to update and be updated
+#' @param lstFiles The name of a text file (string) or a [data.frame()] that contains all the file names to update and be updated
 #' @param path_basexmls (optional) the file path to the base parameter file(s) location [character()]
 #' @param path_newvals (optional) the file path to the new value file(s) location [character()]
 #' @param path_newxmls (optional) the file path to the new output parameter file(s) location [character()]
@@ -15,7 +15,7 @@
 #' @details
 #' The `makeFiles` function requires a table indicating the base SORTIE parameter file (.xml)
 #' and the files containing values to replace in the base parameter file. This table can be read from file, with
-#' `lstFiles()` being a character that contains the pathway and file name of the list of files
+#' `lstFiles()` being a string that contains the pathway and file name of the list of files
 #' table (i.e. "pathway/listofmyfiles.csv"). If the list of files is held in a data.frame in the R environment
 #' (as the example), then `lstFiles()` requires just the name of that object.
 #'

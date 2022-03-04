@@ -89,7 +89,7 @@ There are six different file types allowed in this table of files, with a minimu
 | 1    | New values file      | Yes      |
 | 2-5  | New values file      | No       |
 
-There can be more than one of any of the file types. The code will loop through all combinations of the all the files. The resulting .xml files will be named with a combination of each of the names present: type0-type1-type2.xml.  
+There can be more than one of any of the file types. The code will loop through all combinations of the files. The resulting .xml files will be named with a combination of each of the names present: type0-type1-type2.xml.  
 The column names must be: type and name.  
   
 Example:  
