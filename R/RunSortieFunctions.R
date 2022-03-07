@@ -29,7 +29,7 @@ runSortie <-function(fname, sortie_loc=0) {
     cmd=paste0("\"C:\\Program Files (x86)\\SORTIE\\bin\\coremodel.exe\" ","temp_run.xml")
   } else {
 
-    cmd=paste0("\"", gsub("/","\\\\",sortie_loc),"\"", "temp_run.xml")
+    cmd=paste0("\"", gsub("/","\\\\",sortie_loc),"\"",paste(" ","temp_run.xml"))
   }
   write(cmd, file="runsortie.bat")
 
