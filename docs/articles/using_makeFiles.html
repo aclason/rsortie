@@ -59,9 +59,8 @@
 <div class="row">
   <main id="main"><div class="page-header">
       <img src="" class="logo" alt=""><h1>Using makeFiles</h1>
-                        <h4 data-toc-skip class="author">Alana Clason</h4>
             
-            <h4 data-toc-skip class="date">2022-03-02</h4>
+            <h4 data-toc-skip class="date">2022-03-07</h4>
       
       
       <div class="d-none name"><code>using_makeFiles.Rmd</code></div>
@@ -72,7 +71,7 @@
 <p>This vignette describes how to create one or more new SORTIE parameter files that will substitute new values or chunks of .xml code from the base SORTIE parameter file.<br><br></p>
 <p>These are the components that <code><a href="../reference/makeFiles.html">makeFiles()</a></code> needs to run:</p>
 <p><img src="makeFiles_schematic.jpg" alt="makeFiles function breakdown"><br></p>
-<p>In this vignette, we assume the user has read and understood the “rsortie Basics” and “Preparing inputs of rsortie” vignettes and their files are ready to run.</p>
+<p>In this vignette, we assume the user has read and understood the <em>rsortie Basics</em> and <em>Preparing inputs of rsortie</em> vignettes and their files are ready to run.</p>
 <div class="section level3">
 <h3 id="load-the-rsortie-library">1. Load the <code>rsortie</code> library<a class="anchor" aria-label="anchor" href="#load-the-rsortie-library"></a>
 </h3>
@@ -81,10 +80,10 @@
 <span class="fu">`?`</span><span class="op">(</span><span class="va">makeFiles</span><span class="op">)</span></code></pre></div>
 </div>
 <div class="section level3">
-<h3 id="optional-set-your-pathways">2. <strong>Optional</strong> Set your pathways<a class="anchor" aria-label="anchor" href="#optional-set-your-pathways"></a>
+<h3 id="optional-set-your-pathways">2. Optional: Set your pathways<a class="anchor" aria-label="anchor" href="#optional-set-your-pathways"></a>
 </h3>
 <p>While creating a folder structure is entirely up to the user, we typically default to a system that helps us keep track of the various files required to create and store SORTIE parameter files.<br><br></p>
-<p>For example:</p>
+<p><em>For example</em>:</p>
 <p>Inputs</p>
 <ul>
 <li>FileLists<br>
@@ -98,7 +97,7 @@
 <li>ParameterValues<br><br>
 </li>
 </ul>
-<p><code>rsortie</code> allows pathway arguments to be passed to the makeFiles function in order to accommodate the folder structure outlined above, or any user-defined pathways. If you are using a Rstudio project, you can use relative pathways, which helps make code more reproducible on other computers.</p>
+<p><code>rsortie</code> allows pathway arguments to be passed to the <code><a href="../reference/makeFiles.html">makeFiles()</a></code> function in order to accommodate the folder structure outlined above, or any user-defined pathways. If you are using a Rstudio project, you can use relative pathways, which helps make code more reproducible on other computers.</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># Change the loc_path to your working directory</span>
 <span class="va">loc_path</span> <span class="op">&lt;-</span> <span class="st">"ExampleDirectory/ProjectName/Inputs/"</span>
@@ -116,10 +115,10 @@
 <p>Alternatively, all files can be stored and written to the working directory, and in that case, no pathways would be passed to <code><a href="../reference/makeFiles.html">makeFiles()</a></code>.</p>
 </div>
 <div class="section level3">
-<h3 id="optional-update-variablenames">3. <strong>Optional</strong> Update VariableNames<a class="anchor" aria-label="anchor" href="#optional-update-variablenames"></a>
+<h3 id="optional-update-variablenames">3. Optional: Update VariableNames<a class="anchor" aria-label="anchor" href="#optional-update-variablenames"></a>
 </h3>
-<p>Any new variables and behaviours can be appended to the default VariableNames object, or a user-defined VariableNames table can be passed to <code><a href="../reference/makeFiles.html">makeFiles()</a></code>. See the Preparing inputs for rsortie vignette for detailed description of the requirements for building a VariableNames table.</p>
-<p>Within rsortie, we currently support adding the necessary initial tree density size naming convention and size classes to add to the default VariableNames object.</p>
+<p>Any new variables and behaviours can be appended to the default VariableNames object, or a user-defined VariableNames table can be passed to <code><a href="../reference/makeFiles.html">makeFiles()</a></code>. See the <em>Preparing inputs of rsortie</em> vignette for a detailed description of the requirements for building a VariableNames table.</p>
+<p>Within <code>rsortie</code>, we currently support adding the user’s initial tree density size naming convention and size classes to the default VariableNames object.</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu">`?`</span><span class="op">(</span><span class="va">treelistDfn</span><span class="op">)</span>
 

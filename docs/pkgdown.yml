@@ -3,12 +3,11 @@ pkgdown: 2.0.2
 pkgdown_sha: ~
 articles:
   edit_harvest: edit_harvest.html
-  edit_plant: edit_plant.html
   extract_outputs: extract_outputs.html
   prepare_inputs: prepare_inputs.html
   use_rsortie: use_rsortie.html
   using_makeFiles: using_makeFiles.html
-last_built: 2022-03-03T04:51Z
+last_built: 2022-03-07T22:44Z
 urls:
   reference: https://aclason.github.io/rsortie/reference
   article: https://aclason.github.io/rsortie/articles

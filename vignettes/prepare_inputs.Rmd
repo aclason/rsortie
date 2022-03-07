@@ -21,6 +21,10 @@ This vignette describes the files required to run `rsortie` for editing and crea
 
 # **Inputs**
 
+![Prepare files workflow](prepare_inputsSchematic.jpg)
+
+There are files that users must prepare (green), a default file (yellow) and the resulting file(s) (grey) that we will describe in detail here to support creating new SORTIE parameter files using rsortie
+
 *Required for users to prepare:*
 
 * Base SORTIE parameter file

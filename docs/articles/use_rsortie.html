@@ -60,7 +60,7 @@
   <main id="main"><div class="page-header">
       <img src="" class="logo" alt=""><h1>rsortie basics</h1>
             
-            <h4 data-toc-skip class="date">January 2022</h4>
+            <h4 data-toc-skip class="date">March 2022</h4>
       
       
       <div class="d-none name"><code>use_rsortie.Rmd</code></div>
@@ -68,11 +68,12 @@
 
     
     
-<p><code>rsortie</code> is an R interface that supports interacting with SORTIE-ND.</p>
+<p><code>rsortie</code> is an R package that supports interacting with SORTIE-ND in an R environment.</p>
 <div class="section level2">
 <h2 id="sortie-nd">SORTIE-ND<a class="anchor" aria-label="anchor" href="#sortie-nd"></a>
 </h2>
-<p>SORTIE-ND (hereafter SORTIE) is an individual-based, spatially-explicit model of forest stand dynamics. <br> Specifically:</p>
+<p>SORTIE-ND (hereafter SORTIE) is an individual-based, spatially-explicit model of forest stand dynamics.<br><br></p>
+<p>Specifically:</p>
 <ul>
 <li>SORTIE simulates the processes of establishment, growth, and mortality of individuals, in resource-mediated (primarily light) interactions</li>
 <li>Trees are individuals with x-y coordinates that interact in neighbourhoods</li>
@@ -81,41 +82,57 @@
 </ul>
 <p>Here we break down some of these key components:</p>
 <div class="section level3">
-<h3 id="sortie-initiation">SORTIE initiation<a class="anchor" aria-label="anchor" href="#sortie-initiation"></a>
+<h3 id="behaviours">Behaviours<a class="anchor" aria-label="anchor" href="#behaviours"></a>
 </h3>
-<div class="section level5">
-<h5 id="sortie-parameter-file">SORTIE parameter file<a class="anchor" aria-label="anchor" href="#sortie-parameter-file"></a>
-</h5>
-<p>Opening the SORTIE GUI does not instantly produce a usable model. A valid SORTIE parameter file is required.</p>
-<p>A SORTIE parameter file contains all of the functions, called “behaviours”, that define how a forest should establish, grow, and die. These behaviours (functions) describe the shape of a response or relationship between variables (e.g., logistic growth curve as a function of tree size). All the variables (or parameters) contained within the selected behaviours must be defined to make those functions work. Theoretically, you could construct a SORTIE parameter file based solely off literature-produced parameter values, as long as the functions are available in SORTIE. More often, over a series of years and many publications, parameter files are built from an abundance field data that are used to parameterize SORTIE behaviours (functions). <br> After initial parameterization, validation, and model testing, certain parameter values may require calibration to better reflect forest stand dynamics in the place of interest. Calibration is the processes in which the predictions from a model are compared with observations and afterwards one or more parameter values are changed to produce predictions that match the observations. <br> To initiate a SORTIE simulation, you must have a SORTIE parameter file (or build one) and populate all the parameter values required for each of the behaviours. Please see www.sortie-nd.com for detailed model description, including recommended minimum stand sizes and definition of all behaviours contained in the model.</p>
-</div>
-<div class="section level5">
-<h5 id="initial-conditions">Initial conditions<a class="anchor" aria-label="anchor" href="#initial-conditions"></a>
-</h5>
-<p>With a valid SORTIE parameter file in hand, the next step to initiation is to define the starting conditions for any one particular forest: run length, plot dimension, and starting forest composition.</p>
-<p>For initial stand conditions, SORTIE is most often initiated by a tree list: a table that contains the density (stems/ha) of each tree species in user-defined diameter classes. Alternatively, a stand can be initiated through a spatial tree map (stem map) of the exact starting location, identity and size (diameter) of trees.</p>
-</div>
+<p>SORTIE is like an “umbrella” model with many other models (or functions) within it.</p>
+<p>These other models (or functions) control processes, such as establishment, growth, mortality, and resource allocation. These processes are termed “behaviours”.</p>
+<p>In other words, a behaviour is a function (or parameterized model) that describes part of the processes. They describe the shape of a response or relationship between variables (e.g., logistic growth curve as a function of tree size).</p>
+<p>Behaviors are the active part of a SORTIE simulation. Nothing in the model is pre-defined, default, or automatic. Everything that happens is done by a behavior, and all behaviors are under user control.</p>
+<p>For example, there can be a behaviour to calculate light levels, then another to determine tree growth as a result of the amount of light, and another to select trees to die if they grow too slowly.</p>
 </div>
 <div class="section level3">
-<h3 id="sortie-outputs">SORTIE outputs<a class="anchor" aria-label="anchor" href="#sortie-outputs"></a>
+<h3 id="trees">Trees<a class="anchor" aria-label="anchor" href="#trees"></a>
 </h3>
-<p>There are many possible outputs from a SORTIE simulation. All the output options must be selected and applied to the parameter file, including where the output file location should be. There are two output files created during a SORTIE run: detailed and summary, with different options to select in either.</p>
+<p>The tree is the basic unit of data in the model. A model tree is a collection of attributes describing one individual, such as location, species, and size.</p>
+</div>
+<div class="section level3">
+<h3 id="sortie-initiation">SORTIE initiation<a class="anchor" aria-label="anchor" href="#sortie-initiation"></a>
+</h3>
+<p>Each simulation starts with initial tree and environment conditions, which are acted upon by behaviours to change the model state.<br><br></p>
+<p><strong>SORTIE parameter file</strong></p>
+<p>Opening the SORTIE GUI does not instantly produce a usable model. A valid SORTIE parameter file is required.</p>
+<p>A SORTIE parameter file contains all of the behaviours (or functions) that define how a forest should establish, grow, and die. All the variables (or parameters) contained within the selected behaviours must be defined to make those functions work.</p>
+<p>Theoretically, you could construct a SORTIE parameter file based solely off literature-produced parameter values, as long as the functions are available in SORTIE. More often, over a series of years and many publications, parameter files are built from an abundance field data that are used to parameterize SORTIE behaviours (functions).</p>
+<p>After initial parameterization, validation, and model testing, certain parameter values may require calibration to better reflect forest stand dynamics in the place of interest. Calibration is the processes in which the predictions from a model are compared with observations and afterwards one or more parameter values are changed to produce predictions that match the observations.</p>
+<p>To initiate a SORTIE simulation, you must have a SORTIE parameter file (or build one) and populate all the parameter values required for each of the behaviours.<br><br></p>
+<p>Please see www.sortie-nd.org for detailed model description, including recommended minimum stand sizes and definition of all behaviours contained in the model.<br><br></p>
+<p><strong>Initial conditions</strong></p>
+<p>With a valid SORTIE parameter file, the next step to initiation is to define the starting conditions for any one particular forest: run length, plot dimension, and starting forest composition.</p>
+<p>For initial stand conditions, SORTIE is most often initiated by a tree list: a table that contains the density (stems/ha) of each tree species in user-defined diameter classes. Alternatively, a stand can be initiated through a spatial tree map (stem map) of the exact starting location, identity and size (diameter) of trees.</p>
+<p><strong>SORTIE outputs</strong></p>
+<p>There are many possible outputs from a SORTIE simulation. All the output options must be selected during the initiation and applied to the parameter file, including the desired location of the output file(s). There are two output files created during a SORTIE run: detailed and summary, with different options to select in either.</p>
 </div>
 </div>
 <div class="section level2">
 <h2 id="rsortie">rsortie<a class="anchor" aria-label="anchor" href="#rsortie"></a>
 </h2>
-<p><code>rsortie</code> is designed to support a continuous workflow from data through to model outputs, making model development, parameterization, experimentation, and validation efficient and reproducible (McIntire et al 2021 preprint). This takes advantage of packages already developed in R, including the ability to manipulate datasets and spatial files effectively, supporting larger and more complex experiments applied within SORTIE-ND. Examples and uses of <code>rsortie</code> are explored in other vignettes.</p>
-<p><code>rsortie</code> can be used in a continuous workflow (from data to outputs) or in stages. It is important to note that development of an <code>rsortie</code> workflow requires the use of the SORTIE GUI to set up the starting point. Often with complex silviculture prescriptions or experimental designs, there may still be some stopping points within the workflow where a user needs to interact with SORTIE through the GUI as well. Creating the first SORTIE parameter file that define a SORTIE run must occur in the GUI before those variables (or parameters) are available to change in R.</p>
+<p><code>rsortie</code> is designed to support a continuous workflow from data management through to model outputs, making model development, parameterization, experimentation, and validation efficient and reproducible (McIntire et al. 2021 preprint).</p>
+<p><code>rsortie</code> takes advantage of packages already developed in R, including the ability to manipulate datasets and spatial files effectively, supporting larger and more complex experiments applied within SORTIE.</p>
+<p>Examples and uses of <code>rsortie</code> are explored in other vignettes.</p>
+<p><code>rsortie</code> can be used in a continuous workflow or in stages. <em>It is important to note that development of an <code>rsortie</code> workflow requires the use of the SORTIE GUI to set up the starting point.</em> Often with complex silviculture prescriptions or experimental designs, there may still be some stopping points within the workflow where a user <em>needs to interact with SORTIE through the GUI as well.</em></p>
+<p>Creating the first SORTIE parameter file that define a SORTIE run <em>must occur in the GUI</em> before those variables (or parameters) are available to change in R.<br><br></p>
 <p>A typical workflow in <code>rsortie</code> may include:</p>
 <ol style="list-style-type: decimal">
-<li>Importing initial stands (i.e. from plot data) and using R to generate SORTIE starting conditions from plots</li>
-<li>Defining a base parameter file to update with initial stands (in the SORTIE GUI)</li>
-<li>Using makeFiles to modify values (i.e. stand initial conditions, time steps to run, or values from a certain behaviour in a parameterization experiment) from the base parameter file.</li>
-<li>Modify silvicultural treatments (harvest, planting) defined in the base parameter file</li>
-<li>Run the model for each parameter file of interest, either in serial or with parallel processing</li>
-<li>Extract and parse model outputs (often individual tree data)</li>
-<li>Analyze outputs</li>
+<li>Importing field plot data and using R to manipulate the data and generate SORTIE initial tree conditions (in R)<br>
+</li>
+<li>Defining a base parameter file - selecting behaviours, tree species, diameter size classes, etc. (in the SORTIE GUI)<br>
+</li>
+<li>Using <code><a href="../reference/makeFiles.html">makeFiles()</a></code> to update/ replace values in the base parameter file with new values (e.g., initial tree stand conditions, number of time steps, or values from a certain behaviour in a parameterization experiment)<br>
+</li>
+<li>Modify silvicultural treatments (e.g., harvest or planting) defined in the base parameter file (in <code>rsortie</code>)</li>
+<li>Run the model for each parameter file of interest, either in serial or parallel processing (in <code>rsortie</code>)</li>
+<li>Extract and parse model outputs (in the SORTIE GUI or <code>rsortie</code>)</li>
+<li>Analyze outputs (in R)</li>
 </ol>
 <p>Literature Cited: McIntire E, Chubaty A, Cumming S, et al. PERFICT: a Re-imagined Foundation for Predictive Ecology. Authorea Preprints; 2021. DOI: 10.22541/au.163252535.52485317/v1</p>
 </div>
