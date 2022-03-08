@@ -60,7 +60,7 @@ values (new vals) to generate new parameter files (new xmls) to be run in SORTIE
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
     <dl><dt>lstFiles</dt>
-<dd><p>The text file <code><a href="https://rdrr.io/r/base/character.html" class="external-link">character()</a></code>or <code><a href="https://rdrr.io/r/base/data.frame.html" class="external-link">data.frame()</a></code> that contains all the file names to update and be updated</p></dd>
+<dd><p>The name of a text file (string) or a <code><a href="https://rdrr.io/r/base/data.frame.html" class="external-link">data.frame()</a></code> that contains all the file names to update and be updated</p></dd>
 <dt>path_basexmls</dt>
 <dd><p>(optional) the file path to the base parameter file(s) location <code><a href="https://rdrr.io/r/base/character.html" class="external-link">character()</a></code></p></dd>
 <dt>path_newvals</dt>
@@ -80,7 +80,7 @@ values (new vals) to generate new parameter files (new xmls) to be run in SORTIE
 starting stands, or test the effect of changing the values that define a given behaviour (process)</p>
 <p>The <code>makeFiles</code> function requires a table indicating the base SORTIE parameter file (.xml)
 and the files containing values to replace in the base parameter file. This table can be read from file, with
-<code>lstFiles()</code> being a character that contains the pathway and file name of the list of files
+<code>lstFiles()</code> being a string that contains the pathway and file name of the list of files
 table (i.e. "pathway/listofmyfiles.csv"). If the list of files is held in a data.frame in the R environment
 (as the example), then <code>lstFiles()</code> requires just the name of that object.</p>
 <p>There are two optional pathway arguments available if the required files (base parameter file(s), and new

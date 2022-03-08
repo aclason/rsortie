@@ -13,7 +13,7 @@ makeFiles(
 )
 }
 \arguments{
-\item{lstFiles}{The text file \code{\link[=character]{character()}}or \code{\link[=data.frame]{data.frame()}} that contains all the file names to update and be updated}
+\item{lstFiles}{The name of a text file (string) or a \code{\link[=data.frame]{data.frame()}} that contains all the file names to update and be updated}
 
 \item{path_basexmls}{(optional) the file path to the base parameter file(s) location \code{\link[=character]{character()}}}
 
@@ -37,7 +37,7 @@ starting stands, or test the effect of changing the values that define a given b
 
 The \code{makeFiles} function requires a table indicating the base SORTIE parameter file (.xml)
 and the files containing values to replace in the base parameter file. This table can be read from file, with
-\code{lstFiles()} being a character that contains the pathway and file name of the list of files
+\code{lstFiles()} being a string that contains the pathway and file name of the list of files
 table (i.e. "pathway/listofmyfiles.csv"). If the list of files is held in a data.frame in the R environment
 (as the example), then \code{lstFiles()} requires just the name of that object.
 
