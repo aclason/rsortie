@@ -26,9 +26,8 @@ parseXML <- function(xmlname){
 
   # Load external libraries to help parse xml
   library(xml2) # may need to install...
-  `%>%` <- dplyr::`%>%`
-  #library(dplyr)
-  #library(tidyr)
+  library(dplyr)
+  library(tidyr)
 
   #set tree type codes
   tp_name <- matrix(c(1:6,"Seedling","Sapling","Adult","Stump","Snag","Woody"),nrow=6,ncol=2)
@@ -254,46 +253,54 @@ parseXML <- function(xmlname){
 
 
   # Fix format
-  sprd <- long_f %>%  tidyr::spread(colnames, values)
+  library(tidyr)
+  sprd <- long_f %>% spread(colnames, values)
 
   #plot(sprd$X, sprd$Y, pch='.', col=as.factor(sprd$tree_species))
 
 
   # Output df
   output_df <- sprd
-  #head(output_df)
-  #str(output_df)
+  head(output_df)
+  str(output_df)
 
-  #outf<-stringr::str_replace(xmlname,".xml",".csv")
-  #write.csv(output_df, file=outf)
+  outf<-str_replace(xmlname,".xml",".csv")
+  write.csv(output_df, file=outf)
 
   return(output_df)
 }
 
+#*******************************************************************************************
+#*******************************************************************************************
+#********************************************************************************************
+#*******************************************************************************************
 
 #' Parse spatial files
 #'
 #' @description
-#' `parseMap()` takes the output XML file name and returns the outputs stored in maps.
+#' `parseMap()` takes the output XML file name and returns the file sprd.
 #'
-#' @param xmlname [character()] XML file name
+#' @param grid_data [character()] Grid data
 #'
 #' @return
-#' The output contained in grids from SORTIE run as a data frame
+#' The file sprd.
 #' @export
 #'
 #' @examples
 #' parseMap(grid_data)
 #'
-parseMap <-function(xmlname){
+parseMap <-function(grid_data)
+{
   #Routine will take the file xmlname (assume it is a SORTIE output file)
   #it will return the file sprd
 
   #This routine is just a map portion of the output file, assuming it is there
-  `%>%` <- magrittr::`%>%`
-  library(xml2)
 
-  grid_data <- read_xml(xmlname)
+  # Open xml file
+  #dat <- read_xml("temp_fullbasecase.xml")
+  #dat <- read_xml("temp_NCIFitCase.xml")
+  #FOR DEBUGGING
+  #grid_data <- read_xml("map_temp.xml")
 
   #read the map file notes
   #grid_loc <- xml_find_all(dat, ".//grid")
@@ -480,8 +487,8 @@ parseMap <-function(xmlname){
   smaller <- big_merge[,!(names(big_merge) %in% c("join","colpos","fieldn"))]
 
   # Fix format
-  #library(tidyr)
-  sprd <- smaller %>% tidyr::spread(colnames, values)
+  library(tidyr)
+  sprd <- smaller %>% spread(colnames, values)
   sprd <- merge(sprd, map_points, by.x="point_id", by.y="point_id", all.x=TRUE)
   #head(sprd)
 

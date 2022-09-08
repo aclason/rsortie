@@ -4,16 +4,16 @@
 \alias{parseMap}
 \title{Parse spatial files}
 \usage{
-parseMap(xmlname)
+parseMap(grid_data)
 }
 \arguments{
-\item{xmlname}{\code{\link[=character]{character()}} XML file name}
+\item{grid_data}{\code{\link[=character]{character()}} Grid data}
 }
 \value{
-The output contained in grids from SORTIE run as a data frame
+The file sprd.
 }
 \description{
-\code{parseMap()} takes the output XML file name and returns the outputs stored in maps.
+\code{parseMap()} takes the output XML file name and returns the file sprd.
 }
 \examples{
 parseMap(grid_data)

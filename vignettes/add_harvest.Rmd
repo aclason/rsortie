@@ -1,0 +1,26 @@
+---
+title: "How to add a harvest"
+output: rmarkdown::html_vignette
+date: "January 2022"
+vignette: >
+  %\VignetteIndexEntry{How to add a harvest}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(rsortie)
+```
+
+## Introduction 
+
+## Prepare inputs
+
+## Implement harvest

@@ -4,16 +4,16 @@
 \alias{extractFiles}
 \title{Extract output files}
 \usage{
-extractFiles(itype, exname, tarnames, extime)
+extractFiles(itype, exname, onename, extime)
 }
 \arguments{
-\item{itype}{\code{\link[=double]{double()}} '1' = extract only the given file(s), 0 = extract all files in the directory}
+\item{itype}{\code{\link[=double]{double()}} '1' = extract only the given file, otherwise extract all files in the directory}
 
 \item{exname}{\code{\link[=character]{character()}} The directory that contains the tar file(s) to be extracted}
 
-\item{tarnames}{\code{\link[=character]{character()}} The single tar file to extract (only used if itype = 1)}
+\item{onename}{\code{\link[=character]{character()}} The single tar file to extract (only used if itype = 1)}
 
-\item{extime}{\code{\link[=double]{double()}} Extract time? Not working}
+\item{extime}{\code{\link[=double]{double()}} Extract time?}
 }
 \value{
 The routine returns a list of the extracted files.
@@ -26,6 +26,6 @@ The extracted files will be placed in a new extracted directory. If you want to 
 somewhere else, then change the variable extractDir
 }
 \examples{
-extractFiles(itype,exname,tarnames,extime)
+extractFiles(itype,exname,onename,extime)
 
 }

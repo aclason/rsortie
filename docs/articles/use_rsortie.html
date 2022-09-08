@@ -6,12 +6,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="rsortie">
-<title>rsortie basics • rsortie</title>
+<title>Structure of rsortie • rsortie</title>
 <script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="../deps/bootstrap-5.1.0/bootstrap.min.css" rel="stylesheet">
 <script src="../deps/bootstrap-5.1.0/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
-<!-- bootstrap-toc --><script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="../pkgdown.js"></script><meta property="og:title" content="rsortie basics">
+<!-- bootstrap-toc --><script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="../pkgdown.js"></script><meta property="og:title" content="Structure of rsortie">
 <meta property="og:description" content="rsortie">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -33,7 +33,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div id="navbar" class="collapse navbar-collapse ms-3">
+    <div id="navbar" class="collapse navbar-collapse ms-2">
       <ul class="navbar-nav me-auto">
 <li class="active nav-item">
   <a class="nav-link" href="../articles/index.html">Vignettes</a>
@@ -53,14 +53,11 @@
   </div>
 </nav><div class="container template-article">
 
-
-
-
 <div class="row">
   <main id="main"><div class="page-header">
-      <img src="" class="logo" alt=""><h1>rsortie basics</h1>
+      <img src="" class="logo" alt=""><h1>Structure of rsortie</h1>
             
-            <h4 data-toc-skip class="date">March 2022</h4>
+            <h4 data-toc-skip class="date">January 2022</h4>
       
       
       <div class="d-none name"><code>use_rsortie.Rmd</code></div>
@@ -68,73 +65,26 @@
 
     
     
-<p><code>rsortie</code> is an R package that supports interacting with SORTIE-ND in an R environment.</p>
+<div class="section level2">
+<h2 id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
+</h2>
+<p>This vignette provides an <em>overview</em> of the <strong>rsortie</strong> package, with other vignettes going into specific actions and functions.</p>
+</div>
 <div class="section level2">
 <h2 id="sortie-nd">SORTIE-ND<a class="anchor" aria-label="anchor" href="#sortie-nd"></a>
 </h2>
-<p>SORTIE-ND (hereafter SORTIE) is an individual-based, spatially-explicit model of forest stand dynamics.<br><br></p>
-<p>Specifically:</p>
+<p>SORTIE-ND (hereafter SORTIE) is an individual-based, spatially-explicit model of forest stand dynamics. Specifically:</p>
 <ul>
-<li>SORTIE simulates the processes of establishment, growth, and mortality of individuals, in resource-mediated (primarily light) interactions</li>
-<li>Trees are individuals with x-y coordinates that interact in neighbourhoods</li>
-<li>Complex, spatial, or aspatial silviculture experiments, including partial harvests and planting, are built into in SORTIE</li>
-<li>SORTIE tracks trees in space and time, meaning any metric that can be applied to individuals or stands, can be calculated from SORTIE outputs.</li>
+<li>the model simulates the processes of establishment, growth and mortality of individuals, within resource-mediated (primarily light) interactions</li>
+<li>Trees exist as individuals with x-y coordinates that interact in neighbourhoods</li>
 </ul>
-<p>Here we break down some of these key components:</p>
-<div class="section level3">
-<h3 id="behaviours">Behaviours<a class="anchor" aria-label="anchor" href="#behaviours"></a>
-</h3>
-<p>SORTIE is like an “umbrella” model with many other models (or functions) within it.</p>
-<p>These other models (or functions) control processes, such as establishment, growth, mortality, and resource allocation. These processes are termed “behaviours”.</p>
-<p>In other words, a behaviour is a function (or parameterized model) that describes part of the processes. They describe the shape of a response or relationship between variables (e.g., logistic growth curve as a function of tree size).</p>
-<p>Behaviors are the active part of a SORTIE simulation. Nothing in the model is pre-defined, default, or automatic. Everything that happens is done by a behavior, and all behaviors are under user control.</p>
-<p>For example, there can be a behaviour to calculate light levels, then another to determine tree growth as a result of the amount of light, and another to select trees to die if they grow too slowly.</p>
-</div>
-<div class="section level3">
-<h3 id="trees">Trees<a class="anchor" aria-label="anchor" href="#trees"></a>
-</h3>
-<p>The tree is the basic unit of data in the model. A model tree is a collection of attributes describing one individual, such as location, species, and size.</p>
-</div>
-<div class="section level3">
-<h3 id="sortie-initiation">SORTIE initiation<a class="anchor" aria-label="anchor" href="#sortie-initiation"></a>
-</h3>
-<p>Each simulation starts with initial tree and environment conditions, which are acted upon by behaviours to change the model state.<br><br></p>
-<p><strong>SORTIE parameter file</strong></p>
-<p>Opening the SORTIE GUI does not instantly produce a usable model. A valid SORTIE parameter file is required.</p>
-<p>A SORTIE parameter file contains all of the behaviours (or functions) that define how a forest should establish, grow, and die. All the variables (or parameters) contained within the selected behaviours must be defined to make those functions work.</p>
-<p>Theoretically, you could construct a SORTIE parameter file based solely off literature-produced parameter values, as long as the functions are available in SORTIE. More often, over a series of years and many publications, parameter files are built from an abundance field data that are used to parameterize SORTIE behaviours (functions).</p>
-<p>After initial parameterization, validation, and model testing, certain parameter values may require calibration to better reflect forest stand dynamics in the place of interest. Calibration is the processes in which the predictions from a model are compared with observations and afterwards one or more parameter values are changed to produce predictions that match the observations.</p>
-<p>To initiate a SORTIE simulation, you must have a SORTIE parameter file (or build one) and populate all the parameter values required for each of the behaviours.<br><br></p>
-<p>Please see www.sortie-nd.org for detailed model description, including recommended minimum stand sizes and definition of all behaviours contained in the model.<br><br></p>
-<p><strong>Initial conditions</strong></p>
-<p>With a valid SORTIE parameter file, the next step to initiation is to define the starting conditions for any one particular forest: run length, plot dimension, and starting forest composition.</p>
-<p>For initial stand conditions, SORTIE is most often initiated by a tree list: a table that contains the density (stems/ha) of each tree species in user-defined diameter classes. Alternatively, a stand can be initiated through a spatial tree map (stem map) of the exact starting location, identity and size (diameter) of trees.</p>
-<p><strong>SORTIE outputs</strong></p>
-<p>There are many possible outputs from a SORTIE simulation. All the output options must be selected during the initiation and applied to the parameter file, including the desired location of the output file(s). There are two output files created during a SORTIE run: detailed and summary, with different options to select in either.</p>
-</div>
 </div>
 <div class="section level2">
 <h2 id="rsortie">rsortie<a class="anchor" aria-label="anchor" href="#rsortie"></a>
 </h2>
-<p><code>rsortie</code> is designed to support a continuous workflow from data management through to model outputs, making model development, parameterization, experimentation, and validation efficient and reproducible (McIntire et al. 2021 preprint).</p>
-<p><code>rsortie</code> takes advantage of packages already developed in R, including the ability to manipulate datasets and spatial files effectively, supporting larger and more complex experiments applied within SORTIE.</p>
-<p>Examples and uses of <code>rsortie</code> are explored in other vignettes.</p>
-<p><code>rsortie</code> can be used in a continuous workflow or in stages. <em>It is important to note that development of an <code>rsortie</code> workflow requires the use of the SORTIE GUI to set up the starting point.</em> Often with complex silviculture prescriptions or experimental designs, there may still be some stopping points within the workflow where a user <em>needs to interact with SORTIE through the GUI as well.</em></p>
-<p>Creating the first SORTIE parameter file that define a SORTIE run <em>must occur in the GUI</em> before those variables (or parameters) are available to change in R.<br><br></p>
-<p>A typical workflow in <code>rsortie</code> may include:</p>
-<ol style="list-style-type: decimal">
-<li>Importing field plot data and using R to manipulate the data and generate SORTIE initial tree conditions (in R)<br>
-</li>
-<li>Defining a base parameter file - selecting behaviours, tree species, diameter size classes, etc. (in the SORTIE GUI)<br>
-</li>
-<li>Using <code><a href="../reference/makeFiles.html">makeFiles()</a></code> to update/ replace values in the base parameter file with new values (e.g., initial tree stand conditions, number of time steps, or values from a certain behaviour in a parameterization experiment)<br>
-</li>
-<li>Modify silvicultural treatments (e.g., harvest or planting) defined in the base parameter file (in <code>rsortie</code>)</li>
-<li>Run the model for each parameter file of interest, either in serial or parallel processing (in <code>rsortie</code>)</li>
-<li>Extract and parse model outputs (in the SORTIE GUI or <code>rsortie</code>)</li>
-<li>Analyze outputs (in R)</li>
-</ol>
-<p>Literature Cited: McIntire E, Chubaty A, Cumming S, et al. PERFICT: a Re-imagined Foundation for Predictive Ecology. Authorea Preprints; 2021. DOI: 10.22541/au.163252535.52485317/v1</p>
+<p>The goal of the <strong>rsortie</strong> package is to support a continuous workflow from data through to model outputs, making model development, parameterization, experimentation and validation efficient and reproducible. Taking advantage of packages already developed in R, including the ability to manipulate datasets and spatial files effectively, supporting larger and more complex experiments applied within SORTIE-ND. Examples and uses of <strong>rsortie</strong> are explored in other vignettes.</p>
+<p>rsortie can be used in a continuous workflow (from data to outputs) or in stages. Often with complex silviculture prescriptions or experimental designs, there may still be a need to interact with SORTIE with its GUI. Many modifications of the structure (behaviours) must occur in the GUI.</p>
+<p>A typical workflow in rsortie may include: <em>1. Importing initial stands (plots) and manipulating data to generate SORTIE starting conditions </em>2. Defining a base parameter file to update with initial stands <em>3. Modifying parameter values (i.e. stand initial conditions, time steps to run, or parameter values from a certain behaviour in a parameterization experiment), which always include updating the output file pathways in the base parameter file </em>4. Modify silviculture treatments (harvest, planting) defined in the base parameter file <em>5. Run the model for each parameter file of interest, either in serial or with parallel processing </em>6. Extract and parse model outputs *7. Analyze outputs</p>
 </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
     </nav></aside>
@@ -149,7 +99,7 @@
 
 <div class="pkgdown-footer-right">
   <p></p>
-<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.1.</p>
 </div>
 
     </footer>

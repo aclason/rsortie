@@ -2,7 +2,7 @@
 % Please edit documentation in R/CreateNewParameterFiles.R
 \name{prepareFile}
 \alias{prepareFile}
-\title{Match formatting of the new values file to the base SORTIE parameter file}
+\title{Prepare a file to be updated}
 \usage{
 prepareFile(pfname)
 }
@@ -10,12 +10,10 @@ prepareFile(pfname)
 \item{pfname}{\code{\link[=character]{character()}} File path and name of the parameter file with new values}
 }
 \value{
-a formatted table containing the values of
+pf1
 }
 \description{
-\code{prepareFile()} is called by \code{modifyFile()} and receives an table of values that will replace the
-values already in the base SORTIE parameter file. Typically this function is not called outside of the
-\code{makeFiles()} function sequence.
+\code{prepareFile()} prepares the new parameter file for \code{modifyFile()}
 }
 \examples{
 prepareFile(paramFile)

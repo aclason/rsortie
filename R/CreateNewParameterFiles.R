@@ -1,13 +1,13 @@
-#' Create new SORTIE parameter files
+#' Make new parameter files
 #'
 #' @description `makeFiles` takes a base SORTIE parameter file (base xmls) and replaces specific
 #' values (new vals) to generate new parameter files (new xmls) to be run in SORTIE.
 #'
-#' @param lstFiles The name of a text file (string) or a [data.frame()] that contains all the file names to update and be updated
+#' @param lstFiles The text file [character()]or [data.frame()] that contains all the file names to update and be updated
 #' @param path_basexmls (optional) the file path to the base parameter file(s) location [character()]
 #' @param path_newvals (optional) the file path to the new value file(s) location [character()]
 #' @param path_newxmls (optional) the file path to the new output parameter file(s) location [character()]
-#' @param variable_names
+#' @param treelist_add
 #'
 #' @details Common use of this function would be to change the number of timesteps, initiate different
 #' starting stands, or test the effect of changing the values that define a given behaviour (process)
@@ -15,31 +15,31 @@
 #' @details
 #' The `makeFiles` function requires a table indicating the base SORTIE parameter file (.xml)
 #' and the files containing values to replace in the base parameter file. This table can be read from file, with
-#' `lstFiles()` being a string that contains the pathway and file name of the list of files
+#' [lstFiles()] being a character that contains the pathway and file name of the list of files
 #' table (i.e. "pathway/listofmyfiles.csv"). If the list of files is held in a data.frame in the R environment
-#' (as the example), then `lstFiles()` requires just the name of that object.
+#' (as the example), then [lstFiles()] requires just the name of that object.
 #'
 #' There are two optional pathway arguments available if the required files (base parameter file(s), and new
 #' values file(s)) are not yet present in the R environment. `makeFiles()` will read those files in and translate
-#' them into the appropriate format, but requires file directory location be passed by the `path_basexml` and
-#' `path_newvals` arguments. The `path_newxmls` is provided to allow users the ability to organize and store
+#' them into the appropriate format, but requires file directory location be passed by the [path_basexml] and
+#' [path_newvals] arguments. The [path_newxmls] is provided to allow users the ability to organize and store
 #' newly generated SORTIE parameter files in different directories, but if not passed, the new files will
 #' be placed in the working directory.
 #'
 #' NOTE - you do not need to assign the makeFiles function to a named object in R, as the output is written to
 #' file, not returned as an object.
 #'
-#' @return This function will generate new .xml files in the `path_newxmls` directory, or if `path_newxmls`
+#' @return This function will generate new .xml files in the [path_newxmls()] directory, or if [path_newxmls()]
 #' is not defined, the new .xml will be exported to the working directory.
 #'
 #' @export
 #'
 #' @examples
-#' exFiles <- data.frame("type"=c(0,1), "name"=c("samplebasexml","gmf_time_new"))
+#' exFiles <- data.frame("type"=c(0,0,1), "name"=c("samplebasexml","samplebasexml","gmf_time_new"))
 #' makeFiles(lstFiles=exFiles)
 #'
 makeFiles <- function(lstFiles, path_basexmls = path_basexmls, path_newvals = path_newvals,
-                      path_newxmls = path_newxmls, variable_names = rsortie::VariableNames){
+                      path_newxmls = path_newxmls, treelist_add = NULL){
   #determine what type of file the list of files is
   if(is.character(lstFiles)){
     lstFiles <- read.csv(lstFiles)
@@ -50,11 +50,11 @@ makeFiles <- function(lstFiles, path_basexmls = path_basexmls, path_newvals = pa
   }
 
   #determine whether there has been an addition to the Variable names file
-  # if(missing(treelist_add)){
-  #  VariableNames <- VariableNames #use Variable Names unless adding tree inits, then add those rows
-  # }else{
-  #  VariableNames <- treelist_add
-  # }
+  if(missing(treelist_add)){
+    VariableNames <- VariableNames #use Variable Names unless adding tree inits, then add those rows
+  }else{
+    VariableNames <- treelist_add
+  }
 
   #create the hierarchy for updating - how many base files, how many new parameter value files?
   xmlList <- c()
@@ -132,7 +132,7 @@ makeFiles <- function(lstFiles, path_basexmls = path_basexmls, path_newvals = pa
                   #} else {
                   #  stop("must provide a valid parameter values file")
                   #}
-                  xml2 <- modifyFile(pfname,xml1,newname,variable_names)
+                  xml2 <- modifyFile(pfname,xml1,newname)
                   #xml2 <- ModifyFile(paste0(path_newvals,paramList1[[iii]][ip_vals[iii]]),xml1,newname)
                 } else {
                   xml2 <- xml1
@@ -157,20 +157,18 @@ makeFiles <- function(lstFiles, path_basexmls = path_basexmls, path_newvals = pa
   }
 }
 
-#' Add new variables that translate updates to base SORTIE parameter file
+#' Add tree initial definitions to VariableNames file
 #'
-#' @description `treelistDfn()` adds additional initial tree diameter size classes and prefixes
-#' to `VariableNames`
+#' `treelistDfn` adds additional initial tree diameter size classes and prefixes to [VariableNames]
 #'
-#' @details `VariableNames` is a table that translates the names of parameters found within behaviours
+#' @details [VariableNames] is a table that translates the names of parameters found within behaviours
 #' (variables) defined by a user in the newvals object to the names of these parameters (variables) found in
 #' the base SORTIE parameter file. This file is essential to finding the right variable within the right
-#' behaviour to update with new values during a `makeFiles()` call.
+#' behaviour to update with new values during a [makeFiles()] call.
 #'
-#' For details on how to write a new `VariableNames` file, see the *Preparing inputs for rsortie* vignette,
-#' linked below
+#' For details on how to write a new [VariableNames] file, see [vignette("rsortie")]
 #'
-#' There is a default `VariableNames` loaded with the rsortie package, but a user may wish to add additional
+#' There is a default [VariableNames] loaded with the rsortie package, but a user may wish to add additional
 #' variable translations.
 #'
 #'
@@ -180,8 +178,6 @@ makeFiles <- function(lstFiles, path_basexmls = path_basexmls, path_newvals = pa
 #' @param diamMax Maximum diameter size
 #' @param diamInc Size (in cm) of diameter bins
 #'
-#' @seealso \href{https://aclason.github.io/rsortie/articles/prepare_inputs.html}{Preparing inputs for rsortie}
-#'
 #' @return
 #' @export
 #'
@@ -189,25 +185,24 @@ makeFiles <- function(lstFiles, path_basexmls = path_basexmls, path_newvals = pa
 #' samplebasexml[1:30]
 #' VariableNames[1:30,]
 treelistDfn <- function(initname,numDigits=0, diamMin, diamMax, diamInc){
-  de<-data.frame(paste0(initname,formatC(seq(diamMin,diamMax, by=diamInc),
+  de<-data.frame(paste0(initname,formatC(seq(diamMin,diamMax, by=diaminc),
                                          digits = numDigits, format = "f")),
-                 rep(6,length(seq(diamMin,diamMax, by=diamInc))),
-                 paste0("tr_initialDensity sizeClass=\"s",
-                        formatC(seq(diamMin,diamMax, by=diamInc),
-                                digits = 1, format = "f"),"\""),
-                 rep("tr_idVals",length(seq(diamMin,diamMax, by=diamInc))))
-  names(de)<-names(rsortie::VariableNames)
-  #if two users use the same inputfileparametername, but different type, codename and group.name, that's a problem
-  newdf <- rbind(rsortie::VariableNames, de)
-  return(newdf)
+                 rep(6,length(seq(diamMin,diamMax, by=diaminc))),
+                 paste0("tr_initialDensity sizeClass\"=s",
+                        formatC(seq(diamMin,diamMax, by=diaminc),
+                                digits = numDigits, format = "f"),"\""),
+                 rep("tr_idVals",length(seq(diamMin,diamMax, by=diaminc))))
+  names(de)<-names(VariableNames)
+  newdf <- rbind(VariableNames, de)
+  #return(newdf)
 }
 
-#' Find the location in a SORTIE base parameter file from variable name
+#' Find a file line
 #'
 #' @description
-#' `findFileLine()` finds the line within the base SORTIE parameter file that the new values (file or dataframe)
-#' identifies is a variable to be modified. This file line applies only to the base parameter file and is
-#'  passed to `replaceInfo()`.
+#' `findFileLine()` finds the line within the base parameter file that the new vals (file or dataframe)
+#' identifies is a value to modify. This file line applies only to the base parameter file and is passed to
+#' `replaceInfo()1
 #'
 #' @param rf [character()] Base XML parameter file to be modified
 #' @param itype [integer()] File type
@@ -299,16 +294,14 @@ findFileLine <- function(rf,itype, varname, vargroup, varmaster) {
   return(ln1)
 }
 
-#' Match formatting of the new values file to the base SORTIE parameter file
+#' Prepare a file to be updated
 #'
 #' @description
-#' `prepareFile()` is called by `modifyFile()` and receives an table of values that will replace the
-#'values already in the base SORTIE parameter file. Typically this function is not called outside of the
-#'`makeFiles()` function sequence.
+#' `prepareFile()` prepares the new parameter file for `modifyFile()`
 #'
 #' @param pfname [character()] File path and name of the parameter file with new values
 #'
-#' @return a formatted table containing the values of
+#' @return pf1
 #' @export
 #'
 #' @examples
@@ -340,7 +333,6 @@ prepareFile <-function(pfname) {
 #' @param paramFile [character()] Parameter file with new values
 #' @param xml1 [character()] Base XML parameter file to be modified
 #' @param newname name of the new parameter file being created. Automatically generated in makeFiles function
-#' @param variable_names
 #'
 #' @return
 #' @export
@@ -350,11 +342,11 @@ prepareFile <-function(pfname) {
 #' @examples
 #' modifyFile(newsortievals,xml1, newname)
 #'
-modifyFile <-function(paramFile, xml1, newname, variable_names) {
+modifyFile <-function(paramFile, xml1, newname) {
   pf1 <- prepareFile(paramFile)
   if (!is.null(ncol(pf1))) {#usual file type with variables on the lines and values in columns
     ncols <- ncol(pf1)-1
-    xml2 <- replaceInfo(xml1, variable_names, pf1, ncols, newname)
+    xml2 <- replaceInfo(xml1, VariableNames, pf1, ncols, newname)
   } else { #there are no columns here so we will assume it is a .xml chunk
     p2 <- NULL
     try(p2 <- xml2::read_xml(toString(paramFile)),silent=TRUE)

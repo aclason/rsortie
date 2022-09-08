@@ -4,7 +4,7 @@
 \alias{modifyFile}
 \title{Modify a parameter file}
 \usage{
-modifyFile(paramFile, xml1, newname, variable_names)
+modifyFile(paramFile, xml1, newname)
 }
 \arguments{
 \item{paramFile}{\code{\link[=character]{character()}} Parameter file with new values}
@@ -12,8 +12,6 @@ modifyFile(paramFile, xml1, newname, variable_names)
 \item{xml1}{\code{\link[=character]{character()}} Base XML parameter file to be modified}
 
 \item{newname}{name of the new parameter file being created. Automatically generated in makeFiles function}
-
-\item{variable_names}{}
 }
 \value{
 

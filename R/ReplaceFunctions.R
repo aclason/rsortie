@@ -5,7 +5,7 @@
 #' `replaceInfo()` updates the base parameter file with the new values from the new parameter values file.
 #'
 #' @param rf [character()] Base XML parameter file to be modified
-#' @param variable_names [list()] Variable Names translation file
+#' @param VariableNames [list()] Variable Names translation file
 #' @param pf1 [character()] Parameter file with new values
 #' @param ncols [double()] Number of columns
 #' @param newname [character()] New file name
@@ -14,9 +14,9 @@
 #' @export
 #'
 #' @examples
-#' xml2 <- ReplaceInfo(xml1, variable_names, pf1, ncols, newname)
+#' xml2 <- ReplaceInfo(xml1, VariableNames, pf1, ncols, newname)
 #'
-replaceInfo <- function(rf, variable_names, pf1, ncols, newname) {
+replaceInfo <- function(rf, VariableNames, pf1, ncols, newname) {
 
   #file format for pf1:
   #The first line will be a header that has the species names, which must be in " and the same as in the xml file
@@ -38,20 +38,15 @@ replaceInfo <- function(rf, variable_names, pf1, ncols, newname) {
       next                      #and skip the rest of the loop.
     }
 
-    exactParamName <- paste0("^",paramName,"$") #need this to distinguish cases like Output from ShortOutput ()
-    #need to force the inclusion of the period for regular expressions
-    if(grepl("\\.",exactParamName)==TRUE){ #if there's a period or decimal in the exact name, add slashes
-      exactParamName <- gsub("\\.", "\\\\.", exactParamName)
-
-    }
-    iline <- grep(exactParamName,variable_names[,1])
-    itype <- as.numeric(variable_names[iline,2])             #ensures that itype is a number, with no blank
+    exactParamName <- paste("\\b",paramName,"\\b",sep="")   #need this to distinguish cases like Output from ShortOutput ()
+    iline <- grep(exactParamName,VariableNames[,1])
+    itype <- as.numeric(VariableNames[iline,2])             #ensures that itype is a number, with no blank
 
     #print(paste("Looking for Variable: ", paramName, " of type ", itype))
 
-    #codename <- trimws(variable_names[iline,3])              #removes any whitespace before and after the variable name
-    codename <- gsub("\"","",trimws(variable_names[iline,3]))  ##AC change
-    groupname <- trimws(variable_names[iline,4])
+    #codename <- trimws(VariableNames[iline,3])              #removes any whitespace before and after the variable name
+    codename <- gsub("\"","",trimws(VariableNames[iline,3]))  ##AC change
+    groupname <- trimws(VariableNames[iline,4])
 
     iloop <- 1
 
@@ -63,12 +58,13 @@ replaceInfo <- function(rf, variable_names, pf1, ncols, newname) {
 
       for (j in 1:iloop) {
         if (itype==2 || itype == 4 || itype == 8) { #these are species related parameters, so we put the species in the codename
-          codename <- paste(variable_names[iline,3],"=",pf1[1,j+1],sep="")
+          codename <- paste(VariableNames[iline,3],"=",pf1[1,j+1],sep="")
         } else if (itype==6) {
           mastergroup <- pf1[1,j+1]   #we don't need the master group until we get a new one, so store the species in it for now
         }
         ln1 <- findFileLine(rf,itype,codename, groupname, mastergroup)
-                #print(paste("Variable",codename," is on line: ", ln1))
+
+        #print(paste("Variable",codename," is on line: ", ln1))
 
         if (length(ln1) > 0) {
           if (itype == 5 ) {     #changing the output filename

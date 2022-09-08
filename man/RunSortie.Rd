@@ -4,27 +4,20 @@
 \alias{runSortie}
 \title{Run the SORTIE model}
 \usage{
-runSortie(fname, sortie_loc = 0)
+runSortie(fname, sortie_loc)
 }
 \arguments{
-\item{fname}{\code{\link[=character]{character()}} File path and name of SORTIE parameter file to be run}
+\item{fname}{\code{\link[=character]{character()}} File path and name to be run}
 
-\item{sortie_loc}{Location of SORTIE program}
+\item{sortie_loc}{SORTIE location '0'}
 }
 \value{
 
 }
 \description{
-\code{runSortie()} passes a parameter file to SORTIE to start a simulation.
-}
-\details{
-default location for sortie_loc = 0: "C:/Program Files (x86)/SORTIE/bin/coremodel.exe/",
-if the program is installed else, use sortie_loc = 1 and specify the location of coremodel.exe,
-end the character string of the core model location after coremodel.exe (i.e don't add a
-final forward slash)
+\code{runSortie()} is a wrapper function that passes a parameter file to SORTIE to start a simulation.
 }
 \examples{
-# MySortieLoc <- "C:/Program Files/SORTIE/bin/coremodel.exe"
-#(runSortie(samplebasexml,0))
+#(runSortie(parameterfile.xml,0))
 
 }

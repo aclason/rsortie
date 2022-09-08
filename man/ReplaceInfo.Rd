@@ -4,12 +4,12 @@
 \alias{replaceInfo}
 \title{Replace parameter values in base XML file}
 \usage{
-replaceInfo(rf, variable_names, pf1, ncols, newname)
+replaceInfo(rf, VariableNames, pf1, ncols, newname)
 }
 \arguments{
 \item{rf}{\code{\link[=character]{character()}} Base XML parameter file to be modified}
 
-\item{variable_names}{\code{\link[=list]{list()}} Variable Names translation file}
+\item{VariableNames}{\code{\link[=list]{list()}} Variable Names translation file}
 
 \item{pf1}{\code{\link[=character]{character()}} Parameter file with new values}
 
@@ -24,6 +24,6 @@ replaceInfo(rf, variable_names, pf1, ncols, newname)
 \code{replaceInfo()} updates the base parameter file with the new values from the new parameter values file.
 }
 \examples{
-xml2 <- ReplaceInfo(xml1, variable_names, pf1, ncols, newname)
+xml2 <- ReplaceInfo(xml1, VariableNames, pf1, ncols, newname)
 
 }
