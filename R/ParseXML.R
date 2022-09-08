@@ -261,11 +261,11 @@ parseXML <- function(xmlname){
 
   # Output df
   output_df <- sprd
-  head(output_df)
-  str(output_df)
+  #head(output_df)
+  #str(output_df)
 
-  outf<-stringr::str_replace(xmlname,".xml",".csv")
-  write.csv(output_df, file=outf)
+  #outf<-stringr::str_replace(xmlname,".xml",".csv")
+  #write.csv(output_df, file=outf)
 
   return(output_df)
 }
@@ -274,29 +274,26 @@ parseXML <- function(xmlname){
 #' Parse spatial files
 #'
 #' @description
-#' `parseMap()` takes the output XML file name and returns the file sprd.
+#' `parseMap()` takes the output XML file name and returns the outputs stored in maps.
 #'
-#' @param grid_data [character()] Grid data
+#' @param xmlname [character()] XML file name
 #'
 #' @return
-#' The file sprd.
+#' The output contained in grids from SORTIE run as a data frame
 #' @export
 #'
 #' @examples
 #' parseMap(grid_data)
 #'
-parseMap <-function(grid_data){
+parseMap <-function(xmlname){
   #Routine will take the file xmlname (assume it is a SORTIE output file)
   #it will return the file sprd
 
   #This routine is just a map portion of the output file, assuming it is there
   `%>%` <- magrittr::`%>%`
   library(xml2)
-  # Open xml file
-  #dat <- read_xml("temp_fullbasecase.xml")
-  #dat <- read_xml("temp_NCIFitCase.xml")
-  #FOR DEBUGGING
-  #grid_data <- read_xml("map_temp.xml")
+
+  grid_data <- read_xml(xmlname)
 
   #read the map file notes
   #grid_loc <- xml_find_all(dat, ".//grid")
