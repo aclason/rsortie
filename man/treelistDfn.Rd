@@ -2,7 +2,7 @@
 % Please edit documentation in R/CreateNewParameterFiles.R
 \name{treelistDfn}
 \alias{treelistDfn}
-\title{Add tree initial definitions to VariableNames file}
+\title{Add new variables that translate updates to base SORTIE parameter file}
 \usage{
 treelistDfn(initname, numDigits = 0, diamMin, diamMax, diamInc)
 }
@@ -21,20 +21,25 @@ treelistDfn(initname, numDigits = 0, diamMin, diamMax, diamInc)
 
 }
 \description{
-\code{treelistDfn} adds additional initial tree diameter size classes and prefixes to \link{VariableNames}
+\code{treelistDfn()} adds additional initial tree diameter size classes and prefixes
+to \code{VariableNames}
 }
 \details{
-\link{VariableNames} is a table that translates the names of parameters found within behaviours
+\code{VariableNames} is a table that translates the names of parameters found within behaviours
 (variables) defined by a user in the newvals object to the names of these parameters (variables) found in
 the base SORTIE parameter file. This file is essential to finding the right variable within the right
-behaviour to update with new values during a \code{\link[=makeFiles]{makeFiles()}} call.
+behaviour to update with new values during a \code{makeFiles()} call.
 
-For details on how to write a new \link{VariableNames} file, see \link{vignette("rsortie")}
+For details on how to write a new \code{VariableNames} file, see the \emph{Preparing inputs for rsortie} vignette,
+linked below
 
-There is a default \link{VariableNames} loaded with the rsortie package, but a user may wish to add additional
+There is a default \code{VariableNames} loaded with the rsortie package, but a user may wish to add additional
 variable translations.
 }
 \examples{
 samplebasexml[1:30]
 VariableNames[1:30,]
+}
+\seealso{
+\href{https://aclason.github.io/rsortie/articles/prepare_inputs.html}{Preparing inputs for rsortie}
 }

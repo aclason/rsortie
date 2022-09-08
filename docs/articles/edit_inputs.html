@@ -70,14 +70,20 @@
 <div class="section level2">
 <h2 id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
 </h2>
-<p>This vignette will:</p>
-<ul>
-<li>Create one or more new files that contain updated information based on user-provided values or chunks of xml code</li>
-</ul>
+<p>This vignette will describe how to create one or more new SORTIE parameter files that contain updated information based on new values or chunks of xml code to substitute.</p>
 </div>
 <div class="section level1">
 <h1 id="inputs">Inputs<a class="anchor" aria-label="anchor" href="#inputs"></a>
 </h1>
+<p>In order to run</p>
+<div class="figure">
+<img src="makeFiles_schematic.jpg" alt=""><p class="caption">makeFiles function breakdown</p>
+</div>
+<div class="section level3">
+<h3 id="base-sortie-parameter-file-xml">Base SORTIE parameter file (xml)<a class="anchor" aria-label="anchor" href="#base-sortie-parameter-file-xml"></a>
+</h3>
+<p>To set up a base parameter file and run SORTIE, you must also download and install SORTIE - instructions are on the main page.</p>
+<p>rsortie interacts with the SORTIE parameter files. These are .xmls that contain the list of parameters within behaviours defined in the SORTIE GUI. rsortie cannot interact with or change elements that do not exist already in the base xml file, so it is important to understand the GUI to select all the behaviours required to run a SORTIE simulation. Importantly, if you intend to primarily use rsortie to assign values to parameters within the selected behaviours, you must assign a non-zero value to those parameters, or those lines do not get printed to the base xml.</p>
 <p>To edit a SORTIE xml file, you must provide the tool with a set of information about the base file, the parameters or code that you are changing, and information about how to combine the input to make different files.</p>
 <p>There are a minimum of four files that must be present to run the model.</p>
 <ol style="list-style-type: decimal">
@@ -169,14 +175,6 @@ The tool will search through the xml file replacing one section at a time, in or
 </ul>
 </li>
 </ul>
-<div class="section level2">
-<h2 id="editing-the-variablenames-file">Editing the VariableNames file<a class="anchor" aria-label="anchor" href="#editing-the-variablenames-file"></a>
-</h2>
-<p>The VariableNames.csv file is critical to the success of the code when using new values defined in the csv-format parameter value files. The VariableNames file contains two important pieces of information: the mapping of the parameter name in the input parameter value file to the corresponding xml variable name, and the type of the variable in the xml file. <strong>You must be familiar with the SORTIE xml file format</strong> because this file contains the names that the code is using to identify what to change.</p>
-<p>The xml file contains many different formats for its variables. Some are simple formats with the variable and its value on the same line. Some include species, and some are further grouped. The Type column in the VariableNames file is critical to identify the format of the variable and thus the rules in the code for finding and replacing the right variable. So far, 7 different formats have been identified and coded.</p>
-<p>The current version of the VariableNames file is not exhaustive. It only contains those variables that were being used in the testing files. However, new variables that fit one of the 7 currently defined types should be able to be added and the code should run.</p>
-<p><em><strong>Variable Types:</strong> <span style="color: blue;">Blue text</span> is an example from the xml file (the SORTIE-generated file). <span style="color: green;">Green text</span> is an example from the VariableNames file and <span style="color: purple;">purple text</span> is the example from the parameter value file (the csv file).</em></p>
-<p>Type 1: the parameter is on the same line and directly after the variable name:<br><span style="color: blue;">&lt;timesteps&gt;20&lt;/timesteps&gt;</span><br><span style="color: green;">Timesteps,1,timesteps,</span><br><span style="color: purple;">Timesteps,66,66,66,66</span></p>
 </div>
 </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>

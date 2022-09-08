@@ -20,7 +20,7 @@ Search for **Environment Variables** and select **Edit the system Environment Va
 Click **Environment Variables** near the bottom right.  
 Under **System Variables**, click **New**.  
 Set the *Variable Name* as **JAVA_HOME**.  
-Set the *Variable Value* as the `C:\filepath\location\of\java.exe`  
+Set the *Variable Value* as the `C:\filepath\location\of\java`  
 Click OK and close the Environment Variables editor.  
 
 Or
@@ -28,7 +28,7 @@ Or
 Open **Command Prompt** (Run as administrator).  
 Run:  
 ```r 
-setx -m JAVA_HOME "C:\filepath\location\of\java.exe"
+setx -m JAVA_HOME "C:\filepath\location\of\java"
 ```
 Verify the Environment Variable has been added correctly by restarting Command Prompt and running:  
 ```r
@@ -40,9 +40,8 @@ You should see the file path location of java.exe
 3.\ Install `rsortie` from github.
 
 ```r
-#install.packages("devtools")
-library("devtools")
-devtools::install_github("aclason/rsortie")
+install.packages("devtools")
+devtools::install_github("aclason/rsortie", build_vignettes = TRUE)
 ```
 For information on parameterizations of SORTIE in British Columbia and research at the Bulkley Valley Research Centre, visit https://forests-bvcentre.ca.
 

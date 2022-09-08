@@ -4,10 +4,7 @@
     <loc>https://aclason.github.io/rsortie/404.html</loc>
   </url>
   <url>
-    <loc>https://aclason.github.io/rsortie/articles/add_harvest.html</loc>
-  </url>
-  <url>
-    <loc>https://aclason.github.io/rsortie/articles/add_plant.html</loc>
+    <loc>https://aclason.github.io/rsortie/articles/edit_harvest.html</loc>
   </url>
   <url>
     <loc>https://aclason.github.io/rsortie/articles/edit_inputs.html</loc>
@@ -19,10 +16,13 @@
     <loc>https://aclason.github.io/rsortie/articles/index.html</loc>
   </url>
   <url>
+    <loc>https://aclason.github.io/rsortie/articles/prepare_inputs.html</loc>
+  </url>
+  <url>
     <loc>https://aclason.github.io/rsortie/articles/use_rsortie.html</loc>
   </url>
   <url>
-    <loc>https://aclason.github.io/rsortie/articles/values_to_xml_translation.html</loc>
+    <loc>https://aclason.github.io/rsortie/articles/using_makeFiles.html</loc>
   </url>
   <url>
     <loc>https://aclason.github.io/rsortie/authors.html</loc>
