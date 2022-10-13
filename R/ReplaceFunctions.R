@@ -285,6 +285,40 @@ replaceLines <- function(rf, pf1) {       #rf is the main file, pf1 is the param
 }
 
 
+#' Update Number of Years (timesteps)
+#'
+#' @description
+#' `updateNumYears()` Updates the number of years for a simulation
+#'
+#' @param xmls [character()] XML file to be modified with pathway included
+#' @param num_years [numeric()] Number of years to run a simulation
+#'
+#' @return
+#' @export
+#'
+#' @examples
+#' updateNumYears(xmls, num_years)
+#'
+updateNumYears <- function(xmls,num_years){
+
+  for(ix in 1:length(xmls)){
+
+    res <- xml2::read_xml(xmls[ix])
+    #write the xml to a file again (this will put in the missing line breaks)
+    xml2::write_xml(res, "temp.xml")
+    #read the newly printed file, this time as lines of text
+    tmp <- readLines("temp.xml", encoding="UTF-8")
+    xml1 <- gsub("\\\\", "//",tmp)
+
+    ln1 <- findFileLine(rf = xml1, itype = 1, varname = "timesteps")
+
+    xml2 <- replaceParameter(ln1 = ln1, rf = xml1, varvalue = num_years)
+    xml2 <- gsub("//", "\\\\", xml2)
+
+    writeLines(xml2,xmls[ix])
+
+  }
+}
 ##helper function to read in .kmz files
 
 #' Read keyhole
