@@ -11,9 +11,6 @@ removeRow(ln1, rf)
 
 \item{rf}{\code{\link[=character]{character()}} Base XML file to be modified}
 }
-\value{
-
-}
 \description{
 \code{removeRow()} removes a row from the base parameter file.
 }

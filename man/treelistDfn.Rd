@@ -17,9 +17,6 @@ treelistDfn(initname, numDigits = 0, diamMin, diamMax, diamInc)
 
 \item{diamInc}{Size (in cm) of diameter bins}
 }
-\value{
-
-}
 \description{
 \code{treelistDfn()} adds additional initial tree diameter size classes and prefixes
 to \code{VariableNames}

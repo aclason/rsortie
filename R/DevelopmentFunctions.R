@@ -69,9 +69,6 @@ parseMap <-function(xmlname){
   #start the actual routine
   #++++++++++++++++++++++++++
 
-  # build list object to export data
-  build_map_in_loop <- list()
-
   #find the labels for this map
   #integer
   codes <- xml_children(xml_find_all(grid_data, ".//ma_intCodes"))
@@ -146,14 +143,16 @@ parseMap <-function(xmlname){
 
   map_dat_pts <- list()
   #we need to loop through the grids individually to track which grid holds which float code
-  for(ix in 1:length(grid_chunks)){
+  for(xii in 1:length(grid_chunks)){
     # Read the map
-    map_loc_all <- xml_find_all(grid_chunks[[ix]], ".//ma_v")
+    map_loc_all <- xml_find_all(grid_chunks[[xii]], ".//ma_v")
 
     # build list object to export individual items
     map_list <- list()
+    # build list object to export data
+    build_map_in_loop <- list()
 
-    print(paste("Reading",grid_names[[ix]],"map data"))
+    print(paste("Reading",grid_names[[xii]],"map data"))
 
     # Loop through each map header
     j <- 0
@@ -250,11 +249,11 @@ parseMap <-function(xmlname){
                            map_dat$colpos)
     # Merge together
     map_datj <- map_dat[,c("point_id", "join", "values")]
-    map_datj$mapnm <- gsub(" ","",grid_names[ix])
+    map_datj$mapnm <- gsub(" ","",grid_names[xii])
 
     val_name_merge <- as.data.table(merge(map_datj, all_headers, by=c("mapnm","join"), all.x=TRUE))
     dat_pts <- merge(val_name_merge,map_points, by="point_id")
-    map_dat_pts[[ix]] <- dat_pts[,.(mapnm,point_id,x,y,colnames,values)]
+    map_dat_pts[[xii]] <- dat_pts[,c("mapnm","point_id","x","y","colnames","values")]
   }
 
   map_all_dat <- rbindlist(map_dat_pts)

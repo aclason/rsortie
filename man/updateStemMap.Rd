@@ -14,9 +14,6 @@ updateStemMap(xmls, MapNames, TreatmentBase)
 \item{TreatmentBase}{\code{\link[=vector]{vector()}} names that appear in both XMLs and Map names to link
 which stemmap with which parameter file}
 }
-\value{
-
-}
 \description{
 \code{updateStemMap()} Update the parameter file with a stemmap.
 }

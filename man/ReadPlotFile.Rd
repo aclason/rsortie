@@ -9,9 +9,6 @@ readPlotFile(outdir)
 \arguments{
 \item{outdir}{\code{\link[=character]{character()}} Output directory}
 }
-\value{
-
-}
 \description{
 \code{readPlotFile()} reads .out output files.
 }

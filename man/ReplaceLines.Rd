@@ -11,9 +11,6 @@ replaceLines(rf, pf1)
 
 \item{pf1}{\code{\link[=character]{character()}} Parameter file with new values}
 }
-\value{
-
-}
 \description{
 \code{replaceLines()} replaces a chunk of the parameter file with a different set of lines. It assumes the new set of lines are complete and completely replace relevant section.
 }

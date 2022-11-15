@@ -15,9 +15,6 @@ modifyFile(paramFile, xml1, newname, variable_names)
 
 \item{variable_names}{}
 }
-\value{
-
-}
 \description{
 \code{modifyFile()} replaces the base parameter file with new, updated values.
 }

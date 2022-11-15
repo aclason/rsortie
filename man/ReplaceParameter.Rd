@@ -13,9 +13,6 @@ replaceParameter(ln1, rf, varvalue)
 
 \item{varvalue}{\code{\link[=character]{character()}} Output file name}
 }
-\value{
-
-}
 \description{
 \code{replaceParameter()} replaces a parameter in the base file with a new value.
 }

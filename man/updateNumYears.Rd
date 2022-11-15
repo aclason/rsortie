@@ -13,11 +13,6 @@ updateNumYears(xmls, num_years)
 
 \item{num_years}{\code{\link[=numeric]{numeric()}} number of years to update parameter file}
 }
-\value{
-
-
-
-}
 \description{
 \code{updateNumYears()} Updates the number of years for a simulation
 
