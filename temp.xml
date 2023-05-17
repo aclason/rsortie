@@ -1109,6 +1109,953 @@
         <tr_initialDensity sizeClass="s262.5">1.0</tr_initialDensity>
       </tr_idVals>
     </tr_initialDensities>
+    <tr_snagInitialDensities>
+      <tr_sidVals whatSpecies="Western_Hemlock">
+        <tr_snagInitialDensity sizeClass="s7.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s10.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s12.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s15.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s17.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s20.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s22.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s25.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s27.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s30.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s32.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s35.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s37.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s40.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s42.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s45.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s47.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s50.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s52.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s55.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s57.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s60.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s62.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s65.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s67.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s70.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s72.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s75.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s77.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s80.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s82.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s85.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s87.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s90.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s92.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s95.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s97.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s100.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s102.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s105.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s107.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s110.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s112.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s115.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s117.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s120.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s122.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s125.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s127.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s130.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s132.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s135.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s137.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s140.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s142.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s145.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s147.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s150.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s152.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s155.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s157.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s160.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s162.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s165.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s167.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s170.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s172.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s175.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s177.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s180.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s182.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s185.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s187.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s190.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s192.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s195.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s197.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s200.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s202.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s205.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s207.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s210.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s212.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s215.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s217.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s220.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s222.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s225.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s227.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s230.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s232.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s235.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s237.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s240.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s242.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s245.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s247.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s250.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s252.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s255.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s257.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s260.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s262.5">1.0</tr_snagInitialDensity>
+      </tr_sidVals>
+      <tr_sidVals whatSpecies="Western_redcedar">
+        <tr_snagInitialDensity sizeClass="s7.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s10.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s12.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s15.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s17.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s20.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s22.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s25.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s27.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s30.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s32.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s35.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s37.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s40.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s42.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s45.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s47.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s50.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s52.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s55.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s57.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s60.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s62.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s65.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s67.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s70.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s72.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s75.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s77.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s80.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s82.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s85.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s87.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s90.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s92.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s95.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s97.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s100.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s102.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s105.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s107.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s110.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s112.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s115.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s117.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s120.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s122.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s125.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s127.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s130.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s132.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s135.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s137.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s140.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s142.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s145.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s147.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s150.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s152.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s155.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s157.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s160.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s162.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s165.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s167.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s170.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s172.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s175.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s177.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s180.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s182.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s185.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s187.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s190.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s192.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s195.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s197.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s200.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s202.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s205.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s207.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s210.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s212.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s215.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s217.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s220.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s222.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s225.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s227.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s230.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s232.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s235.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s237.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s240.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s242.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s245.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s247.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s250.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s252.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s255.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s257.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s260.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s262.5">1.0</tr_snagInitialDensity>
+      </tr_sidVals>
+      <tr_sidVals whatSpecies="Amabalis_Fir">
+        <tr_snagInitialDensity sizeClass="s7.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s10.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s12.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s15.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s17.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s20.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s22.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s25.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s27.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s30.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s32.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s35.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s37.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s40.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s42.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s45.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s47.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s50.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s52.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s55.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s57.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s60.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s62.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s65.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s67.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s70.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s72.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s75.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s77.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s80.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s82.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s85.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s87.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s90.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s92.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s95.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s97.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s100.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s102.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s105.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s107.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s110.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s112.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s115.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s117.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s120.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s122.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s125.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s127.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s130.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s132.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s135.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s137.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s140.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s142.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s145.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s147.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s150.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s152.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s155.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s157.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s160.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s162.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s165.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s167.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s170.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s172.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s175.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s177.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s180.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s182.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s185.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s187.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s190.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s192.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s195.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s197.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s200.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s202.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s205.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s207.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s210.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s212.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s215.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s217.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s220.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s222.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s225.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s227.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s230.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s232.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s235.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s237.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s240.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s242.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s245.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s247.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s250.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s252.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s255.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s257.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s260.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s262.5">1.0</tr_snagInitialDensity>
+      </tr_sidVals>
+      <tr_sidVals whatSpecies="Subalpine_Fir">
+        <tr_snagInitialDensity sizeClass="s7.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s10.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s12.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s15.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s17.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s20.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s22.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s25.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s27.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s30.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s32.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s35.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s37.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s40.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s42.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s45.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s47.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s50.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s52.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s55.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s57.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s60.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s62.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s65.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s67.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s70.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s72.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s75.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s77.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s80.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s82.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s85.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s87.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s90.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s92.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s95.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s97.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s100.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s102.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s105.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s107.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s110.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s112.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s115.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s117.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s120.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s122.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s125.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s127.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s130.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s132.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s135.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s137.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s140.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s142.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s145.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s147.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s150.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s152.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s155.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s157.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s160.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s162.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s165.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s167.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s170.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s172.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s175.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s177.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s180.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s182.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s185.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s187.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s190.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s192.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s195.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s197.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s200.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s202.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s205.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s207.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s210.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s212.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s215.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s217.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s220.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s222.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s225.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s227.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s230.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s232.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s235.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s237.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s240.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s242.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s245.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s247.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s250.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s252.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s255.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s257.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s260.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s262.5">1.0</tr_snagInitialDensity>
+      </tr_sidVals>
+      <tr_sidVals whatSpecies="Hybrid_spruce">
+        <tr_snagInitialDensity sizeClass="s7.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s10.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s12.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s15.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s17.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s20.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s22.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s25.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s27.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s30.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s32.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s35.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s37.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s40.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s42.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s45.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s47.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s50.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s52.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s55.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s57.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s60.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s62.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s65.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s67.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s70.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s72.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s75.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s77.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s80.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s82.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s85.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s87.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s90.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s92.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s95.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s97.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s100.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s102.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s105.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s107.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s110.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s112.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s115.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s117.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s120.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s122.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s125.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s127.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s130.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s132.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s135.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s137.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s140.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s142.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s145.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s147.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s150.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s152.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s155.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s157.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s160.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s162.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s165.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s167.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s170.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s172.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s175.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s177.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s180.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s182.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s185.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s187.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s190.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s192.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s195.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s197.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s200.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s202.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s205.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s207.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s210.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s212.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s215.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s217.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s220.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s222.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s225.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s227.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s230.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s232.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s235.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s237.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s240.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s242.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s245.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s247.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s250.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s252.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s255.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s257.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s260.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s262.5">1.0</tr_snagInitialDensity>
+      </tr_sidVals>
+      <tr_sidVals whatSpecies="Lodgepole_Pine">
+        <tr_snagInitialDensity sizeClass="s7.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s10.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s12.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s15.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s17.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s20.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s22.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s25.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s27.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s30.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s32.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s35.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s37.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s40.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s42.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s45.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s47.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s50.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s52.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s55.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s57.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s60.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s62.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s65.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s67.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s70.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s72.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s75.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s77.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s80.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s82.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s85.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s87.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s90.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s92.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s95.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s97.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s100.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s102.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s105.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s107.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s110.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s112.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s115.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s117.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s120.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s122.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s125.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s127.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s130.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s132.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s135.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s137.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s140.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s142.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s145.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s147.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s150.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s152.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s155.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s157.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s160.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s162.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s165.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s167.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s170.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s172.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s175.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s177.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s180.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s182.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s185.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s187.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s190.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s192.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s195.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s197.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s200.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s202.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s205.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s207.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s210.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s212.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s215.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s217.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s220.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s222.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s225.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s227.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s230.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s232.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s235.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s237.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s240.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s242.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s245.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s247.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s250.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s252.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s255.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s257.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s260.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s262.5">1.0</tr_snagInitialDensity>
+      </tr_sidVals>
+      <tr_sidVals whatSpecies="Trembling_Aspen">
+        <tr_snagInitialDensity sizeClass="s7.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s10.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s12.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s15.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s17.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s20.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s22.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s25.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s27.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s30.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s32.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s35.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s37.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s40.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s42.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s45.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s47.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s50.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s52.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s55.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s57.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s60.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s62.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s65.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s67.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s70.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s72.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s75.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s77.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s80.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s82.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s85.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s87.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s90.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s92.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s95.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s97.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s100.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s102.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s105.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s107.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s110.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s112.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s115.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s117.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s120.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s122.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s125.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s127.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s130.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s132.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s135.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s137.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s140.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s142.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s145.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s147.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s150.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s152.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s155.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s157.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s160.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s162.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s165.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s167.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s170.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s172.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s175.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s177.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s180.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s182.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s185.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s187.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s190.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s192.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s195.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s197.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s200.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s202.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s205.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s207.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s210.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s212.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s215.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s217.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s220.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s222.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s225.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s227.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s230.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s232.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s235.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s237.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s240.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s242.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s245.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s247.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s250.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s252.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s255.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s257.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s260.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s262.5">1.0</tr_snagInitialDensity>
+      </tr_sidVals>
+      <tr_sidVals whatSpecies="Black_Cottonwood">
+        <tr_snagInitialDensity sizeClass="s7.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s10.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s12.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s15.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s17.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s20.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s22.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s25.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s27.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s30.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s32.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s35.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s37.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s40.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s42.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s45.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s47.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s50.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s52.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s55.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s57.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s60.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s62.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s65.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s67.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s70.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s72.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s75.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s77.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s80.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s82.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s85.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s87.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s90.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s92.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s95.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s97.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s100.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s102.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s105.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s107.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s110.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s112.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s115.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s117.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s120.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s122.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s125.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s127.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s130.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s132.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s135.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s137.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s140.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s142.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s145.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s147.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s150.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s152.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s155.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s157.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s160.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s162.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s165.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s167.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s170.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s172.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s175.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s177.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s180.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s182.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s185.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s187.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s190.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s192.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s195.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s197.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s200.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s202.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s205.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s207.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s210.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s212.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s215.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s217.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s220.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s222.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s225.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s227.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s230.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s232.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s235.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s237.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s240.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s242.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s245.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s247.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s250.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s252.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s255.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s257.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s260.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s262.5">1.0</tr_snagInitialDensity>
+      </tr_sidVals>
+      <tr_sidVals whatSpecies="Paper_Birch">
+        <tr_snagInitialDensity sizeClass="s7.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s10.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s12.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s15.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s17.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s20.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s22.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s25.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s27.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s30.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s32.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s35.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s37.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s40.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s42.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s45.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s47.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s50.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s52.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s55.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s57.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s60.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s62.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s65.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s67.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s70.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s72.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s75.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s77.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s80.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s82.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s85.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s87.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s90.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s92.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s95.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s97.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s100.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s102.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s105.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s107.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s110.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s112.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s115.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s117.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s120.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s122.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s125.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s127.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s130.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s132.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s135.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s137.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s140.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s142.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s145.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s147.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s150.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s152.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s155.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s157.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s160.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s162.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s165.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s167.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s170.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s172.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s175.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s177.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s180.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s182.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s185.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s187.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s190.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s192.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s195.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s197.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s200.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s202.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s205.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s207.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s210.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s212.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s215.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s217.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s220.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s222.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s225.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s227.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s230.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s232.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s235.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s237.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s240.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s242.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s245.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s247.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s250.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s252.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s255.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s257.5">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s260.0">1.0</tr_snagInitialDensity>
+        <tr_snagInitialDensity sizeClass="s262.5">1.0</tr_snagInitialDensity>
+      </tr_sidVals>
+    </tr_snagInitialDensities>
     <tr_seedlingHeightClass1>20.0</tr_seedlingHeightClass1>
     <tr_seedlingHeightClass2>30.0</tr_seedlingHeightClass2>
     <tr_seedlingHeight1Density>
@@ -1254,9 +2201,23 @@
       <applyTo species="Paper_Birch" type="Adult"/>
     </behavior>
     <behavior>
-      <behaviorName>BCMortality</behaviorName>
+      <behaviorName>CompetitionMortality</behaviorName>
       <version>1.0</version>
       <listPosition>7</listPosition>
+      <applyTo species="Western_Hemlock" type="Adult"/>
+      <applyTo species="Western_redcedar" type="Adult"/>
+      <applyTo species="Amabalis_Fir" type="Adult"/>
+      <applyTo species="Subalpine_Fir" type="Adult"/>
+      <applyTo species="Hybrid_spruce" type="Adult"/>
+      <applyTo species="Lodgepole_Pine" type="Adult"/>
+      <applyTo species="Trembling_Aspen" type="Adult"/>
+      <applyTo species="Black_Cottonwood" type="Adult"/>
+      <applyTo species="Paper_Birch" type="Adult"/>
+    </behavior>
+    <behavior>
+      <behaviorName>BCMortality</behaviorName>
+      <version>1.0</version>
+      <listPosition>8</listPosition>
       <applyTo species="Trembling_Aspen" type="Seedling"/>
       <applyTo species="Hybrid_spruce" type="Seedling"/>
       <applyTo species="Lodgepole_Pine" type="Seedling"/>
@@ -1279,20 +2240,6 @@
     <behavior>
       <behaviorName>Senescence</behaviorName>
       <version>1.0</version>
-      <listPosition>8</listPosition>
-      <applyTo species="Western_Hemlock" type="Adult"/>
-      <applyTo species="Western_redcedar" type="Adult"/>
-      <applyTo species="Amabalis_Fir" type="Adult"/>
-      <applyTo species="Subalpine_Fir" type="Adult"/>
-      <applyTo species="Hybrid_spruce" type="Adult"/>
-      <applyTo species="Lodgepole_Pine" type="Adult"/>
-      <applyTo species="Trembling_Aspen" type="Adult"/>
-      <applyTo species="Black_Cottonwood" type="Adult"/>
-      <applyTo species="Paper_Birch" type="Adult"/>
-    </behavior>
-    <behavior>
-      <behaviorName>StochasticMortality</behaviorName>
-      <version>1.0</version>
       <listPosition>9</listPosition>
       <applyTo species="Western_Hemlock" type="Adult"/>
       <applyTo species="Western_redcedar" type="Adult"/>
@@ -1308,15 +2255,20 @@
       <behaviorName>StochasticMortality</behaviorName>
       <version>1.0</version>
       <listPosition>10</listPosition>
-      <applyTo species="Hybrid_spruce" type="Seedling"/>
-      <applyTo species="Lodgepole_Pine" type="Seedling"/>
-      <applyTo species="Subalpine_Fir" type="Seedling"/>
-      <applyTo species="Trembling_Aspen" type="Seedling"/>
-      <applyTo species="Western_redcedar" type="Seedling"/>
-      <applyTo species="Western_Hemlock" type="Seedling"/>
-      <applyTo species="Amabalis_Fir" type="Seedling"/>
-      <applyTo species="Black_Cottonwood" type="Seedling"/>
-      <applyTo species="Paper_Birch" type="Seedling"/>
+      <applyTo species="Western_Hemlock" type="Adult"/>
+      <applyTo species="Western_redcedar" type="Adult"/>
+      <applyTo species="Amabalis_Fir" type="Adult"/>
+      <applyTo species="Subalpine_Fir" type="Adult"/>
+      <applyTo species="Hybrid_spruce" type="Adult"/>
+      <applyTo species="Lodgepole_Pine" type="Adult"/>
+      <applyTo species="Trembling_Aspen" type="Adult"/>
+      <applyTo species="Black_Cottonwood" type="Adult"/>
+      <applyTo species="Paper_Birch" type="Adult"/>
+    </behavior>
+    <behavior>
+      <behaviorName>StochasticMortality</behaviorName>
+      <version>1.0</version>
+      <listPosition>11</listPosition>
       <applyTo species="Western_Hemlock" type="Sapling"/>
       <applyTo species="Western_redcedar" type="Sapling"/>
       <applyTo species="Amabalis_Fir" type="Sapling"/>
@@ -1328,29 +2280,29 @@
       <applyTo species="Paper_Birch" type="Sapling"/>
     </behavior>
     <behavior>
-      <behaviorName>WeibullSnagMortality</behaviorName>
-      <version>1.1</version>
-      <listPosition>11</listPosition>
-      <applyTo species="Hybrid_spruce" type="Snag"/>
-      <applyTo species="Lodgepole_Pine" type="Snag"/>
-      <applyTo species="Subalpine_Fir" type="Snag"/>
-      <applyTo species="Trembling_Aspen" type="Snag"/>
-      <applyTo species="Western_redcedar" type="Snag"/>
-      <applyTo species="Western_Hemlock" type="Snag"/>
-      <applyTo species="Amabalis_Fir" type="Snag"/>
-      <applyTo species="Black_Cottonwood" type="Snag"/>
-      <applyTo species="Paper_Birch" type="Snag"/>
+      <behaviorName>StochasticMortality</behaviorName>
+      <version>1.0</version>
+      <listPosition>12</listPosition>
+      <applyTo species="Western_Hemlock" type="Seedling"/>
+      <applyTo species="Western_redcedar" type="Seedling"/>
+      <applyTo species="Amabalis_Fir" type="Seedling"/>
+      <applyTo species="Subalpine_Fir" type="Seedling"/>
+      <applyTo species="Hybrid_spruce" type="Seedling"/>
+      <applyTo species="Lodgepole_Pine" type="Seedling"/>
+      <applyTo species="Trembling_Aspen" type="Seedling"/>
+      <applyTo species="Black_Cottonwood" type="Seedling"/>
+      <applyTo species="Paper_Birch" type="Seedling"/>
     </behavior>
     <behavior>
       <behaviorName>DensitySelfThinning</behaviorName>
       <version>1.0</version>
-      <listPosition>12</listPosition>
+      <listPosition>13</listPosition>
       <applyTo species="Trembling_Aspen" type="Seedling"/>
     </behavior>
     <behavior>
       <behaviorName>SnagDecayClassDynamics</behaviorName>
       <version>2.0</version>
-      <listPosition>13</listPosition>
+      <listPosition>14</listPosition>
       <applyTo species="Western_Hemlock" type="Snag"/>
       <applyTo species="Western_redcedar" type="Snag"/>
       <applyTo species="Amabalis_Fir" type="Snag"/>
@@ -1373,30 +2325,39 @@
     <behavior>
       <behaviorName>DetailedSubstrate</behaviorName>
       <version>1.0</version>
-      <listPosition>14</listPosition>
-      <applyTo species="Western_Hemlock" type="Adult"/>
+      <listPosition>15</listPosition>
       <applyTo species="Western_Hemlock" type="Snag"/>
-      <applyTo species="Western_redcedar" type="Adult"/>
       <applyTo species="Western_redcedar" type="Snag"/>
-      <applyTo species="Amabalis_Fir" type="Adult"/>
       <applyTo species="Amabalis_Fir" type="Snag"/>
-      <applyTo species="Subalpine_Fir" type="Adult"/>
       <applyTo species="Subalpine_Fir" type="Snag"/>
-      <applyTo species="Hybrid_spruce" type="Adult"/>
       <applyTo species="Hybrid_spruce" type="Snag"/>
-      <applyTo species="Lodgepole_Pine" type="Adult"/>
       <applyTo species="Lodgepole_Pine" type="Snag"/>
-      <applyTo species="Trembling_Aspen" type="Adult"/>
       <applyTo species="Trembling_Aspen" type="Snag"/>
-      <applyTo species="Black_Cottonwood" type="Adult"/>
       <applyTo species="Black_Cottonwood" type="Snag"/>
-      <applyTo species="Paper_Birch" type="Adult"/>
       <applyTo species="Paper_Birch" type="Snag"/>
+      <applyTo species="Western_Hemlock" type="Adult"/>
+      <applyTo species="Western_redcedar" type="Adult"/>
+      <applyTo species="Amabalis_Fir" type="Adult"/>
+      <applyTo species="Subalpine_Fir" type="Adult"/>
+      <applyTo species="Hybrid_spruce" type="Adult"/>
+      <applyTo species="Lodgepole_Pine" type="Adult"/>
+      <applyTo species="Trembling_Aspen" type="Adult"/>
+      <applyTo species="Black_Cottonwood" type="Adult"/>
+      <applyTo species="Paper_Birch" type="Adult"/>
     </behavior>
     <behavior>
       <behaviorName>RemoveDead</behaviorName>
       <version>3.0</version>
-      <listPosition>15</listPosition>
+      <listPosition>16</listPosition>
+      <applyTo species="Western_Hemlock" type="Adult"/>
+      <applyTo species="Western_redcedar" type="Adult"/>
+      <applyTo species="Amabalis_Fir" type="Adult"/>
+      <applyTo species="Subalpine_Fir" type="Adult"/>
+      <applyTo species="Hybrid_spruce" type="Adult"/>
+      <applyTo species="Lodgepole_Pine" type="Adult"/>
+      <applyTo species="Trembling_Aspen" type="Adult"/>
+      <applyTo species="Black_Cottonwood" type="Adult"/>
+      <applyTo species="Paper_Birch" type="Adult"/>
       <applyTo species="Trembling_Aspen" type="Seedling"/>
       <applyTo species="Hybrid_spruce" type="Seedling"/>
       <applyTo species="Lodgepole_Pine" type="Seedling"/>
@@ -1415,29 +2376,20 @@
       <applyTo species="Trembling_Aspen" type="Sapling"/>
       <applyTo species="Black_Cottonwood" type="Sapling"/>
       <applyTo species="Paper_Birch" type="Sapling"/>
-      <applyTo species="Western_Hemlock" type="Adult"/>
-      <applyTo species="Western_redcedar" type="Adult"/>
-      <applyTo species="Amabalis_Fir" type="Adult"/>
-      <applyTo species="Subalpine_Fir" type="Adult"/>
-      <applyTo species="Hybrid_spruce" type="Adult"/>
-      <applyTo species="Lodgepole_Pine" type="Adult"/>
-      <applyTo species="Trembling_Aspen" type="Adult"/>
-      <applyTo species="Black_Cottonwood" type="Adult"/>
-      <applyTo species="Paper_Birch" type="Adult"/>
+      <applyTo species="Western_Hemlock" type="Snag"/>
+      <applyTo species="Western_redcedar" type="Snag"/>
+      <applyTo species="Amabalis_Fir" type="Snag"/>
+      <applyTo species="Subalpine_Fir" type="Snag"/>
       <applyTo species="Hybrid_spruce" type="Snag"/>
       <applyTo species="Lodgepole_Pine" type="Snag"/>
-      <applyTo species="Subalpine_Fir" type="Snag"/>
       <applyTo species="Trembling_Aspen" type="Snag"/>
-      <applyTo species="Western_redcedar" type="Snag"/>
-      <applyTo species="Western_Hemlock" type="Snag"/>
-      <applyTo species="Amabalis_Fir" type="Snag"/>
       <applyTo species="Black_Cottonwood" type="Snag"/>
       <applyTo species="Paper_Birch" type="Snag"/>
     </behavior>
     <behavior>
       <behaviorName>GapDisperse</behaviorName>
       <version>1.0</version>
-      <listPosition>16</listPosition>
+      <listPosition>17</listPosition>
       <applyTo species="Western_Hemlock" type="Adult"/>
       <applyTo species="Western_redcedar" type="Adult"/>
       <applyTo species="Amabalis_Fir" type="Adult"/>
@@ -1454,7 +2406,7 @@
     <behavior>
       <behaviorName>NonSpatialDisperse</behaviorName>
       <version>1.0</version>
-      <listPosition>17</listPosition>
+      <listPosition>18</listPosition>
       <applyTo species="Western_Hemlock" type="Adult"/>
       <applyTo species="Western_redcedar" type="Adult"/>
       <applyTo species="Amabalis_Fir" type="Adult"/>
@@ -1468,7 +2420,7 @@
     <behavior>
       <behaviorName>GapSubstrateSeedSurvival</behaviorName>
       <version>1.1</version>
-      <listPosition>18</listPosition>
+      <listPosition>19</listPosition>
       <applyTo species="Western_Hemlock" type="Seed"/>
       <applyTo species="Western_redcedar" type="Seed"/>
       <applyTo species="Amabalis_Fir" type="Seed"/>
@@ -1482,7 +2434,7 @@
     <behavior>
       <behaviorName>Establishment</behaviorName>
       <version>1.0</version>
-      <listPosition>19</listPosition>
+      <listPosition>20</listPosition>
       <applyTo species="Western_Hemlock" type="Seed"/>
       <applyTo species="Western_redcedar" type="Seed"/>
       <applyTo species="Amabalis_Fir" type="Seed"/>
@@ -1496,17 +2448,17 @@
     <behavior>
       <behaviorName>Plant</behaviorName>
       <version>1.0</version>
-      <listPosition>20</listPosition>
+      <listPosition>21</listPosition>
     </behavior>
     <behavior>
       <behaviorName>ShortOutput</behaviorName>
       <version>1.0</version>
-      <listPosition>22</listPosition>
+      <listPosition>23</listPosition>
     </behavior>
     <behavior>
       <behaviorName>Output</behaviorName>
       <version>1.0</version>
-      <listPosition>21</listPosition>
+      <listPosition>22</listPosition>
       <applyTo species="Western_Hemlock" type="Seedling"/>
       <applyTo species="Western_redcedar" type="Seedling"/>
       <applyTo species="Amabalis_Fir" type="Seedling"/>
@@ -1984,9 +2936,6 @@
       <ha_applyToSpecies species="Subalpine_Fir"/>
       <ha_applyToSpecies species="Hybrid_spruce"/>
       <ha_applyToSpecies species="Lodgepole_Pine"/>
-      <ha_applyToSpecies species="Trembling_Aspen"/>
-      <ha_applyToSpecies species="Black_Cottonwood"/>
-      <ha_applyToSpecies species="Paper_Birch"/>
       <ha_timestep>1</ha_timestep>
       <ha_cutType>clear</ha_cutType>
       <ha_cutAmountType>percent of density</ha_cutAmountType>
@@ -2539,8 +3488,6 @@
     </ha_cutEvent>
     <ha_cutEvent>
       <ha_applyToSpecies species="Trembling_Aspen"/>
-      <ha_applyToSpecies species="Black_Cottonwood"/>
-      <ha_applyToSpecies species="Paper_Birch"/>
       <ha_timestep>1</ha_timestep>
       <ha_cutType>clear</ha_cutType>
       <ha_cutAmountType>percent of density</ha_cutAmountType>
@@ -3092,10 +4039,560 @@
       <ha_applyToCell x="23" y="23"/>
     </ha_cutEvent>
     <ha_cutEvent>
-      <ha_applyToSpecies species="Trembling_Aspen"/>
       <ha_applyToSpecies species="Black_Cottonwood"/>
+      <ha_timestep>1</ha_timestep>
+      <ha_cutType>clear</ha_cutType>
+      <ha_cutAmountType>percent of density</ha_cutAmountType>
+      <ha_tallestFirst>1</ha_tallestFirst>
+      <ha_dbhRange>
+        <ha_low>0.0</ha_low>
+        <ha_high>3000.0</ha_high>
+        <ha_amountToCut>100.0</ha_amountToCut>
+      </ha_dbhRange>
+      <ha_percentSeedlingsDie>
+        <ha_psdVal species="Western_Hemlock">100.0</ha_psdVal>
+        <ha_psdVal species="Western_redcedar">100.0</ha_psdVal>
+        <ha_psdVal species="Amabalis_Fir">100.0</ha_psdVal>
+        <ha_psdVal species="Subalpine_Fir">100.0</ha_psdVal>
+        <ha_psdVal species="Hybrid_spruce">100.0</ha_psdVal>
+        <ha_psdVal species="Lodgepole_Pine">100.0</ha_psdVal>
+        <ha_psdVal species="Trembling_Aspen">100.0</ha_psdVal>
+        <ha_psdVal species="Black_Cottonwood">100.0</ha_psdVal>
+        <ha_psdVal species="Paper_Birch">100.0</ha_psdVal>
+      </ha_percentSeedlingsDie>
+      <ha_applyToCell x="1" y="1"/>
+      <ha_applyToCell x="1" y="2"/>
+      <ha_applyToCell x="1" y="3"/>
+      <ha_applyToCell x="1" y="4"/>
+      <ha_applyToCell x="1" y="5"/>
+      <ha_applyToCell x="1" y="6"/>
+      <ha_applyToCell x="1" y="7"/>
+      <ha_applyToCell x="1" y="8"/>
+      <ha_applyToCell x="1" y="9"/>
+      <ha_applyToCell x="1" y="10"/>
+      <ha_applyToCell x="1" y="11"/>
+      <ha_applyToCell x="1" y="12"/>
+      <ha_applyToCell x="1" y="13"/>
+      <ha_applyToCell x="1" y="14"/>
+      <ha_applyToCell x="1" y="15"/>
+      <ha_applyToCell x="1" y="16"/>
+      <ha_applyToCell x="1" y="17"/>
+      <ha_applyToCell x="1" y="18"/>
+      <ha_applyToCell x="1" y="19"/>
+      <ha_applyToCell x="1" y="20"/>
+      <ha_applyToCell x="1" y="21"/>
+      <ha_applyToCell x="1" y="22"/>
+      <ha_applyToCell x="1" y="23"/>
+      <ha_applyToCell x="2" y="1"/>
+      <ha_applyToCell x="2" y="2"/>
+      <ha_applyToCell x="2" y="3"/>
+      <ha_applyToCell x="2" y="4"/>
+      <ha_applyToCell x="2" y="5"/>
+      <ha_applyToCell x="2" y="6"/>
+      <ha_applyToCell x="2" y="7"/>
+      <ha_applyToCell x="2" y="8"/>
+      <ha_applyToCell x="2" y="9"/>
+      <ha_applyToCell x="2" y="10"/>
+      <ha_applyToCell x="2" y="11"/>
+      <ha_applyToCell x="2" y="12"/>
+      <ha_applyToCell x="2" y="13"/>
+      <ha_applyToCell x="2" y="14"/>
+      <ha_applyToCell x="2" y="15"/>
+      <ha_applyToCell x="2" y="16"/>
+      <ha_applyToCell x="2" y="17"/>
+      <ha_applyToCell x="2" y="18"/>
+      <ha_applyToCell x="2" y="19"/>
+      <ha_applyToCell x="2" y="20"/>
+      <ha_applyToCell x="2" y="21"/>
+      <ha_applyToCell x="2" y="22"/>
+      <ha_applyToCell x="2" y="23"/>
+      <ha_applyToCell x="3" y="1"/>
+      <ha_applyToCell x="3" y="2"/>
+      <ha_applyToCell x="3" y="3"/>
+      <ha_applyToCell x="3" y="4"/>
+      <ha_applyToCell x="3" y="5"/>
+      <ha_applyToCell x="3" y="6"/>
+      <ha_applyToCell x="3" y="7"/>
+      <ha_applyToCell x="3" y="8"/>
+      <ha_applyToCell x="3" y="9"/>
+      <ha_applyToCell x="3" y="10"/>
+      <ha_applyToCell x="3" y="11"/>
+      <ha_applyToCell x="3" y="12"/>
+      <ha_applyToCell x="3" y="13"/>
+      <ha_applyToCell x="3" y="14"/>
+      <ha_applyToCell x="3" y="15"/>
+      <ha_applyToCell x="3" y="16"/>
+      <ha_applyToCell x="3" y="17"/>
+      <ha_applyToCell x="3" y="18"/>
+      <ha_applyToCell x="3" y="19"/>
+      <ha_applyToCell x="3" y="20"/>
+      <ha_applyToCell x="3" y="21"/>
+      <ha_applyToCell x="3" y="22"/>
+      <ha_applyToCell x="3" y="23"/>
+      <ha_applyToCell x="4" y="1"/>
+      <ha_applyToCell x="4" y="2"/>
+      <ha_applyToCell x="4" y="3"/>
+      <ha_applyToCell x="4" y="4"/>
+      <ha_applyToCell x="4" y="5"/>
+      <ha_applyToCell x="4" y="6"/>
+      <ha_applyToCell x="4" y="7"/>
+      <ha_applyToCell x="4" y="8"/>
+      <ha_applyToCell x="4" y="9"/>
+      <ha_applyToCell x="4" y="10"/>
+      <ha_applyToCell x="4" y="11"/>
+      <ha_applyToCell x="4" y="12"/>
+      <ha_applyToCell x="4" y="13"/>
+      <ha_applyToCell x="4" y="14"/>
+      <ha_applyToCell x="4" y="15"/>
+      <ha_applyToCell x="4" y="16"/>
+      <ha_applyToCell x="4" y="17"/>
+      <ha_applyToCell x="4" y="18"/>
+      <ha_applyToCell x="4" y="19"/>
+      <ha_applyToCell x="4" y="20"/>
+      <ha_applyToCell x="4" y="21"/>
+      <ha_applyToCell x="4" y="22"/>
+      <ha_applyToCell x="4" y="23"/>
+      <ha_applyToCell x="5" y="1"/>
+      <ha_applyToCell x="5" y="2"/>
+      <ha_applyToCell x="5" y="3"/>
+      <ha_applyToCell x="5" y="4"/>
+      <ha_applyToCell x="5" y="5"/>
+      <ha_applyToCell x="5" y="6"/>
+      <ha_applyToCell x="5" y="7"/>
+      <ha_applyToCell x="5" y="8"/>
+      <ha_applyToCell x="5" y="9"/>
+      <ha_applyToCell x="5" y="10"/>
+      <ha_applyToCell x="5" y="11"/>
+      <ha_applyToCell x="5" y="12"/>
+      <ha_applyToCell x="5" y="13"/>
+      <ha_applyToCell x="5" y="14"/>
+      <ha_applyToCell x="5" y="15"/>
+      <ha_applyToCell x="5" y="16"/>
+      <ha_applyToCell x="5" y="17"/>
+      <ha_applyToCell x="5" y="18"/>
+      <ha_applyToCell x="5" y="19"/>
+      <ha_applyToCell x="5" y="20"/>
+      <ha_applyToCell x="5" y="21"/>
+      <ha_applyToCell x="5" y="22"/>
+      <ha_applyToCell x="5" y="23"/>
+      <ha_applyToCell x="6" y="1"/>
+      <ha_applyToCell x="6" y="2"/>
+      <ha_applyToCell x="6" y="3"/>
+      <ha_applyToCell x="6" y="4"/>
+      <ha_applyToCell x="6" y="5"/>
+      <ha_applyToCell x="6" y="6"/>
+      <ha_applyToCell x="6" y="7"/>
+      <ha_applyToCell x="6" y="8"/>
+      <ha_applyToCell x="6" y="9"/>
+      <ha_applyToCell x="6" y="10"/>
+      <ha_applyToCell x="6" y="11"/>
+      <ha_applyToCell x="6" y="12"/>
+      <ha_applyToCell x="6" y="13"/>
+      <ha_applyToCell x="6" y="14"/>
+      <ha_applyToCell x="6" y="15"/>
+      <ha_applyToCell x="6" y="16"/>
+      <ha_applyToCell x="6" y="17"/>
+      <ha_applyToCell x="6" y="18"/>
+      <ha_applyToCell x="6" y="19"/>
+      <ha_applyToCell x="6" y="20"/>
+      <ha_applyToCell x="6" y="21"/>
+      <ha_applyToCell x="6" y="22"/>
+      <ha_applyToCell x="6" y="23"/>
+      <ha_applyToCell x="7" y="1"/>
+      <ha_applyToCell x="7" y="2"/>
+      <ha_applyToCell x="7" y="3"/>
+      <ha_applyToCell x="7" y="4"/>
+      <ha_applyToCell x="7" y="5"/>
+      <ha_applyToCell x="7" y="6"/>
+      <ha_applyToCell x="7" y="7"/>
+      <ha_applyToCell x="7" y="8"/>
+      <ha_applyToCell x="7" y="9"/>
+      <ha_applyToCell x="7" y="10"/>
+      <ha_applyToCell x="7" y="11"/>
+      <ha_applyToCell x="7" y="12"/>
+      <ha_applyToCell x="7" y="13"/>
+      <ha_applyToCell x="7" y="14"/>
+      <ha_applyToCell x="7" y="15"/>
+      <ha_applyToCell x="7" y="16"/>
+      <ha_applyToCell x="7" y="17"/>
+      <ha_applyToCell x="7" y="18"/>
+      <ha_applyToCell x="7" y="19"/>
+      <ha_applyToCell x="7" y="20"/>
+      <ha_applyToCell x="7" y="21"/>
+      <ha_applyToCell x="7" y="22"/>
+      <ha_applyToCell x="7" y="23"/>
+      <ha_applyToCell x="8" y="1"/>
+      <ha_applyToCell x="8" y="2"/>
+      <ha_applyToCell x="8" y="3"/>
+      <ha_applyToCell x="8" y="4"/>
+      <ha_applyToCell x="8" y="5"/>
+      <ha_applyToCell x="8" y="6"/>
+      <ha_applyToCell x="8" y="7"/>
+      <ha_applyToCell x="8" y="8"/>
+      <ha_applyToCell x="8" y="9"/>
+      <ha_applyToCell x="8" y="10"/>
+      <ha_applyToCell x="8" y="11"/>
+      <ha_applyToCell x="8" y="12"/>
+      <ha_applyToCell x="8" y="13"/>
+      <ha_applyToCell x="8" y="14"/>
+      <ha_applyToCell x="8" y="15"/>
+      <ha_applyToCell x="8" y="16"/>
+      <ha_applyToCell x="8" y="17"/>
+      <ha_applyToCell x="8" y="18"/>
+      <ha_applyToCell x="8" y="19"/>
+      <ha_applyToCell x="8" y="20"/>
+      <ha_applyToCell x="8" y="21"/>
+      <ha_applyToCell x="8" y="22"/>
+      <ha_applyToCell x="8" y="23"/>
+      <ha_applyToCell x="9" y="1"/>
+      <ha_applyToCell x="9" y="2"/>
+      <ha_applyToCell x="9" y="3"/>
+      <ha_applyToCell x="9" y="4"/>
+      <ha_applyToCell x="9" y="5"/>
+      <ha_applyToCell x="9" y="6"/>
+      <ha_applyToCell x="9" y="7"/>
+      <ha_applyToCell x="9" y="8"/>
+      <ha_applyToCell x="9" y="9"/>
+      <ha_applyToCell x="9" y="10"/>
+      <ha_applyToCell x="9" y="11"/>
+      <ha_applyToCell x="9" y="12"/>
+      <ha_applyToCell x="9" y="13"/>
+      <ha_applyToCell x="9" y="14"/>
+      <ha_applyToCell x="9" y="15"/>
+      <ha_applyToCell x="9" y="16"/>
+      <ha_applyToCell x="9" y="17"/>
+      <ha_applyToCell x="9" y="18"/>
+      <ha_applyToCell x="9" y="19"/>
+      <ha_applyToCell x="9" y="20"/>
+      <ha_applyToCell x="9" y="21"/>
+      <ha_applyToCell x="9" y="22"/>
+      <ha_applyToCell x="9" y="23"/>
+      <ha_applyToCell x="10" y="1"/>
+      <ha_applyToCell x="10" y="2"/>
+      <ha_applyToCell x="10" y="3"/>
+      <ha_applyToCell x="10" y="4"/>
+      <ha_applyToCell x="10" y="5"/>
+      <ha_applyToCell x="10" y="6"/>
+      <ha_applyToCell x="10" y="7"/>
+      <ha_applyToCell x="10" y="8"/>
+      <ha_applyToCell x="10" y="9"/>
+      <ha_applyToCell x="10" y="10"/>
+      <ha_applyToCell x="10" y="11"/>
+      <ha_applyToCell x="10" y="12"/>
+      <ha_applyToCell x="10" y="13"/>
+      <ha_applyToCell x="10" y="14"/>
+      <ha_applyToCell x="10" y="15"/>
+      <ha_applyToCell x="10" y="16"/>
+      <ha_applyToCell x="10" y="17"/>
+      <ha_applyToCell x="10" y="18"/>
+      <ha_applyToCell x="10" y="19"/>
+      <ha_applyToCell x="10" y="20"/>
+      <ha_applyToCell x="10" y="21"/>
+      <ha_applyToCell x="10" y="22"/>
+      <ha_applyToCell x="10" y="23"/>
+      <ha_applyToCell x="11" y="1"/>
+      <ha_applyToCell x="11" y="2"/>
+      <ha_applyToCell x="11" y="3"/>
+      <ha_applyToCell x="11" y="4"/>
+      <ha_applyToCell x="11" y="5"/>
+      <ha_applyToCell x="11" y="6"/>
+      <ha_applyToCell x="11" y="7"/>
+      <ha_applyToCell x="11" y="8"/>
+      <ha_applyToCell x="11" y="9"/>
+      <ha_applyToCell x="11" y="10"/>
+      <ha_applyToCell x="11" y="11"/>
+      <ha_applyToCell x="11" y="12"/>
+      <ha_applyToCell x="11" y="13"/>
+      <ha_applyToCell x="11" y="14"/>
+      <ha_applyToCell x="11" y="15"/>
+      <ha_applyToCell x="11" y="16"/>
+      <ha_applyToCell x="11" y="17"/>
+      <ha_applyToCell x="11" y="18"/>
+      <ha_applyToCell x="11" y="19"/>
+      <ha_applyToCell x="11" y="20"/>
+      <ha_applyToCell x="11" y="21"/>
+      <ha_applyToCell x="11" y="22"/>
+      <ha_applyToCell x="11" y="23"/>
+      <ha_applyToCell x="12" y="1"/>
+      <ha_applyToCell x="12" y="2"/>
+      <ha_applyToCell x="12" y="3"/>
+      <ha_applyToCell x="12" y="4"/>
+      <ha_applyToCell x="12" y="5"/>
+      <ha_applyToCell x="12" y="6"/>
+      <ha_applyToCell x="12" y="7"/>
+      <ha_applyToCell x="12" y="8"/>
+      <ha_applyToCell x="12" y="9"/>
+      <ha_applyToCell x="12" y="10"/>
+      <ha_applyToCell x="12" y="11"/>
+      <ha_applyToCell x="12" y="12"/>
+      <ha_applyToCell x="12" y="13"/>
+      <ha_applyToCell x="12" y="14"/>
+      <ha_applyToCell x="12" y="15"/>
+      <ha_applyToCell x="12" y="16"/>
+      <ha_applyToCell x="12" y="17"/>
+      <ha_applyToCell x="12" y="18"/>
+      <ha_applyToCell x="12" y="19"/>
+      <ha_applyToCell x="12" y="20"/>
+      <ha_applyToCell x="12" y="21"/>
+      <ha_applyToCell x="12" y="22"/>
+      <ha_applyToCell x="12" y="23"/>
+      <ha_applyToCell x="13" y="1"/>
+      <ha_applyToCell x="13" y="2"/>
+      <ha_applyToCell x="13" y="3"/>
+      <ha_applyToCell x="13" y="4"/>
+      <ha_applyToCell x="13" y="5"/>
+      <ha_applyToCell x="13" y="6"/>
+      <ha_applyToCell x="13" y="7"/>
+      <ha_applyToCell x="13" y="8"/>
+      <ha_applyToCell x="13" y="9"/>
+      <ha_applyToCell x="13" y="10"/>
+      <ha_applyToCell x="13" y="11"/>
+      <ha_applyToCell x="13" y="12"/>
+      <ha_applyToCell x="13" y="13"/>
+      <ha_applyToCell x="13" y="14"/>
+      <ha_applyToCell x="13" y="15"/>
+      <ha_applyToCell x="13" y="16"/>
+      <ha_applyToCell x="13" y="17"/>
+      <ha_applyToCell x="13" y="18"/>
+      <ha_applyToCell x="13" y="19"/>
+      <ha_applyToCell x="13" y="20"/>
+      <ha_applyToCell x="13" y="21"/>
+      <ha_applyToCell x="13" y="22"/>
+      <ha_applyToCell x="13" y="23"/>
+      <ha_applyToCell x="14" y="1"/>
+      <ha_applyToCell x="14" y="2"/>
+      <ha_applyToCell x="14" y="3"/>
+      <ha_applyToCell x="14" y="4"/>
+      <ha_applyToCell x="14" y="5"/>
+      <ha_applyToCell x="14" y="6"/>
+      <ha_applyToCell x="14" y="7"/>
+      <ha_applyToCell x="14" y="8"/>
+      <ha_applyToCell x="14" y="9"/>
+      <ha_applyToCell x="14" y="10"/>
+      <ha_applyToCell x="14" y="11"/>
+      <ha_applyToCell x="14" y="12"/>
+      <ha_applyToCell x="14" y="13"/>
+      <ha_applyToCell x="14" y="14"/>
+      <ha_applyToCell x="14" y="15"/>
+      <ha_applyToCell x="14" y="16"/>
+      <ha_applyToCell x="14" y="17"/>
+      <ha_applyToCell x="14" y="18"/>
+      <ha_applyToCell x="14" y="19"/>
+      <ha_applyToCell x="14" y="20"/>
+      <ha_applyToCell x="14" y="21"/>
+      <ha_applyToCell x="14" y="22"/>
+      <ha_applyToCell x="14" y="23"/>
+      <ha_applyToCell x="15" y="1"/>
+      <ha_applyToCell x="15" y="2"/>
+      <ha_applyToCell x="15" y="3"/>
+      <ha_applyToCell x="15" y="4"/>
+      <ha_applyToCell x="15" y="5"/>
+      <ha_applyToCell x="15" y="6"/>
+      <ha_applyToCell x="15" y="7"/>
+      <ha_applyToCell x="15" y="8"/>
+      <ha_applyToCell x="15" y="9"/>
+      <ha_applyToCell x="15" y="10"/>
+      <ha_applyToCell x="15" y="11"/>
+      <ha_applyToCell x="15" y="12"/>
+      <ha_applyToCell x="15" y="13"/>
+      <ha_applyToCell x="15" y="14"/>
+      <ha_applyToCell x="15" y="15"/>
+      <ha_applyToCell x="15" y="16"/>
+      <ha_applyToCell x="15" y="17"/>
+      <ha_applyToCell x="15" y="18"/>
+      <ha_applyToCell x="15" y="19"/>
+      <ha_applyToCell x="15" y="20"/>
+      <ha_applyToCell x="15" y="21"/>
+      <ha_applyToCell x="15" y="22"/>
+      <ha_applyToCell x="15" y="23"/>
+      <ha_applyToCell x="16" y="1"/>
+      <ha_applyToCell x="16" y="2"/>
+      <ha_applyToCell x="16" y="3"/>
+      <ha_applyToCell x="16" y="4"/>
+      <ha_applyToCell x="16" y="5"/>
+      <ha_applyToCell x="16" y="6"/>
+      <ha_applyToCell x="16" y="7"/>
+      <ha_applyToCell x="16" y="8"/>
+      <ha_applyToCell x="16" y="9"/>
+      <ha_applyToCell x="16" y="10"/>
+      <ha_applyToCell x="16" y="11"/>
+      <ha_applyToCell x="16" y="12"/>
+      <ha_applyToCell x="16" y="13"/>
+      <ha_applyToCell x="16" y="14"/>
+      <ha_applyToCell x="16" y="15"/>
+      <ha_applyToCell x="16" y="16"/>
+      <ha_applyToCell x="16" y="17"/>
+      <ha_applyToCell x="16" y="18"/>
+      <ha_applyToCell x="16" y="19"/>
+      <ha_applyToCell x="16" y="20"/>
+      <ha_applyToCell x="16" y="21"/>
+      <ha_applyToCell x="16" y="22"/>
+      <ha_applyToCell x="16" y="23"/>
+      <ha_applyToCell x="17" y="1"/>
+      <ha_applyToCell x="17" y="2"/>
+      <ha_applyToCell x="17" y="3"/>
+      <ha_applyToCell x="17" y="4"/>
+      <ha_applyToCell x="17" y="5"/>
+      <ha_applyToCell x="17" y="6"/>
+      <ha_applyToCell x="17" y="7"/>
+      <ha_applyToCell x="17" y="8"/>
+      <ha_applyToCell x="17" y="9"/>
+      <ha_applyToCell x="17" y="10"/>
+      <ha_applyToCell x="17" y="11"/>
+      <ha_applyToCell x="17" y="12"/>
+      <ha_applyToCell x="17" y="13"/>
+      <ha_applyToCell x="17" y="14"/>
+      <ha_applyToCell x="17" y="15"/>
+      <ha_applyToCell x="17" y="16"/>
+      <ha_applyToCell x="17" y="17"/>
+      <ha_applyToCell x="17" y="18"/>
+      <ha_applyToCell x="17" y="19"/>
+      <ha_applyToCell x="17" y="20"/>
+      <ha_applyToCell x="17" y="21"/>
+      <ha_applyToCell x="17" y="22"/>
+      <ha_applyToCell x="17" y="23"/>
+      <ha_applyToCell x="18" y="1"/>
+      <ha_applyToCell x="18" y="2"/>
+      <ha_applyToCell x="18" y="3"/>
+      <ha_applyToCell x="18" y="4"/>
+      <ha_applyToCell x="18" y="5"/>
+      <ha_applyToCell x="18" y="6"/>
+      <ha_applyToCell x="18" y="7"/>
+      <ha_applyToCell x="18" y="8"/>
+      <ha_applyToCell x="18" y="9"/>
+      <ha_applyToCell x="18" y="10"/>
+      <ha_applyToCell x="18" y="11"/>
+      <ha_applyToCell x="18" y="12"/>
+      <ha_applyToCell x="18" y="13"/>
+      <ha_applyToCell x="18" y="14"/>
+      <ha_applyToCell x="18" y="15"/>
+      <ha_applyToCell x="18" y="16"/>
+      <ha_applyToCell x="18" y="17"/>
+      <ha_applyToCell x="18" y="18"/>
+      <ha_applyToCell x="18" y="19"/>
+      <ha_applyToCell x="18" y="20"/>
+      <ha_applyToCell x="18" y="21"/>
+      <ha_applyToCell x="18" y="22"/>
+      <ha_applyToCell x="18" y="23"/>
+      <ha_applyToCell x="19" y="1"/>
+      <ha_applyToCell x="19" y="2"/>
+      <ha_applyToCell x="19" y="3"/>
+      <ha_applyToCell x="19" y="4"/>
+      <ha_applyToCell x="19" y="5"/>
+      <ha_applyToCell x="19" y="6"/>
+      <ha_applyToCell x="19" y="7"/>
+      <ha_applyToCell x="19" y="8"/>
+      <ha_applyToCell x="19" y="9"/>
+      <ha_applyToCell x="19" y="10"/>
+      <ha_applyToCell x="19" y="11"/>
+      <ha_applyToCell x="19" y="12"/>
+      <ha_applyToCell x="19" y="13"/>
+      <ha_applyToCell x="19" y="14"/>
+      <ha_applyToCell x="19" y="15"/>
+      <ha_applyToCell x="19" y="16"/>
+      <ha_applyToCell x="19" y="17"/>
+      <ha_applyToCell x="19" y="18"/>
+      <ha_applyToCell x="19" y="19"/>
+      <ha_applyToCell x="19" y="20"/>
+      <ha_applyToCell x="19" y="21"/>
+      <ha_applyToCell x="19" y="22"/>
+      <ha_applyToCell x="19" y="23"/>
+      <ha_applyToCell x="20" y="1"/>
+      <ha_applyToCell x="20" y="2"/>
+      <ha_applyToCell x="20" y="3"/>
+      <ha_applyToCell x="20" y="4"/>
+      <ha_applyToCell x="20" y="5"/>
+      <ha_applyToCell x="20" y="6"/>
+      <ha_applyToCell x="20" y="7"/>
+      <ha_applyToCell x="20" y="8"/>
+      <ha_applyToCell x="20" y="9"/>
+      <ha_applyToCell x="20" y="10"/>
+      <ha_applyToCell x="20" y="11"/>
+      <ha_applyToCell x="20" y="12"/>
+      <ha_applyToCell x="20" y="13"/>
+      <ha_applyToCell x="20" y="14"/>
+      <ha_applyToCell x="20" y="15"/>
+      <ha_applyToCell x="20" y="16"/>
+      <ha_applyToCell x="20" y="17"/>
+      <ha_applyToCell x="20" y="18"/>
+      <ha_applyToCell x="20" y="19"/>
+      <ha_applyToCell x="20" y="20"/>
+      <ha_applyToCell x="20" y="21"/>
+      <ha_applyToCell x="20" y="22"/>
+      <ha_applyToCell x="20" y="23"/>
+      <ha_applyToCell x="21" y="1"/>
+      <ha_applyToCell x="21" y="2"/>
+      <ha_applyToCell x="21" y="3"/>
+      <ha_applyToCell x="21" y="4"/>
+      <ha_applyToCell x="21" y="5"/>
+      <ha_applyToCell x="21" y="6"/>
+      <ha_applyToCell x="21" y="7"/>
+      <ha_applyToCell x="21" y="8"/>
+      <ha_applyToCell x="21" y="9"/>
+      <ha_applyToCell x="21" y="10"/>
+      <ha_applyToCell x="21" y="11"/>
+      <ha_applyToCell x="21" y="12"/>
+      <ha_applyToCell x="21" y="13"/>
+      <ha_applyToCell x="21" y="14"/>
+      <ha_applyToCell x="21" y="15"/>
+      <ha_applyToCell x="21" y="16"/>
+      <ha_applyToCell x="21" y="17"/>
+      <ha_applyToCell x="21" y="18"/>
+      <ha_applyToCell x="21" y="19"/>
+      <ha_applyToCell x="21" y="20"/>
+      <ha_applyToCell x="21" y="21"/>
+      <ha_applyToCell x="21" y="22"/>
+      <ha_applyToCell x="21" y="23"/>
+      <ha_applyToCell x="22" y="1"/>
+      <ha_applyToCell x="22" y="2"/>
+      <ha_applyToCell x="22" y="3"/>
+      <ha_applyToCell x="22" y="4"/>
+      <ha_applyToCell x="22" y="5"/>
+      <ha_applyToCell x="22" y="6"/>
+      <ha_applyToCell x="22" y="7"/>
+      <ha_applyToCell x="22" y="8"/>
+      <ha_applyToCell x="22" y="9"/>
+      <ha_applyToCell x="22" y="10"/>
+      <ha_applyToCell x="22" y="11"/>
+      <ha_applyToCell x="22" y="12"/>
+      <ha_applyToCell x="22" y="13"/>
+      <ha_applyToCell x="22" y="14"/>
+      <ha_applyToCell x="22" y="15"/>
+      <ha_applyToCell x="22" y="16"/>
+      <ha_applyToCell x="22" y="17"/>
+      <ha_applyToCell x="22" y="18"/>
+      <ha_applyToCell x="22" y="19"/>
+      <ha_applyToCell x="22" y="20"/>
+      <ha_applyToCell x="22" y="21"/>
+      <ha_applyToCell x="22" y="22"/>
+      <ha_applyToCell x="22" y="23"/>
+      <ha_applyToCell x="23" y="1"/>
+      <ha_applyToCell x="23" y="2"/>
+      <ha_applyToCell x="23" y="3"/>
+      <ha_applyToCell x="23" y="4"/>
+      <ha_applyToCell x="23" y="5"/>
+      <ha_applyToCell x="23" y="6"/>
+      <ha_applyToCell x="23" y="7"/>
+      <ha_applyToCell x="23" y="8"/>
+      <ha_applyToCell x="23" y="9"/>
+      <ha_applyToCell x="23" y="10"/>
+      <ha_applyToCell x="23" y="11"/>
+      <ha_applyToCell x="23" y="12"/>
+      <ha_applyToCell x="23" y="13"/>
+      <ha_applyToCell x="23" y="14"/>
+      <ha_applyToCell x="23" y="15"/>
+      <ha_applyToCell x="23" y="16"/>
+      <ha_applyToCell x="23" y="17"/>
+      <ha_applyToCell x="23" y="18"/>
+      <ha_applyToCell x="23" y="19"/>
+      <ha_applyToCell x="23" y="20"/>
+      <ha_applyToCell x="23" y="21"/>
+      <ha_applyToCell x="23" y="22"/>
+      <ha_applyToCell x="23" y="23"/>
+    </ha_cutEvent>
+    <ha_cutEvent>
       <ha_applyToSpecies species="Paper_Birch"/>
-      <ha_timestep>2</ha_timestep>
+      <ha_timestep>1</ha_timestep>
       <ha_cutType>clear</ha_cutType>
       <ha_cutAmountType>percent of density</ha_cutAmountType>
       <ha_tallestFirst>1</ha_tallestFirst>
@@ -4052,7 +5549,31 @@
       <nsefdVal species="Paper_Birch">1.0</nsefdVal>
     </nciStormEffFullDmg>
   </NCIMasterGrowth6>
-  <BCMortality7>
+  <CompetitionMortality7>
+    <mo_CompMort>
+      <mo_cmVal species="Western_Hemlock">1.0</mo_cmVal>
+      <mo_cmVal species="Western_redcedar">1.0</mo_cmVal>
+      <mo_cmVal species="Amabalis_Fir">1.0</mo_cmVal>
+      <mo_cmVal species="Subalpine_Fir">1.0</mo_cmVal>
+      <mo_cmVal species="Hybrid_spruce">1.0</mo_cmVal>
+      <mo_cmVal species="Lodgepole_Pine">1.0</mo_cmVal>
+      <mo_cmVal species="Trembling_Aspen">1.0</mo_cmVal>
+      <mo_cmVal species="Black_Cottonwood">1.0</mo_cmVal>
+      <mo_cmVal species="Paper_Birch">1.0</mo_cmVal>
+    </mo_CompMort>
+    <mo_CompMortMax>
+      <mo_cmmVal species="Western_Hemlock">1.0</mo_cmmVal>
+      <mo_cmmVal species="Western_redcedar">1.0</mo_cmmVal>
+      <mo_cmmVal species="Amabalis_Fir">1.0</mo_cmmVal>
+      <mo_cmmVal species="Subalpine_Fir">1.0</mo_cmmVal>
+      <mo_cmmVal species="Hybrid_spruce">1.0</mo_cmmVal>
+      <mo_cmmVal species="Lodgepole_Pine">1.0</mo_cmmVal>
+      <mo_cmmVal species="Trembling_Aspen">1.0</mo_cmmVal>
+      <mo_cmmVal species="Black_Cottonwood">1.0</mo_cmmVal>
+      <mo_cmmVal species="Paper_Birch">1.0</mo_cmmVal>
+    </mo_CompMortMax>
+  </CompetitionMortality7>
+  <BCMortality8>
     <mo_mortAtZeroGrowth>
       <mo_mazgVal species="Western_Hemlock">1.0</mo_mazgVal>
       <mo_mazgVal species="Western_redcedar">1.0</mo_mazgVal>
@@ -4075,8 +5596,8 @@
       <mo_ldmVal species="Black_Cottonwood">2.3449</mo_ldmVal>
       <mo_ldmVal species="Paper_Birch">2.0931</mo_ldmVal>
     </mo_lightDependentMortality>
-  </BCMortality7>
-  <Senescence8>
+  </BCMortality8>
+  <Senescence9>
     <mo_senescenceAlpha>
       <mo_saVal species="Western_Hemlock">-3.7</mo_saVal>
       <mo_saVal species="Western_redcedar">-3.7</mo_saVal>
@@ -4111,8 +5632,8 @@
       <mo_daoosVal species="Paper_Birch">35.0</mo_daoosVal>
     </mo_dbhAtOnsetOfSenescence>
     <mo_dbhAtAsympMaxMort>200</mo_dbhAtAsympMaxMort>
-  </Senescence8>
-  <StochasticMortality9>
+  </Senescence9>
+  <StochasticMortality10>
     <mo_stochasticMortRate>
       <mo_smrVal species="Western_Hemlock">5.0E-4</mo_smrVal>
       <mo_smrVal species="Western_redcedar">5.0E-4</mo_smrVal>
@@ -4124,8 +5645,8 @@
       <mo_smrVal species="Black_Cottonwood">0.009</mo_smrVal>
       <mo_smrVal species="Paper_Birch">0.009</mo_smrVal>
     </mo_stochasticMortRate>
-  </StochasticMortality9>
-  <StochasticMortality10>
+  </StochasticMortality10>
+  <StochasticMortality11>
     <mo_stochasticMortRate>
       <mo_smrVal species="Western_Hemlock">0.01</mo_smrVal>
       <mo_smrVal species="Western_redcedar">0.01</mo_smrVal>
@@ -4137,98 +5658,21 @@
       <mo_smrVal species="Black_Cottonwood">0.01</mo_smrVal>
       <mo_smrVal species="Paper_Birch">0.01</mo_smrVal>
     </mo_stochasticMortRate>
-  </StochasticMortality10>
-  <WeibullSnagMortality11>
-    <mo_snag1WeibullA>
-      <mo_s1waVal species="Western_Hemlock">0.05</mo_s1waVal>
-      <mo_s1waVal species="Western_redcedar">0.05</mo_s1waVal>
-      <mo_s1waVal species="Amabalis_Fir">0.05</mo_s1waVal>
-      <mo_s1waVal species="Subalpine_Fir">0.05</mo_s1waVal>
-      <mo_s1waVal species="Hybrid_spruce">0.05</mo_s1waVal>
-      <mo_s1waVal species="Lodgepole_Pine">0.05</mo_s1waVal>
-      <mo_s1waVal species="Trembling_Aspen">0.05</mo_s1waVal>
-      <mo_s1waVal species="Black_Cottonwood">0.05</mo_s1waVal>
-      <mo_s1waVal species="Paper_Birch">0.05</mo_s1waVal>
-    </mo_snag1WeibullA>
-    <mo_snag2WeibullA>
-      <mo_s2waVal species="Western_Hemlock">0.05</mo_s2waVal>
-      <mo_s2waVal species="Western_redcedar">0.05</mo_s2waVal>
-      <mo_s2waVal species="Amabalis_Fir">0.05</mo_s2waVal>
-      <mo_s2waVal species="Subalpine_Fir">0.05</mo_s2waVal>
-      <mo_s2waVal species="Hybrid_spruce">0.05</mo_s2waVal>
-      <mo_s2waVal species="Lodgepole_Pine">0.05</mo_s2waVal>
-      <mo_s2waVal species="Trembling_Aspen">0.05</mo_s2waVal>
-      <mo_s2waVal species="Black_Cottonwood">0.05</mo_s2waVal>
-      <mo_s2waVal species="Paper_Birch">0.05</mo_s2waVal>
-    </mo_snag2WeibullA>
-    <mo_snag3WeibullA>
-      <mo_s3waVal species="Western_Hemlock">0.05</mo_s3waVal>
-      <mo_s3waVal species="Western_redcedar">0.05</mo_s3waVal>
-      <mo_s3waVal species="Amabalis_Fir">0.05</mo_s3waVal>
-      <mo_s3waVal species="Subalpine_Fir">0.05</mo_s3waVal>
-      <mo_s3waVal species="Hybrid_spruce">0.05</mo_s3waVal>
-      <mo_s3waVal species="Lodgepole_Pine">0.05</mo_s3waVal>
-      <mo_s3waVal species="Trembling_Aspen">0.05</mo_s3waVal>
-      <mo_s3waVal species="Black_Cottonwood">0.05</mo_s3waVal>
-      <mo_s3waVal species="Paper_Birch">0.05</mo_s3waVal>
-    </mo_snag3WeibullA>
-    <mo_snag1WeibullB>
-      <mo_s1wbVal species="Western_Hemlock">2.5</mo_s1wbVal>
-      <mo_s1wbVal species="Western_redcedar">2.5</mo_s1wbVal>
-      <mo_s1wbVal species="Amabalis_Fir">2.5</mo_s1wbVal>
-      <mo_s1wbVal species="Subalpine_Fir">2.5</mo_s1wbVal>
-      <mo_s1wbVal species="Hybrid_spruce">2.5</mo_s1wbVal>
-      <mo_s1wbVal species="Lodgepole_Pine">2.5</mo_s1wbVal>
-      <mo_s1wbVal species="Trembling_Aspen">2.5</mo_s1wbVal>
-      <mo_s1wbVal species="Black_Cottonwood">2.5</mo_s1wbVal>
-      <mo_s1wbVal species="Paper_Birch">2.5</mo_s1wbVal>
-    </mo_snag1WeibullB>
-    <mo_snag2WeibullB>
-      <mo_s2wbVal species="Western_Hemlock">2.5</mo_s2wbVal>
-      <mo_s2wbVal species="Western_redcedar">2.5</mo_s2wbVal>
-      <mo_s2wbVal species="Amabalis_Fir">2.5</mo_s2wbVal>
-      <mo_s2wbVal species="Subalpine_Fir">2.5</mo_s2wbVal>
-      <mo_s2wbVal species="Hybrid_spruce">2.5</mo_s2wbVal>
-      <mo_s2wbVal species="Lodgepole_Pine">2.5</mo_s2wbVal>
-      <mo_s2wbVal species="Trembling_Aspen">2.5</mo_s2wbVal>
-      <mo_s2wbVal species="Black_Cottonwood">2.5</mo_s2wbVal>
-      <mo_s2wbVal species="Paper_Birch">2.5</mo_s2wbVal>
-    </mo_snag2WeibullB>
-    <mo_snag3WeibullB>
-      <mo_s3wbVal species="Western_Hemlock">2.5</mo_s3wbVal>
-      <mo_s3wbVal species="Western_redcedar">2.5</mo_s3wbVal>
-      <mo_s3wbVal species="Amabalis_Fir">2.5</mo_s3wbVal>
-      <mo_s3wbVal species="Subalpine_Fir">2.5</mo_s3wbVal>
-      <mo_s3wbVal species="Hybrid_spruce">2.5</mo_s3wbVal>
-      <mo_s3wbVal species="Lodgepole_Pine">2.5</mo_s3wbVal>
-      <mo_s3wbVal species="Trembling_Aspen">2.5</mo_s3wbVal>
-      <mo_s3wbVal species="Black_Cottonwood">2.5</mo_s3wbVal>
-      <mo_s3wbVal species="Paper_Birch">2.5</mo_s3wbVal>
-    </mo_snag3WeibullB>
-    <mo_snagSizeClass1DBH>
-      <mo_sc1dVal species="Western_Hemlock">8.0</mo_sc1dVal>
-      <mo_sc1dVal species="Western_redcedar">8.0</mo_sc1dVal>
-      <mo_sc1dVal species="Amabalis_Fir">8.0</mo_sc1dVal>
-      <mo_sc1dVal species="Subalpine_Fir">8.0</mo_sc1dVal>
-      <mo_sc1dVal species="Hybrid_spruce">8.0</mo_sc1dVal>
-      <mo_sc1dVal species="Lodgepole_Pine">8.0</mo_sc1dVal>
-      <mo_sc1dVal species="Trembling_Aspen">8.0</mo_sc1dVal>
-      <mo_sc1dVal species="Black_Cottonwood">8.0</mo_sc1dVal>
-      <mo_sc1dVal species="Paper_Birch">8.0</mo_sc1dVal>
-    </mo_snagSizeClass1DBH>
-    <mo_snagSizeClass2DBH>
-      <mo_sc2dVal species="Western_Hemlock">20.0</mo_sc2dVal>
-      <mo_sc2dVal species="Western_redcedar">20.0</mo_sc2dVal>
-      <mo_sc2dVal species="Amabalis_Fir">20.0</mo_sc2dVal>
-      <mo_sc2dVal species="Subalpine_Fir">20.0</mo_sc2dVal>
-      <mo_sc2dVal species="Hybrid_spruce">20.0</mo_sc2dVal>
-      <mo_sc2dVal species="Lodgepole_Pine">20.0</mo_sc2dVal>
-      <mo_sc2dVal species="Trembling_Aspen">20.0</mo_sc2dVal>
-      <mo_sc2dVal species="Black_Cottonwood">20.0</mo_sc2dVal>
-      <mo_sc2dVal species="Paper_Birch">20.0</mo_sc2dVal>
-    </mo_snagSizeClass2DBH>
-  </WeibullSnagMortality11>
-  <DensitySelfThinning12>
+  </StochasticMortality11>
+  <StochasticMortality12>
+    <mo_stochasticMortRate>
+      <mo_smrVal species="Western_Hemlock">1.0</mo_smrVal>
+      <mo_smrVal species="Western_redcedar">1.0</mo_smrVal>
+      <mo_smrVal species="Amabalis_Fir">1.0</mo_smrVal>
+      <mo_smrVal species="Subalpine_Fir">1.0</mo_smrVal>
+      <mo_smrVal species="Hybrid_spruce">1.0</mo_smrVal>
+      <mo_smrVal species="Lodgepole_Pine">1.0</mo_smrVal>
+      <mo_smrVal species="Trembling_Aspen">1.0</mo_smrVal>
+      <mo_smrVal species="Black_Cottonwood">1.0</mo_smrVal>
+      <mo_smrVal species="Paper_Birch">1.0</mo_smrVal>
+    </mo_stochasticMortRate>
+  </StochasticMortality12>
+  <DensitySelfThinning13>
     <mo_selfThinAsymptote>
       <mo_staVal species="Trembling_Aspen">0.1019</mo_staVal>
     </mo_selfThinAsymptote>
@@ -4244,9 +5688,9 @@
     <mo_selfThinRadius>
       <mo_strVal species="Trembling_Aspen">5.0</mo_strVal>
     </mo_selfThinRadius>
-  </DensitySelfThinning12>
-  <SnagDecayClassDynamics13>
-    <sd_snagDecompTreefallAlpha>-0.805</sd_snagDecompTreefallAlpha>
+  </DensitySelfThinning13>
+  <SnagDecayClassDynamics14>
+    <sd_snagDecompTreefallAlpha>-100.0</sd_snagDecompTreefallAlpha>
     <sd_snagDecompTreefallBeta>
       <sd_sdtbVal species="Western_Hemlock">1.151</sd_sdtbVal>
       <sd_sdtbVal species="Western_redcedar">1.151</sd_sdtbVal>
@@ -4256,12 +5700,12 @@
       <sd_sdtbVal species="Lodgepole_Pine">1.151</sd_sdtbVal>
       <sd_sdtbVal species="Trembling_Aspen">-0.404</sd_sdtbVal>
       <sd_sdtbVal species="Black_Cottonwood">-0.404</sd_sdtbVal>
-      <sd_sdtbVal species="Paper_Birch">0.444</sd_sdtbVal>
+      <sd_sdtbVal species="Paper_Birch">-0.907</sd_sdtbVal>
     </sd_snagDecompTreefallBeta>
-    <sd_snagDecompTreefallDelta>0.0</sd_snagDecompTreefallDelta>
-    <sd_snagDecompTreefallTheta>0.0</sd_snagDecompTreefallTheta>
+    <sd_snagDecompTreefallDelta>-0.016</sd_snagDecompTreefallDelta>
+    <sd_snagDecompTreefallTheta>-0.026</sd_snagDecompTreefallTheta>
     <sd_snagDecompTreefallIota>3.389</sd_snagDecompTreefallIota>
-    <sd_snagDecompTreefallLambda>0.0</sd_snagDecompTreefallLambda>
+    <sd_snagDecompTreefallLambda>-0.084</sd_snagDecompTreefallLambda>
     <sd_snagDecompSnagfallAlpha>5.691</sd_snagDecompSnagfallAlpha>
     <sd_snagDecompSnagfallBeta>
       <sd_sdsbVal species="Western_Hemlock">-0.293</sd_sdsbVal>
@@ -4272,43 +5716,44 @@
       <sd_sdsbVal species="Lodgepole_Pine">-0.293</sd_sdsbVal>
       <sd_sdsbVal species="Trembling_Aspen">0.189</sd_sdsbVal>
       <sd_sdsbVal species="Black_Cottonwood">0.189</sd_sdsbVal>
-      <sd_sdsbVal species="Paper_Birch">0.466</sd_sdsbVal>
+      <sd_sdsbVal species="Paper_Birch">-0.481</sd_sdsbVal>
     </sd_snagDecompSnagfallBeta>
     <sd_snagDecompSnagfallGamma2>0.177</sd_snagDecompSnagfallGamma2>
     <sd_snagDecompSnagfallGamma3>0.542</sd_snagDecompSnagfallGamma3>
     <sd_snagDecompSnagfallGamma4>0.702</sd_snagDecompSnagfallGamma4>
     <sd_snagDecompSnagfallGamma5>0.528</sd_snagDecompSnagfallGamma5>
-    <sd_snagDecompSnagfallZeta>0.0</sd_snagDecompSnagfallZeta>
-    <sd_snagDecompSnagfallEta>0.0</sd_snagDecompSnagfallEta>
-    <sd_snagDecompSnagfallKappa>0.0</sd_snagDecompSnagfallKappa>
-    <sd_snagDecompLiveTo1Prob>0.8</sd_snagDecompLiveTo1Prob>
-    <sd_snagDecompLiveTo2Prob>0.1</sd_snagDecompLiveTo2Prob>
-    <sd_snagDecompLiveTo3Prob>0.05</sd_snagDecompLiveTo3Prob>
-    <sd_snagDecompLiveTo4Prob>0.05</sd_snagDecompLiveTo4Prob>
-    <sd_snagDecompLiveTo5Prob>0.0</sd_snagDecompLiveTo5Prob>
-    <sd_snagDecomp1To1Prob>0.8</sd_snagDecomp1To1Prob>
-    <sd_snagDecomp1To2Prob>0.1</sd_snagDecomp1To2Prob>
-    <sd_snagDecomp1To3Prob>0.05</sd_snagDecomp1To3Prob>
-    <sd_snagDecomp1To4Prob>0.05</sd_snagDecomp1To4Prob>
-    <sd_snagDecomp1To5Prob>0.0</sd_snagDecomp1To5Prob>
-    <sd_snagDecomp2To2Prob>0.8</sd_snagDecomp2To2Prob>
-    <sd_snagDecomp2To3Prob>0.1</sd_snagDecomp2To3Prob>
-    <sd_snagDecomp2To4Prob>0.05</sd_snagDecomp2To4Prob>
-    <sd_snagDecomp2To5Prob>0.05</sd_snagDecomp2To5Prob>
-    <sd_snagDecomp3To3Prob>0.8</sd_snagDecomp3To3Prob>
-    <sd_snagDecomp3To4Prob>0.1</sd_snagDecomp3To4Prob>
-    <sd_snagDecomp3To5Prob>0.1</sd_snagDecomp3To5Prob>
-    <sd_snagDecomp4To4Prob>0.8</sd_snagDecomp4To4Prob>
-    <sd_snagDecomp4To5Prob>0.2</sd_snagDecomp4To5Prob>
+    <sd_snagDecompSnagfallZeta>-3.777</sd_snagDecompSnagfallZeta>
+    <sd_snagDecompSnagfallEta>0.531</sd_snagDecompSnagfallEta>
+    <sd_snagDecompSnagfallKappa>0.157</sd_snagDecompSnagfallKappa>
+    <sd_snagDecompLiveTo1Prob>0.29</sd_snagDecompLiveTo1Prob>
+    <sd_snagDecompLiveTo2Prob>0.229</sd_snagDecompLiveTo2Prob>
+    <sd_snagDecompLiveTo3Prob>0.196</sd_snagDecompLiveTo3Prob>
+    <sd_snagDecompLiveTo4Prob>0.124</sd_snagDecompLiveTo4Prob>
+    <sd_snagDecompLiveTo5Prob>0.161</sd_snagDecompLiveTo5Prob>
+    <sd_snagDecomp1To1Prob>0.045</sd_snagDecomp1To1Prob>
+    <sd_snagDecomp1To2Prob>0.186</sd_snagDecomp1To2Prob>
+    <sd_snagDecomp1To3Prob>0.329</sd_snagDecomp1To3Prob>
+    <sd_snagDecomp1To4Prob>0.166</sd_snagDecomp1To4Prob>
+    <sd_snagDecomp1To5Prob>0.274</sd_snagDecomp1To5Prob>
+    <sd_snagDecomp2To2Prob>0.165</sd_snagDecomp2To2Prob>
+    <sd_snagDecomp2To3Prob>0.379</sd_snagDecomp2To3Prob>
+    <sd_snagDecomp2To4Prob>0.204</sd_snagDecomp2To4Prob>
+    <sd_snagDecomp2To5Prob>0.252</sd_snagDecomp2To5Prob>
+    <sd_snagDecomp3To3Prob>0.351</sd_snagDecomp3To3Prob>
+    <sd_snagDecomp3To4Prob>0.346</sd_snagDecomp3To4Prob>
+    <sd_snagDecomp3To5Prob>0.303</sd_snagDecomp3To5Prob>
+    <sd_snagDecomp4To4Prob>0.527</sd_snagDecomp4To4Prob>
+    <sd_snagDecomp4To5Prob>0.473</sd_snagDecomp4To5Prob>
     <sd_snagDecomp5To5Prob>1.0</sd_snagDecomp5To5Prob>
     <sd_minSnagBreakHeight>3.0</sd_minSnagBreakHeight>
     <sd_maxSnagBreakHeight>10.0</sd_maxSnagBreakHeight>
     <sd_snagDecomp5To5Prob>1.0</sd_snagDecomp5To5Prob>
-  </SnagDecayClassDynamics13>
-  <DetailedSubstrate14>
+    <sd_snagDecompInitialClasses/>
+  </SnagDecayClassDynamics14>
+  <DetailedSubstrate15>
     <su_logSpGroupAssignment>
       <su_lsgaVal species="Western_Hemlock">1</su_lsgaVal>
-      <su_lsgaVal species="Western_redcedar">1</su_lsgaVal>
+      <su_lsgaVal species="Western_redcedar">3</su_lsgaVal>
       <su_lsgaVal species="Amabalis_Fir">1</su_lsgaVal>
       <su_lsgaVal species="Subalpine_Fir">1</su_lsgaVal>
       <su_lsgaVal species="Hybrid_spruce">1</su_lsgaVal>
@@ -4318,13 +5763,13 @@
       <su_lsgaVal species="Paper_Birch">2</su_lsgaVal>
     </su_logSpGroupAssignment>
     <su_propOfFallUproot>
-      <su_pofuVal species="Western_Hemlock">0.5</su_pofuVal>
-      <su_pofuVal species="Western_redcedar">0.5</su_pofuVal>
-      <su_pofuVal species="Amabalis_Fir">0.5</su_pofuVal>
-      <su_pofuVal species="Subalpine_Fir">0.5</su_pofuVal>
-      <su_pofuVal species="Hybrid_spruce">0.5</su_pofuVal>
-      <su_pofuVal species="Lodgepole_Pine">0.5</su_pofuVal>
-      <su_pofuVal species="Trembling_Aspen">0.5</su_pofuVal>
+      <su_pofuVal species="Western_Hemlock">0.8</su_pofuVal>
+      <su_pofuVal species="Western_redcedar">0.8</su_pofuVal>
+      <su_pofuVal species="Amabalis_Fir">0.8</su_pofuVal>
+      <su_pofuVal species="Subalpine_Fir">0.8</su_pofuVal>
+      <su_pofuVal species="Hybrid_spruce">0.8</su_pofuVal>
+      <su_pofuVal species="Lodgepole_Pine">0.3</su_pofuVal>
+      <su_pofuVal species="Trembling_Aspen">0.3</su_pofuVal>
       <su_pofuVal species="Black_Cottonwood">0.5</su_pofuVal>
       <su_pofuVal species="Paper_Birch">0.5</su_pofuVal>
     </su_propOfFallUproot>
@@ -4355,71 +5800,71 @@
     <su_propFallenTreesLogDecayClass3>0.1</su_propFallenTreesLogDecayClass3>
     <su_propFallenTreesLogDecayClass4>0.0</su_propFallenTreesLogDecayClass4>
     <su_propFallenTreesLogDecayClass5>0.0</su_propFallenTreesLogDecayClass5>
-    <su_propFallenSnagsLogDecayClass1>0.5</su_propFallenSnagsLogDecayClass1>
-    <su_propFallenSnagsLogDecayClass2>0.3</su_propFallenSnagsLogDecayClass2>
-    <su_propFallenSnagsLogDecayClass3>0.1</su_propFallenSnagsLogDecayClass3>
-    <su_propFallenSnagsLogDecayClass4>0.1</su_propFallenSnagsLogDecayClass4>
-    <su_propFallenSnagsLogDecayClass5>0.0</su_propFallenSnagsLogDecayClass5>
-    <su_logSpGroup1SmallDecayClass1DecayAlpha>-0.001</su_logSpGroup1SmallDecayClass1DecayAlpha>
-    <su_logSpGroup1SmallDecayClass2DecayAlpha>-0.001</su_logSpGroup1SmallDecayClass2DecayAlpha>
-    <su_logSpGroup1SmallDecayClass3DecayAlpha>-0.001</su_logSpGroup1SmallDecayClass3DecayAlpha>
-    <su_logSpGroup1SmallDecayClass4DecayAlpha>-0.001</su_logSpGroup1SmallDecayClass4DecayAlpha>
-    <su_logSpGroup1SmallDecayClass5DecayAlpha>-0.001</su_logSpGroup1SmallDecayClass5DecayAlpha>
-    <su_logSpGroup2SmallDecayClass1DecayAlpha>-0.001</su_logSpGroup2SmallDecayClass1DecayAlpha>
-    <su_logSpGroup2SmallDecayClass2DecayAlpha>-0.001</su_logSpGroup2SmallDecayClass2DecayAlpha>
-    <su_logSpGroup2SmallDecayClass3DecayAlpha>-0.001</su_logSpGroup2SmallDecayClass3DecayAlpha>
-    <su_logSpGroup2SmallDecayClass4DecayAlpha>-0.001</su_logSpGroup2SmallDecayClass4DecayAlpha>
-    <su_logSpGroup2SmallDecayClass5DecayAlpha>-0.001</su_logSpGroup2SmallDecayClass5DecayAlpha>
-    <su_logSpGroup3SmallDecayClass1DecayAlpha>-0.001</su_logSpGroup3SmallDecayClass1DecayAlpha>
-    <su_logSpGroup3SmallDecayClass2DecayAlpha>-0.001</su_logSpGroup3SmallDecayClass2DecayAlpha>
-    <su_logSpGroup3SmallDecayClass3DecayAlpha>-0.001</su_logSpGroup3SmallDecayClass3DecayAlpha>
-    <su_logSpGroup3SmallDecayClass4DecayAlpha>-0.001</su_logSpGroup3SmallDecayClass4DecayAlpha>
-    <su_logSpGroup3SmallDecayClass5DecayAlpha>-0.001</su_logSpGroup3SmallDecayClass5DecayAlpha>
-    <su_logSpGroup1LargeDecayClass1DecayAlpha>-0.001</su_logSpGroup1LargeDecayClass1DecayAlpha>
-    <su_logSpGroup1LargeDecayClass2DecayAlpha>-0.001</su_logSpGroup1LargeDecayClass2DecayAlpha>
-    <su_logSpGroup1LargeDecayClass3DecayAlpha>-0.001</su_logSpGroup1LargeDecayClass3DecayAlpha>
-    <su_logSpGroup1LargeDecayClass4DecayAlpha>-0.001</su_logSpGroup1LargeDecayClass4DecayAlpha>
-    <su_logSpGroup1LargeDecayClass5DecayAlpha>-0.001</su_logSpGroup1LargeDecayClass5DecayAlpha>
-    <su_logSpGroup2LargeDecayClass1DecayAlpha>-0.001</su_logSpGroup2LargeDecayClass1DecayAlpha>
-    <su_logSpGroup2LargeDecayClass2DecayAlpha>-0.001</su_logSpGroup2LargeDecayClass2DecayAlpha>
-    <su_logSpGroup2LargeDecayClass3DecayAlpha>-0.001</su_logSpGroup2LargeDecayClass3DecayAlpha>
-    <su_logSpGroup2LargeDecayClass4DecayAlpha>-0.001</su_logSpGroup2LargeDecayClass4DecayAlpha>
-    <su_logSpGroup2LargeDecayClass5DecayAlpha>-0.001</su_logSpGroup2LargeDecayClass5DecayAlpha>
-    <su_logSpGroup3LargeDecayClass1DecayAlpha>-0.001</su_logSpGroup3LargeDecayClass1DecayAlpha>
-    <su_logSpGroup3LargeDecayClass2DecayAlpha>-0.001</su_logSpGroup3LargeDecayClass2DecayAlpha>
-    <su_logSpGroup3LargeDecayClass3DecayAlpha>-0.001</su_logSpGroup3LargeDecayClass3DecayAlpha>
-    <su_logSpGroup3LargeDecayClass4DecayAlpha>-0.001</su_logSpGroup3LargeDecayClass4DecayAlpha>
-    <su_logSpGroup3LargeDecayClass5DecayAlpha>-0.001</su_logSpGroup3LargeDecayClass5DecayAlpha>
-    <su_logSpGroup1SmallDecayClass1DecayBeta>0.2</su_logSpGroup1SmallDecayClass1DecayBeta>
-    <su_logSpGroup1SmallDecayClass2DecayBeta>0.2</su_logSpGroup1SmallDecayClass2DecayBeta>
-    <su_logSpGroup1SmallDecayClass3DecayBeta>0.2</su_logSpGroup1SmallDecayClass3DecayBeta>
-    <su_logSpGroup1SmallDecayClass4DecayBeta>0.2</su_logSpGroup1SmallDecayClass4DecayBeta>
-    <su_logSpGroup1SmallDecayClass5DecayBeta>0.2</su_logSpGroup1SmallDecayClass5DecayBeta>
-    <su_logSpGroup2SmallDecayClass1DecayBeta>0.2</su_logSpGroup2SmallDecayClass1DecayBeta>
-    <su_logSpGroup2SmallDecayClass2DecayBeta>0.2</su_logSpGroup2SmallDecayClass2DecayBeta>
-    <su_logSpGroup2SmallDecayClass3DecayBeta>0.2</su_logSpGroup2SmallDecayClass3DecayBeta>
-    <su_logSpGroup2SmallDecayClass4DecayBeta>0.2</su_logSpGroup2SmallDecayClass4DecayBeta>
-    <su_logSpGroup2SmallDecayClass5DecayBeta>0.2</su_logSpGroup2SmallDecayClass5DecayBeta>
-    <su_logSpGroup3SmallDecayClass1DecayBeta>0.2</su_logSpGroup3SmallDecayClass1DecayBeta>
-    <su_logSpGroup3SmallDecayClass2DecayBeta>0.2</su_logSpGroup3SmallDecayClass2DecayBeta>
-    <su_logSpGroup3SmallDecayClass3DecayBeta>0.2</su_logSpGroup3SmallDecayClass3DecayBeta>
-    <su_logSpGroup3SmallDecayClass4DecayBeta>0.2</su_logSpGroup3SmallDecayClass4DecayBeta>
-    <su_logSpGroup3SmallDecayClass5DecayBeta>0.2</su_logSpGroup3SmallDecayClass5DecayBeta>
-    <su_logSpGroup1LargeDecayClass1DecayBeta>0.2</su_logSpGroup1LargeDecayClass1DecayBeta>
-    <su_logSpGroup1LargeDecayClass2DecayBeta>0.2</su_logSpGroup1LargeDecayClass2DecayBeta>
-    <su_logSpGroup1LargeDecayClass3DecayBeta>0.2</su_logSpGroup1LargeDecayClass3DecayBeta>
-    <su_logSpGroup1LargeDecayClass4DecayBeta>0.2</su_logSpGroup1LargeDecayClass4DecayBeta>
-    <su_logSpGroup1LargeDecayClass5DecayBeta>0.2</su_logSpGroup1LargeDecayClass5DecayBeta>
-    <su_logSpGroup2LargeDecayClass1DecayBeta>0.2</su_logSpGroup2LargeDecayClass1DecayBeta>
-    <su_logSpGroup2LargeDecayClass2DecayBeta>0.2</su_logSpGroup2LargeDecayClass2DecayBeta>
-    <su_logSpGroup2LargeDecayClass3DecayBeta>0.2</su_logSpGroup2LargeDecayClass3DecayBeta>
-    <su_logSpGroup2LargeDecayClass4DecayBeta>0.2</su_logSpGroup2LargeDecayClass4DecayBeta>
-    <su_logSpGroup2LargeDecayClass5DecayBeta>0.2</su_logSpGroup2LargeDecayClass5DecayBeta>
-    <su_logSpGroup3LargeDecayClass1DecayBeta>0.2</su_logSpGroup3LargeDecayClass1DecayBeta>
-    <su_logSpGroup3LargeDecayClass2DecayBeta>0.2</su_logSpGroup3LargeDecayClass2DecayBeta>
-    <su_logSpGroup3LargeDecayClass3DecayBeta>0.2</su_logSpGroup3LargeDecayClass3DecayBeta>
-    <su_logSpGroup3LargeDecayClass4DecayBeta>0.2</su_logSpGroup3LargeDecayClass4DecayBeta>
-    <su_logSpGroup3LargeDecayClass5DecayBeta>0.2</su_logSpGroup3LargeDecayClass5DecayBeta>
+    <su_propFallenSnagsLogDecayClass1>0.0</su_propFallenSnagsLogDecayClass1>
+    <su_propFallenSnagsLogDecayClass2>0.1</su_propFallenSnagsLogDecayClass2>
+    <su_propFallenSnagsLogDecayClass3>0.8</su_propFallenSnagsLogDecayClass3>
+    <su_propFallenSnagsLogDecayClass4>0.05</su_propFallenSnagsLogDecayClass4>
+    <su_propFallenSnagsLogDecayClass5>0.05</su_propFallenSnagsLogDecayClass5>
+    <su_logSpGroup1SmallDecayClass1DecayAlpha>-0.0318</su_logSpGroup1SmallDecayClass1DecayAlpha>
+    <su_logSpGroup1SmallDecayClass2DecayAlpha>-0.0318</su_logSpGroup1SmallDecayClass2DecayAlpha>
+    <su_logSpGroup1SmallDecayClass3DecayAlpha>-0.0318</su_logSpGroup1SmallDecayClass3DecayAlpha>
+    <su_logSpGroup1SmallDecayClass4DecayAlpha>-0.0318</su_logSpGroup1SmallDecayClass4DecayAlpha>
+    <su_logSpGroup1SmallDecayClass5DecayAlpha>-0.0318</su_logSpGroup1SmallDecayClass5DecayAlpha>
+    <su_logSpGroup2SmallDecayClass1DecayAlpha>-0.008</su_logSpGroup2SmallDecayClass1DecayAlpha>
+    <su_logSpGroup2SmallDecayClass2DecayAlpha>-0.008</su_logSpGroup2SmallDecayClass2DecayAlpha>
+    <su_logSpGroup2SmallDecayClass3DecayAlpha>-0.008</su_logSpGroup2SmallDecayClass3DecayAlpha>
+    <su_logSpGroup2SmallDecayClass4DecayAlpha>-0.008</su_logSpGroup2SmallDecayClass4DecayAlpha>
+    <su_logSpGroup2SmallDecayClass5DecayAlpha>-0.008</su_logSpGroup2SmallDecayClass5DecayAlpha>
+    <su_logSpGroup3SmallDecayClass1DecayAlpha>-0.051</su_logSpGroup3SmallDecayClass1DecayAlpha>
+    <su_logSpGroup3SmallDecayClass2DecayAlpha>-0.051</su_logSpGroup3SmallDecayClass2DecayAlpha>
+    <su_logSpGroup3SmallDecayClass3DecayAlpha>-0.051</su_logSpGroup3SmallDecayClass3DecayAlpha>
+    <su_logSpGroup3SmallDecayClass4DecayAlpha>-0.051</su_logSpGroup3SmallDecayClass4DecayAlpha>
+    <su_logSpGroup3SmallDecayClass5DecayAlpha>-0.051</su_logSpGroup3SmallDecayClass5DecayAlpha>
+    <su_logSpGroup1LargeDecayClass1DecayAlpha>-0.0318</su_logSpGroup1LargeDecayClass1DecayAlpha>
+    <su_logSpGroup1LargeDecayClass2DecayAlpha>-0.0318</su_logSpGroup1LargeDecayClass2DecayAlpha>
+    <su_logSpGroup1LargeDecayClass3DecayAlpha>-0.0318</su_logSpGroup1LargeDecayClass3DecayAlpha>
+    <su_logSpGroup1LargeDecayClass4DecayAlpha>-0.0318</su_logSpGroup1LargeDecayClass4DecayAlpha>
+    <su_logSpGroup1LargeDecayClass5DecayAlpha>-0.0318</su_logSpGroup1LargeDecayClass5DecayAlpha>
+    <su_logSpGroup2LargeDecayClass1DecayAlpha>-0.008</su_logSpGroup2LargeDecayClass1DecayAlpha>
+    <su_logSpGroup2LargeDecayClass2DecayAlpha>-0.008</su_logSpGroup2LargeDecayClass2DecayAlpha>
+    <su_logSpGroup2LargeDecayClass3DecayAlpha>-0.008</su_logSpGroup2LargeDecayClass3DecayAlpha>
+    <su_logSpGroup2LargeDecayClass4DecayAlpha>-0.008</su_logSpGroup2LargeDecayClass4DecayAlpha>
+    <su_logSpGroup2LargeDecayClass5DecayAlpha>-0.008</su_logSpGroup2LargeDecayClass5DecayAlpha>
+    <su_logSpGroup3LargeDecayClass1DecayAlpha>-0.051</su_logSpGroup3LargeDecayClass1DecayAlpha>
+    <su_logSpGroup3LargeDecayClass2DecayAlpha>-0.051</su_logSpGroup3LargeDecayClass2DecayAlpha>
+    <su_logSpGroup3LargeDecayClass3DecayAlpha>-0.051</su_logSpGroup3LargeDecayClass3DecayAlpha>
+    <su_logSpGroup3LargeDecayClass4DecayAlpha>-0.051</su_logSpGroup3LargeDecayClass4DecayAlpha>
+    <su_logSpGroup3LargeDecayClass5DecayAlpha>-0.051</su_logSpGroup3LargeDecayClass5DecayAlpha>
+    <su_logSpGroup1SmallDecayClass1DecayBeta>0.5</su_logSpGroup1SmallDecayClass1DecayBeta>
+    <su_logSpGroup1SmallDecayClass2DecayBeta>0.5</su_logSpGroup1SmallDecayClass2DecayBeta>
+    <su_logSpGroup1SmallDecayClass3DecayBeta>0.5</su_logSpGroup1SmallDecayClass3DecayBeta>
+    <su_logSpGroup1SmallDecayClass4DecayBeta>0.5</su_logSpGroup1SmallDecayClass4DecayBeta>
+    <su_logSpGroup1SmallDecayClass5DecayBeta>0.5</su_logSpGroup1SmallDecayClass5DecayBeta>
+    <su_logSpGroup2SmallDecayClass1DecayBeta>0.5</su_logSpGroup2SmallDecayClass1DecayBeta>
+    <su_logSpGroup2SmallDecayClass2DecayBeta>0.5</su_logSpGroup2SmallDecayClass2DecayBeta>
+    <su_logSpGroup2SmallDecayClass3DecayBeta>0.5</su_logSpGroup2SmallDecayClass3DecayBeta>
+    <su_logSpGroup2SmallDecayClass4DecayBeta>0.5</su_logSpGroup2SmallDecayClass4DecayBeta>
+    <su_logSpGroup2SmallDecayClass5DecayBeta>0.5</su_logSpGroup2SmallDecayClass5DecayBeta>
+    <su_logSpGroup3SmallDecayClass1DecayBeta>0.5</su_logSpGroup3SmallDecayClass1DecayBeta>
+    <su_logSpGroup3SmallDecayClass2DecayBeta>0.5</su_logSpGroup3SmallDecayClass2DecayBeta>
+    <su_logSpGroup3SmallDecayClass3DecayBeta>0.5</su_logSpGroup3SmallDecayClass3DecayBeta>
+    <su_logSpGroup3SmallDecayClass4DecayBeta>0.5</su_logSpGroup3SmallDecayClass4DecayBeta>
+    <su_logSpGroup3SmallDecayClass5DecayBeta>0.5</su_logSpGroup3SmallDecayClass5DecayBeta>
+    <su_logSpGroup1LargeDecayClass1DecayBeta>0.1</su_logSpGroup1LargeDecayClass1DecayBeta>
+    <su_logSpGroup1LargeDecayClass2DecayBeta>0.1</su_logSpGroup1LargeDecayClass2DecayBeta>
+    <su_logSpGroup1LargeDecayClass3DecayBeta>0.1</su_logSpGroup1LargeDecayClass3DecayBeta>
+    <su_logSpGroup1LargeDecayClass4DecayBeta>0.1</su_logSpGroup1LargeDecayClass4DecayBeta>
+    <su_logSpGroup1LargeDecayClass5DecayBeta>0.1</su_logSpGroup1LargeDecayClass5DecayBeta>
+    <su_logSpGroup2LargeDecayClass1DecayBeta>0.1</su_logSpGroup2LargeDecayClass1DecayBeta>
+    <su_logSpGroup2LargeDecayClass2DecayBeta>0.1</su_logSpGroup2LargeDecayClass2DecayBeta>
+    <su_logSpGroup2LargeDecayClass3DecayBeta>0.1</su_logSpGroup2LargeDecayClass3DecayBeta>
+    <su_logSpGroup2LargeDecayClass4DecayBeta>0.1</su_logSpGroup2LargeDecayClass4DecayBeta>
+    <su_logSpGroup2LargeDecayClass5DecayBeta>0.1</su_logSpGroup2LargeDecayClass5DecayBeta>
+    <su_logSpGroup3LargeDecayClass1DecayBeta>0.1</su_logSpGroup3LargeDecayClass1DecayBeta>
+    <su_logSpGroup3LargeDecayClass2DecayBeta>0.1</su_logSpGroup3LargeDecayClass2DecayBeta>
+    <su_logSpGroup3LargeDecayClass3DecayBeta>0.1</su_logSpGroup3LargeDecayClass3DecayBeta>
+    <su_logSpGroup3LargeDecayClass4DecayBeta>0.1</su_logSpGroup3LargeDecayClass4DecayBeta>
+    <su_logSpGroup3LargeDecayClass5DecayBeta>0.1</su_logSpGroup3LargeDecayClass5DecayBeta>
     <su_initialSmallLogMeanDiameter>2.5</su_initialSmallLogMeanDiameter>
     <su_initialLargeLogMeanDiameter>12.5</su_initialLargeLogMeanDiameter>
     <su_initialLogSpGroup1SmallDecayClass1>0.02</su_initialLogSpGroup1SmallDecayClass1>
@@ -4554,9 +5999,9 @@
     <su_gapCutLargeLogMeanDiameter>12.5</su_gapCutLargeLogMeanDiameter>
     <su_clearCutSmallLogMeanDiameter>2.5</su_clearCutSmallLogMeanDiameter>
     <su_clearCutLargeLogMeanDiameter>12.5</su_clearCutLargeLogMeanDiameter>
-  </DetailedSubstrate14>
-  <RemoveDead15/>
-  <GapDisperse16>
+  </DetailedSubstrate15>
+  <RemoveDead16/>
+  <GapDisperse17>
     <di_seedDistributionMethod>0</di_seedDistributionMethod>
     <di_standardDeviation>
       <di_sdVal species="Western_Hemlock">0.0</di_sdVal>
@@ -4768,8 +6213,8 @@
       <di_lgx0Val species="Black_Cottonwood">0.0</di_lgx0Val>
       <di_lgx0Val species="Paper_Birch">0.0</di_lgx0Val>
     </di_lognormalGapX0>
-  </GapDisperse16>
-  <NonSpatialDisperse17>
+  </GapDisperse17>
+  <NonSpatialDisperse18>
     <di_seedDistributionMethod>0</di_seedDistributionMethod>
     <di_standardDeviation>
       <di_sdVal species="Western_Hemlock">0.0</di_sdVal>
@@ -4826,8 +6271,8 @@
       <di_nsiolVal species="Black_Cottonwood">0.0</di_nsiolVal>
       <di_nsiolVal species="Paper_Birch">0.0</di_nsiolVal>
     </di_nonSpatialInterceptOfLambda>
-  </NonSpatialDisperse17>
-  <SubstrateDependentSeedSurvival18>
+  </NonSpatialDisperse18>
+  <SubstrateDependentSeedSurvival19>
     <es_freshLogCanopyFav>
       <es_flcfVal species="Western_Hemlock">0.353</es_flcfVal>
       <es_flcfVal species="Western_redcedar">0.424</es_flcfVal>
@@ -4960,9 +6405,9 @@
       <es_ffmgfVal species="Black_Cottonwood">0.079</es_ffmgfVal>
       <es_ffmgfVal species="Paper_Birch">0.41</es_ffmgfVal>
     </es_forestFloorMossGapFav>
-  </SubstrateDependentSeedSurvival18>
-  <Establishment19/>
-  <Plant20>
+  </SubstrateDependentSeedSurvival19>
+  <Establishment20/>
+  <Plant21>
     <pl_initialDiam10>
       <pl_idVal species="Western_Hemlock">0.1</pl_idVal>
       <pl_idVal species="Western_redcedar">0.1</pl_idVal>
@@ -5528,7 +6973,7 @@
       <pl_applyToCell x="23" y="22"/>
       <pl_applyToCell x="23" y="23"/>
     </pl_plantEvent>
-  </Plant20>
+  </Plant21>
   <Output>
     <ou_filename>D:\Github\SORTIEparams\Outputs\ICH\DetSubstrate\ICH_det.gz.tar</ou_filename>
     <ou_treeInfo species="Western_Hemlock" type="Seedling">
@@ -5749,67 +7194,470 @@
     </ou_treeInfo>
     <ou_treeInfo species="Western_Hemlock" type="Snag">
       <ou_saveFreq>1</ou_saveFreq>
-      <ou_int>dead</ou_int>
       <ou_float>X</ou_float>
       <ou_float>Y</ou_float>
       <ou_float>DBH</ou_float>
     </ou_treeInfo>
     <ou_treeInfo species="Western_redcedar" type="Snag">
       <ou_saveFreq>1</ou_saveFreq>
-      <ou_int>dead</ou_int>
       <ou_float>X</ou_float>
       <ou_float>Y</ou_float>
       <ou_float>DBH</ou_float>
     </ou_treeInfo>
     <ou_treeInfo species="Amabalis_Fir" type="Snag">
       <ou_saveFreq>1</ou_saveFreq>
-      <ou_int>dead</ou_int>
       <ou_float>X</ou_float>
       <ou_float>Y</ou_float>
       <ou_float>DBH</ou_float>
     </ou_treeInfo>
     <ou_treeInfo species="Subalpine_Fir" type="Snag">
       <ou_saveFreq>1</ou_saveFreq>
-      <ou_int>dead</ou_int>
       <ou_float>X</ou_float>
       <ou_float>Y</ou_float>
       <ou_float>DBH</ou_float>
     </ou_treeInfo>
     <ou_treeInfo species="Hybrid_spruce" type="Snag">
       <ou_saveFreq>1</ou_saveFreq>
-      <ou_int>dead</ou_int>
       <ou_float>X</ou_float>
       <ou_float>Y</ou_float>
       <ou_float>DBH</ou_float>
     </ou_treeInfo>
     <ou_treeInfo species="Lodgepole_Pine" type="Snag">
       <ou_saveFreq>1</ou_saveFreq>
-      <ou_int>dead</ou_int>
       <ou_float>X</ou_float>
       <ou_float>Y</ou_float>
       <ou_float>DBH</ou_float>
     </ou_treeInfo>
     <ou_treeInfo species="Trembling_Aspen" type="Snag">
       <ou_saveFreq>1</ou_saveFreq>
-      <ou_int>dead</ou_int>
       <ou_float>X</ou_float>
       <ou_float>Y</ou_float>
       <ou_float>DBH</ou_float>
     </ou_treeInfo>
     <ou_treeInfo species="Black_Cottonwood" type="Snag">
       <ou_saveFreq>1</ou_saveFreq>
-      <ou_int>dead</ou_int>
       <ou_float>X</ou_float>
       <ou_float>Y</ou_float>
       <ou_float>DBH</ou_float>
     </ou_treeInfo>
     <ou_treeInfo species="Paper_Birch" type="Snag">
       <ou_saveFreq>1</ou_saveFreq>
-      <ou_int>dead</ou_int>
       <ou_float>X</ou_float>
       <ou_float>Y</ou_float>
       <ou_float>DBH</ou_float>
     </ou_treeInfo>
+    <ou_deadTreeInfo species="Western_Hemlock" type="Snag" code="natural">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_int>SnagDecayClass</ou_int>
+      <ou_float>X</ou_float>
+      <ou_float>Y</ou_float>
+      <ou_float>DBH</ou_float>
+      <ou_float>Height</ou_float>
+    </ou_deadTreeInfo>
+    <ou_deadTreeInfo species="Western_Hemlock" type="Snag" code="harvest">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_int>SnagDecayClass</ou_int>
+      <ou_float>X</ou_float>
+      <ou_float>Y</ou_float>
+      <ou_float>DBH</ou_float>
+      <ou_float>Height</ou_float>
+    </ou_deadTreeInfo>
+    <ou_deadTreeInfo species="Western_Hemlock" type="Snag" code="insects">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_int>SnagDecayClass</ou_int>
+      <ou_float>X</ou_float>
+      <ou_float>Y</ou_float>
+      <ou_float>DBH</ou_float>
+      <ou_float>Height</ou_float>
+    </ou_deadTreeInfo>
+    <ou_deadTreeInfo species="Western_Hemlock" type="Snag" code="disease">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_int>SnagDecayClass</ou_int>
+      <ou_float>X</ou_float>
+      <ou_float>Y</ou_float>
+      <ou_float>DBH</ou_float>
+      <ou_float>Height</ou_float>
+    </ou_deadTreeInfo>
+    <ou_deadTreeInfo species="Western_Hemlock" type="Snag" code="storm">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_int>SnagDecayClass</ou_int>
+      <ou_float>X</ou_float>
+      <ou_float>Y</ou_float>
+      <ou_float>DBH</ou_float>
+      <ou_float>Height</ou_float>
+    </ou_deadTreeInfo>
+    <ou_deadTreeInfo species="Western_redcedar" type="Snag" code="natural">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_int>SnagDecayClass</ou_int>
+      <ou_float>X</ou_float>
+      <ou_float>Y</ou_float>
+      <ou_float>DBH</ou_float>
+      <ou_float>Height</ou_float>
+    </ou_deadTreeInfo>
+    <ou_deadTreeInfo species="Western_redcedar" type="Snag" code="harvest">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_int>SnagDecayClass</ou_int>
+      <ou_float>X</ou_float>
+      <ou_float>Y</ou_float>
+      <ou_float>DBH</ou_float>
+      <ou_float>Height</ou_float>
+    </ou_deadTreeInfo>
+    <ou_deadTreeInfo species="Western_redcedar" type="Snag" code="insects">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_int>SnagDecayClass</ou_int>
+      <ou_float>X</ou_float>
+      <ou_float>Y</ou_float>
+      <ou_float>DBH</ou_float>
+      <ou_float>Height</ou_float>
+    </ou_deadTreeInfo>
+    <ou_deadTreeInfo species="Western_redcedar" type="Snag" code="disease">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_int>SnagDecayClass</ou_int>
+      <ou_float>X</ou_float>
+      <ou_float>Y</ou_float>
+      <ou_float>DBH</ou_float>
+      <ou_float>Height</ou_float>
+    </ou_deadTreeInfo>
+    <ou_deadTreeInfo species="Western_redcedar" type="Snag" code="storm">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_int>SnagDecayClass</ou_int>
+      <ou_float>X</ou_float>
+      <ou_float>Y</ou_float>
+      <ou_float>DBH</ou_float>
+      <ou_float>Height</ou_float>
+    </ou_deadTreeInfo>
+    <ou_deadTreeInfo species="Amabalis_Fir" type="Snag" code="natural">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_int>SnagDecayClass</ou_int>
+      <ou_float>X</ou_float>
+      <ou_float>Y</ou_float>
+      <ou_float>DBH</ou_float>
+      <ou_float>Height</ou_float>
+    </ou_deadTreeInfo>
+    <ou_deadTreeInfo species="Amabalis_Fir" type="Snag" code="harvest">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_int>SnagDecayClass</ou_int>
+      <ou_float>X</ou_float>
+      <ou_float>Y</ou_float>
+      <ou_float>DBH</ou_float>
+      <ou_float>Height</ou_float>
+    </ou_deadTreeInfo>
+    <ou_deadTreeInfo species="Amabalis_Fir" type="Snag" code="insects">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_int>SnagDecayClass</ou_int>
+      <ou_float>X</ou_float>
+      <ou_float>Y</ou_float>
+      <ou_float>DBH</ou_float>
+      <ou_float>Height</ou_float>
+    </ou_deadTreeInfo>
+    <ou_deadTreeInfo species="Amabalis_Fir" type="Snag" code="disease">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_int>SnagDecayClass</ou_int>
+      <ou_float>X</ou_float>
+      <ou_float>Y</ou_float>
+      <ou_float>DBH</ou_float>
+      <ou_float>Height</ou_float>
+    </ou_deadTreeInfo>
+    <ou_deadTreeInfo species="Amabalis_Fir" type="Snag" code="storm">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_int>SnagDecayClass</ou_int>
+      <ou_float>X</ou_float>
+      <ou_float>Y</ou_float>
+      <ou_float>DBH</ou_float>
+      <ou_float>Height</ou_float>
+    </ou_deadTreeInfo>
+    <ou_deadTreeInfo species="Subalpine_Fir" type="Snag" code="natural">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_int>SnagDecayClass</ou_int>
+      <ou_float>X</ou_float>
+      <ou_float>Y</ou_float>
+      <ou_float>DBH</ou_float>
+      <ou_float>Height</ou_float>
+    </ou_deadTreeInfo>
+    <ou_deadTreeInfo species="Subalpine_Fir" type="Snag" code="harvest">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_int>SnagDecayClass</ou_int>
+      <ou_float>X</ou_float>
+      <ou_float>Y</ou_float>
+      <ou_float>DBH</ou_float>
+      <ou_float>Height</ou_float>
+    </ou_deadTreeInfo>
+    <ou_deadTreeInfo species="Subalpine_Fir" type="Snag" code="insects">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_int>SnagDecayClass</ou_int>
+      <ou_float>X</ou_float>
+      <ou_float>Y</ou_float>
+      <ou_float>DBH</ou_float>
+      <ou_float>Height</ou_float>
+    </ou_deadTreeInfo>
+    <ou_deadTreeInfo species="Subalpine_Fir" type="Snag" code="disease">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_int>SnagDecayClass</ou_int>
+      <ou_float>X</ou_float>
+      <ou_float>Y</ou_float>
+      <ou_float>DBH</ou_float>
+      <ou_float>Height</ou_float>
+    </ou_deadTreeInfo>
+    <ou_deadTreeInfo species="Subalpine_Fir" type="Snag" code="storm">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_int>SnagDecayClass</ou_int>
+      <ou_float>X</ou_float>
+      <ou_float>Y</ou_float>
+      <ou_float>DBH</ou_float>
+      <ou_float>Height</ou_float>
+    </ou_deadTreeInfo>
+    <ou_deadTreeInfo species="Hybrid_spruce" type="Snag" code="natural">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_int>SnagDecayClass</ou_int>
+      <ou_float>X</ou_float>
+      <ou_float>Y</ou_float>
+      <ou_float>DBH</ou_float>
+      <ou_float>Height</ou_float>
+    </ou_deadTreeInfo>
+    <ou_deadTreeInfo species="Hybrid_spruce" type="Snag" code="harvest">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_int>SnagDecayClass</ou_int>
+      <ou_float>X</ou_float>
+      <ou_float>Y</ou_float>
+      <ou_float>DBH</ou_float>
+      <ou_float>Height</ou_float>
+    </ou_deadTreeInfo>
+    <ou_deadTreeInfo species="Hybrid_spruce" type="Snag" code="insects">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_int>SnagDecayClass</ou_int>
+      <ou_float>X</ou_float>
+      <ou_float>Y</ou_float>
+      <ou_float>DBH</ou_float>
+      <ou_float>Height</ou_float>
+    </ou_deadTreeInfo>
+    <ou_deadTreeInfo species="Hybrid_spruce" type="Snag" code="disease">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_int>SnagDecayClass</ou_int>
+      <ou_float>X</ou_float>
+      <ou_float>Y</ou_float>
+      <ou_float>DBH</ou_float>
+      <ou_float>Height</ou_float>
+    </ou_deadTreeInfo>
+    <ou_deadTreeInfo species="Hybrid_spruce" type="Snag" code="storm">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_int>SnagDecayClass</ou_int>
+      <ou_float>X</ou_float>
+      <ou_float>Y</ou_float>
+      <ou_float>DBH</ou_float>
+      <ou_float>Height</ou_float>
+    </ou_deadTreeInfo>
+    <ou_deadTreeInfo species="Lodgepole_Pine" type="Snag" code="natural">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_int>SnagDecayClass</ou_int>
+      <ou_float>X</ou_float>
+      <ou_float>Y</ou_float>
+      <ou_float>DBH</ou_float>
+      <ou_float>Height</ou_float>
+    </ou_deadTreeInfo>
+    <ou_deadTreeInfo species="Lodgepole_Pine" type="Snag" code="harvest">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_int>SnagDecayClass</ou_int>
+      <ou_float>X</ou_float>
+      <ou_float>Y</ou_float>
+      <ou_float>DBH</ou_float>
+      <ou_float>Height</ou_float>
+    </ou_deadTreeInfo>
+    <ou_deadTreeInfo species="Lodgepole_Pine" type="Snag" code="insects">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_int>SnagDecayClass</ou_int>
+      <ou_float>X</ou_float>
+      <ou_float>Y</ou_float>
+      <ou_float>DBH</ou_float>
+      <ou_float>Height</ou_float>
+    </ou_deadTreeInfo>
+    <ou_deadTreeInfo species="Lodgepole_Pine" type="Snag" code="disease">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_int>SnagDecayClass</ou_int>
+      <ou_float>X</ou_float>
+      <ou_float>Y</ou_float>
+      <ou_float>DBH</ou_float>
+      <ou_float>Height</ou_float>
+    </ou_deadTreeInfo>
+    <ou_deadTreeInfo species="Lodgepole_Pine" type="Snag" code="storm">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_int>SnagDecayClass</ou_int>
+      <ou_float>X</ou_float>
+      <ou_float>Y</ou_float>
+      <ou_float>DBH</ou_float>
+      <ou_float>Height</ou_float>
+    </ou_deadTreeInfo>
+    <ou_deadTreeInfo species="Trembling_Aspen" type="Snag" code="natural">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_int>SnagDecayClass</ou_int>
+      <ou_float>X</ou_float>
+      <ou_float>Y</ou_float>
+      <ou_float>DBH</ou_float>
+      <ou_float>Height</ou_float>
+    </ou_deadTreeInfo>
+    <ou_deadTreeInfo species="Trembling_Aspen" type="Snag" code="harvest">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_int>SnagDecayClass</ou_int>
+      <ou_float>X</ou_float>
+      <ou_float>Y</ou_float>
+      <ou_float>DBH</ou_float>
+      <ou_float>Height</ou_float>
+    </ou_deadTreeInfo>
+    <ou_deadTreeInfo species="Trembling_Aspen" type="Snag" code="insects">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_int>SnagDecayClass</ou_int>
+      <ou_float>X</ou_float>
+      <ou_float>Y</ou_float>
+      <ou_float>DBH</ou_float>
+      <ou_float>Height</ou_float>
+    </ou_deadTreeInfo>
+    <ou_deadTreeInfo species="Trembling_Aspen" type="Snag" code="disease">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_int>SnagDecayClass</ou_int>
+      <ou_float>X</ou_float>
+      <ou_float>Y</ou_float>
+      <ou_float>DBH</ou_float>
+      <ou_float>Height</ou_float>
+    </ou_deadTreeInfo>
+    <ou_deadTreeInfo species="Trembling_Aspen" type="Snag" code="storm">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_int>SnagDecayClass</ou_int>
+      <ou_float>X</ou_float>
+      <ou_float>Y</ou_float>
+      <ou_float>DBH</ou_float>
+      <ou_float>Height</ou_float>
+    </ou_deadTreeInfo>
+    <ou_deadTreeInfo species="Black_Cottonwood" type="Snag" code="natural">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_int>SnagDecayClass</ou_int>
+      <ou_float>X</ou_float>
+      <ou_float>Y</ou_float>
+      <ou_float>DBH</ou_float>
+      <ou_float>Height</ou_float>
+    </ou_deadTreeInfo>
+    <ou_deadTreeInfo species="Black_Cottonwood" type="Snag" code="harvest">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_int>SnagDecayClass</ou_int>
+      <ou_float>X</ou_float>
+      <ou_float>Y</ou_float>
+      <ou_float>DBH</ou_float>
+      <ou_float>Height</ou_float>
+    </ou_deadTreeInfo>
+    <ou_deadTreeInfo species="Black_Cottonwood" type="Snag" code="insects">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_int>SnagDecayClass</ou_int>
+      <ou_float>X</ou_float>
+      <ou_float>Y</ou_float>
+      <ou_float>DBH</ou_float>
+      <ou_float>Height</ou_float>
+    </ou_deadTreeInfo>
+    <ou_deadTreeInfo species="Black_Cottonwood" type="Snag" code="disease">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_int>SnagDecayClass</ou_int>
+      <ou_float>X</ou_float>
+      <ou_float>Y</ou_float>
+      <ou_float>DBH</ou_float>
+      <ou_float>Height</ou_float>
+    </ou_deadTreeInfo>
+    <ou_deadTreeInfo species="Black_Cottonwood" type="Snag" code="storm">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_int>SnagDecayClass</ou_int>
+      <ou_float>X</ou_float>
+      <ou_float>Y</ou_float>
+      <ou_float>DBH</ou_float>
+      <ou_float>Height</ou_float>
+    </ou_deadTreeInfo>
+    <ou_deadTreeInfo species="Paper_Birch" type="Snag" code="natural">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_int>SnagDecayClass</ou_int>
+      <ou_float>X</ou_float>
+      <ou_float>Y</ou_float>
+      <ou_float>DBH</ou_float>
+      <ou_float>Height</ou_float>
+    </ou_deadTreeInfo>
+    <ou_deadTreeInfo species="Paper_Birch" type="Snag" code="harvest">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_int>SnagDecayClass</ou_int>
+      <ou_float>X</ou_float>
+      <ou_float>Y</ou_float>
+      <ou_float>DBH</ou_float>
+      <ou_float>Height</ou_float>
+    </ou_deadTreeInfo>
+    <ou_deadTreeInfo species="Paper_Birch" type="Snag" code="insects">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_int>SnagDecayClass</ou_int>
+      <ou_float>X</ou_float>
+      <ou_float>Y</ou_float>
+      <ou_float>DBH</ou_float>
+      <ou_float>Height</ou_float>
+    </ou_deadTreeInfo>
+    <ou_deadTreeInfo species="Paper_Birch" type="Snag" code="disease">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_int>SnagDecayClass</ou_int>
+      <ou_float>X</ou_float>
+      <ou_float>Y</ou_float>
+      <ou_float>DBH</ou_float>
+      <ou_float>Height</ou_float>
+    </ou_deadTreeInfo>
+    <ou_deadTreeInfo species="Paper_Birch" type="Snag" code="storm">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_int>SnagDecayClass</ou_int>
+      <ou_float>X</ou_float>
+      <ou_float>Y</ou_float>
+      <ou_float>DBH</ou_float>
+      <ou_float>Height</ou_float>
+    </ou_deadTreeInfo>
+    <ou_gridInfo gridName="Dispersed Seeds">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_float>seeds_0</ou_float>
+      <ou_float>seeds_1</ou_float>
+      <ou_float>seeds_2</ou_float>
+      <ou_float>seeds_3</ou_float>
+      <ou_float>seeds_4</ou_float>
+      <ou_float>seeds_5</ou_float>
+      <ou_float>seeds_6</ou_float>
+      <ou_float>seeds_7</ou_float>
+      <ou_float>seeds_8</ou_float>
+    </ou_gridInfo>
+    <ou_gridInfo gridName="DetailedSubstrate">
+      <ou_saveFreq>1</ou_saveFreq>
+      <ou_float>scarsoil</ou_float>
+      <ou_float>tipup</ou_float>
+      <ou_float>ffmoss</ou_float>
+      <ou_float>fflitter</ou_float>
+      <ou_float>totallog</ou_float>
+      <ou_float>totallogvol</ou_float>
+      <ou_float>vloggroup1smalldecay1</ou_float>
+      <ou_float>vloggroup1largedecay1</ou_float>
+      <ou_float>vloggroup2smalldecay1</ou_float>
+      <ou_float>vloggroup2largedecay1</ou_float>
+      <ou_float>vloggroup3smalldecay1</ou_float>
+      <ou_float>vloggroup3largedecay1</ou_float>
+      <ou_float>vloggroup1smalldecay2</ou_float>
+      <ou_float>vloggroup1largedecay2</ou_float>
+      <ou_float>vloggroup2smalldecay2</ou_float>
+      <ou_float>vloggroup2largedecay2</ou_float>
+      <ou_float>vloggroup3smalldecay2</ou_float>
+      <ou_float>vloggroup3largedecay2</ou_float>
+      <ou_float>vloggroup1smalldecay3</ou_float>
+      <ou_float>vloggroup1largedecay3</ou_float>
+      <ou_float>vloggroup2smalldecay3</ou_float>
+      <ou_float>vloggroup2largedecay3</ou_float>
+      <ou_float>vloggroup3smalldecay3</ou_float>
+      <ou_float>vloggroup3largedecay3</ou_float>
+      <ou_float>vloggroup1smalldecay4</ou_float>
+      <ou_float>vloggroup1largedecay4</ou_float>
+      <ou_float>vloggroup2smalldecay4</ou_float>
+      <ou_float>vloggroup2largedecay4</ou_float>
+      <ou_float>vloggroup3smalldecay4</ou_float>
+      <ou_float>vloggroup3largedecay4</ou_float>
+      <ou_float>vloggroup1smalldecay5</ou_float>
+      <ou_float>vloggroup1largedecay5</ou_float>
+      <ou_float>vloggroup2smalldecay5</ou_float>
+      <ou_float>vloggroup2largedecay5</ou_float>
+      <ou_float>vloggroup3smalldecay5</ou_float>
+      <ou_float>vloggroup3largedecay5</ou_float>
+      <ou_packageInt>age</ou_packageInt>
+    </ou_gridInfo>
   </Output>
   <ShortOutput>
     <so_filename>D:\Github\SORTIEparams\Outputs\ICH\DetSubstrate\ICH.out</so_filename>
