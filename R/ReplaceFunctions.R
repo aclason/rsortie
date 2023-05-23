@@ -437,3 +437,27 @@ updateStemMap <- function(xmls,MapNames,TreatmentBase){
   }
 }
 
+
+
+#' Update Behaviour Position Value
+#'
+#' @param paramValfiles
+#' @param behaviour
+#' @param newPos
+#' @importFrom data.table fread
+#' @importFrom data.table fwrite
+#' @importFrom stringr str_replace
+#'
+#' @return
+#' @export
+#'
+#' @examples
+behaviourPosition <- function(paramValfiles, behaviour, newPos){
+  for(i in 1:length(paramValfiles)){
+    pv <- fread(paramValfiles[i])
+    oldPos <- as.character(pv[grep(paste0(behaviour,"*[[:digit:]]"), pv[[1]]),1])
+    pv[[1]] <- str_replace(pv[[1]],oldPos,paste0(behaviour,newPos))
+    fwrite(pv,paramValfiles[i])
+  }
+
+}
