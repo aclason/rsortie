@@ -11,6 +11,7 @@
 #' @param exname [character()] The directory that contains the tar file(s) to be extracted
 #' @param tarnames [character()] The single tar file to extract (only used if itype = 1)
 #' @param extime [double()] Extract time? Not working
+#' @importFrom R.utils gunzip
 #'
 #' @return
 #' The routine returns a list of the extracted files.
