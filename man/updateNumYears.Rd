@@ -5,22 +5,16 @@
 \title{Update Number of Years (timesteps)}
 \usage{
 updateNumYears(xmls, num_years)
-
-updateNumYears(xmls, num_years)
 }
 \arguments{
-\item{xmls}{\code{\link[=character]{character()}} name of xml files (includes pathway)}
+\item{xmls}{\code{\link[=character]{character()}} XML file to be modified with pathway included}
 
-\item{num_years}{\code{\link[=numeric]{numeric()}} number of years to update parameter file}
+\item{num_years}{\code{\link[=numeric]{numeric()}} Number of years to run a simulation}
 }
 \description{
 \code{updateNumYears()} Updates the number of years for a simulation
-
-\code{updateNumYears()} Update the parameter file with a new timestep
 }
 \examples{
 updateNumYears(xmls, num_years)
-
-updateNumYears(xmls,num_years)
 
 }

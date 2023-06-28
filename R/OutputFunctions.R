@@ -98,3 +98,50 @@ readPlotFile <- function(outdir) {
   return(dt)
 
 }
+
+
+#' Title
+#'
+#' @param parseFiles
+#' @param parseGrids
+#' @param parseTrees
+#'
+#' @return
+#' @export
+#'
+#' @examples
+parseOutputs <- function(parseFiles, parseGrids=TRUE, parseTrees=TRUE){
+
+  #make data.tables
+  g_dt <- data.table()
+  t_dt <- data.table()
+  #need to make this in parallel
+  for(ix in 1:length(parseFiles)){
+    # identify which treatment, year and unit is being parsed
+    yr <- sub('\\.xml$', '',stringr::str_split(parseFiles[ix],"det_")[[1]][2])
+    up <- gregexpr(Blocks_l, parseFiles[ix])[[1]][1]
+    unn <- substr(parseFiles[ix], up,up+1)
+    tp <- gregexpr(paste(c("NH","CC","HR","LR"), collapse="|"), parseFiles[ix])[[1]][1]
+    tpn <- substr(parseFiles[ix], tp,tp+1)
+    print(paste("parsing:",tpn,unn,"timestep",yr))
+
+    if(parse_grids == 1){
+      # parse the output xml grid data
+      g <- as.data.table(parseMap(parseFiles[ix]))
+
+      g[, ':='(timestep = yr, Unit = unn, Treat = tpn)]
+      g_dt <- rbind(g_dt, g, fill=TRUE)
+    }
+
+    if(parse_trees == 1){
+      # parse the output xml grid data
+      t <- as.data.table(parseXML(parseFiles[ix]))
+
+      t[, ':='(timestep = yr, Unit = unn, Treat = tpn)]
+      t_dt <- rbind(t_dt, t, fill=TRUE)
+    }
+  }
+
+}
+
+

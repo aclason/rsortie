@@ -355,42 +355,6 @@ read_keyhole <- function(file) {
   }
 }
 
-#' Update the parameter file with a new timestep
-#'
-#' @description
-#' `updateNumYears()` Update the parameter file with a new timestep
-#'
-#' @param xmls [character()] name of xml files (includes pathway)
-#' @param num_years [numeric()] number of years to update parameter file
-#'
-#' @return
-#' @export
-#'
-#' @examples
-#' updateNumYears(xmls,num_years)
-#'
-updateNumYears <- function(xmls,num_years){
-
-  for(ix in 1:length(xmls)){
-
-    res <- xml2::read_xml(xmls[ix])
-    #write the xml to a file again (this will put in the missing line breaks)
-    xml2::write_xml(res, "temp.xml")
-    #read the newly printed file, this time as lines of text
-    tmp <- readLines("temp.xml", encoding="UTF-8")
-    xml1 <- gsub("\\\\", "//",tmp)
-
-    ln1 <- findFileLine(rf = xml1, itype = 1, varname = "timesteps")
-
-    xml2 <- replaceParameter(ln1 = ln1, rf = xml1, varvalue = num_years)
-    xml2 <- gsub("//", "\\\\", xml2)
-
-    writeLines(xml2,xmls[ix])
-
-  }
-}
-
-
 
 #' Update the parameter file with a stemmap
 #'
