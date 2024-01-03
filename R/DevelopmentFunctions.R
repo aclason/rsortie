@@ -44,7 +44,7 @@ runSortiePar <- function(fname, numcores, sortie_loc) {
 #' `parseMap()` takes the output XML file name and returns the outputs stored in maps.
 #'
 #' @param xmlname [character()] XML file name
-#'
+#' @import xml2
 #' @return
 #' The output contained in grids from SORTIE run as a data frame
 #' @export
@@ -59,7 +59,7 @@ parseMap <-function(xmlname){
 
   #This routine is just a map portion of the output file, assuming it is there
   `%>%` <- magrittr::`%>%`
-  library(xml2)
+  #library(xml2)
 
   grid_data <- read_xml(xmlname)
 
@@ -82,6 +82,7 @@ parseMap <-function(xmlname){
   grid_chunks <- xml_find_all(grid_data, ".//grid")
   grid_names <- xml_attr(xml_find_all(grid_data, ".//grid"),"gridName")
 
+  #if we wanted to pass an argument of which grids to parse, it would be here
   colnames_l <- list()
   colpos_l <- list()
   fieldname_l <- list()
@@ -485,5 +486,50 @@ parseMapOld <-function(xmlname){
 
   # Output df
   return(sprd)
+
+}
+
+
+#' Title
+#'
+#' @param parseFiles
+#' @param parseGrids
+#' @param parseTrees
+#'
+#' @return
+#' @export
+#'
+#' @examples
+parseOutputsOLD <- function(parseFiles, parseGrids=TRUE, parseTrees=TRUE){
+
+  #make data.tables
+  g_dt <- data.table()
+  t_dt <- data.table()
+  #need to make this in parallel
+  for(ix in 1:length(parseFiles)){
+    # identify which treatment, year and unit is being parsed
+    yr <- sub('\\.xml$', '',stringr::str_split(parseFiles[ix],"det_")[[1]][2])
+    up <- gregexpr(Blocks_l, parseFiles[ix])[[1]][1]
+    unn <- substr(parseFiles[ix], up,up+1)
+    tp <- gregexpr(paste(c("NH","CC","HR","LR"), collapse="|"), parseFiles[ix])[[1]][1]
+    tpn <- substr(parseFiles[ix], tp,tp+1)
+    print(paste("parsing:",tpn,unn,"timestep",yr))
+
+    if(parse_grids == 1){
+      # parse the output xml grid data
+      g <- as.data.table(parseMap(parseFiles[ix]))
+
+      g[, ':='(timestep = yr, Unit = unn, Treat = tpn)]
+      g_dt <- rbind(g_dt, g, fill=TRUE)
+    }
+
+    if(parse_trees == 1){
+      # parse the output xml grid data
+      t <- as.data.table(parseXML(parseFiles[ix]))
+
+      t[, ':='(timestep = yr, Unit = unn, Treat = tpn)]
+      t_dt <- rbind(t_dt, t, fill=TRUE)
+    }
+  }
 
 }
