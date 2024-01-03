@@ -118,7 +118,10 @@ parseXML <- function(xmlname){
   all_headers <- do.call("rbind", build_list_in_loop)
 
   # Replace dead with -1
-  all_headers$colpos <- ifelse((all_headers$colpos == 0 || all_headers$colpos == 2) & all_headers$colnames == "dead", -1, all_headers$colpos)
+  #all_headers$colpos <- ifelse((all_headers$colpos == 0 || all_headers$colpos == 2) &
+   #                              all_headers$colnames == "dead", -1, all_headers$colpos)
+  all_headers$colpos <- ifelse((all_headers$colpos == 0 | all_headers$colpos == 2) &
+                                 all_headers$colnames == "dead", -1, all_headers$colpos)
 
   # end of header info
   head(all_headers)

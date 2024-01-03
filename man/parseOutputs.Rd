@@ -2,13 +2,36 @@
 % Please edit documentation in R/OutputFunctions.R
 \name{parseOutputs}
 \alias{parseOutputs}
-\title{Title}
+\title{parse SORTIE outputs}
 \usage{
-parseOutputs(parseFiles, parseGrids = TRUE, parseTrees = TRUE)
+parseOutputs(
+  plots,
+  filesToparse,
+  parseGrids = TRUE,
+  parseTrees = TRUE,
+  numcores,
+  years,
+  treatmentName = NA,
+  parseDir
+)
 }
 \arguments{
-\item{parseTrees}{}
+\item{plots}{vector of plot names}
+
+\item{filesToparse}{e.g."./myPathway/Outputs/extracted/File1_det_0.xml"}
+
+\item{parseGrids}{default = TRUE}
+
+\item{parseTrees}{default = TRUE}
+
+\item{numcores}{how many cores (default set to 1 (not parallel))}
+
+\item{years}{which years to parse}
+
+\item{treatmentName}{optional - if there's a treatment name to track with outputs, can add it here}
+
+\item{parseDir}{output of parsing directory (function automatically writes out files)}
 }
 \description{
-Title
+parse SORTIE outputs
 }
