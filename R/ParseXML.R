@@ -76,27 +76,42 @@ parseXML <- function(xmlname){
     # first child - usually alive or dead
     child <- xml_child(this_tree)
     cont <- xml_contents(child)
-    colnames <- xml_attr(cont, "label")
-    colpos <- xml_text(cont)
-    colpos <- as.numeric(as.character(colpos))
+    #colnames <- xml_attr(cont, "label")
+    #colpos <- xml_text(cont)
+    #colpos <- as.numeric(as.character(colpos))
 
 
     # make sure to get alive and dead attr for
     # some trees
-    if( length(xml_children(this_tree)) == 2){
+    #if( length(xml_children(this_tree)) == 2){
 
-      child2 <- xml_child(this_tree, search=2)
-      cont2 <- xml_contents(child2)
-      colnames2 <- xml_attr(cont2, "label")
-      colpos2 <- xml_text(cont2)
-      colpos2 <- as.numeric(as.character(colpos2))
+      #dead is first (integer) and then the rest
+      #child2 <- xml_child(this_tree, search=2)
+      #cont2 <- xml_contents(child2)
+      #colnames2 <- xml_attr(cont2, "label")
+      #colpos2 <- xml_text(cont2)
+      #colpos2 <- as.numeric(as.character(colpos2))
 
       # append
-      colpos <- c(colpos, colpos2)
-      colnames <- c(colnames, colnames2)
+      #colpos <- c(colpos, colpos2)
+      #colnames <- c(colnames, colnames2)
+
+    #}
+    # Initialize vectors to store colnames, colpos, and counter
+    colnames <- character(0)
+    colpos <- numeric(0)
+
+
+    # Dynamically handle all child elements, not just those with exactly two children
+    # Loop through all children under tm_treeSettings and get their codes
+    for (child_idx in 1:length(xml_children(this_tree))) {
+      child <- xml_child(this_tree, child_idx)
+      cont <- xml_contents(child)
+      # Extract label and position
+      colnames <- c(colnames, xml_attr(cont, "label"))
+      colpos <- c(colpos, as.numeric(xml_text(cont)))
 
     }
-
 
     # Build export datadframe
 
@@ -117,11 +132,20 @@ parseXML <- function(xmlname){
   # merge and combine all headers
   all_headers <- do.call("rbind", build_list_in_loop)
 
-  # Replace dead with -1
+  # Replace live/dead with -1 for colpos
   #all_headers$colpos <- ifelse((all_headers$colpos == 0 || all_headers$colpos == 2) &
    #                              all_headers$colnames == "dead", -1, all_headers$colpos)
   all_headers$colpos <- ifelse((all_headers$colpos == 0 | all_headers$colpos == 2) &
                                  all_headers$colnames == "dead", -1, all_headers$colpos)
+
+  #make treefall == -2
+  all_headers$colpos <- ifelse(all_headers$colpos == 0 &
+                                 all_headers$colnames == "Fall", -2, all_headers$colpos)
+
+  #make snagdeclass == -3
+  all_headers$colpos <- ifelse(all_headers$colpos == 2 &
+                                 all_headers$colnames == "SnagDecayClass", -3,
+                               all_headers$colpos)
 
   # end of header info
   head(all_headers)
@@ -163,21 +187,55 @@ parseXML <- function(xmlname){
     # Get the xml content (the values)
     cont <- xml_contents(children)
     values <- xml_text(cont)
+
+    # Initialize empty vectors for colnames and values
+    #colpos <- c()
+    #values <- c()
+
+    #for(child_idx in 1:length(children)) {
+     # child <- children[[child_idx]]
+
+      # Get the contents of the child
+      #cont <- xml_contents(child)
+
+      # Extract the label attribute and the value
+      #label <- xml_attr(cont, "c")
+      #value <- xml_text(cont)
+
+      # Handle boolean values
+      #is_boolean <- xml_name(child) == "bl"
+      #value <- ifelse(is_boolean, ifelse(value == "true", 2, 1),
+       #               as.numeric(as.character(value)))
+
+      # Append label and value to respective vectors
+      #colpos <- c(colpos, label)
+      #values <- c(values, value)
+    #}
+
+    is_boolean <- xml_name(children) == "bl"
+    values <- ifelse(is_boolean, ifelse(values == "true", 2, 1),
+                     as.numeric(as.character(values)))
+    #use -2 for tree fall
+    boolean_labels <- ifelse(is_boolean, -2, NA)
     values <- as.numeric(as.character(values))
 
     # get the xml label names
     colnames <- xml_attr(children, "c")
-    colnames <- as.numeric(as.character(colnames))
+    # Ensure boolean values are labeled
+    labeled_colnames <- ifelse(!is.na(boolean_labels), boolean_labels, colnames)
+    labeled_colnames <- as.numeric(as.character(labeled_colnames))
 
     # set first value to -1 for dead to avoid dup zero
-    c <- as.character(children[[1]])
+    cp <- as.character(children[[1]])
     mstart <- c(0,0)
-    if(grepl("int", c) & all(colnames[1:2] == mstart)){
-      colnames[1] <- -1
+    if(grepl("int", cp) & all(labeled_colnames[1:2] == mstart)){
+      labeled_colnames[1] <- -1
     }
+
+    #if the first value is 2 - this actually corresponds to snagdecayclass
     mstart <- c(2,0)
-    if(grepl("int", c) & all(colnames[1:2] == mstart)){
-      colnames[1] <- -1
+    if(grepl("int", cp) & all(labeled_colnames[1:2] == mstart)){
+      labeled_colnames[1] <- -3
     }
 
 
@@ -185,7 +243,7 @@ parseXML <- function(xmlname){
     this_values <- data.frame(
       tree_species_id = this_species,
       tp = this_tp,
-      colpos = colnames,
+      colpos = labeled_colnames,
       values = values,
       tree_id = i
     )
@@ -243,9 +301,15 @@ parseXML <- function(xmlname){
   tree_datj <- tree_dat[,c("tree_id", "join", "values")]
 
   big_merge <- merge(tree_datj, all_headers, by.x="join", by.y="join", all.x=TRUE)
+  #big_merge[big_merge$tp == 5,]
   head(big_merge)
   nrow(big_merge)
+  # Check if the "join" column contains "tree_fall"
+  #big_merge$tree_fall_check <- grepl("tree_fall", big_merge$join)
 
+  # Use ifelse to update the colnames based on the presence of "tree_fall"
+  #big_merge$colnames <- ifelse(big_merge$tree_fall_check, "tree_fall", big_merge$colnames)
+  #big_merge$tree_fall_check <- NULL
 
   # Convert from long format to short format
   long_f2 <- big_merge[,c("tree_species", "tp", "tree_id", "values", "colnames")]
@@ -257,8 +321,9 @@ parseXML <- function(xmlname){
 
 
   # Fix format
-  sprd <- long_f %>%  tidyr::spread(colnames, values)
-
+  #sprd <- long_f %>%  tidyr::spread(colnames, values)
+  sprd <- long_f %>%
+    tidyr::pivot_wider(names_from = colnames, values_from = values)
   #plot(sprd$X, sprd$Y, pch='.', col=as.factor(sprd$tree_species))
 
 
