@@ -2,6 +2,7 @@
 
 export(behaviourPosition)
 export(extractFiles)
+export(extractFiles_fast)
 export(findFileLine)
 export(makeFiles)
 export(modifyFile)
