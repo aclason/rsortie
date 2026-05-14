@@ -11,9 +11,6 @@ removeSpecies(sp, rf)
 
 \item{rf}{\code{\link[=character]{character()}} Base XML file to be modified}
 }
-\value{
-
-}
 \description{
 \code{removeSpecies()} removes a species from the base parameter file.
 }

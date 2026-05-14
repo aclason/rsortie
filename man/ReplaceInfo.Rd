@@ -17,9 +17,6 @@ replaceInfo(rf, variable_names, pf1, ncols, newname)
 
 \item{newname}{\code{\link[=character]{character()}} New file name}
 }
-\value{
-
-}
 \description{
 \code{replaceInfo()} updates the base parameter file with the new values from the new parameter values file.
 }

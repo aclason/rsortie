@@ -9,9 +9,6 @@ read_keyhole(file)
 \arguments{
 \item{file}{\code{\link[=character]{character()}} KMZ File}
 }
-\value{
-
-}
 \description{
 \code{read_keyhole()} is a helper function to read in .kmz spatial files.
 }

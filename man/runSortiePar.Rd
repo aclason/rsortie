@@ -14,9 +14,6 @@ update this to allow serial runs passed across cores}
 
 \item{sortie_loc}{'0' defaults to Program Files (x86) for SORTIE location. If stored elsewhere, sortie_loc = location}
 }
-\value{
-
-}
 \description{
 \code{runSortiePar()} is a wrapper function that passes parameter files to process parallel SORTIE simulations
 }

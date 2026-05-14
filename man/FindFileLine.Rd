@@ -17,9 +17,6 @@ findFileLine(rf, itype, varname, vargroup, varmaster)
 
 \item{varmaster}{\code{\link[=character]{character()}} variable master group}
 }
-\value{
-
-}
 \description{
 \code{findFileLine()} finds the line within the base SORTIE parameter file that the new values (file or dataframe)
 identifies is a variable to be modified. This file line applies only to the base parameter file and is

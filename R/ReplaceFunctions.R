@@ -285,6 +285,40 @@ replaceLines <- function(rf, pf1) {       #rf is the main file, pf1 is the param
 }
 
 
+#' Update Number of Years (timesteps)
+#'
+#' @description
+#' `updateNumYears()` Updates the number of years for a simulation
+#'
+#' @param xmls [character()] XML file to be modified with pathway included
+#' @param num_years [numeric()] Number of years to run a simulation
+#'
+#' @return
+#' @export
+#'
+#' @examples
+#' updateNumYears(xmls, num_years)
+#'
+updateNumYears <- function(xmls,num_years){
+
+  for(ix in 1:length(xmls)){
+
+    res <- xml2::read_xml(xmls[ix])
+    #write the xml to a file again (this will put in the missing line breaks)
+    xml2::write_xml(res, "temp.xml")
+    #read the newly printed file, this time as lines of text
+    tmp <- readLines("temp.xml", encoding="UTF-8")
+    xml1 <- gsub("\\\\", "//",tmp)
+
+    ln1 <- findFileLine(rf = xml1, itype = 1, varname = "timesteps")
+
+    xml2 <- replaceParameter(ln1 = ln1, rf = xml1, varvalue = num_years)
+    xml2 <- gsub("//", "\\\\", xml2)
+
+    writeLines(xml2,xmls[ix])
+
+  }
+}
 ##helper function to read in .kmz files
 
 #' Read keyhole
@@ -321,3 +355,73 @@ read_keyhole <- function(file) {
   }
 }
 
+
+#' Update the parameter file with a stemmap
+#'
+#' @description
+#' `updateStemMap()` Update the parameter file with a stemmap.
+#'
+#' @param xmls [character()] name(s) of xml files (includes pathway)
+#' @param MapNames [character()] name(s) of the text files to add to the parameter file (includes pathway)
+#' @param TreatmentBase [vector()] names that appear in both XMLs and Map names to link
+#' which stemmap with which parameter file
+#'
+#' @return
+#' @export
+#'
+#' @examples
+#' updateStemMap(xmls,MapNames)
+#'
+updateStemMap <- function(xmls,MapNames,TreatmentBase){
+
+  for(ix in 1:length(xmls)){
+
+    res <- xml2::read_xml(xmls[ix])
+    #write the xml to a file again (this will put in the missing line breaks)
+    xml2::write_xml(res, "temp.xml")
+    #read the newly printed file, this time as lines of text
+    tmp <- readLines("temp.xml", encoding="UTF-8")
+    xml1 <- gsub("\\\\", "//",tmp)
+
+    ln1 <- findFileLine(rf = xml1, itype = 1, varname = "tr_treemapFile")
+
+    if(length(ln1) == 0){
+      print(paste("Current parameter file",xmls[ix], "is missing the stem map placeholder"))
+      next
+    }
+
+    Tr_use <- TreatmentBase[stringr::str_detect(xmls[ix], TreatmentBase)]
+    Map_use <- grep(Tr_use, MapNames, value = TRUE)
+
+    xml2 <- replaceParameter(ln1 = ln1, rf = xml1, varvalue = Map_use)
+    xml2 <- gsub("//", "\\\\", xml2)
+
+    writeLines(xml2,xmls[ix])
+
+  }
+}
+
+
+
+#' Update Behaviour Position Value
+#'
+#' @param paramValfiles
+#' @param behaviour
+#' @param newPos
+#' @importFrom data.table fread
+#' @importFrom data.table fwrite
+#' @importFrom stringr str_replace
+#'
+#' @return
+#' @export
+#'
+#' @examples
+behaviourPosition <- function(paramValfiles, behaviour, newPos){
+  for(i in 1:length(paramValfiles)){
+    pv <- fread(paramValfiles[i])
+    oldPos <- as.character(pv[grep(paste0(behaviour,"*[[:digit:]]"), pv[[1]]),1])
+    pv[[1]] <- str_replace(pv[[1]],oldPos,paste0(behaviour,newPos))
+    fwrite(pv,paramValfiles[i])
+  }
+
+}

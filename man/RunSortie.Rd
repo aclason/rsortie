@@ -11,9 +11,6 @@ runSortie(fname, sortie_loc = 0)
 
 \item{sortie_loc}{Location of SORTIE program}
 }
-\value{
-
-}
 \description{
 \code{runSortie()} passes a parameter file to SORTIE to start a simulation.
 }
